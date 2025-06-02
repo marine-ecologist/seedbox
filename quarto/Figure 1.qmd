@@ -1,0 +1,9 @@
+---
+title: "Figure 1"
+format: html
+editor: visual
+---
+
+## 
+
+![](images/clipboard-1522408336.png){width="600"}

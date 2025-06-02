@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.29">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Figure 2 – Larval seedboxes</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-748b535e376f14d4692bf2b2e5fd6380.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-139760d7c2b45b71cf6fb5fb69731804.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<link href="site_libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet">
+<script src="site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<link href="site_libs/leaflet-1.3.1/leaflet.css" rel="stylesheet">
+<script src="site_libs/leaflet-1.3.1/leaflet.js"></script>
+<link href="site_libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet">
+<script src="site_libs/proj4-2.6.2/proj4.min.js"></script>
+<script src="site_libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+<link href="site_libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet">
+<script src="site_libs/leaflet-binding-2.2.2/leaflet.js"></script>
+<script src="site_libs/leaflet-providers-2.0.0/leaflet-providers_2.0.0.js"></script>
+<script src="site_libs/leaflet-providers-plugin-2.2.2/leaflet-providers-plugin.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Larval seedboxes</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./codebase.html"> 
+<span class="menu-text">Codebase</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-figures" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Figures</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-figures">    
+        <li>
+    <a class="dropdown-item" href="./Figure 1.html">
+ <span class="dropdown-text">Figure 1</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./Figure 2.html">
+ <span class="dropdown-text">Figure 2</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./Figure 3.html">
+ <span class="dropdown-text">Figure 3</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./Figure 4.html">
+ <span class="dropdown-text">Figure 4</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./Figure S1.html">
+ <span class="dropdown-text">Figure S1</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./Figure S2.html">
+ <span class="dropdown-text">Figure S2</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/marine-ecologist/seedbox"> <i class="bi bi-github" role="img" aria-label="GitHub">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
+    </div>
+<!-- main -->
+<main class="content column-page" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<div class="quarto-title-block"><div><h1 class="title">Figure 2</h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button">View Source</a></li></ul></div></div>
+</div>
+
+
+
+<div class="quarto-title-meta column-page">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="cell">
+<style>
+  code, pre {
+    font-size: 65%;
+    color:darkgrey;
+  }
+</style>
+</div>
+<p><img src="images/clipboard-3805581159.png" class="img-fluid"></p>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># load libraries</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(sf)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(janitor)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readxl)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(leaflet)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co"># permanent link to orthoomosaic via geonadir.com:</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>geonadir_url <span class="ot">&lt;-</span> <span class="st">"https://api.geonadir.com/cog_tiles/ortho/9723/e534dfb7-6121-4429-bad4-68e9da770711/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMzMjI2MjkzLCJpYXQiOjE3MzMxMzk4OTMsImp0aSI6ImM0ODRmNTc0OTZkNzRiNmZiMWZjZDlmNDViYzViZjQ2IiwidXNlcl9pZCI6MTI1NzR9.IIqFtk6NwEErJiUNZwIDodEgwyR-nxqECf92oHssggY/{z}/{x}/{y}"</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="co"># load geojson spatial files for tile locations, join with the tile data:</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>seedbox_tile_locations_sf <span class="ot">&lt;-</span> <span class="fu">rbind</span>(</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">st_read</span>(<span class="st">"../data/Seedbox2.geojson"</span>, <span class="at">quiet=</span><span class="cn">TRUE</span>) <span class="sc">|&gt;</span> <span class="fu">mutate</span>(<span class="at">seedbox=</span><span class="dv">1</span>) <span class="sc">|&gt;</span> <span class="fu">st_transform</span>(<span class="dv">32755</span>),</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">st_read</span>(<span class="st">"../data/Seedbox3.geojson"</span>, <span class="at">quiet=</span><span class="cn">TRUE</span>) <span class="sc">|&gt;</span> <span class="fu">mutate</span>(<span class="at">seedbox=</span><span class="dv">2</span>) <span class="sc">|&gt;</span> <span class="fu">st_transform</span>(<span class="dv">32755</span>),</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">st_read</span>(<span class="st">"../data/Seedbox4.geojson"</span>, <span class="at">quiet=</span><span class="cn">TRUE</span>) <span class="sc">|&gt;</span> <span class="fu">mutate</span>(<span class="at">seedbox=</span><span class="dv">3</span>) <span class="sc">|&gt;</span> <span class="fu">st_transform</span>(<span class="dv">32755</span>),</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">st_read</span>(<span class="st">"../data/Seedbox5.geojson"</span>, <span class="at">quiet=</span><span class="cn">TRUE</span>) <span class="sc">|&gt;</span> <span class="fu">mutate</span>(<span class="at">seedbox=</span><span class="dv">4</span>) <span class="sc">|&gt;</span> <span class="fu">st_transform</span>(<span class="dv">32755</span>),</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">st_read</span>(<span class="st">"../data/Seedbox6.geojson"</span>, <span class="at">quiet=</span><span class="cn">TRUE</span>) <span class="sc">|&gt;</span> <span class="fu">mutate</span>(<span class="at">seedbox=</span><span class="dv">5</span>) <span class="sc">|&gt;</span> <span class="fu">st_transform</span>(<span class="dv">32755</span>)</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>) <span class="sc">|&gt;</span> <span class="fu">st_transform</span>(<span class="dv">4326</span>)  </span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>seedbox_tile_locations <span class="ot">&lt;-</span> seedbox_tile_locations_sf <span class="sc">%&gt;%</span>  </span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">st_coordinates</span>() <span class="sc">|&gt;</span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as.data.frame</span>() <span class="sc">|&gt;</span></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">x =</span> X, <span class="at">y =</span> Y) <span class="sc">|&gt;</span></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>  <span class="fu">bind_cols</span>(<span class="fu">st_drop_geometry</span>(seedbox_tile_locations_sf))</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="co"># Map tile locations on orthomosaic</span></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="fu">leaflet</span>(seedbox_tile_locations) <span class="sc">%&gt;%</span></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addProviderTiles</span>(<span class="st">'Esri.WorldImagery'</span>, <span class="at">group =</span> <span class="st">"&lt;b&gt; [Seascape]&lt;/b&gt; satellite map"</span>, </span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>                   <span class="at">options=</span><span class="fu">providerTileOptions</span>(<span class="at">opacity=</span><span class="dv">5</span>, <span class="at">maxNativeZoom=</span><span class="dv">18</span>,<span class="at">maxZoom=</span><span class="dv">100</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addTiles</span>(<span class="at">urlTemplate =</span> geonadir_url, </span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>           <span class="at">attribution =</span> <span class="st">"Geoff Carlin @ CSIRO"</span>, </span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>           <span class="at">options =</span> <span class="fu">providerTileOptions</span>(<span class="at">minZoom =</span> <span class="dv">17</span>, <span class="at">maxZoom =</span> <span class="dv">30</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addCircleMarkers</span>(<span class="sc">~</span>seedbox_tile_locations<span class="sc">$</span>x, <span class="sc">~</span>seedbox_tile_locations<span class="sc">$</span>y,</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>                   <span class="at">group=</span><span class="st">"seedbox"</span>,</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>                   <span class="at">radius =</span> <span class="dv">5</span>,</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>                   <span class="at">fillColor =</span> <span class="st">"white"</span>,</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>                   <span class="at">fillOpacity =</span> <span class="fl">0.8</span>, </span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>                   <span class="at">stroke =</span> <span class="cn">TRUE</span>, </span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>                   <span class="at">color =</span> <span class="st">"black"</span>, </span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>                   <span class="at">weight =</span> <span class="dv">1</span>)  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<div class="leaflet html-widget html-fill-item" id="htmlwidget-c8efaee8009d9a317900" style="width:100%;height:443px;"></div>
+<script type="application/json" data-for="htmlwidget-c8efaee8009d9a317900">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addProviderTiles","args":["Esri.WorldImagery",null,"<b> [Seascape]<\/b> satellite map",{"errorTileUrl":"","noWrap":false,"opacity":5,"detectRetina":false,"maxNativeZoom":18,"maxZoom":100}]},{"method":"addTiles","args":["https://api.geonadir.com/cog_tiles/ortho/9723/e534dfb7-6121-4429-bad4-68e9da770711/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMzMjI2MjkzLCJpYXQiOjE3MzMxMzk4OTMsImp0aSI6ImM0ODRmNTc0OTZkNzRiNmZiMWZjZDlmNDViYzViZjQ2IiwidXNlcl9pZCI6MTI1NzR9.IIqFtk6NwEErJiUNZwIDodEgwyR-nxqECf92oHssggY/{z}/{x}/{y}",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false,"minZoom":17,"maxZoom":30,"attribution":"Geoff Carlin @ CSIRO"}]},{"method":"addCircleMarkers","args":[[-14.65477423600025,-14.65477945402401,-14.65478194111944,-14.65478023428925,-14.65477769842723,-14.65477491873234,-14.65476979824174,-14.65477116370591,-14.65476809141155,-14.65477418723369,-14.65478135592052,-14.6547873542095,-14.65478881720681,-14.65477958686301,-14.6547573689161,-14.65475608885457,-14.65475812382419,-14.65476840102164,-14.65478183566622,-14.65479287527668,-14.65479867574996,-14.65480249283561,-14.6547965800951,-14.65474392791676,-14.6547431775347,-14.65474704612333,-14.65475042678187,-14.65476375772918,-14.65475859355571,-14.6547660734478,-14.65477316153602,-14.65477800565661,-14.65479494895838,-14.65480288140284,-14.65480936215811,-14.65481195446022,-14.65481542814504,-14.65480985409095,-14.65480170004966,-14.65479220512156,-14.65478521076613,-14.65477705672483,-14.65476977244792,-14.65476665579214,-14.65476339417562,-14.65475310196349,-14.65474659469588,-14.65469112629511,-14.65469354448296,-14.65469866939243,-14.65470110443926,-14.65469544448421,-14.65469217605947,-14.65468757968442,-14.65469434826261,-14.65470270485337,-14.65470541228464,-14.65470343377717,-14.6546924999201,-14.65468682472762,-14.65468544497899,-14.65467655442204,-14.65468152349521,-14.65469353501022,-14.65470673746865,-14.65471575461162,-14.65471731985155,-14.65471524420731,-14.65471031029888,-14.65469101701557,-14.65467396951128,-14.65467764442238,-14.65468383732813,-14.65465957078,-14.6546624456376,-14.65467068689607,-14.6546738811823,-14.65468277884246,-14.65469219080325,-14.65470682127695,-14.65471329782423,-14.65472275637889,-14.65472755554702,-14.65473123646239,-14.65473207515195,-14.65473170240103,-14.65472969886482,-14.6547224768157,-14.65470640193216,-14.65469111914434,-14.65468697229033,-14.65467536200916,-14.65466913634602,-14.65466275632759,-14.65465992648071,-14.65459771636454,-14.6546030463966,-14.65460616827252,-14.6546052926244,-14.65459981030572,-14.65459516556348,-14.65458983553142,-14.65459805900946,-14.65460712006396,-14.6546098612233,-14.65460826221368,-14.65460171388859,-14.65459215790253,-14.65459067310789,-14.65457620587801,-14.65458199276997,-14.65458972131644,-14.65460045752388,-14.6546164095484,-14.6546211685056,-14.65462040707245,-14.65461214552275,-14.65460635863081,-14.65459463256028,-14.65458454357102,-14.65457944196891,-14.65456524124064,-14.65456870576148,-14.65457757645769,-14.65459847779769,-14.6546105845848,-14.65461865577619,-14.65462528024461,-14.65462904933871,-14.65463392251088,-14.65463609259536,-14.65463681595686,-14.65463399865419,-14.65462946812695,-14.65462082586068,-14.65460936629175,-14.65459280512071,-14.65457475915503,-14.65457346471867,-14.65458502842276,-14.65456672416309,-14.65460310931749,-14.6545648386251,-14.65458379382046,-14.6545770084291,-14.65448149291186,-14.654481751765,-14.65448641112165,-14.65449029391885,-14.65449844779298,-14.65450220116361,-14.6545295748839,-14.65451119631046,-14.65454277639438,-14.65454225868809,-14.65454737103774,-14.65455054198879,-14.65455183625452,-14.65455047727549,-14.65454064085593,-14.65452743934543,-14.65452116215662,-14.65451177873004,-14.65450407784892,-14.65449987148529,-14.65449411200277,-14.6544890643664,-14.65448317545731,-14.65448259303773,-14.65449417264683,-14.65453488700031,-14.65451813549022,-14.65451731046288,-14.65451253533314,-14.65451464644313,-14.65451530666076,-14.65452261051455,-14.65453159123919,-14.6545065296623,-14.65449373960663,-14.65450847138955,-14.65451293744934,-14.65450249736563,-14.65449996251493,-14.65451186459933,-14.65451891892764,-14.65451558328476,-14.65451039827161,-14.65452123109572,-14.65454047491798,-14.65452690225808,-14.65449286037588,-14.65452827499042,-14.65450621767767,-14.6545313755494,-14.65452181690876,-14.65444354558067,-14.65443848999754,-14.65440061086691,-14.65441379822083,-14.6544556186849,-14.654406564901,-14.65443707396173,-14.65442099383226,-14.65443957102296,-14.65438503026469,-14.65438286933556,-14.65442320238027,-14.65438588123149,-14.6544234873542,-14.65442620954879,-14.65440108545382,-14.65442307770418,-14.65441522311007,-14.65443169000983,-14.65444203576091,-14.65445550991821,-14.65439758399573,-14.65443761779524,-14.65441963392172,-14.65441647568566,-14.65441626411496,-14.65442241416536,-14.65442814668621,-14.65442573389761,-14.65441917712342,-14.65438292217584,-14.65439309214118,-14.65441153267367,-14.65443164798637,-14.65441559713835,-14.65445578183496,-14.65441444799225,-14.65440402690722,-14.6543979115301,-14.654431254943,-14.65442603414118,-14.65441348226803,-14.65444604721488,-14.65442818101268,-14.65441570130421,-14.65442339888271,-14.65441687952107,-14.65438337739973,-14.65445137678342,-14.65440904273782,-14.65439927753178],[145.4503639131909,145.4503660101537,145.450361133496,145.4503585488674,145.4503573297029,145.4503589877666,145.4503657663208,145.4503713744772,145.4503573297029,145.4503501610161,145.4503518678463,145.4503575247693,145.4503655224879,145.4503721613125,145.4503710895124,145.4503605864434,145.4503516588348,145.4503425485505,145.4503390308441,145.4503452803863,145.4503538875402,145.4503664614694,145.4503758170715,145.4503565198341,145.4503676413181,145.4503765634684,145.4503842657935,145.4503819132734,145.4503891790471,145.4503953410535,145.4504025359973,145.450389036573,145.450398076111,145.4503930470449,145.4503822112221,145.4503753675445,145.4503642724915,145.4503448956037,145.45034022062,145.4503352194747,145.4503276452763,145.450323840057,145.4503274278352,145.4503271379137,145.4503306169714,145.4503362341998,145.4503469002814,145.4503337417909,145.4503355142127,145.4503356103906,145.4503301680669,145.4503279519155,145.4503296419303,145.4503389843552,145.45034346203,145.4503407285657,145.4503336475916,145.4503235988563,145.4503223753056,145.4503242236481,145.4503304195005,145.4503363658199,145.4503452826204,145.4503554907068,145.4503542997633,145.4503430368414,145.4503307531107,145.4503213616713,145.4503137056064,145.4503089418328,145.4503261594719,145.450318537434,145.4503151347386,145.4503321441236,145.4503425894395,145.4503542485843,145.4503617551569,145.4503667020292,145.4503707091016,145.4503682862206,145.4503627415506,145.4503620426426,145.4503528636511,145.4503421470621,145.4503382331774,145.4503268642743,145.450317638689,145.450302728652,145.4502954134152,145.450291685906,145.4502965782618,145.4503019973045,145.4503113615251,145.4503148602449,145.4503258709218,145.4503400691381,145.4503401072098,145.4503359573991,145.4503312745852,145.4503294471457,145.4503346248911,145.4503375944804,145.4503467697499,145.4503440666622,145.4503402975681,145.4503303608655,145.4503234698954,145.4503265917714,145.450330855797,145.4503394980633,145.4503508814889,145.4503574678856,145.4503577724589,145.4503539272215,145.4503427722258,145.4503273532045,145.4503137996944,145.4503114773233,145.4503160459222,145.4503185205799,145.450328076566,145.4503412112878,145.4503571252407,145.4503659578652,145.4503739529133,145.4503707929658,145.4503669858,145.4503614654097,145.4503583435337,145.4503495870525,145.4503456656718,145.450333406598,145.4503241551852,145.4503148276291,145.4503053858581,145.450298723318,145.45029716238,145.4503118580399,145.4503137996944,145.450302135609,145.4503275463175,145.450297719235,145.4503317628777,145.4503759723386,145.4503082996545,145.4503321192575,145.4503376198868,145.4503433146561,145.4503469386001,145.4503521803763,145.4503515979568,145.4503601401106,145.4503598165442,145.4503457737609,145.4503555454673,145.4503339959428,145.4503306955652,145.4503204061526,145.4503057162365,145.4502939384183,145.4502883730756,145.4502858492575,145.4502867552435,145.4502863022505,145.4502897320547,145.4502957503903,145.4503063633694,145.4503158115093,145.4503249360827,145.4503329228291,145.4503064124302,145.4503312187033,145.4503169990961,145.4503210705225,145.4503257451232,145.4503438097864,145.4502990042061,145.4503339599531,145.4503167738153,145.4503165722805,145.4503009938434,145.4503170493606,145.4503406734293,145.4503030681462,145.4503103157337,145.4503249911554,145.4502977765575,145.4503291284064,145.4503203668192,145.4503217792038,145.4503268821171,145.4503232448308,145.4503182089446,145.4503245734309,145.4503375188345,145.4503117508629,145.4503378128687,145.4503511007344,145.4503806343488,145.4503739230991,145.4503740865648,145.4503961118225,145.4503342779508,145.4503568446732,145.4503722023506,145.4503593544856,145.4503787233213,145.4503657679196,145.4503804142102,145.4503615467432,145.4503882880088,145.4503291281636,145.4503580914342,145.4503603712257,145.4503262292147,145.4503607434812,145.4503648413948,145.4503692619614,145.4503969819561,145.4503255137145,145.4503521601158,145.4503409390955,145.4503747812609,145.4503548032541,145.4503410255775,145.4503668009501,145.4503513520565,145.4503425301249,145.4503582702278,145.4503633848722,145.4503646814565,145.450384147485,145.4503884609729,145.4503814126871,145.4503575979739,145.4503997011238,145.4503246520974,145.4503268306846,145.4503949153888,145.4503717948579,145.4504008431742,145.4503407228904,145.4503575214863,145.4503666749902,145.4503503210398,145.4503647705108,145.4503961662059],5,null,"seedbox",{"interactive":true,"className":"","stroke":true,"color":"black","weight":1,"opacity":0.5,"fill":true,"fillColor":"white","fillOpacity":0.8},null,null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[-14.65481542814504,-14.65438286933556],"lng":[145.4502858492575,145.4504025359973]}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+
+
+
+<!-- -->
+
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+    const viewSource = window.document.getElementById('quarto-view-source') ||
+                       window.document.getElementById('quarto-code-tools-source');
+    if (viewSource) {
+      const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+      viewSource.addEventListener("click", function(e) {
+        if (sourceUrl) {
+          // rstudio viewer pane
+          if (/\bcapabilities=\b/.test(window.location)) {
+            window.open(sourceUrl);
+          } else {
+            window.location.href = sourceUrl;
+          }
+        } else {
+          const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+          modal.show();
+        }
+        return false;
+      });
+    }
+    function toggleCodeHandler(show) {
+      return function(e) {
+        const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+        for (let i=0; i<detailsSrc.length; i++) {
+          const details = detailsSrc[i].parentElement;
+          if (show) {
+            details.open = true;
+          } else {
+            details.removeAttribute("open");
+          }
+        }
+        const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+        const fromCls = show ? "hidden" : "unhidden";
+        const toCls = show ? "unhidden" : "hidden";
+        for (let i=0; i<cellCodeDivs.length; i++) {
+          const codeDiv = cellCodeDivs[i];
+          if (codeDiv.classList.contains(fromCls)) {
+            codeDiv.classList.remove(fromCls);
+            codeDiv.classList.add(toCls);
+          } 
+        }
+        return false;
+      }
+    }
+    const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+    if (hideAllCode) {
+      hideAllCode.addEventListener("click", toggleCodeHandler(false));
+    }
+    const showAllCode = window.document.getElementById("quarto-show-all-code");
+    if (showAllCode) {
+      showAllCode.addEventListener("click", toggleCodeHandler(true));
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+<div class="sourceCode" id="cb2" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Figure 2"</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co">  html:</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="co">    toc: true</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="co">    math: mathjax</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="co">    code-fold: true</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="co">    code-tools: true</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="an">execute:</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="co">  echo: true</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="co">  warning: false</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="co">  message: false</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="an">editor:</span><span class="co"> visual</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>::: cell</span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="in">```{=html}</span></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;style&gt;</span></span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a><span class="in">  code, pre {</span></span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a><span class="in">    font-size: 65%;</span></span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a><span class="in">    color:darkgrey;</span></span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a><span class="in">  }</span></span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;/style&gt;</span></span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a><span class="al">![](images/clipboard-3805581159.png)</span></span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a><span class="co">#| message: false</span></span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a><span class="co">#| warning: false</span></span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-height: 7.5</span></span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-width: 11</span></span>
+<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a><span class="co"># load libraries</span></span>
+<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(sf)</span>
+<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(janitor)</span>
+<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readxl)</span>
+<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(leaflet)</span>
+<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-45"><a href="#cb2-45" aria-hidden="true" tabindex="-1"></a><span class="co"># permanent link to orthoomosaic via geonadir.com:</span></span>
+<span id="cb2-46"><a href="#cb2-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-47"><a href="#cb2-47" aria-hidden="true" tabindex="-1"></a>geonadir_url <span class="ot">&lt;-</span> <span class="st">"https://api.geonadir.com/cog_tiles/ortho/9723/e534dfb7-6121-4429-bad4-68e9da770711/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMzMjI2MjkzLCJpYXQiOjE3MzMxMzk4OTMsImp0aSI6ImM0ODRmNTc0OTZkNzRiNmZiMWZjZDlmNDViYzViZjQ2IiwidXNlcl9pZCI6MTI1NzR9.IIqFtk6NwEErJiUNZwIDodEgwyR-nxqECf92oHssggY/{z}/{x}/{y}"</span></span>
+<span id="cb2-48"><a href="#cb2-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-49"><a href="#cb2-49" aria-hidden="true" tabindex="-1"></a><span class="co"># load geojson spatial files for tile locations, join with the tile data:</span></span>
+<span id="cb2-50"><a href="#cb2-50" aria-hidden="true" tabindex="-1"></a>seedbox_tile_locations_sf <span class="ot">&lt;-</span> <span class="fu">rbind</span>(</span>
+<span id="cb2-51"><a href="#cb2-51" aria-hidden="true" tabindex="-1"></a>  <span class="fu">st_read</span>(<span class="st">"../data/Seedbox2.geojson"</span>, <span class="at">quiet=</span><span class="cn">TRUE</span>) <span class="sc">|&gt;</span> <span class="fu">mutate</span>(<span class="at">seedbox=</span><span class="dv">1</span>) <span class="sc">|&gt;</span> <span class="fu">st_transform</span>(<span class="dv">32755</span>),</span>
+<span id="cb2-52"><a href="#cb2-52" aria-hidden="true" tabindex="-1"></a>  <span class="fu">st_read</span>(<span class="st">"../data/Seedbox3.geojson"</span>, <span class="at">quiet=</span><span class="cn">TRUE</span>) <span class="sc">|&gt;</span> <span class="fu">mutate</span>(<span class="at">seedbox=</span><span class="dv">2</span>) <span class="sc">|&gt;</span> <span class="fu">st_transform</span>(<span class="dv">32755</span>),</span>
+<span id="cb2-53"><a href="#cb2-53" aria-hidden="true" tabindex="-1"></a>  <span class="fu">st_read</span>(<span class="st">"../data/Seedbox4.geojson"</span>, <span class="at">quiet=</span><span class="cn">TRUE</span>) <span class="sc">|&gt;</span> <span class="fu">mutate</span>(<span class="at">seedbox=</span><span class="dv">3</span>) <span class="sc">|&gt;</span> <span class="fu">st_transform</span>(<span class="dv">32755</span>),</span>
+<span id="cb2-54"><a href="#cb2-54" aria-hidden="true" tabindex="-1"></a>  <span class="fu">st_read</span>(<span class="st">"../data/Seedbox5.geojson"</span>, <span class="at">quiet=</span><span class="cn">TRUE</span>) <span class="sc">|&gt;</span> <span class="fu">mutate</span>(<span class="at">seedbox=</span><span class="dv">4</span>) <span class="sc">|&gt;</span> <span class="fu">st_transform</span>(<span class="dv">32755</span>),</span>
+<span id="cb2-55"><a href="#cb2-55" aria-hidden="true" tabindex="-1"></a>  <span class="fu">st_read</span>(<span class="st">"../data/Seedbox6.geojson"</span>, <span class="at">quiet=</span><span class="cn">TRUE</span>) <span class="sc">|&gt;</span> <span class="fu">mutate</span>(<span class="at">seedbox=</span><span class="dv">5</span>) <span class="sc">|&gt;</span> <span class="fu">st_transform</span>(<span class="dv">32755</span>)</span>
+<span id="cb2-56"><a href="#cb2-56" aria-hidden="true" tabindex="-1"></a>) <span class="sc">|&gt;</span> <span class="fu">st_transform</span>(<span class="dv">4326</span>)  </span>
+<span id="cb2-57"><a href="#cb2-57" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-58"><a href="#cb2-58" aria-hidden="true" tabindex="-1"></a>seedbox_tile_locations <span class="ot">&lt;-</span> seedbox_tile_locations_sf <span class="sc">%&gt;%</span>  </span>
+<span id="cb2-59"><a href="#cb2-59" aria-hidden="true" tabindex="-1"></a>  <span class="fu">st_coordinates</span>() <span class="sc">|&gt;</span></span>
+<span id="cb2-60"><a href="#cb2-60" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as.data.frame</span>() <span class="sc">|&gt;</span></span>
+<span id="cb2-61"><a href="#cb2-61" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">x =</span> X, <span class="at">y =</span> Y) <span class="sc">|&gt;</span></span>
+<span id="cb2-62"><a href="#cb2-62" aria-hidden="true" tabindex="-1"></a>  <span class="fu">bind_cols</span>(<span class="fu">st_drop_geometry</span>(seedbox_tile_locations_sf))</span>
+<span id="cb2-63"><a href="#cb2-63" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-64"><a href="#cb2-64" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-65"><a href="#cb2-65" aria-hidden="true" tabindex="-1"></a><span class="co"># Map tile locations on orthomosaic</span></span>
+<span id="cb2-66"><a href="#cb2-66" aria-hidden="true" tabindex="-1"></a><span class="fu">leaflet</span>(seedbox_tile_locations) <span class="sc">%&gt;%</span></span>
+<span id="cb2-67"><a href="#cb2-67" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addProviderTiles</span>(<span class="st">'Esri.WorldImagery'</span>, <span class="at">group =</span> <span class="st">"&lt;b&gt; [Seascape]&lt;/b&gt; satellite map"</span>, </span>
+<span id="cb2-68"><a href="#cb2-68" aria-hidden="true" tabindex="-1"></a>                   <span class="at">options=</span><span class="fu">providerTileOptions</span>(<span class="at">opacity=</span><span class="dv">5</span>, <span class="at">maxNativeZoom=</span><span class="dv">18</span>,<span class="at">maxZoom=</span><span class="dv">100</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb2-69"><a href="#cb2-69" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addTiles</span>(<span class="at">urlTemplate =</span> geonadir_url, </span>
+<span id="cb2-70"><a href="#cb2-70" aria-hidden="true" tabindex="-1"></a>           <span class="at">attribution =</span> <span class="st">"Geoff Carlin @ CSIRO"</span>, </span>
+<span id="cb2-71"><a href="#cb2-71" aria-hidden="true" tabindex="-1"></a>           <span class="at">options =</span> <span class="fu">providerTileOptions</span>(<span class="at">minZoom =</span> <span class="dv">17</span>, <span class="at">maxZoom =</span> <span class="dv">30</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb2-72"><a href="#cb2-72" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addCircleMarkers</span>(<span class="sc">~</span>seedbox_tile_locations<span class="sc">$</span>x, <span class="sc">~</span>seedbox_tile_locations<span class="sc">$</span>y,</span>
+<span id="cb2-73"><a href="#cb2-73" aria-hidden="true" tabindex="-1"></a>                   <span class="at">group=</span><span class="st">"seedbox"</span>,</span>
+<span id="cb2-74"><a href="#cb2-74" aria-hidden="true" tabindex="-1"></a>                   <span class="at">radius =</span> <span class="dv">5</span>,</span>
+<span id="cb2-75"><a href="#cb2-75" aria-hidden="true" tabindex="-1"></a>                   <span class="at">fillColor =</span> <span class="st">"white"</span>,</span>
+<span id="cb2-76"><a href="#cb2-76" aria-hidden="true" tabindex="-1"></a>                   <span class="at">fillOpacity =</span> <span class="fl">0.8</span>, </span>
+<span id="cb2-77"><a href="#cb2-77" aria-hidden="true" tabindex="-1"></a>                   <span class="at">stroke =</span> <span class="cn">TRUE</span>, </span>
+<span id="cb2-78"><a href="#cb2-78" aria-hidden="true" tabindex="-1"></a>                   <span class="at">color =</span> <span class="st">"black"</span>, </span>
+<span id="cb2-79"><a href="#cb2-79" aria-hidden="true" tabindex="-1"></a>                   <span class="at">weight =</span> <span class="dv">1</span>)  </span>
+<span id="cb2-80"><a href="#cb2-80" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-81"><a href="#cb2-81" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+</code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
+</div></div></div></div></div>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

@@ -1,0 +1,48 @@
+---
+title: "Larval Seedboxes"
+format:
+  html:
+    toc: false
+execute:
+  echo: true
+  warning: false
+  message: false
+editor: visual
+---
+
+::: cell
+```{=html}
+<style>
+pre code {
+  white-space: pre-wrap !important;
+  word-break: break-word;
+  font-size: 100%;
+  background: none;
+  color: darkgrey;
+}
+code:not(pre code) {
+  color: darkgrey !important;
+  font-size: 90%;
+  background: none !important;
+  padding: 0;
+}
+</style>
+```
+:::
+
+![](images/clipboard-4034050238.jpeg){fig-align="center" width="1000"}
+
+Reproducible Code and Data Repository for `Doropoulos et al. (in review) "Larval seedboxes: a modular and effective tool for scaling coral reef restoration"`
+
+#### Abstract
+
+```         
+
+Natural recovery of degraded coral reefs is constrained by low larval recruitment, limiting restoration at ecologically meaningful scales. While propagule-based approaches have proven effective in plant-dominated systems, scaling larval restoration for sessile invertebrates like corals remains challenging. Traditional coral larval methods rely on net enclosures, restricting impact to small areas (\<75 m²). We developed and tested a modular, passive larval delivery system – the larval seedbox – to overcome these spatial constraints. Each unit (600 × 500 × 300 mm; 11 kg) enables delayed release of competent larvae near the benthos, enhancing substrate encounter rates over broader areas. At Lizard Island (Great Barrier Reef), five seedboxes delivered \~14 million larvae across \~2 ha of degraded reef. Larval release coincided with slack currents to facilitate local retention and subsequent dispersal. Settlement was assessed on 234 tiles placed in concentric arrays around each seedbox. After 48 hours, 85% of tiles had settlers (up to 1,041 per tile), with mean densities 24-times greater than background levels. Enhanced settlement was directly quantified across \>470 m², with spatial modelling estimating \>3,000 m² via tidally driven dispersal. The larval seedbox enables unrestrained, scalable coral larval seeding and represents a practical advance toward broad-scale reef restoration`
+```
+
+#### Contact
+
+[george.roff\@csiro.au](mailto:george.roff@csiro.au)
+
+<https://github.com/marine-ecologist/seedbox>

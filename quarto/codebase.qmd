@@ -1,0 +1,49 @@
+---
+title: "Codebase"
+format:
+  html:
+    toc: false
+execute:
+  echo: true
+  warning: false
+  message: false
+editor: visual
+---
+
+::: cell
+```{=html}
+<style>
+pre code {
+  white-space: pre-wrap !important;
+  word-break: break-word;
+  font-size: 100%;
+  background: none;
+  color: darkgrey
+}
+code:not(pre code) {
+  color: darkgrey !important;
+  font-size: 90%;
+  background: none !important;
+  padding: 0;
+}
+</style>
+```
+:::
+
+Code via `quarto::quarto_render()` in `../quarto/`, data via `../data/`
+
+All outputs are regenerated for fully reproducible research
+
+#### Abstract
+
+```{r}
+
+devtools::session_info()
+
+```
+
+#### Contact
+
+[george.roff\@csiro.au](mailto:george.roff@csiro.au)
+
+<https://github.com/marine-ecologist/seedbox>

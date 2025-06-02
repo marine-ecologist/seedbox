@@ -1,0 +1,1260 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.29">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Figure 4 – Larval seedboxes</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-748b535e376f14d4692bf2b2e5fd6380.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-139760d7c2b45b71cf6fb5fb69731804.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<link href="site_libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet">
+<script src="site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<link href="site_libs/leaflet-1.3.1/leaflet.css" rel="stylesheet">
+<script src="site_libs/leaflet-1.3.1/leaflet.js"></script>
+<link href="site_libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet">
+<script src="site_libs/proj4-2.6.2/proj4.min.js"></script>
+<script src="site_libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+<link href="site_libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet">
+<script src="site_libs/leaflet-binding-2.2.2/leaflet.js"></script>
+<script src="site_libs/leaflet-providers-2.0.0/leaflet-providers_2.0.0.js"></script>
+<script src="site_libs/leaflet-providers-plugin-2.2.2/leaflet-providers-plugin.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Larval seedboxes</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./codebase.html"> 
+<span class="menu-text">Codebase</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-figures" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Figures</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-figures">    
+        <li>
+    <a class="dropdown-item" href="./Figure 1.html">
+ <span class="dropdown-text">Figure 1</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./Figure 2.html">
+ <span class="dropdown-text">Figure 2</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./Figure 3.html">
+ <span class="dropdown-text">Figure 3</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./Figure 4.html">
+ <span class="dropdown-text">Figure 4</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./Figure S1.html">
+ <span class="dropdown-text">Figure S1</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./Figure S2.html">
+ <span class="dropdown-text">Figure S2</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/marine-ecologist/seedbox"> <i class="bi bi-github" role="img" aria-label="GitHub">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#figure-4a" id="toc-figure-4a" class="nav-link active" data-scroll-target="#figure-4a">Figure 4a</a></li>
+  <li><a href="#figure-4c" id="toc-figure-4c" class="nav-link" data-scroll-target="#figure-4c">Figure 4c</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content column-page-left" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<div class="quarto-title-block"><div><h1 class="title">Figure 4</h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button">View Source</a></li></ul></div></div>
+</div>
+
+
+
+<div class="quarto-title-meta column-page-left">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="cell">
+<style>
+  code, pre {
+    font-size: 65%;
+    color:darkgrey;
+  }
+</style>
+</div>
+<p><img src="images/clipboard-831903289.png" class="img-fluid" width="600"></p>
+<section id="figure-4a" class="level3">
+<h3 class="anchored" data-anchor-id="figure-4a">Figure 4a</h3>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># load libraries</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(sf)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(stars)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(janitor)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readxl)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(leaflet)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(fields)</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(terra)</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co"># read tile data</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>tiles <span class="ot">&lt;-</span> readxl<span class="sc">::</span><span class="fu">read_xlsx</span>(<span class="st">"/Users/rof011/seedbox2/tiles.xlsx"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(id) <span class="sc">|&gt;</span> </span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">plot=</span><span class="fu">mean</span>(plot), <span class="at">settlers=</span><span class="fu">sum</span>(count)) </span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="co"># import slrp controls</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>tiles_slrp <span class="ot">&lt;-</span> readxl<span class="sc">::</span><span class="fu">read_xlsx</span>(<span class="st">"/Users/rof011/seedbox2/data_SetTilesSlowReleaseExp3.xlsx"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">clean_names</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">id=</span>tile_number) <span class="sc">|&gt;</span> </span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(id) <span class="sc">|&gt;</span> </span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">settlers=</span><span class="fu">sum</span>(settler_count)) <span class="sc">|&gt;</span> </span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">seedbox=</span><span class="dv">0</span>) <span class="sc">|&gt;</span>  <span class="co">#, dsm=NA, height=NA) |&gt; </span></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">drop_na</span>(id)</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="co"># vectorise inner tiles adjacent to seedboxes</span></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>inner <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1217</span>, <span class="dv">1268</span>, <span class="dv">1253</span>, <span class="dv">1121</span>, <span class="dv">1207</span>, <span class="dv">1240</span>, <span class="dv">1021</span>, <span class="dv">1291</span>, <span class="dv">1217</span>,</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>           <span class="dv">1084</span>, <span class="dv">1039</span>, <span class="dv">1040</span>, <span class="dv">1213</span>, <span class="dv">1254</span>, <span class="dv">1029</span>, </span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>           <span class="dv">1099</span>, <span class="dv">1034</span>, <span class="dv">1284</span>, <span class="dv">1027</span>, <span class="dv">1252</span>, <span class="dv">1056</span>, </span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>           <span class="dv">1073</span>, <span class="dv">1086</span>, <span class="dv">1002</span>, <span class="dv">1005</span>, <span class="dv">1179</span>, <span class="dv">1047</span>,</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>           <span class="dv">1187</span>, <span class="dv">1104</span>, <span class="dv">1149</span>, <span class="dv">1130</span>, <span class="dv">1197</span>, <span class="dv">1127</span>,</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>           <span class="dv">1194</span>, <span class="dv">1193</span>, <span class="dv">1107</span>, <span class="dv">1191</span>, <span class="dv">1175</span>, <span class="dv">1178</span>)</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a><span class="co"># read spatial data</span></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>seedbox <span class="ot">&lt;-</span> <span class="fu">rbind</span>(</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>  <span class="fu">st_read</span>(<span class="st">"/Users/rof011/seedbox2/shp/Seedbox2.geojson"</span>, <span class="at">quiet=</span><span class="cn">TRUE</span>) <span class="sc">|&gt;</span> <span class="fu">mutate</span>(<span class="at">seedbox=</span><span class="dv">2</span>) <span class="sc">|&gt;</span> <span class="fu">st_transform</span>(<span class="dv">32755</span>),</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>  <span class="fu">st_read</span>(<span class="st">"/Users/rof011/seedbox2/shp/Seedbox3.geojson"</span>, <span class="at">quiet=</span><span class="cn">TRUE</span>) <span class="sc">|&gt;</span> <span class="fu">mutate</span>(<span class="at">seedbox=</span><span class="dv">3</span>) <span class="sc">|&gt;</span> <span class="fu">st_transform</span>(<span class="dv">32755</span>),</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>  <span class="fu">st_read</span>(<span class="st">"/Users/rof011/seedbox2/shp/Seedbox4.geojson"</span>, <span class="at">quiet=</span><span class="cn">TRUE</span>) <span class="sc">|&gt;</span> <span class="fu">mutate</span>(<span class="at">seedbox=</span><span class="dv">4</span>) <span class="sc">|&gt;</span> <span class="fu">st_transform</span>(<span class="dv">32755</span>),</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>  <span class="fu">st_read</span>(<span class="st">"/Users/rof011/seedbox2/shp/Seedbox5.geojson"</span>, <span class="at">quiet=</span><span class="cn">TRUE</span>) <span class="sc">|&gt;</span> <span class="fu">mutate</span>(<span class="at">seedbox=</span><span class="dv">5</span>) <span class="sc">|&gt;</span> <span class="fu">st_transform</span>(<span class="dv">32755</span>),</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>  <span class="fu">st_read</span>(<span class="st">"/Users/rof011/seedbox2/shp/Seedbox6.geojson"</span>, <span class="at">quiet=</span><span class="cn">TRUE</span>) <span class="sc">|&gt;</span> <span class="fu">mutate</span>(<span class="at">seedbox=</span><span class="dv">6</span>) <span class="sc">|&gt;</span> <span class="fu">st_transform</span>(<span class="dv">32755</span>)) <span class="sc">|&gt;</span> </span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a><span class="co">#  st_transform(4326) |&gt; </span></span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(tiles <span class="sc">|&gt;</span> <span class="fu">select</span>(<span class="sc">-</span>plot), <span class="at">by=</span><span class="st">"id"</span>) <span class="sc">|&gt;</span> <span class="fu">drop_na</span>(settlers) <span class="sc">|&gt;</span> </span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span>seedbox <span class="sc">==</span> <span class="dv">1</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">seedbox =</span> seedbox <span class="sc">-</span> <span class="dv">1</span>)</span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a><span class="co"># filter to only outer array</span></span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>seedbox_outer <span class="ot">&lt;-</span> seedbox <span class="sc">|&gt;</span> <span class="fu">filter</span>(<span class="sc">!</span>id <span class="sc">%in%</span> inner)</span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a><span class="co"># Buffer first to extend spatial domain</span></span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>seedbox_outer_buf <span class="ot">&lt;-</span> seedbox_outer <span class="sc">|&gt;</span> <span class="fu">st_buffer</span>(<span class="dv">10</span>)</span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a grid over the buffered area</span></span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>grd <span class="ot">&lt;-</span> seedbox_outer_buf <span class="sc">|&gt;</span></span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a>  <span class="fu">st_bbox</span>() <span class="sc">|&gt;</span></span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a>  <span class="fu">st_as_stars</span>(<span class="at">dx =</span> <span class="fl">0.05</span>)</span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a><span class="co"># extract grid coordinates for prediction</span></span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a>grd_coords <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(<span class="fu">st_coordinates</span>(grd))</span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a><span class="co"># extract buffered coordinates for fitting the TPS</span></span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a>coords <span class="ot">&lt;-</span> <span class="fu">st_coordinates</span>(seedbox_outer)</span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a><span class="co"># fit the TPS using unbuffered coordinates, extend grid</span></span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a>tps_model <span class="ot">&lt;-</span> <span class="fu">suppressWarnings</span>(</span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a>  <span class="fu">Tps</span>(coords, seedbox_outer<span class="sc">$</span>settlers, <span class="at">method =</span> <span class="st">"REML"</span>)</span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>Warning: 
+Grid searches over lambda (nugget and sill variances) with  minima at the endpoints: 
+  (REML) Restricted maximum likelihood 
+   minimum at  right endpoint  lambda  =  918.891 (eff. df= 3.000899 )</code></pre>
+</div>
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>seedbox_hull <span class="ot">&lt;-</span> seedbox <span class="sc">|&gt;</span> <span class="fu">st_buffer</span>(<span class="fl">1.5</span>) <span class="sc">|&gt;</span> concaveman<span class="sc">::</span><span class="fu">concaveman</span>(<span class="dv">2</span>,<span class="dv">10</span>) <span class="sc">|&gt;</span> terra<span class="sc">::</span><span class="fu">vect</span>()</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>seedbox_area <span class="ot">&lt;-</span> seedbox <span class="sc">|&gt;</span> <span class="fu">st_buffer</span>(<span class="dv">1</span>) <span class="sc">|&gt;</span>  concaveman<span class="sc">::</span><span class="fu">concaveman</span>(<span class="dv">2</span>,<span class="dv">10</span>) </span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>grd_coords<span class="sc">$</span>predicted_settlers <span class="ot">&lt;-</span> <span class="fu">suppressWarnings</span>(</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">predict</span>(tps_model, <span class="fu">as.matrix</span>(grd_coords[, <span class="fu">c</span>(<span class="st">"x"</span>, <span class="st">"y"</span>)]))</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>grd<span class="sc">$</span>predicted_settlers <span class="ot">&lt;-</span> <span class="fu">array</span>(grd_coords<span class="sc">$</span>predicted_settlers, <span class="at">dim =</span> <span class="fu">dim</span>(grd))</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>tps_raster <span class="ot">&lt;-</span> terra<span class="sc">::</span><span class="fu">rast</span>(grd[<span class="st">"predicted_settlers"</span>]) </span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>seed_area <span class="ot">&lt;-</span> seedbox <span class="sc">|&gt;</span> <span class="fu">st_buffer</span>(<span class="dv">1</span>) <span class="sc">|&gt;</span> concaveman<span class="sc">::</span><span class="fu">concaveman</span>(<span class="dv">2</span>,<span class="dv">10</span>) </span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="co"># expand rugosity</span></span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>reef_area_cm2 <span class="ot">&lt;-</span> <span class="dv">1</span> <span class="sc">*</span> <span class="dv">100</span><span class="sc">^</span><span class="dv">2</span>          <span class="co"># 1 m² to cm²</span></span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>rugosity <span class="ot">&lt;-</span> <span class="fl">1.67</span>                     <span class="co"># rugosity factor</span></span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>tile_area_cm2 <span class="ot">&lt;-</span> <span class="dv">70</span>                <span class="co"># single tile area</span></span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>surface_area_cm2 <span class="ot">&lt;-</span> reef_area_cm2 <span class="sc">*</span> rugosity <span class="sc">*</span> <span class="fl">0.8</span></span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>n_tiles <span class="ot">&lt;-</span> surface_area_cm2 <span class="sc">/</span> tile_area_cm2</span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a><span class="co"># mask and crop raster</span></span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a>masked_raster <span class="ot">&lt;-</span> terra<span class="sc">::</span><span class="fu">mask</span>(tps_raster, seed_area, <span class="at">updatevalue =</span> <span class="cn">NA</span>)</span>
+<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a>cropped_raster <span class="ot">&lt;-</span> terra<span class="sc">::</span><span class="fu">crop</span>(masked_raster, terra<span class="sc">::</span><span class="fu">ext</span>(masked_raster)) <span class="sc">|&gt;</span> </span>
+<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as.data.frame</span>(<span class="at">xy =</span> <span class="cn">TRUE</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">predicted_settlers =</span> predicted_settlers <span class="sc">*</span> n_tiles)</span>
+<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-29"><a href="#cb3-29" aria-hidden="true" tabindex="-1"></a>geonadir_url <span class="ot">&lt;-</span> <span class="st">"https://api.geonadir.com/cog_tiles/ortho/9723/e534dfb7-6121-4429-bad4-68e9da770711/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMzMjI2MjkzLCJpYXQiOjE3MzMxMzk4OTMsImp0aSI6ImM0ODRmNTc0OTZkNzRiNmZiMWZjZDlmNDViYzViZjQ2IiwidXNlcl9pZCI6MTI1NzR9.IIqFtk6NwEErJiUNZwIDodEgwyR-nxqECf92oHssggY/{z}/{x}/{y}"</span></span>
+<span id="cb3-30"><a href="#cb3-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-31"><a href="#cb3-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-32"><a href="#cb3-32" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tmap)</span>
+<span id="cb3-33"><a href="#cb3-33" aria-hidden="true" tabindex="-1"></a><span class="fu">tmap_mode</span>(<span class="st">"view"</span>)</span>
+<span id="cb3-34"><a href="#cb3-34" aria-hidden="true" tabindex="-1"></a><span class="fu">tm_tiles</span>(<span class="at">server =</span> geonadir_url, </span>
+<span id="cb3-35"><a href="#cb3-35" aria-hidden="true" tabindex="-1"></a>         <span class="at">zoom=</span><span class="dv">21</span>, </span>
+<span id="cb3-36"><a href="#cb3-36" aria-hidden="true" tabindex="-1"></a>         <span class="at">max.native.zoom=</span><span class="dv">22</span>) <span class="sc">+</span></span>
+<span id="cb3-37"><a href="#cb3-37" aria-hidden="true" tabindex="-1"></a><span class="fu">tm_shape</span>(masked_raster<span class="sc">$</span>predicted_settlers <span class="sc">*</span> n_tiles) <span class="sc">+</span></span>
+<span id="cb3-38"><a href="#cb3-38" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tm_raster</span>(<span class="st">"predicted_settlers"</span>,</span>
+<span id="cb3-39"><a href="#cb3-39" aria-hidden="true" tabindex="-1"></a>            <span class="at">col.scale =</span> <span class="fu">tm_scale_continuous</span>(<span class="at">values =</span> <span class="st">"-spectral"</span>),</span>
+<span id="cb3-40"><a href="#cb3-40" aria-hidden="true" tabindex="-1"></a>            <span class="at">col_alpha =</span> <span class="fl">0.7</span>) <span class="sc">+</span></span>
+<span id="cb3-41"><a href="#cb3-41" aria-hidden="true" tabindex="-1"></a><span class="fu">tm_shape</span>(seedbox_area) <span class="sc">+</span></span>
+<span id="cb3-42"><a href="#cb3-42" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tm_polygons</span>(<span class="at">fill_alpha =</span> <span class="dv">0</span>, </span>
+<span id="cb3-43"><a href="#cb3-43" aria-hidden="true" tabindex="-1"></a>              <span class="at">col =</span> <span class="st">"black"</span>) <span class="sc">+</span></span>
+<span id="cb3-44"><a href="#cb3-44" aria-hidden="true" tabindex="-1"></a><span class="fu">tm_view</span>(<span class="at">set_zoom_limits =</span> <span class="fu">c</span>(<span class="dv">14</span>, <span class="dv">22</span>), </span>
+<span id="cb3-45"><a href="#cb3-45" aria-hidden="true" tabindex="-1"></a>        <span class="at">zoom =</span> <span class="dv">14</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<style>#legend01 { background: #FFFFFF; opacity: 1}</style>
+<div class="leaflet html-widget html-fill-item" id="htmlwidget-ed36ef672372fec169fc" style="width:100%;height:794px;"></div>
+<script type="application/json" data-for="htmlwidget-ed36ef672372fec169fc">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}},"minZoom":14,"maxZoom":22,"attributionControl":true},"calls":[{"method":"createMapPane","args":["tmap401",401]},{"method":"createMapPane","args":["tmap402",402]},{"method":"createMapPane","args":["tmap403",403]},{"method":"addLayersControl","args":[["Esri.WorldGrayCanvas","OpenStreetMap","Esri.WorldTopoMap"],["https://api.geonadir.com/cog_tiles/ortho/9723/e534dfb7-6121-4429-bad4-68e9da770711/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMzMjI2MjkzLCJpYXQiOjE3MzMxMzk4OTMsImp0aSI6ImM0ODRmNTc0OTZkNzRiNmZiMWZjZDlmNDViYzViZjQ2IiwidXNlcl9pZCI6MTI1NzR9.IIqFtk6NwEErJiUNZwIDodEgwyR-nxqECf92oHssggY/{z}/{x}/{y}","masked_raster$predicted_settlers * n_tiles","seedbox_area"],{"collapsed":true,"autoZIndex":true,"position":"topleft"}]},{"method":"addProviderTiles","args":["Esri.WorldGrayCanvas",null,"Esri.WorldGrayCanvas",{"minZoom":0,"maxZoom":22,"maxNativeZoom":17,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"pane":"tilePane"}]},{"method":"addProviderTiles","args":["OpenStreetMap",null,"OpenStreetMap",{"minZoom":0,"maxZoom":22,"maxNativeZoom":17,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"pane":"tilePane"}]},{"method":"addProviderTiles","args":["Esri.WorldTopoMap",null,"Esri.WorldTopoMap",{"minZoom":0,"maxZoom":22,"maxNativeZoom":17,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"pane":"tilePane"}]},{"method":"addTiles","args":["https://api.geonadir.com/cog_tiles/ortho/9723/e534dfb7-6121-4429-bad4-68e9da770711/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMzMjI2MjkzLCJpYXQiOjE3MzMxMzk4OTMsImp0aSI6ImM0ODRmNTc0OTZkNzRiNmZiMWZjZDlmNDViYzViZjQ2IiwidXNlcl9pZCI6MTI1NzR9.IIqFtk6NwEErJiUNZwIDodEgwyR-nxqECf92oHssggY/{z}/{x}/{y}",null,"https://api.geonadir.com/cog_tiles/ortho/9723/e534dfb7-6121-4429-bad4-68e9da770711/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMzMjI2MjkzLCJpYXQiOjE3MzMxMzk4OTMsImp0aSI6ImM0ODRmNTc0OTZkNzRiNmZiMWZjZDlmNDViYzViZjQ2IiwidXNlcl9pZCI6MTI1NzR9.IIqFtk6NwEErJiUNZwIDodEgwyR-nxqECf92oHssggY/{z}/{x}/{y}",{"minZoom":0,"maxZoom":22,"maxNativeZoom":22,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"pane":"tmap401"}]},{"method":"addRasterImage","args":["data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAApgAAAVXCAYAAADyKBomAAAgAElEQVR4nOzdUYhu3Xkf9j0zZ+Y4aUrBoW4NBkOJQW2hFAqhF+1FrbjCRODWxLhNFFGnasANGIoLNbi0NDTglpqAIXVcS26s2FWd2jFK5NpKLBeSXARBiijFLVQXlUkRCrKIUCzrmzkz04s582m+mbXed693r7X2s/b+/S4Pa/Z7LPmc89d/vc+zpwkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIKT/7bu+937t3wMQw9navwGALfnKR77n/vbm5V+tqV+bpml68yZ19jx5tuS5t8nnps/eXKdz4XXi11O/Nk3TdPPO3dGzH/jCb/g3B3bCH3aAhb7yke95T5LKhr7Er6cC5sPZlyGz5LmpgJk72ypg5s4LmrB9/pADnOirP/z++xptY9QWMxcmU79eEjAfP+uDX/y0f4Ngo/zhBij01R9+/7upqSQI5n59yy1m9qyQCZvmDzZAgafh8tHSIFgSMHPPGLXFfCRowrak//YC4IV/8iMvw2XOxeX8gepXr5YPX5d8XsnZq6v5ue/y9fx/Ui6fPfdT3/4BE+iwIQImwAyHwuXFZbq5S58tCYLzn1vD89B3SEnwnHtWyITtcCUBcEAqWN7evDy35WGfaWr/XcynXJfD+DSYABm/95/+2wVX4uu3mK2uyWsoaTw1mTA+ARMgoSRcHtLqu5hFYbLgua2uyUv99T/8PUImDEzABHjmWLi8uFz+GaO1mL2GfZ4SMmFcAibAE8/D5dnVxeyf7T2UM1qLWXb24Z8nIRPGJGACvPX1H//egu9czn+ulUVHzh55rpAJ4zGpB+ze02B5/85t8sz99ctfT02TP/x6v8Xrrd7sM03rLl7/5tlvPuP7f/dv+zcLBqHBBHbteWt59rrkSnz+54w27JOzVosJjEXABHar5Eq81XcxRxv2qeGU72JOk6tyGImACezS1//8B++ngrayhtFazN4ri+Z8npAJYxAwgd35+p//4MGQ0uqaPP+MsVrMVtfkcwmZEJ8vvQC7kQ2WicGe0YZ9cs9o9frInsM+Twd9njL0A3FpMIFd+P2f+L77ku9RjjbsU+PzIrSYqWvyp9/DfOqX/uk/psmEoARMYPN+/ye+73AQKQiTow371BBh8XrK5dWZkAlBuV4ANu15uExdcU/TlLwmn6b0VXnuGamr8hrX2amr8gjX5NOUvubOXZ+nrsqzZ2delT8994Nf+03/pkEQGkxgs1LNZUkDmTNai7mVlUUpT9tVbSbEIWACm/SNv/j99yXfo7Sy6LAIK4ty38V8SsiEGFwnAJvyjb/4/e+9Ei+YBo9wTZ779Qivj4x6TZ4667oc1qXBBDbjebicprJp8AjDPjWM1mLWaDyBWARMYBPe+Us/ULaGyMqiamd7Ll6fc00+Ta7KYW0CJjC8d/7SD1R7M0+EFtPKovLPSvmrr98vZMJKBExgaMfCZS2jtZitrslzIraYV1dnQiasRMAEhpUKl62uyWs8I0KLOdrKolSLmRr0OdR2CpnQn29WA8O5/ui/925gKJnwLjnb8/3kD78+/uL1td9PfmzK/U+/8xn/5kEnGkxgKE/DZc5owz75Z4zVYva8Jk8+88jnazKhHwETGEYqXJaEvtGGfWoYbWVRC08/X8iEPgRMYAg3H/9TRcFgtBbTyqIycwd9UoRMaE/ABMJ7DJdVhnIGazH3uLJoyefMPStkQlu+8AyElWotawzwLB32KX3G0tdHjjbsM03zXx8599WR+c8pH/Z5yuAPtKHBBEJ680sfTqaEZlffVhZVO9tCixZzmjSZ0IqACYTzGC5bDfC0uiavYbTF6y2uycveADT/n7Hcc3/u7LuFTKhMwARCyTWXT0VoMa0sOiwV5nJ7Mudq1WJeXp0JmVCZgAmEkQqXo7WYVhblJd/U02AfZunv4ZGQCfUImEAIt7/6Z5r94z5ai7mVlUVLtLomz3kMyUIm1GF6DljV82B5f/3mxZmSVzSWnM2dj/D6yOyEd+LXU9PkNZ6bmiY/9Izn09tLXx2Z+/m5r47Mnz3+3D9z/1v+fYQFNJjAaua2ls2uvisYrcVsdU2eCnJL3+DTe9jnqZ87++57bSacTsAEVnH7qT+bWUP0avYzIgz71HiGlUVl38VsOewD1CFgAt29Gy4vC8LkYMM+NURtMVNX5K3C2Zot5jT5TiacSsAEuso1l0+N1mLubWXR0nVFS6/Op6lviylkQjkBE+hmTrg8ZLQWcysri+Za2mJGWln0nJAJZQRMoIvbT//H6X+gC67JaxitxYy6sqhni7nWyiLgdAIm0Ny74bLkO5eNrsmzzxisxWx1TZ5bQTRXzxaz9wCPFhPmEzCBprLN5VMBhn1qGK3FnN1WVmhGo7aYNb4PCrwkYAJ9BWgxrSx6kGor115XNE0xWkzX5LCMgAk0c/tbP1LwQuv1W8y9rSxa+93kpSK0mK7JYR4BEwhttBYz8sqiFs9c+vmjrSwC5hEwgSYOtpcVJsdHazGjrizq2WKWhMnIK4uA4wRMoK2SMGll0ZGz/VYWRW0xI6wsck0OxwmYwDoCDPtknzFYi5kKeG/epAZ4+i5z79liuvqGWARMoLoX1+ONWkwri/J6vpu8hggtpmtyqEfABNYToMXcysqiFs9sdU0+Woup8YRyAibQx2At5hZWFo3WYpZYu8X0PUw4TMAEhjFai9nqmnz5gvR+LWZJ+2dlEWyHgAnUd1mQlqwsOmgLK4tSrCyCbRMwgX6sLDoo1WLe3rz8a7rnuqLSz+vZYq69ssg1OeQJmEAbjVrMva0s6vlu8t5GG/YB5hMwgb4GG/bJPqNRizlXqxYzwvvJI7SYrslhGQETqOr27/7oN1PHYC1mjcazxEgtZot3nk/TeC2mxhPmETCB/gZrMVtdk99f385/bkLUFrNVGM1Zs8X0PUxIEzCBIUVoMVtck5esK8o/I2aLaWUR7IeACVTznuvxR1YWTdM0TffvvGwro64revi8fi2mlUWwPQImUE+rNUQ1gufKLeba7yafpv4ri1JGG/bJ0WLCYQIm0F6AYZ8aWkyDt2oxI6wsitBi9rj69j1MeEnABKq4/fv/2cM/sgFazKgri0ZrMVsN64zWYromh3ICJtBHgBYz6sqi0VrM1HOXvjpymsZrMV2TQ56ACaxrsBYzdTa5bqjBdfohUVvMvawsck0O7yVgAou9ez3+qPt7xNdtMXu+m7xU1BbTyiLYNgET6GcjK4tma/Bu8mmKvbJo6c/3Xlnku5jQhoAJtBFg2Cdnqy1m75VFyd9DgBazdxDUYsJLAiawyO0/+PH7soC4/rBPidT3K1u9OnILwz41zo427PPI9zDhmwRMoJ0ALWbPa/Itt5hWFpU/F/ZMwAT6C9BipsLg0tc51jBai5n8eSuLYPcETOBkt//gx7+ZJGpMjq/cYvZ8N3lLPVvMVtfkNazRYromhwcCJtBW4JVF85/Z6D3mG1lZlPz5AMM+NT5PiwmnETCBegIM++SM1GJGXlmU/j2MNeyT/zzfxYRaBEzgJLf/x39ZUFGtP+yz9PuVo7WYEYZ9IrSYVhbBOgRMoK4ALWarlUXJzxqsxbSy6O3ZhlffvocJAiawRIBmMnX2/vrNi1/r/VafLbeYrURoMV2TQx0CJlCs6Hr8mAYt5trvJq8laovZ6po8Z7QW0zU5CJhAC71XFs3UqsXc48qipZ+19ZVFrsnZOwETWKbze8RHajEjXJPnn9ExTAYY9qnxeVpMmE/ABIrMvh5vNexz8/L7lSVGazEjrCza8rBP/vN8FxOWEDCB5dYe9qmxJ3PDLaaVReVngWUETKBMqwXpc58bdF3RNI3XYrb6HuRoLaarb6hPwARmu/2//ut8Guj9XcwFz7Sy6LBUi9n7jUERWsyl1+R/9fX7DfqwWwImEMfKLaaVReWsLAJSBEygXKtr8pubZT8foMXc8sqiCMM+NVi8Du0JmMAsB6/HH/W8Jh+sxYxwTZ5/RswWcysri2CPBEzgNEtbzNS6oZJnVjBai2ll0QMriyA+AROoq8Vqoc4DRFtuMUNMjgdoMXsEwT/9zmekTXZLwASOuv38T6QTQYvGsdH3O60sOnb25X/FS18dmXtujbOGfSA2AROob6AW08qiclYW1XsubJWACcxTNA2+7HWOEVpMK4seRHizT44WE+ISMIGDstfjjxrsrqzyjAAt5lZWFqV/fv1hn5wILabvX7J3AiYwX3IavN/uyhrPiNBiRrgmLxGhxezdFGoxYRkBE1hm7XeTVzJaixnhzT4RWszIK4tgz/xJAbKOXo8fEmCAx8qiY2etLCo9O8cPfu03VZrsnoAJLBehxbSy6KClk99WFtU7C3sgYALtRGgmAwz7ZJ8RtMVsdU1eQ4QW0zU5HOdPCfDC3Rd+8v7uCz+ZWa7et/2L0GLucWVRSoRhnxwtJsQiYAJZZ0XhrtE1eY1nBGgxI68sShlt2CdHiwnr8CcEKBfgOrvGMyK0mFGvyXMitJhWFkF8AibwHs+vxkO0mFYWHX6ulUXTNFlZBJH40wGcJkKLaWXRQa0Wr5eI0GKuubII9krABOqK0GJaWXRQqm1sdU2e/z2M1WK6+oYyAibwrrt/+FPJf8mLrslzIjSTAYZ9ss8I2mJaWXTsrH9GIcWfDOC9ShJJ92nw9VvMrawsShlt2CdHiwnrEzCBaZry7eWjZsM+NQzWYvZeWZT63wxbHvbJ0WJCP/5UAC+1ajGtLKp3ttGuzNFazMgri2DPBExgNiuL1jnbatinxGgtppVFsC5/IoD09fhoLaaVRQctvSavIUKLaWUR9CFgAu1EaDGtLCpmZdGRs4InHCVgAkVtpZVF9c5mn9Hxu5gRhn1qiNBiuiaHb/KnAXbu7os/nU8NVhYdObv+dyNLPm/L7yfP0WLCOgRM4EGrFtPKompna6wsSonQYlpZBNviTwJw2GjDPhWeEaHFjPBmn9FaTCuLIA4BE3bsxfV4hBbTyqLDrCwqPtt7ZREgYAJzjNZiWllUzMqiemcBARPoJUKLucOVRSkRrslrfF6EFtM1OaQJmLBTd//oo+l/na0sOmi0lUUlPx9h2Cf7DC0mDEXAhD0rq7Lmn7WyqNrZViK0mDWmwUtoMaEfARN4KcKwTw2DtZgRhn0itJhbWVkEeyZgwg6953o8QotpZVG9s1YWTdNkZRGsTcAE0iK0mFYWHdZo8XqJ0VpMK4ugD396gDKjtZg7XFm09OetLKp3FvZKwISdSU6Pl4TGGiK0mBteWTTaNXmNz4vQYromh28SMGFvLq4KzlpZdEjklUVLfz7CsE/2GVpMCE/ABB5EGPap8YwALWaElUWjtZhbWVn0wS9+WvKEScCEXbn73Y8//CseocW0sqjaWSuLys/maDGhDgET+KYILaaVRdXOlhitxYy8sggQMIE5IrSYVhYVq/G9zxKjtZi1r8k/8IXfkGThLQETduLd6/FHJdfkOaO1mFteWRTgmjxntBbTNTksJ2AC72Vl0UGhVxYt/PlW1+Q1RG8xtZfwXgIm7FmEYZ+cCM1kgGGf7DOCtph7XFkkXMJLAibswN0//sR9swEeK4uOnF1/gCdCi7nVlUX/1v/z68IlJAiYsHcRWkwri6qdLTFaixl5ZRHwXgIm7MloLaaVReVnK4TR0VpMK4sgHgETNu7uH3+i7n1jhBbTyqJiVhYd1urNPrBX/pQAVhbVPJvR9buYAYZ9ckZrMQ8FT9+/hDwBE/am1dV3DRFazMFWFhUF1wDDPjVoMSE+f0Jgw+7+yS8X/EscYNgnJ0IzGWDYp0iAFnOPK4uABwIm7NFowz41nhGgxYzwfvIILeZWVhYBeQImbN2rkpQQoMW0sqja2RKjtZhrryz6N/7PX5NE4QABEzbq6PX4aC2mlUXlrCw6yMoiaEfABE4XocXc4cqi5M83uiavYbQW89g1ufYSjhMwYQ9aXZNnnzFYiznYyqKigBhg2CdntBbT9zNhPgETNmj29HjnlUXDtZiBVxalfw9jDfvU0LvF1F7CPAIm7EWAYZ8qIjSTow37BGgxt7KyCJhHwIQtijDAY2XRkbNWFk2TlUWwVQImbMzd738y/69wgBbTyqJ6Z1sZrcXsvbIIOE7ABMZrMXe4sij5842uyXNGazFdk8N6BEzYqt7fjYzQYm54ZVGEa/IaRmsxXZPDaQRM2JCD1+OPrCxa52xG1BbTyqKX/uj//ilpE2YSMGHLIlx9ZwzXYgZYWRShxbSyCJhDwIQ9CjDsU0WEZjLAsM9oLaaVRbB9AiZsxN31r6f/FY3QYlpZdORsm+9BjtZiWlkE2yFgwl4FaDGtLCrXKozW+LwILWara/J/9e//TQkTCgiYsCW9h3IitJgbXlkU4Zo8Z7QW0zU59CVgwgZkr8cfWVlU77kV9GwxrSwqP3tzbRk7LCVgwtaUtJhWFq1zNiNqi7m3lUUaTFhOwIS9iHD1nTFci2ll0TRN21lZdIzvX0I5ARMGl7wej9BiWll0UKvr6NFazKgri7SYsIyACaOL0ExGGPap8YygLWaNMDpai9nqmvz2TVlw1F7CaQRMIESLaWXR219rdPVdw2gt5tzn9r6+hz0QMGFgd7e/mf+X0cqiemcrPKNni2ll0YPbm5flY8m6Iu0lnE7AhC3oPJRTJEKLOdjKomYDPDtbWdRq6TpwnIAJWxZh2Cf7jMFazN7taEKEFjPyyqK55rSY//Lf+RvaS1hAwIRBvbgej3CdbWXRQa3eTx6hxYy6suiUFlO4hOUETNi6CC2mlUWrGK3F7Bo8My2mcAl1CJiwJRGayQjDPjWe0bHFbHb1nf09jNVizr0mXxpQ3/cZQz1Qi4AJA7q9+0y7qidAi7nHlUUpVhb1e6ZwCXWtf4cDnOT+7Gw6u5+ZMy+upun2etkHXlxO0+3NumcvX03TzZt1z1Z4xtnVq+n++r1nz15fTPfv3M77+UZnp9cX0zT3bEbZf/X3yVVCyz5//jMvXt1P3/XpTwmW0ICACVvTKtzVUPB5Z5eX0/3N3OB5OU2zz5YEz4LnNnJ2dTHdX88Mk63OloTUCuaGxIvLu+n2Zt5F3PNnCpbQloAJg3l6Pd6sxXx1OU1v5obUzu1ohBaz0dnRWsySkFoSBlPh8tWr++nNzNc85gKqUAn9CJiwRRGusyu0o8O1mDWu2hNGazHXviafpmn6Fz71a8IkrEjAhMEN12L2vpYP0Eymzqa+h9lS1BYz+TrHku9RPnvmd/7q/ypYQgCmyGEgRdPjEVYLWVlUbG8ri2quKxIuIQ4BEwZyd9+v8Zqmycqio5+3bGVRhDf71NDi81q8mxzoR8CEDbg/Kyhuer9HPEKL2fsNPEFbzFZv9slZo8UEYhAwYRA3t5++n6bCFrPze8SLRGgxW12TF4jQYra6Jl/6VVstJoxLwISNaNZitromzz5jsBaz0TvHR2sx54bUGkFQiwnxCZgwgMf28lGIFrNzOzpci5l6boUwGrXFTE2St3o3ecp3/LXfMOADgQiYsCHDtZi9r+WDtpgl1+Q1tGgx1343ORCLgAl7EKGZjDDsU+MZHVvMyCuL5mrVYromh9gETAjuG29+LfkvqZVFR0ReWZQQYdhnqbVaTNfjEI+ACQO4LQiTVhatdLbkGQFazBqN51xaTNgfARMGFmLYJ/uMwVpMK4uKzvYMqNOUD57aS4hJwITAnl6Ph2gxS67JaxitxdzqyqIG64qmafnKon/+f/q0cAlBCZgwuBAtppVF5QKvLJr9zAbvJn846+obRidgwkaFaDGtLCr++bAriwK0mE+Dp/YSYhMwIajU9HjJNXlWhGYywrBPjWd0bDFbXZPfv/NyQXqrV0fWajGFS4hPwISgSq6+rSw6IsLKokYt5trX5DU+q6TFFC5hDH3vYoDFbu/fTBdn8/7o3p+dTWf3M7/PdnE1TbfXC35n00NAvL1Z9+zlq2m6mRm4W50tUfDcs9cXycZx7tnU6xxLnjm9vpimuWczyv5rv59ubx7y5D/7839LsISBCJgQ0NdvPnk/TQ/N5PnMMFlytlm4yz6jILwWfN7Z5eV0fzM3eF5O0+yzJcGzzXPPrl5N99dzz14kw+Op54rPloTUQoIljEnAhAGFaDFfXU7Tm4XBs8SWW8wCLcJcqxazJKReXN5Ntzff/NbWt370bwuWMDABE4IbrsXs3I6GbTE7B9eRWszUf+3/zE9/RqCEDREwIZjH6/GaQrSYja7Jq+gZBhtdk88NgtnP6tRi/qGfEiRhD0yRw6CsLDoiwsqiRrs2564GqvE6x1Yri4BtEzBhAFYWHRZ6ZVHy97BsZdHi3ZUd1xWt8XnA+gRMCORr179yX9JMhng/efYZg7WYA51d/d3k01T0Zp9HrsdhPwRMGESzFrPze8SHazFrXLV3em6rFtM1OVBKwISAhmsxS67Ja4jaYna8fh+txXRNDvsiYEIQX7v+laNj3sO1mJ3b0bAtZqsWNEGLCUQgYMLOhGgxG12TV9GzxZz7ncuCd5PX0Pq7mMD2CZgQVKtr8qwIzWSEYZ9Wz5j78w3WFZWezT5jQYv5T/13XvkIeyJgQgBffeeXZi9Xt7LosBArixo8t6TFjLyyCNgHARMCG27YJ/uMwVrMtSfHA7SYrsmBJQRMCKJVMxli2Cf7jMFazOR3LgvCaOoVkQuXrufPGvYB1iNgwsqOXY8P12LucWVR8uetLAL2S8CEQQ3XYm55ZVHq125u5p0r+ZxCWkxgLQImBNJ7KCdEi7mVlUUvfrZNszriyiIT5LA/AiasaO70uJVFFc92XHq++PMDDPtkn2H6HDhAwIRgQgz71BCgxVz9zT4BWkwri4A1CJiwolbNZIhhn+wzBmsxk9+vXBjWB2sxDfsApQRMWMlXvvGL2evxEC2mlUVlOr8tKEKLqfEEcgRMGMhwLeZWVhYt+dmO64qmKV6L+Qf/wq8b8IEdEjBhZTWGcoZrMbeysujFzzZaQ7SRlUXAfgiYsIJD1+OPrCw6drZRMzh3f2WrFnPjK4uAfRAwIYAIwz5ZEZrJCMM+LZ452LBP9hlaTOAZARMCCzHsU0OAFjN5TZ58N3irafT1W0xX30AvAiZ09uXf//nk9XiEFnN3K4vWXrpe+nsI0GKWnDXgA/slYEJwIVrMjawsmi3VNnYeyhmtxdR4Ak8JmLCCGlfUw7WYUVcWLQ2DVhYBvCBgQke56/FHVhZVPHv7chp88bqiAAM8VhYBIxAwYSWRh3JCtJhrX5OXGGzYpwYtJnCIgAnBRBj2yYrQTM492/Pd5IHPrrWy6A/+F58y4AM7JmBCJ6nr8QgDPFXa0Qgt5kxF1+QlBmsxXX0DLQmY0EmEZrLZsE8NEVvMzkM5o7WYrsmBHAETBhKixYywsigxwLN46XoJK4uqnQW2ScCEDr709Y9lp8etLGqsZ4vZe2WRFhMISsCEjnoP5QzXYqbO3l4ve2ZG2Baz89uFNJNACwImBGBlUaVntlpXFKHF7LyyaEmL+Qd+7JMmyGHnBExo7Pn1eIQBntAri0b5/GmK0WI2uiYHWELAhCAiDPCEXVnUqMVMXpN3HsqJ0GK6JgdqEzBhBRGayRAri94smwbv2mJ2HsqJ0GIa9gFOJWBCQ1/8vZ85+O7xJUK0mD0DXtQWs/NQjhYTGIGACY31vqIO0WLO3V3Zc13RNPVtMXe6ssiADzBNAiasZncri6JefecEuM62sggYlYAJjTy9Hg9xnV1Bk+9itno3eas3+0RoMQOvLAKYJgETVhVhgKfryqIILabGc5omoRFoS8CETiK0mM3a0eS7wRu9OrLn4nUri6qdBfZFwIQGSqbHIzSTIVYWpXRsMZtdk2efMVaLOefst/wnf92ADzBNk4AJTdzcNdtOlLR6i9n7ijpqi2llEcA0TQImdLWVlUWztbomb2S4YZ8Kn2eZOtCCgAmV/c7X/vL9NJW1mJtYWRRhKKfV2QDX2VYWASMRMKGz1a+zC52fvQw2i5eu5wQY9hmuxbSyCAhIwISKHtvLRxFazK7taIS2sdUaohIRWkwri4AVCZhQyfNweUiEFjN19iLRVlZpRqO2mK2uyWs8I0CLWXL1bYIceErAhAo+/9Wfub++W/7v69rNZNh1RdPUtcW0sqjeWWCfBExY6PNfPbzzssbKorW/i9nk3eSlZ7PPCNpi7nBlEcAjARMqKmkxe79HfPUW08qit2etLAK2T8CEBY61l48iDPss/X5liBYzwtkA19mRVxYBTJOACdW1ajHXvibPCdFiljy3wHAt5kori17/uf/FgA/wHgImnOi3v/Kz99e38/8I9WwxU7sru7/VJ0LbuPQ7lzkRmskAwz4AOZ2/hQ7j++2v/GzVF43f3b9JBsIlZ1s8s/Rs1hz9TukAACAASURBVMXVNN1ezzv76nKa3tzUf27y5y+n6XbmZ9Vw+WqabmYG+cvLabqZ+XsreO7Z1avp/nru2Yvp/vp23u8B2D0BE2b63Jc/en91Pi9bXt+dTXPP5tzev0l+b7LXM0vO3p+dTWf3VXP3YSVhMHW24OfPLi+n+9nhriAIZp9REjzbnD17fTHdvzMvTGo8gRRX5DDD57780Wx6anVNnjP3+5Uhvt8ZeWXR0t9D4KEcK4uAtQmYcMTTcFkywNNq2GfpFXWr72KGGPYpseX3k1f4vLnN5NVH/mcDPsALrsgh47Nf+tj91cXMK/Hb8+nq4m7W2Zu7++nyfN6/yXOvqWtcpzf7LubS6+waZ0uUPDfAdXbR2Qp8FxOYQ4MJhdZuMaOuK5qmIC1m6rkVrt+HazE7rywCeErAhITPfuljxV+W7P1dzOfWfo/5QRFWFrX4+WkKsVrIyiIgGgETnnkaLq9vY369LMIAT5V2NGqLWSN4lhisxTTsAxwjYMITc5vLVtfkKRGayWbDPjV0bDGbXZNnn6HFBMYkYMIRJS1mz2vyCM1k6JVFPX8PO11ZZIIcyBEw4a2/98Wfu2/VTKbOpibJew/lhGgxI7yfPEKLuYGVRQCPBEyYoUWL2fPd5KWGazEjNJ4BrrO7t6MAGQImTA/t5Sk/t/T7lSkhrrMrCNFiJj/LyqJDrCwCahAw2b3n4bJGaBypxdz0yqJG1+RZEZpJwz5AAAImu/Zb/99fmZ3wSq7J577VJydCi7mZlUXJzwpw/Z4zSIt5+eFfNOADZAmY7NahcNli2KdGMxqhmQy9sihltGGf7DO0mMA4BEx26Wm4vL6b/8cg1WJenb/Mqb3f6hOhmRxu2MfKooN8FxNYQsBkd+Zei7doJlu8m7yWEC2mlUVvz1pZBIxNwISprMWc/cxGLaaVRSuJ0GJGbkcBnhAw2ZXf+J2fX34fnRChxbSy6PHn+wbX4VrMCtfkBnyAYwRMdqdkGnz5Z43VYm5mZVHy560sqnYW4AgBk9041l7OvSbvGVCnKUaLGXplUfLnAwz71BC4xQQ4RMBkl+aGxJ7vJi8VoZkMsbJoy8M+2WdoMYHYBEw4QYt3k0+TlUWbOxs53GkxgYYETDgiQotpZVFFo7WYwVYWvfrBjxvwAY4SMNmFudPjS5eu58+ONeyTE7bFXPrqyBq/h5wI19muvoHOBEx2ocZ3Hlt81lZWFoVtMTsP5QzXYromBxoRMNm8v/H/fvw+/TrHvkM5o7WYVdYQlVgaBgMM+2RFaCY1nkBHAia7UNYqtrkmryFCixliZVGEAR4riwCyBEx2rVWLaWXRYVYWvWVlEbBRAia7EaHFtLLoiFatYIQWM3K4m/l5F//uz5kgB2YRMNm90VpMK4sef63G5PhgLWawlUUAOQImZIzWYu5yZVGKlUX1zgKcSMBkV3quKyr9PCuLThB4KGe4FlPwBCoSMGGysqjm2SpSYbDkOjvAsE9WhGZS4wk0JmCyOxGGfWqI0GJ2X1mUEmGAZwcriwz4ACUETHhrtGGfnAgtZog3+wRoMa0sAvZKwGSXIrSYVhYdYWVR+dkahEmgAgETnhitxdzlyqIUK4vqPRegAgGTzavx3cjRWszNrCxKaXVNnv28wVrMyO0osBsCJrtlZVG9szmLW8wI19kVDNdiPnvuxQf/BwM+QBEBk10oaxWtLKp1tpnBhn2yIjSTWkygAQGTXYsw7JP/vLFazBDDPqOdrcHidSAgAZPdiNBi9r6Wj9BiWln0YDMriwBmEDDZvQgtppVFK4nQYkYOgoIncCIBEzIitJhWFr3V+4p6tBbTyiIgGAGTXbGyqN7ZHCuLTjgbYYAnc9YEOXAKARMmK4tqns1ZHF4jXGdXoMUE9kDAZHciDPvkP2+sFrPVyqItD/tkBW4xAUoJmPBWhGGf/OeN1WJaWXTC2Rq0mEAQAia7FKHFtLKoosFaTCuLgK0TMOGJCC2mlUUPiq7Ja4jQYgYLghcf+O8N+AAnETDZvDrfjVy/xdzjyqIkK4uOnHVNDqxPwGS3rCyqdzZnadANMeyT/bzBWsxg7SiwbQImuxD5u5ERWswIK4uGG/apQIsJbJWAya5FGPbJf95YLaaVRY9nAw/laDGBTgRMdqPddyOtLKp1tkiEFjNwO7q0xbz47p8y4AOcTMBk9yK0mFYWPagSRgdrMUOvLAI4kYAJGRFazD2uLEqxsqjiWYAOBEx2xcqi9pZ+FzPEsE/2GYO1mIZ9gJUImDBZWVTzbE4qOJY8N8SwT/bzBmsxNZ5AYwImuxP5u5ERWswIAzwhWkwriwBOJmDCWxGGffKfN1aL2epsiBZzByuLTJADSwmY7JKVRfHPFonQYgZuR7WYQG8CJpv3zu38sxFazD2uLEqxsugIK4uAwARMdmu0FnMrK4tSml2T50RoJiMM+wA0ImCyaf/j//0Ly5PWARFazNFWFjULrr2vnUdrMQVPoCMBk037ofd96Gya2l2TZ58xWIsZ4Z3jww37ZD9vsBbz2dmLf/MnDfgAiwmY7Frk70ZGaDFHOxviOrsCLSYwOgGT3Rht2Cf/eWO1mFYWPZ4dc2URwCkETHZvtGGf/OeN1WI2E6HFDNyOCpNADwImuzJai7mVlUUp3YPrYC2mlUXAyARMmMZrMUdbWRTimjwnQjMZYdhnMuAD1CNgsnmPk+StRWgxI68sWvp7sLLoCMM+QCACJrtjZdFhEQZ4hhv2yX7eeC0mQA0CJrwV+buREVrM0c6GuM6uQIsJjEjAZBeeX5OPNuyT/7yxWswSw7WYW1lZBFCBgMluzPku5mjDPvnPW7/FTGkVRrMitJiB21HBE2hFwGS3RmsxR1tZFOKaPGewFrPHyqKLf/2/MUEOVCNgsitbbDEjryxKCTHskxOhmTTsA2yAgMnu9FhbFKHF7L2yKGyLaWXRkbOCJ1CfgMmuWVl0WIQBnuGGfbKfp8UE9kPAhITI342M0GK2WtIeosUMPJTTqsX0/UugNgGT3Rtt2Cf/eTFbzFbX7zkhWsyBVhZd/Gt/QbgEqhMwIWO0YZ/85/VrMSPsz8yK0GJGaEdv1n9FKLB9Aia7NPri9cgri1JCDPvkDNZi9lhZBLCUgAkHjNZiRlhZNNz7yXMiNJNLh31ubuadA6hMwITGIrSYvVcWLX1uiGGfGtZuMTWYwEoETHar1zV59hmDtZgRmsnhhn2yn7fydzHftpgGfIBWBEw4IvJ3I0drMUuEaDHXDoIHaDGByARMdm30YZ/85/VrMXsP5QzXYja6Jr9f+v1K38UEGhIwYYbRhn3yn9evxbSyaKWzAAEImOze6C1mhJVFEQZ49rayyLoiIDIBE6aXITNltBaz98qilOGGfXJGaiZdfQMBCJjw1pyQuVSEFjPC+8kjnN3CyqIlLebFv/JfmSAHmhEw4YnHkGll0WERmsnhhn2yn5d4xm1igGfp0nWAjgRMeOZQk9n7u5GjtZithGgx1776zvBdTCAiARMSfuh9HzqLMOxTQ8/vYlpZdMJzl7aVOVpMYEUCJmT80Ps+dPYnv+tlmznasE/+85a1mBGuvqtYu8UM2owCLCFgwhGpkJmyx5VFKREGeEKvLJr9+Q3eTT5N03R5acAHaE7AhBOM1mIa9nkQdmVRqxbTNTmwEgETVhKhxbSy6K1WV8/J71e2eXVkUYsJ0JiACRXtcWVRieFazJ7X5FpMYEMETDjRHlcWpfQeygnRYqbOvmk0DV5AiwlEIWDCDFYWPQhxnZ2xeou58rvJD9JiAp0JmLDAaMM++c/r12JuZmVRi2d2WFl08S/+5ybIgeYETJgpQosZYWVRhBYz7MqiAC2ma3IgAgETFhqtxbSy6EHRNfnt9ctfi9BMGvYBghIwIYAILabG862egzlaTGCjBEwo0OqaPPuMAC1mSu+hnNVbzN5v9dFiAoMTMKGCLa8sanVNXkP372I+F/g94qkW8+KP/JgBH6ALARMKRRj2qaFnixl5ZdFsrVrM3iuLADoQMKGS0YZ98p/Xr8XsvbJodniNMJQTuB0FOEbAhBl+6H0fek/qitBiGuApP7vYYC2mYR9gLQImVDRai7n0mjwnQouZOnt+9nLIpWhdUU6EZlKLCQQiYEIwUVvMkmvynLVbzLDriqZJiwlsioAJJ9ryyqKSMBp5ZdFcTd5NPk2hVhaZIAd6EjBhpuffw8zZysqilC2sLGrWYga+ztZiAr0JmLBAhGGfGnq2mK3Opr5f2ezVkYMN+wD0JmBCgbVbzN4ri1K2sLJouBYzcDsKkCJgwkIRWswI7yfv2WJeJNrKruuKpkmLCXCAgAmFtJhlWjSTq7+b/JAIzaTgCaxMwIQTzA2ZS/VsMUt2YvZeWdTimXtaWXT+nT+6/v/SAHZFwIQTPQ2ZW1lZlP6smCuLQrSYg64sAmhNwIQFjjWZo60satVilgS81PcrS4RoMXsHQWESCEbAhIUeQ2aEYZ9W1h726b3MPUSLWfJcgGAETGhstGGftVvM3m/1Ga7FdE0ODEDAhIoitJg1rtqXPneoAZ4aIrSYmTBpwAdYg4AJHURtMVuF0aUiLGjfzMoigBUImDCIni1mz5VFEV4zuaeVRQA9CJhQ2WgriyK82SdluBYz8soigM4ETOgk8sqi5M8vbDHPE+uGagzllAjRYlpZBOyQgAkNRBj2KdEi/Ia4zs4YrsW0sggYjIAJHUUY9ilR0mLOFeHqO2e4FvPI2fPv+JGYU1zA5gmY0EiEFjP9tp5+1+8RWkwriwD6EzChs6gtZslnXZ2//M5lq1dHRjhrZRFAGQETKihpK2vo2WK2uCbPidBiWlkEsJyACQ1FXlmU/vmXv4eri7tZ53J6D+WEaDGtLAJ2TsCESorCZICVRXMD7drvJq8lRIvZ8er7/Nt/2IAPsBoBExqLMOzTQqsW08qiis8FWImACRVFaDFbrCyK0GJaWVTxLEBjAiZ0oMWM0WLucmURwAoETFhRzxZz7s/X+M7naC2mlUUAdQmYUFnklUVLfrbnuqJpitFibmZlEUBnAiZ0MtLKolbNqpVFR1RaWWSCHFibgAkNRBj2uTp/ub8y+cxGLaaVRSudBQhAwISO1h72afedz7GGfXKGazFdkwNBCZjQSIQWs4UILaaVRQCxCZjQWa/vYpZ8B7POdz7HajGtLAJoR8CECmpMjvdqJnu3paO1mJtZWQSwIgETGqoSPGe/MzzxvvFGLaaVRUfUCIIntpjn3/YRE+TA6gRMqKQkTPbelfncaMM+OcO1mK6zgZ0QMKGxpcM+Vxcvr5hbvZvcyqJ6Zw37AHsmYEJFLVrMVu8bH63FtLKo4nMBGhMwoYMWV+KpINcqjGZ/DwFaTCuLAOIRMGFFvVpMK4vqna2iUYtpwAeIQsCEykraytcXL39t6XV00fcorSyqdjbCyqK73/34/P+AARoSMKGTpdfkUVtMK4uO6L2yCCAAARMaSIXJVFvZal1RhBbTyqIjGg3laDGBCARM6KTVu8lLRGgxe68sGq7FrHD27h99VMgEViVgwsqWvpu8RhgdrcXsPZQTosUsXFkkZAJrEjChgnfuZp7r2GJaWVTvbE7kFhNgTQImVPB64Z+kni2mlUX1zlahxQQ2SMCEhf7bz/1C8h/xGgM8PVtMK4vqnY2wsghgTQImVDD3inyaKgXPoC2mlUVH9F5ZpMUEViJgQkMt3k1eKkKLaWXREd4jDmyMgAmVtGoxrSx6YGVRxbMAjQmY0FjPFtPKovZCtJiF1+QAvQmYUFHPFrOsVbSyqNbZnMgtpu9hAr0JmBBMzxbTyqJ6Z6vQYgIbIWBCB61WFrVqMa0sqnc2ysoiLSbQk4AJlfVeWZQSocW0sugIK4uADXu19m8A9uKd22l6fVH/7PXt2XR1MS83FJ29O5uuztc9e3f/Zjo/W/bX1O39m+li5jNanb0/O5vO7mdmu4urabq9nnf2BE9D5vm3faTvl3OB3RAwoYF37ua/PrIkTLZyfXc+XZ3Pq17LAu35dHUx77k3d/fT5fm8vFMS7nJKwmurs9PF5TTd3qx29t2weXsznX/7DwubQDWuyGGhVmuIUmd7fzfSyqLDhltZdMDdF3/a9TlQjYAJjfT8LqaVReuczQm7suhIcL374k/fC5pADQImBNazxbSyqN7ZKnq2mM/CqJAJLCVgQgXDvXPcyqJVzoZYWTQzuAqZwBICJjQU4f3kEVpMK4uO6L2yaObvQcgETiVgQiVazLZna1xRD9ditnoDT8FzhUzgFAImNLa0xWwVRnMitJitrslzhmsxazSeBc+9+4c/JWQCRQRMqKhni2llUb2zNYRoMVPX5DXCaKtAC2yWgAkd9GwxrSxa52xO2Baz8PpdiwmUEDBhYKMN++Q/b/0Ws3c7GrbF1FYCFQiYUFnPN/vkjDbskzNai1mj8SzSs8W8uNRiArN5Fzl0UvJ+8hLXd2fT1fnMd4MXnV3//eQ1RHjneLP3k+e8upymN8+eUeld5smQeXsznX/nj3qXOfAuARMaeOd2ml5fnH625OdzykJfwdlmgXb+2aLAlnF7/2a6mPmMVmfvz86ms/uZpeDF1TTdXs87W6LkuYeC5xd+8j3/hwicsG+uyGGhomvuhcWdlUWHWVlU0cLfw90XfvL+9vM/4UoddkrAhEaWfr8ywpt9en9ehGGfGkKsLEr+fN+VRWeXl9Pt539C0IQdEjChs54tZu+VRaO1mJteWVTy6shWbwx6QsiEfREwoYJWV9cRWsySa/IaIrSYm1lZlPz5RtfvM84KmbAfAiY0FCJ4WlkU/mwVPVvMwmvyp4RM2AcBEypZOuxTI4xGaDFbXZPXEKHFbHZNXmLFFnOahEzYAwETGlsaHKsEz8FazFbX5DkRWsyub/ap8dwFLeY0CZmwdQImVNSzxbSy6LBdrixqpVHjKWTCdgmY0EHPFtPKonpna+jaYvben7mwxQS2S8CEYEZ7P3mdz1u/xdzMyqKUYCuLntJiwjYJmFBZqzf7RGgxrSyqdzYnbIsZ4e1CwDAETOjEyqLyszmjtZjdVxalBB32AbZJwIQGQkyOB2gxrSyqdzZE22jYB5hJwISFll5zt7omzxmtxbSyqCItJtCJgAmN9GwxrSw6bNMrizoP5fguJjCHgAkBjDbs0/vzIgz71NC1xbSyCFiRgAkVtAqIVhYdNtqwT07XFrP3yiKvj4RdEjChISuL6onQYoZeWZQSYIAH2CcBEyopCYjNfg8BWkwri+qdLRKhxXRNDrwlYEJjycnxzgM8EVrM3iuLIjSTIb4PGqHF1HjC7giYUNHSFtPKonpna4jQYiavyWsENi0m0JCACR30bDGtLDpsMyuLUgZeWXTxR36s7/96AJoSMCGY0YZ9en9ehGGfGrq2mFYWAZ0JmFCZlUU1P2/9FjP0yqKUCMM+2WcIk7AXAiYENFqLaWVRvbNFIrSYQiOQIGBCA6mAWOO7kaO1mFYW1TtbtBMzQovpmhx2TcCEhXq+c7yGCC2mlUX1zhaJ0GImzp5/548a8IGNETChkaUtppVF9c7WEKHFTBp8ZZFwCdskYEIFPVtMK4sO2/LKombX5DWcEHSFS9guARM6i9BiWllU72wNXVvMwCuLgO0QMCGICC2mlUXrnC0x3LBP8ucvtZewcQImVJJ8W8/CV0eWPiNCi2ll0TpnQ7SYqbO3Ny9+6fw7fkS4hI0TMGEFVhbVO5szWou52ZVFrshhlwRMqGhpi2ll0bGz+1tZ1Ixl6kBDAiasJMKwT85oLeaWVxY1uybP0WICFQiY0MFo7yevIUKLuZWVRSkhVhbdXic+S5gEBEyorllAHGzYp/fnRRj2yVkaXocb9mnx88BQBEwIKEKLaWVRvbMlwg77JKbBuy9zB4YhYEInVha1F6HFjHC2STNpKAgoIGDCQsnJ8c7fjRytxbSyqJ7Vv4tZ+d3kwDYImNCRlUVHzlpZNE1TuzCapcUEKhMwoZHRhn1yRmsxt7KyKKXZNXnq+5WtXh0peMIuCJhQQYSAaGXRYaOtLAox7JP8eS0mcJyACQ2N1mJaWVTvbE7IFlMQBCoTMCG4CC2mlUX1zpZo1mLO1eqaHNg8ARMqadVA1nhGhBbTyqJ6mjw36oJ2YEgCJjRmZdGRs1YWTdNUJzTObjGXLl2v8Vxg0wRMqCjC9yhriNBi7nFlUUrXlUVaTKASARM6GG3YJ2e0FnO0lUVLg+vZfaKdrRHutJhAIQETKosQEK0sOizyyqIlv4fub/XRYgIZAiZ0MlqLaWVRvbMlhhrgAcgQMGEgEVpMK4tin23WYromBwoImNCAlUXHzlpZVOri7NWyZ0YY4NGOwm4ImLDQ9c38P0ZWFh05u8OVRSlLw6gWE1ibgAmNRPgeZQ0RWswtryxKhdHzRFvZdV3RNGkxgUUETKggQotpZVG9szUsCYTNrt6tLAI6ETChoQgBsfe1/GgtZu+VRUs0ezd575VFwOYJmLCC0VrM3u1fhBZz7WGfEC2m0AicSMCESkquyWuI0GJaWVR+dun3K0O0mAuuyc+/7SN9/9cKsAoBExqzsujY2f2tLGohRIup8QTeEjChogjDPr0/b7Rhn5xe38XsHVojtZjaS9gPARM6iPA9yhoitJhbWVn0XM89m8W0mEAhARMqi9BiWllU72yJ1PcrU9YeIJqmqfvKIu0l7IuACZ1ECIhWFh3W4pp87XeTT5OVRUB/AiasbLQW08qi5eeinO119X3+hz+svYSdETChASuL6p2t83ltWswWhmsxj1yTC5ewTwImLHRzfTH7rJVFx87GXVk019z3jbcUosW8uBQuYccETGgkwrBP788bbdgnZ26LuTQ47nJlEbALAiZUEKHFtLLo2Nllf90tDYMRhn2yrCECKhMwoaEILaaVReVnL8/73eyGGPapQYsJPCFgwgoiBEQri/J6vpu899nuK4uAXRIwoZKSa/Kc0VrMrawsmqtVKxiixXRNDlQkYEJjVhbVO1vn8/q0mDXC6HAtpmty4C0BEyqKMOxT4xlbWVmU+ryri5f/QbRYup6zy5VFwO4ImNBBhGGf3p8XYdhnqZ4tppVFwJYImFBZhBbTyqIHV+cvA+LSdUXT1LfFtLIIGJGACZ1EaDH3trJo7aGgaYrRYlpZBPQmYMLKIgTErawsmv3MAO8mj9BiWlkEtCJgQgNWFrW3dovZ6p3jIVpM1+TAQgImLHRzXfA9QSuLqp1Nf7+yzasjl7aYVhYBeyNgQiMRhn1qPGMLK4uitphWFgFbJWBCBa1aTCuLDpzrfCXfs8XczMoiYLcETGgoQou5lZVFs5/Z6Jq8RIQBnrVXFp3/oT/R938BAKEImFDJaC1m5JVFs5/Z7Eq+zZt9RjsLcCoBEwKJEBCjrixaunQ9f7bNsE+EZjLEsA+wSwImNGZlUVsRWsxWQrSYhn2AEwiYUFHvlUWjtZjzX+e4PNz1bDF7X1FHbzF9/xIQMKGDVsM+NazdYvZ+q0/PFtPKImCvBEyobLRhnyif91yLd5O3FOE6O8LKovM/8H3r/5cBrE7AhE6sLFp+7uGsYZ+WZ7M0k0ABARMaGK3FbBVSl7/Ocf0BHiuL5tNeAo8ETAgqQkDseU0+WotZIkIz2XrYR7gEnhIwYaGSq+8tryx6nfg/rfd3I3u2mEtfHVkqRIuZuSYXLoHnBExoZG8ri9Z+N3m9z1v238XeVhadX32vcAm8IGBCBa1azMgri+Zq1yr2XVmUEmHYp4ZTW0zhEsgRMKGh0YZ9lj4jQovZ6lp+y8M+OUXfxQR4QsCESiK0mK2uyVPfrywRocW0sqj8bJaVRcARAiY0NlqLOTek1mhGI7SYrRrPCM3kmiuLgH0TMGEAa7eYva/ko7aYNcJohGay2coigLcETKhoKyuLWjxzKyuLUqwsAngvARM6iLyyaPYzG4XZyCuLkj8fYNgnp2eLeX7xx1SbQJaACZVFGPZZqtWwUIRhn5LPG23YJ8d3MYHeBEzoZLRhn56fFWHYp0SEFrN3EPRdTKCEgAkNRGgxUy1kat1Q72XuEVrMGlftKRFazB7tqOtx4BgBEzpau8Vcexr9kAgt5tJr8pwILWbkdhTYHgETFrouCI01rD0NvseVRenPsrIIIEfAhEairiyK0GJGXlmU/PlGwz419G4xXY8DcwiYUEFJi9nqmjz5/cpGAXG0YZ+SZ7T6jugWVhZdnL9fuARmETChoQjDPktFaDF7ryxKPtfKIoDZBEyopGeLuXQavEZAHa3FbBdo128xewRB7SVQQsCExlq0mBG+R1lDhBbTyqLjZ4VLoJSACSspaTHnavY9yh2uLEp/1v5WFgmXwCkETKio58qiCAFxKyuLln/WNlcWXV58QLgETiJgQgc11hDNNVqLGWFlUVljuv2VRZcXHzgTLoElBEyorMWwT8m6opzRWszeK4uSzx1s2Cdnbov5La/+uGAJVCFgQiepFvPy6mXqi7quaJpitJgRhn22uLLoW179ccESqEbAhAbmtphrv5u89Gzvz4sw7DNai2l3JRCBgAkBtWoxe0+Dj9ZithKhxazReALMtf7fvDC4m5tlAzyjtZglIbWGni1mq2vynAgtpsYTaEHAhEasLKpzNsfKorZnAZYQMKGCVIt5tXCAp8ZqowgtZuSVRcnfQ4BhnxpKW8xvvPm1vr9BYNMETGik57vJS43WYhr2KT+bo8UEehAwobNWLaaVRcfOWll0iO9iAjUJmLDAB/7K3zyYGCK0mFYW1TNaiyk0AmsRMGEFEVpMK4vKf76GCC2ma3KgNQETKlm6rmiaxmsxt7KyaPlnbWNlEUAtAiY01nNd0TTFaDEjryxa+vNbXln09ZtPmiQHqhAwoaKSFtPKosNqhLNUCznasE8NWkygNwETOogw7JMzWos52gBPhGGfHN/FBFoRMKGyCC2mlUX1RGgxDfAAoxEwYYGitjFAG29UHgAAIABJREFUi2ll0dtfW/jqyIdnjNViuiYHehIwYWURWsw9rixq8fPTNF6LqfEEWhAwoQEri9pbvIao0bBPDWu2mCbJgRoETFio1TV5DRFazAgri0Z7P3mOFhMYhYAJjUQY9smJ0GL2XlmUfq6VRQAtCJhQwWjDPjmjtZit3uwTocW0sggYmYAJDUVoMa0sqidCi+nqGxiBgAmVjNZi7nFlUfLnrSwCqE7AhEAitJhbWVmU/PlG1+T5zxurxdR4ArUImNCYlUXtpZepl4RJK4uesqoIWErAhIp6rywarcXsfS2fMtqwT44WE4hMwIQOWg371BChxYww7LOVlUW+iwlEIGBCZaMN++SM1mJaWVSPFhNYSsCEBUpCn5VFR84GWLxeIkKL6eobiErAhAZGazG3srIopdU1eZ3Ps7II2CYBE4KK0GKOtrIowjV5/vPGajG/dv0rJsmBkwmYsFCra/Ianxehxey9siglwrBPDVpMYBQCJjRiZdE6ZyO0mFtZWQRwKgETKogw7FNDhBbTyqIHVhYBIxMwoaHRhn1yRmsxS4zWYgqCwAgETKgkQou5x5VFKb2/GxmhxXRNDkQiYEJjo7WYo60sinBNXufzrCwCtkPAhAFEaDEjryxKiTDsk/+8MVpMq4qAUwmYUJGVRUfONlpZFKHFtLII4JsETOjAyqJ1zkZoMa0sAvZIwITKIgz71BChxWw2OR6gxbSyCNgyARMWuC76buRYwz45EVrMlDrfjVy/mbSyCNgCARMaiNBibnllUatr8hoitJiuyYG1CZjQ0WgtZuSVRSkRhn3qfF6clUUmyYFTCJiwUMk1eQ0RWswIK4tGG/bJf54WE9geARMasbLoyFkri6qxsgiIRsCECiIM++Q/b6wWM8Q7xwcb9snRYgJrETChoQjDPjVEbTFrhNEILaaVRcDWCJhQSYQWc8sri4q+c2llEcCqBExoLEKLuZWVRcmft7LooBrX5CbJgVICJqxktBYzwsqiVi2mlUX1zgJMk4AJVVlZVO+5JawsOsywD9CbgAkdWFl05GyjkBqhxdzKyiKAEgImVBZh2Cf/edttMUtEaDGtLAK2TMCEBYqayQDDPjX0bDF7f+8zQosZeWURwFwCJjQQocXcysqipT9vZRFAfwImdBShxRxtZVGrFtPKorKzX33nl6wqAmYTMGGhktBY4xkRWswIr34cbdinzuetv7IIYA4BExqxsqjicwO0mFYWAcwnYEIFEYZ9anxehBbTyqJ6tJjAWgRMaCjCsE/+88ZqMVuJ0GJaWQRsjYAJlURoMbeysmjtz5qmGC2mlUXAqARMaCxCiznayqII1+TZZwzWYtYMjSbJgbkETFhJhBaz98qiqC2mlUX1zgJMk4AJVVlZVE+EFtPKIoDTCJjQgZVFFZ8boMW0sgjgMAETKosw7FPj8yKsLCoxWotZ41peiwlEJWDCAq+u59d0EYZ98p+3fovZ4uenabwWs0bjWUKLCbQgYEIDEVrM0VYWRWhBcyK0mBFWFn3rt/ypvukXGJaACQuN1mJGXlm09OetLDps6dW3NUXAXAImBBChxYywsmi0YZ/sMwZrMedefbsiB+YSMKERK4vqidBi9v5uZNQWE2AOARMqaHVNXkOEFrPGsM7i38Ngwz75z+v7XUyAUwiY0FCEYZ8an9ezxez9xiAri5afA3hOwIRKRhv2yX9evxazdws6WovZ81re9yuBmgRMaCxCixl5ZdHSn7ey6LDUNfn52avZP/+8xfzKN37RvTtwlIAJFY3WYkZYWRTh9ZN7W1nk6htoTcCEYCK0mL1XFi19boRhn+wzArSYc7kmB2oRMKEDK4sqng3QYm5hZZF3kwMtCZhQmZVF64jQYkZYWXR1/vIrki2WrgMcImDCAq9u5ieVCMM+NT5vaYvZqoGs8YwtrCxqtXRdiwmUEDChgdGGffKf16/FtLKo/OzVRZsN9sdaTJPkwDECJiw0WosZYWVRqxZzbyuLer/VR4sJzCVgQiOjtZi9VxaljDbsk31G5+9iLnmm0Ai0IGBCYBFazAjvJ7ey6NC5Ni2mYR9gCQETKmh1TV7jGVrM8udGWFl0dfEyDLb6fRn2AWoTMKGh3iuLoraYvb8bGaHF7HlNrsUEohEwoZIIwz419GwxrSx6kNpdWedKXosJrEPAhMZGG/bJf16/FnNvK4siXMnn5FpMq4qAQwRMqChCixl5ZVFKhGGfGppMgzd6N7mVRUBrAiZ0MFqL6f3kD3quLGp3JW9lEdCfgAmDiNBitmo8I7SYPVcWtXp1pGEfIAoBEyqzsuhB76GcCC1m+nWObb6qqMUEIhMwYYGSq+89rixK2dvKot5v9dFiAhEImNBAhGGfGnq2mFtZWTT/mW2uyfOfV7/F/PLv/7xJciBJwISFIrSYkVcWpUQY9qnxeWu3mFFWFgE8J2BCIxFazAgriyK0mK2u5Ze/znGsYR+AuQRM6Gy0FrPVtXyEFrPnNXmEFtOwD9CLgAkVlITGGiK0mKmzS18dOU0xWszU2XavcxyrxXRNDswhYEJDe1xZlLKFlUWRvxupxQSiETChkgjDPjlRW8zIK4vmavFu8mmysggYm4AJjUUY9qmhZ4sZdWVRu+9GjruyyKoiIEXAhIoitJgRVhaN9n7y14n/eFu9OjLCsE8NWkzgEAETOojQYlpZVH52qQgtppVFwBoETFjRaC3mFlYWLW4rq3w3cv0W07AP0JKACZXtcWVRStSVRWu/m/zgMwZrMV2TAzkCJixweT0/gWx5ZVFJGO29sqjFMyN/N1KLCUQgYEIDEYZ9cqK2mD2/GxmhxdzSyiKT5MBzAiYsFKHFjLCyqFWL2XNlUYQWc+SVRQCPBExoJEKL2XtlUfK5HVcWJQd4KnwldrQW08oiYG0CJnQWocXs+WafnBYtZtR1RdMUo8W0sgjoRcCECkquyXO23GKWaDLA0+ia3coigLT1/zWBDdvyyqKi4NpxZVGznZpWFgHMJmBCJRGGfWo8Y2mL2eqa/HXitxVhWKj3dyOjtphf+vrHpFHgXQImNBZh2CcnaotpZVFbWkygNQETKorQYvZeWZT+PSxrMZdOg/de5m5lEcB7rf8vEexAhBYzwvvJ57aYPd9NXipCixl5ZRHANAmYsKoILWbJNXmJpW8BSmnVYtZoPEdrMV2TAy0JmFDZllcW1QiNI7WY3XdlBmgxXZMDNQiYsMCrku9cbmRl0dLPurpc9p9DhBbTyiKAwwRMaCDCsE+NZyxtMeee7T2UY2VRvbNPW0yrioBHAiYs1KrFjLyyKPnziTB6efXyP5ve64pGazGtLAK2QMCERiK0mK1WFs1tJtd+N3ktEVpMK4uAkQiYUMFoLebauzJbtZhWFtU7m6PFBOZ4tfZvAEb0gT/3q9X/lX11czu9uZzbDJ5Pl1fzElLR2ZuL6fLyvanp+vp8upr58+nPv0helae8c5tesp48e5d+feTi5xaczbm+O5uuzuf9v0jZ2fPp6nzefxfXt2fT1cXM596eT1cXnWthYNM0mFDog3/2l2eHy62sLEr//LIUNlqLaWXRYa7JgacETChwKFxueWVRapo81Ur2vnq3sqje59Ua9jFJDkyTgAmzPQ2XlwVDORGGfVo8o8W6ommysuhUWkwgEgETZph7LT7asE8LLd5NPk1WFvVgZRFQi4AJR/w7/8FfS/5LOlqL2eLNPhFaTCuLjpy1sghYgYAJlY3WYiYXpF8uqwsjtJhWFtU7m6PFBHIETDjgsb3sPZQTocV8LjXoUypCi9kqpOaM1mKWXJMD5PibBDJyV+NPtbomz+n1XcyS10YuXVc0TeO1mFYWARwmYMJMZdfZ21hZ9FxJi2ll0WF7WFkE7JeACQuNNuyTeqtP6udbtZhWFtU72/vz5p794u/9jNQJOydgQsIP/MlPJP+BjNBirr2yqFWLaWVRvbM1aDGBJQRMqCBqi3m18G07o7WYVhYdOdt5ZRGwXwImZNQZylm3xVx76fo0xWgxrSyqdxZgDgETCkVeWTRX8juXJUHQyqKTjNZiuiYHTiVgwgElLWbUlUVLW0wri+o9t4YILabGEzhGwIQTRBj2eXO1rIXs2WJaWXTYVlYWPWWSHPZNwIQjIrSYLa7JS4w27FPjGVYWlZ91TQ48EjDhRD1bzDeXL4NYz3eT559rZVGts1tZWQQwTQImVNeixWy1dL3EaC2mlUVHzjZaWaTFBKZJwIRZeq8smv/MZS1m7+9GRmgxrSyqdxYgR8CEBXquLOrZYlpZVO9szmgtppVFQAkBE2aKMOyT0rPFtLKo3nNriN5imiSH/RIwIaHdG3gSr268WjbAkxO1xbSy6LDRVha5UgdSBExI+MQvfyj5r2aLFjPCuqIILaaVRfXORvg81+SwbwImZLRqMVs8s9V3QSO0mFYW1TtbgxYTmEPAhIbWbjFTQW7pqyOnabwW08qiI2cbhVQtJuyXgAmFSsLgTXJBeqvvdy5LUVYWHTlrZVG1s8D2CZiQ8Ylf/tDZ2tfk2c/q2GJaWVTvbM6WW8zf+dpfVmPCDgmYcIJUi/nm6uUfp57riqapb4tpZVG959bQs8X06kjgGH9LwBFzW8ye7yavIUKLaWXRYZFXFqU/yzU58EDAhMZatZit3uwTocW0sqje2Vafp8UEDvE3BBzwuA9zpBbTyqIHVhatQ4sJTJOACbO8Sbxtp0SEFjPFyqL2IrSYEd5PDuyLvx3ggH//T/xCdgK2zlBOvxaz1TV5DRFaTCuL6nn+XJPksD8CJswQYSgn+3kdW0wri+qdzYnaYrr6BkoImHBA7p3kj1q8m7z0uSVGG/bJGa3FrBI8g7aYrsmBFH8zwEztrrPXH/aJ0GJaWdRezxZT4wn7JmDCQhFaTCuLHlhZdBotJlCbvxWgwGgtZisRWkwri+qdLaHFBOYQMOGIY9/DLNWzxWx1TZ4zWotZZRp8sBbTyiKgB38jQAWRVxalWFlU72wNEVrM1iuLrCqCfREwodBo19mjDfvkP2/9FnOPK4uWfhawTwImVGLY5+1ZK4uqPTenZ4vpmhw4hb8NYIbn38McbdhntBbTyqL2eraYGk/YHwETKorQYpYYrcW0sqje2RJaTKCUvwngRFFbzKWvjiwVocW0sqji2Wbf+9Riwp4ImLCini2mlUVHzlpZdPhshRbTJDnsh4AJM83dhxlhZVGEYZ+c0VrMPa4sakWLCfshYMICVhY96L8rc/0Wc8sri1x9A0sJmNBAhGGfCC2mlUX1npvTs8U07APM5W8AWCjCsE+JCC1m75VFEQJi5Gv5FC0msISACQVK3kves8Wscf0+WotZo/EsESGkbmXYB9g+f/qhgqgtppVFh1lZdORsg0D7+a/+jEly2AEBE4Lo2WJaWXTk7A5XFpXQYgLH+JMPhS5v5ieH3iuLkj8fYNgnZ7QWc8sri5a+OhLgKX+jQKGPf/LDyX/JI6wsitBiWllU72xOzxYzQmMKjEfAhBO0ajFLrslLRGgxrSyq99ycxWuIDPsAlfhTDxX1HPapc/2+fotpZVG9syXWHvYBtk3AhBN8/JMfPovaYlpZ1F6EkDryyiKT5LB9AiZUFrXFtLLosD2uLCqhxQRKCJgQUM8W08qiI2c3vLKoRhj1XUwgxZ92OFHLa/ISo72fPGe0FnMrK4uSP29lEbCQv0WggQhv9onQYlpZVO9szuI1RIZ9gAYETFggyrDPaC2mlUX1npuTXqYea9gH2C5/0qGRCIvXS0RoMa0sqne2xBotpkly2DYBEyro2WL2Dq6jtZhWFtWjxQRO5U85LJR7deQ09Q2DVhYdea6VRQ+/ViGM+i4mcIyACQMabdgnJ0KLuceVRcmft7IIqMifcKjAsM9pZ3NGazFHW1nUatgH4JG/OaAxK4seWFlU72yOlUVAFAImVGTx+glnrSyq9twSEVYWAdslYEIlLYd9lr46slSEFtPKonpny74b2a/F/O2v/KxVRbBRAiZU1rPFtLKo3tkaIoTU0VYWAdskYEJFtVrMlAjDPjVEaDH3uLIoxcoioBUBEwLa8rBPToQWc8sri1pdk7d8BjAuARMasLKo/GzOaC1m5JVFKVYWAS342wIqa3lNXuO5EVpMK4vqnS0RddgH2B4BExpZ2mLWGMoZrcW0sqjec1uFvtrDPibJYZsETGggyrBPDRFaTCuL6p3VYgI9CJjQUEmLmRJh2CdntBZzjyuLSli8DtQkYMIKUmFwtGGfGiK0mFteWdS7KTylxfyXvvU/kkBhgwRMaOTQNXmJCC2mlUVHzgZeWZQSYWXR1bmvXsKWCZjQ2NJr8vxz128xrSyqd7bVMyIM+wD7428IaKh02GfpqyNzz82fXb/FtLKonqjDPlcXL9vKx3OmyGGbBEzooOewT/b3MFiLaWVRveeu3WIa9IH9ETAhmFbDPjVEaDGtLKqn93cxXzzTuiLYLAETGnu8Jk+1mO2us60sqnU2J2qLWSOMajGBpQRMCMjKosMiDPvU0LPF7NkWWroOCJjQQa03+0RoMa0sOnK288qi5M93HPa5Oi/4/wctJuyGgAkdWVlUfjYnQosZYWXR2sM+NdYVmSSH7REwISgri9qL0GKOtrJo9jNdk8OuCZjQyRrX5DmjtZhWFtWzdovpmhz2QcCEzkquya0sOvZcK4tKfz5n7uscly5dB/ZBwIQgRhv2yRmtxdzKyqKln5XS6tWRWkzYPgETOjq0EzNnKyuLRmsxI68sWvrzc1/nWIMWE/ZJwIRARmsxazSeJSK0mBFWFrVoTHu/1ef5Mz735Y+aJIcNETBhYyK0mFYW1TtbosVzW12TA9vmbwPorPU1eU6EFrP3yqLRWsxm3+VcucV0TQ77I2BCMFYWHTlbcE1eQ4QWc+lV++vEf2St9lQa9gGmScCEVUQa9qkhQou5x5VFLX5eiwnUIGBCQKMN++REaDG3srJo7s+n2soqezK1mEABARNWFqHFtLLoyHMDrCya24K2ejd5Dcc+zyQ5bIeACSs59OrIaRqvxbSy6MjZvv/xvPz8Ru8mb7GyCBifgAkbFqHFtLKo4tmVW0wri4C5/A0AK7KyaB4rix68TvzH0CrMGvYBlhAwITAri46c3eHKohYitJiuyWFbBEwIIsKwTw0RWsytrCxa8rNVJse1mMCJBExY2daGfXIitJhbXVnUuy3VYgLHCJgQSIQW08qiI8/tvLLouVYtZpSVRVYVwTYImBDA1lpMK4uOnE38x7N0Qfpowz4tnwGsT8CEgY3WYlpZtPzcNMVoMa0sAg7xpx6CKbkmryFCi7nHlUUtjNZiGvaB7RIwIYi1rslzRmsxt7CyKPmKyM6hVYsJ1OBPPAQUYdinhggtZoSVRcnvVy783wBWFgGRCZgQyNaGfXIitJg9VxYtDXgRhn1yWrSYn/3Sx0ySw+AETAgqQotpZdGR5yauyVNtZYnRhn1q0GLC9giYMJjRWsy9rSyKEBBHG/YBtkfAhGCOXZPnjNZibmVl0VythnUitJiGfYDn/EmHwKwsOizqyqKlLWaNMDpai+maHLZFwIQBWVl05GyjlUWXVy//b2uxrqjVz5fSYgKn8qccAnp6TR5h2KeGCC1mz2vyrpPjG1xZZJIcxiZgwqBGG/bJidBipq6+L69e/t+2dF3RNGWWqQ827JOjxQQe+RMOQUVrMfe2sqjVu8lLRGgxrSwCTiFgwsBGazEjryya/cxG7yYfrcW0sgg4RMCEDRqtxYy6sqhVi2ll0eNZ/wTBVvnTDYGdek1eQ4QWs+fKolavjowwOT5ai+maHMYnYMLgrCw6cjZxTX6VGOCpYel3MXtPg0dvMU2Sw7gETAgu2rBPDWu3mL3f6pOcHG/1Pcq+RbcWE0gSMGEDRhv2yen9XcyXz2xzTV5itGGfHN/FhH3zpxoGE6HF3MLKolYtZqthnwgT6TVaRS0m7IOACQN4ek2eM1qL2WplUXJB+sKl6zXORgiIEYZ9gH0QMGHjRmsxe16TR2gxW4nQYromh/3yJxoGYWXR3Nc5Lv9rred3MXt/NzJCi1ly9u998edMksOABEzYkL2tLGr1bvIan5dqMSNck9d4hhYTOMafZhhUhGGfnLW/i9ni3eQtRRj2qcHrI4FH6//NCsw2yrBPDWu3mIZ9ys/maDFhf/xJhoFFaDFbXZOnvl/Z6tWREYZ9IrSYkVcWAWMRMGEwo7SYa1+T50RoMUuM1mIKjcA0CZiwK1FbzDdXL/8q6v1Wn56vj6xx7Vz0eQFazCXX5CbJYTwCJgxuCyuL1n43+eFnLGsxI1yT9/48wz6AgAkDWvOaPKekxZyrVYvZe2VRSoTvUdZ4hpVFQIo/wbABEYZ9ckZqMVutLIrQYlpZBPQkYMKgRhn2SX2/skSEFtPKovKzOVpM2Ad/emEjIrSYc59bsq4oJ0KLWeM7nikRWkwri4AlBEzYuLVbzN7riqK2mCXX5DmjtZhCI+yXgAkDm3NNntP7u5jPtXg3eS1WFr09G2jYx6oiGMurtX8DQD2XN3fTzWW/MPbq+nZ6c3W82Xt1fTf7u5glZ6+vL6arq3kp6Ob6PPl2oBI31xfT5czPS7m+OZ+uLuf9Ht65nabXM0vTkrO9P+/69my6upiXDY+dfR4yr87vpz/6z/2HalIIyB9M2IAPf9/H3/2HNxcwU0HwJhMOk4vPL1+ezYXL1HNzofFN8rnps6mAmAuYqbO5gHl5+fIZV7mzRZ+XeG4mYKYCWy7EvU78x5M9m3puJr8XPSNz9ur8ZUDMhcays4n/7p/9vLAJcbgih42JMOyT0uq7mBGGfUpYWVTx7LOr9s9+6WP3n/3Sx1ylQwACJuzE0mGfVINZ8swaRltZVCLCNPhWVhYJmbA+ARM24PmwT4sWs+e7yUtFaDFTz60RRiO0mJFXFuU+73Nf/uj95778UUETViJgwo60aBzbrUHaxsqiFCuL2nv8PCET1iFgwkb0WFkUocWMvLIopdWbfWqI0GL2eLOPkAn9CZiwUSXX5Llp8rkitJitrsnzz0hM5ZdcvwcY9un9eb2GfVKETOhLwISdafEGnpwILWara/ISo72fvMYzIrSY3iQE6xEwYUPmDPukdlf2fqvPaC1mqzf7RGgxt7qyKEWLCf0ImLAza7+bvJYILaaVReVnc7SYsC0CJmzMqcM+rVrMPa4sSn+WlUWn0GLCmARM2KEILeZWVhYt/Swri9rTYkJ/AiZszNP3kpcarcWMsLKopJm0sqjm2dP/u9diwv/f3t28WJfUdwA/ifR9VkEIgSABCSRCSCBIhEkw4kIXRnzJEJyI40smbyooBDe6mo24CARcuHJQMIhk8AU1QREHySL+A65czcq1CENWYZ7QWfTTme6+de49dU9VnV+d+nxWM03duj0zz+3+zvec+p36BEzYmTVP9SkhQovZemTR2n0jHPZp/X5bHvYB6hMwYVC1guCcCC1mhMM+RhaVXOuwD0QlYMIOtXg2+c2+RhYV2zdAiznSyCKgLgETBhbhsE8JEVrMWiK0mHscWeQ+TKhLwIRBRGgx9zKyKP36tvMzI7SYexhZJGhCHQIm7NTSeZgRWszeRhZFuEw+p7cWM8LIop/98qvXP//VVwRNKEjABJJ6azFbjyxKfw/bH/YpsUeEFrPVyKK77ydkQjnb/0QGqjGyyGGfkiK0mLUP+/z8V1/RZkIBAiZgZNG5tUYWFdsjQou5JKQKmbCOgAmDiXDYZ05vLWaOCC1m65FFvbWYD9cKmXA5ARN2rqfDPiXUajFTci6Tz38PfbWYrS/LG7wOfRIwYUARWszeRhbVukxeQoQWs/eRRXNrtZhwGQETBtBTixl5ZFFKhMM+cyK0mL2NLEoRMiGfgAmc1VuLWe0+ys4O+5TYI0KLucXIImAdARMGVWJkUW8tppFF5URoMVs+n1yLCXkETBhEjcvkJURoMeudHN++xTSy6Mxah32gCgETBhbhsM+cCC1mSs5l8tk9ArSYRhaVWwscEzBhID0d9ilhbYtZ6zL5/PfQV4s52sgil8lhOQETBhehxYw8sijFyKJy+/Y0smiahExYSsAEkiK0mBFGFvV22GdOhBZzDyOLpukmZL78ygvXL7/ygrAJMwRMGMzSy+RzemsxjSwqt0eEFjPayCJBE9IETMDIojN6azGNLDqztshl+fv/PYRMuE/AhAEZWdRehBbTyKIza1deln/5lReuf/HfXxY0YRIwgSciHPaZ07LFzDp5bmTRRXprMY03gnwCJnBShMM+s3s0bDGNLCq3toQILebDy+S3tJggYMKwUpfJI7SYOfuW0LLFNLLotN5GFp0iZDI6ARM4K0KL2XpkUUpvh33mRGgx9zKyKNViukwOAiYMzciiQmuNLCq2b4TDPiXeb5q0mIxNwATuGXFkUY7eWkwji86srTCy6O6+QiajEjCBRfY8smjtoyNzRWgxjSw6s7bxZXnYGwETBhf1sM+cli2mkUVn1hpZtIgWkxEJmMBiEQ77zO7RsMU0sqjc2hKitpgO+zAyARMI22K2HlmUEuGwTwkRWsw9jyyam4l5S4vJaARMIEuEFtPzyZ/sa2TRRbSYUJ+ACRQRocU0suiGkUX1XdJiwkh8GoBpmtZfJp/TW4uZo7cW08iiM2srhVQtJiMSMIFsexlZlGJkUbl9S+zR28iiUy2m+zAZiYAJ/L+oh33mrG0xI1wmL/F+RhYVXKtthCIETOAiEQ77zO7RsMU0sqjc2hJatpiR7xGFrQmYwFkRWsxaI4sitJhGFp0WeWRR+r38agWfAuCe1GXyORFaTCOLnuxrZNFFWraYb/yNT6oxGYaACRQXocVce5l8ToQW08iicmtr0WIyOp8A4MieRxal5ITGEntEaDGNLDqzdmWgPbzu/p/J33/9J7ZPvdCQgAms0tvIolqXyUuI0GIaWVSGBpPR+QQAi0U47DOnZYtpZNFMfr5lAAANR0lEQVSZtTseWZR6/eHXjbeEhwRMIKm3wz6zezRsMY0sKre2hFYtZoR7PiEaARPIEqHFNLKonAgt5l5HFrlMzsj86Qdm9dZi1nrmeIQW08ii01qPLDp+rRYT7hIwgaqitpglwmiEFtPIonJrU1L3V+Y+m9wJckYkYALZehtZlDMT08ii+iK0mEvX9jZ/E6IQMIGTal0mL6Fli2lkUbl9S+wh+EFsAiZwkQiHfea0bDGNLDqzdicji0q+FkYgYAJn9XbYJ4eRRWfWBjjsU8LSFjN10EdbCvkETOBiEVrMWs8nj9BilhhZ1FuL2Xpk0RpLWsw//M1/lDgZkoAJFNdbi5kjQotZ4iBSjggtZsuRRVpMWE/ABBbJuUw+p2WLmRdcjSy6hBbTvZgwR8AEVok8sij5eiOLTmoePDduMWsFxK2DL2xNwAQW621kUa0Ws8TIot5azBKnwXOsbTEPr0sMSF8Z+oRGWE7ABFaLcNgnR4TDPiVEaDGjjixaO64o57GRc+/lgA8jEzCBLL2NLIrQYhpZVG5tSupxjnO0mNCGgAkUocW8YK2RRUX2LRH6arWYMCoBE8gWtcVc++jI3O8hQos54siipRzgge0ImMAmWraYJcYQ5YjQYo42sqjWnEotJlxGwAQukmoxI4wsivBknxJ7GFl041EiJ7ccun6pN//WP0ibDE3ABKorMbKoZYtpZNGZtQ0L4VpD11Nrs06eu0wOJwmYQFG1DvtkfQ8BWkwji86sTfwxSbWVJd6rxqMja70X7IWACVwswmGfHBFaTCOLyrz/HC0mxCBgAsW1HFlU4vJ7hBZzxJFFW+6ZS4sJeQRMYJWoLaaRRfVt3WLWukyuxYT1BExgcy1bTCOLTmt5crzWTM1aoW9pi/nUb/+91MnwBExgtQgji1IiHPYpscdeRhbVeK+1LaYGEuoQMIGmao0s6u355HN6azH3MLIo+XqXyWEVARMoYm2LaWRROT21mCUCassWM+ewD4zMJwVoLsI9kxFazNFGFrU+ja7FhO0ImEAxW7eYRhZdZm2L+Sjx8q1nauYq1WI64AM3BExgE2tbzJxHRxpZVFetgLj1/M1p0mLCpQRMoKicuZgpLVtMI4tOS7aVlR7n2HJkUYlB6O7FhNN8QoDiHobMWiOLarWYRhbNazkns+baFA0klCNgApspcc/k2n0jHPaZE6HFXKrluKJpattievQj5BMwgSrWtJhrn+xTYt8Ih31K2LrFbD1Ts2WL+fAy+dve8HeSKDwhYALVLLkfs1aLmSNCixlhZNHh6vifLcJ9lLVGFmkxoR4BE2hmbYuZFwSNLMpVa+h6hJCaw+B1WM8nA6iqRYtpZFH+vleHOuksQosZYWQRjE7ABKq7dHRRyxZztJFFtZ7qU2KPli2mkUVQh08F0FSJkUXpffs67FNijxL3Yh7t2fjZ5C1bzLxL33nB0wEfuE/ABJo412LWGy1kZNHaddPU/jR4jpYtpsvksIyACTRzGzK1mPlrc6Tur6wxrmiaYhz2yXm/mi0m8BoBEwgj1TaWOJST9z1s32K2vEweocXs7QCPFhPOEzCBpkq1mEYWndpz/SX53lrMtU/2KbEWeI2ACTR36n7MtS3miCOLttzzlN5azBx3W8x3/M5zUig8IGAC3Ypw2KeErVvMPY8symo2XfqGYgRMYBNf//eP/Zrnk+fvcXV1/D2sHbo+Zy8ji1JcJoe6BExgM5cOYL8rQovZcmRRrUdHRjjsU0LLFlPjCfMETGBTL37nI0e/pUscyumtxUw/zjEnuPbVYkYIqVpMqEfABLox2sii1odyIrSYEZ5PntNMOuADaQImsLm1LeZeRhYt3rPSZfI5Wsz8tTA6ARPoSoTDPnO2bjFrXSafE7XFjDDGCEYnYAIhRG0xa40sOqx8nGOEwz4ltGwxS18m/4s3/o1KE2YImEB3IrSYLS+TR2gxextZVPvJPsIlnCZgAmGkWswcEVrM1NrUafC144qmKUaLGeE+yhwGr0MbAiYQysOQuYeRRbWeTT6ntxYzwr2cOS2m9hLOEzCBLkUeWbTU1s8mP/1+27eYtQ7rrGkx3/+76x8OACMQMIFw1rSYUUcW1WoxjSzKf/2ccy2mcAnLCZhASEvux4xw2Ofx1XFoq/XoyAiHfeZEbTFLtaDCJeQRMIEuRGgx114m763F7G1kUa3GVLiEfAImEFYPLWbOuKISIrSYkUcWrX39w8vkH/i9jwqXcAEBEwjt0tFFre/FXPP+RhaVU7LFFC7hcgImEN5tyIw6sqjW0HUji86srTiySLiEdQRMoHtlniOeeHTjYd0BngiHfUqI0GK2HFn07JvWDfwHBEygE5e0mLWeI558rwAt5ogji0q/XriEMgRMoBun7sdce9jncaKtLNOMbt9i7nlkUckWVLiEcgRMoDs1WszWzWhvLWbkkUVrX/8//ytcQmkCJtCVUi3mUjWeTV5KhBaz9cii5L4rW8y//QPhEkoTMIHu5I4u2rrFNLLozNpKh32WrBUuoQ4BE+hSThh8fDj+UVfr0ZERDvvM6a3FrB1ShUuox4cL6NYzz754nfr6w/FCqYA5TdP0auI54jfrj7+eGlk0t3fq+eRza68O6WR0OBynq7m1qa9fXaXT2SG1NvFep9/veP3hKr32UeJfRepr0zRNjxL/mWq8/pN/JFhCbRpMoFvf/rcPHQWFtbMrS4jQYu55ZNGa1wuX0IaACezK1s8mP8XIojNrV/5/wLnXC5fQjoAJDKHWs8mNLKqvRIspXEJbAibQtdRl8ggtppFFp7UcWfRPfyxcQmsCJtC9VMhMidBiGll0Zm3hkUXCJWxDwASGF6HFNLKonNuQKlzCdgRMYBcetphlDuX01WKWCJ45WraYuWFUuIRtCZjAbiy5VG5k0bl9444sWvr6z75ZuIStCZjAbkU47DMnQovZ28iiJa8XLiEGARPYldItppFF5dbWchs8hUuIQ8AEduduyIzQYhpZdFqJ55MLlxCLgAkMKUKLaWRRGc+/RbiEaARMYJeWzsZ8KEKLaWTRk68tyN/CJcQkYAK7dRsyjSyqr2WLeft64RLiEjCBYRlZdG7f7UcWzbWYwiXEJmACu3ZJi2lkUbl956xpMb/wlHAJ0QmYwO6duh8zwmGfOb21mLVGFt1tMYVL6IMPKjCMZ5598frVw3EIenxIh7NXr1Jr0yEqZ9/HyX3Ta68Ox0H1cEgH3dTaua9fXaX3OKTWZrzf3NrD1fHaR4l/lamvTdM0/cufCZbQEw0mMIy5JjNCi2lk0fzXhEvoj4AJDOX7//rXi8OKkUXl3i/nsM9dwiX0ScAEhpMTMlN6azF7G1l0+zXhEvrlwwsM6+nnvnV99+9T90Gm7sO8WXv89dR9mHP7TlPbezFn789M3IuZug/zZo/jtfP3fV5+L+aX/lywhN75EAPDuw2aEQ77zK2fC3KpkNnrYR/BEvbDhxngiaef+9Z1yxYzJ2BO0z5azNuA+cLbb8LkJ/7rG9e3fw3shw81QMJ7P/6de5fPo44smqa+WsyvvfNZv3dgAD7oAAu861Pfu059vWWLWStgTlPdFlOohPH40ANkuhs2I7SYtS6T3+x9eYv5jXd/0O8YGJQPP8BK7/zMfxy1m721mDkB82aP9PsJlcA0CZgARd0Nm3toMZcEzG/+5TN+lwD3+KEAUNHbP/fDs7M2p6m/FvO7z/yV3x/ALD8gABq5DZu9jiwSKoGl/LAA2Mhbn//R/XYz4MiiH3z4ab8ngGx+cAAE8Nbnf3Qd4TL5NE3Tj597n98NwCp+iAAE89TnX1p032bJy+RCJVCSHygAwT31+ZeSj7Bc22L+58ff43cAUIUfLgAd+ZN//sm9djO3xRQqgRb8oAHo2J9+8aXkIyzvhsyffvrdftYDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAvOb/ANv3/d4TnkgLAAAAAElFTkSuQmCC",[[-14.65429125663616,145.4501903113881],[-14.65490709091378,145.4504995021989]],"masked_raster$predicted_settlers * n_tiles","masked_raster$predicted_settlers * n_tiles",{"tileSize":256,"zIndex":1,"minZoom":0,"pane":"tmap402","opacity":0.7}]},{"method":"addPolygons","args":[[[[{"lng":[145.4502765749553,145.450276565288,145.4502770186845,145.450277035011,145.4502770763903,145.450277142816,145.4502772352101,145.4502773517033,145.4502774922891,145.4502776578833,145.4502778475574,145.4502780594357,145.4502782944466,145.4502785507269,145.4502788291861,145.4502791279736,145.4502794461422,145.4502797827634,145.4502801378246,145.450280509469,145.450280896762,145.4502810881671,145.4502812769128,145.4502814887911,145.4502817238083,145.4502819810106,145.4502822585414,145.450282557329,145.4502828754975,145.4502832121187,145.4502835671799,145.4502839388243,145.4502843270457,145.4502847290461,145.4502851457604,145.4502855743908,145.4502860140025,145.4502864645956,145.4502869233851,145.4502869409983,145.4502871065988,145.4502872953382,145.4502875072228,145.4502877422336,145.4502879994359,145.450288276973,145.4502885757542,145.4502888939228,145.450289230544,145.4502895856051,145.450319888952,145.4503198542064,145.4503198445389,145.4503198608589,145.450319902238,145.4503199686636,145.4503200610576,145.4503201775506,145.4503203190646,145.4503204837302,145.4503206734042,145.4503208852823,145.4503211202993,145.4503213765731,145.450321655032,145.4503219538193,145.4503222719876,145.4503226086086,145.4503229636696,145.4503233353138,145.4503455587997,145.4503459470207,145.4503463490209,145.4503467657349,145.450347194365,145.4503476339764,145.4503480845692,145.4503485433584,145.4503490103375,145.4503494836435,145.450349962348,145.4503504446008,145.4503509294608,145.4503514160058,145.4503787873134,145.4503792727522,145.4503797570912,145.4503802384735,145.4503807159645,145.4503811877202,145.4503816528059,145.4503821093776,145.4503825574226,145.4503829941749,145.4503834205565,145.4503838328667,145.4503842310991,145.4503846152665,145.4503849825902,145.4503853330764,145.4504027755357,145.4504031073279,145.4504034204386,145.4504037139461,145.4504039869217,145.450404237528,145.4504044666932,145.4504046725671,145.450404856097,145.4504050154199,145.4504051496264,145.4504098265494,145.4504099365743,145.450410022424,145.4504100822545,145.4504101170003,145.4504101266743,145.4504101103481,145.4504100689692,145.4504100025438,145.4504099101564,145.4504097936635,145.450409653078,145.4504094874778,145.4504092978041,145.4504090859261,145.4504089849586,145.4504089686387,145.4504089272598,145.4504088608344,145.4504087684406,145.4504086519477,145.4504085104338,145.45040834484,145.4504081560945,145.4504079442102,145.4504077091997,145.4504074519976,145.4504071744608,145.4504068756799,145.4504065575116,145.4504062655278,145.4504062492016,145.4504062078226,145.4504061413972,145.4504060490034,145.4504059325105,145.4504057919249,145.4504056263311,145.4504054366573,145.4504052247793,145.4504049897687,145.4504047334887,145.4504044550298,145.4504041990764,145.4504041827566,145.4504041413776,145.4504040749522,145.4504039825584,145.4504038660655,145.4504037245516,145.4504035598861,145.4504033702123,145.4504031583279,145.4504029233173,145.4504026670436,145.4504023885784,145.4504020897974,145.4504017716291,145.4504014350082,145.4504010799472,145.450400708303,145.4504003210102,145.4503999180816,145.4503995022959,145.4503990736657,145.4503986331257,145.4503981825328,145.4503977237435,145.4503972567642,145.450396783458,145.450396304747,145.4503958225004,145.4503953376403,145.4503948520234,145.4503934308927,145.4503934145729,145.4503933731938,145.4503933067684,145.4503932153029,145.4503930978816,145.450392957296,145.4503927916958,145.4503926029566,145.4503923901439,145.4503921551333,145.4503918988532,145.4503916203943,145.4503913225417,145.4503910043733,145.4503906668239,145.4503903117566,145.4503899401124,145.450389552826,145.4503891508193,145.4503887341115,145.4503883054813,145.450387864935,145.4503874152703,145.4503869555527,145.4503864885797,145.4503860152672,145.4503855365624,145.4503850543158,145.4503845694557,145.4503840838387,145.4503835983997,145.4503831140606,145.4503826326781,145.4503692996072,145.4503633842554,145.4503637347354,145.4503640665342,145.4503643796451,145.4503646731463,145.4503649452001,145.4503651967284,145.4503654258937,145.450365631774,145.4503658152975,145.4503659736984,145.4503661088333,145.4503662188582,145.4503663047078,145.4503663645381,145.4503663992839,145.450367472728,145.4503679502258,145.4503684219819,145.450368887068,145.4503693445621,145.4503697916855,145.4503702293601,145.4503706548201,145.4503710671242,145.4503714662853,145.450371849531,145.4503722168549,145.450372567335,145.4503728991338,145.4503732122384,145.4503735057459,145.450373778728,145.4503740293281,145.4503742584934,145.4503744643737,145.4503746478973,145.450376521543,145.4503770058824,145.4503774872587,145.4503779647565,145.4503784365127,145.4503789015988,145.4503793581646,145.4503798062163,145.4503802438973,145.4503806693509,145.4503810816551,145.4503814808226,145.4503818640619,145.4503822313858,145.4503825818724,145.4503829136648,145.4503832267758,145.450383520277,145.4503837923308,145.4503840438592,145.4503842730246,145.4503844789049,145.4503846624285,145.4503848208294,145.4503849559643,145.4503850659893,145.450385151839,145.4503852116693,145.4503852464151,145.4503852560827,145.4503852397628,145.4503851983837,145.4503851319582,145.4503850395642,145.4503849230712,145.4503847815571,145.4503846168915,145.4503844272175,145.4503842153393,145.4503839803221,145.4503837231198,145.4503834455891,145.4503831468016,145.4503832269783,145.4503832366522,145.4503832203259,145.4503831789468,145.4503831125213,145.4503830201336,145.4503829036406,145.4503827621265,145.4503825974545,145.4503824077805,145.4503821959023,145.4503819608914,145.4503817036828,145.450381426152,145.4503811273645,145.4503808091959,145.4503804725809,145.4503801175133,145.4503800670209,145.4503800766948,145.4503800603685,145.4503800189958,145.4503799525702,145.4503798601762,145.4503797436832,145.4503796021691,145.450379437497,145.450379247823,145.4503790359447,145.4503788009339,145.4503785437252,145.4503782661944,145.4503779674132,145.4503776492446,145.4503773126233,145.4503769575557,145.4503765859112,145.4503762248145,145.4503762595603,145.4503762692342,145.4503762529143,145.4503762115351,145.4503761451096,145.4503760536439,145.4503759362225,145.4503757956368,145.4503756300363,145.450375441297,145.450375228484,145.4503749934732,145.4503747371992,145.4503744587336,145.4503741608808,145.4503738427121,145.4503735051625,145.4503731501012,145.4503727784566,145.4503723911635,145.4503719882282,145.4503715724484,145.4503711438178,145.4503707032775,145.4503705332506,145.4503704158292,145.4503702752434,145.4503798880249,145.4503892429038,145.4503897283498,145.4503902126831,145.4503906940663,145.4503911715645,145.4503916433146,145.4503921084075,145.4503925649736,145.4503930130257,145.4503934507007,145.4503938761546,145.4503942884655,145.4503946876269,145.4503950708729,145.4503954381971,145.4503957886776,145.4503961204766,145.4503964335815,145.4503967270893,145.4503969991433,145.4503972506719,145.4503974798374,145.4503976857179,145.4503978683133,145.4503980276364,145.4503981627714,145.4503982727964,145.4503983586524,145.4503987270773,145.4503991751294,145.4503996118761,145.4504000382584,145.4504004505693,145.4504008488024,145.4504012329768,145.450401600301,145.4504019507815,145.4504022825741,145.4504025956854,145.4504028891932,145.4504031612473,145.4504034127759,145.4504036419414,145.4504038478219,145.4504040304174,145.4504041897404,145.4504043248754,145.4504044349005,145.4504045281177,145.4504049998679,145.4504054649608,145.4504059224553,145.4504063695791,145.4504068072542,145.4504072327081,145.450407645019,145.4504080441805,145.4504084274265,145.4504087947508,145.4504091452313,145.4504094779523,145.4504097910636,145.4504100836431,145.4504103566255,145.4504106072258,145.4504108363914,145.4504110432003,145.4504112257957,145.4504113851187,145.4504115193255,145.4504116302789,145.4504117152066,145.4504117750307,145.4504118097829,145.4504118194505,145.4504118031306,145.4504117617515,145.450411695326,145.4504116038603,145.4504071438645,145.450407026443,145.4504068858571,145.4504067202629,145.4504065315171,145.4504063187103,145.450406083693,145.4504058274188,145.4504055489595,145.4504052511,145.4504049329311,145.4504045953812,145.450404241248,145.4503883757496,145.4503880041048,145.4503876168113,145.4503872138756,145.4503867980955,145.4503863694645,145.4503859289238,145.450385479252,145.4503786354583,145.4503781757399,145.4503670811165,145.4503666141364,145.4503661408294,145.4503656621239,145.4503651798765,145.4503646950092,145.4503642093978,145.4503637230233,145.4503632386897,145.4503627573064,145.4503622798081,145.4503618080515,145.4503424316822,145.4503419665892,145.4503415090947,145.4503410619708,145.4503406242958,145.4503401988418,145.4503397865309,145.4503393873694,145.4503390041234,145.4503386367992,145.4503382863187,145.450337954526,145.4503376414148,145.4503373479071,145.4503200970041,145.4503198249566,145.4503195734217,145.4503193451847,145.4503191383824,145.4503153335756,145.4503151500521,145.4502867235126,145.4502865641898,145.4502864299834,145.450282702223,145.4502825921983,145.4502825063488,145.4502824465187,145.4502824117731,145.4502824020994,145.4502824184196,145.4502824597989,145.4502825262247,145.450282618619,145.4502827351122,145.4502828766266,145.4502830412989,145.4502832309669,145.4502834428517,145.4502836778628,145.4502839350654,145.4502842126028,145.4502845113843,145.4502848295531,145.4502851661747,145.4502855212362,145.450285892881,145.4502862801743,145.4502866831098,145.4502870988898,145.4502878879023,145.4502878791633,145.4502880468761,145.4502876795523,145.4502873290724,145.4502869972738,145.450286684163,145.450286390662,145.4502861176801,145.4502858670802,145.4502856379151,145.450285432035,145.4502852485116,145.4502850891826,145.4502849549762,145.4502848449579,145.4502847591021,145.4502846992719,145.4502846645263,145.4502846548589,145.4502845389623,145.4502841022098,145.450283675828,145.4502832635241,145.4502828652851,145.4502824811177,145.450282113794,145.4502817633077,145.4502814315155,145.4502811184047,145.4502808248974,145.4502805528502,145.4502803013157,145.4502800721505,145.4502798662769,145.4502796836819,145.4502795243528,145.4502793892181,145.4502792791934,145.4502791942724,145.4502791335138,145.4502790987683,145.4502789077024,145.4502785945917,145.4502783010907,145.4502780290372,145.450277777509,145.4502775483439,145.4502773424638,145.4502771598688,145.4502770005398,145.4502768654052,145.4502767553805,145.4502766704594,145.4502766097009,145.4502765749553],"lat":[-14.65452157362494,-14.65452109993806,-14.65450401639669,-14.65450354288303,-14.65450307134403,-14.65450260268352,-14.65450213781149,-14.65450167852319,-14.65450122572246,-14.65450078122311,-14.65450034501896,-14.65449991980909,-14.65449950559968,-14.65449910328217,-14.6544987155742,-14.6544983415596,-14.65449798394362,-14.65449764272006,-14.65449731969658,-14.65449701486079,-14.65449672911033,-14.65449657492192,-14.65449613871158,-14.6544957135017,-14.65449529838846,-14.65449489698095,-14.6544945092668,-14.65449413525219,-14.6544937776362,-14.65449343641264,-14.65449311338914,-14.65449280855335,-14.65449252280908,-14.65449225794538,-14.65449201306465,-14.65449178995595,-14.65449158951691,-14.65449141174756,-14.65449125662929,-14.6544912603621,-14.65449081495892,-14.65449037965239,-14.65448995353868,-14.65448953932926,-14.65448913792175,-14.65448874930376,-14.65448837619296,-14.65448801857695,-14.65448767735339,-14.65448735432989,-14.65440196888091,-14.65440149683465,-14.65440102314776,-14.65440055053791,-14.65440007899889,-14.65439961033834,-14.65439914546627,-14.65439868617794,-14.65439823338336,-14.65439778887777,-14.65439735267357,-14.65439692746362,-14.65439651235033,-14.65439611093658,-14.65439572322853,-14.65439534921385,-14.65439499159778,-14.65439465037414,-14.65439432735056,-14.65439402251469,-14.65437585930391,-14.65437557355951,-14.65437530869568,-14.6543750638148,-14.65437484070596,-14.65437464026678,-14.65437446249726,-14.65437430737885,-14.65437417581535,-14.65437406869824,-14.6543739860213,-14.65437392686835,-14.65437389304085,-14.65437388362878,-14.65437383100544,-14.65437384689401,-14.65437388717948,-14.65437395184944,-14.65437404180156,-14.6543741552158,-14.65437429298981,-14.65437445330359,-14.65437463796477,-14.65437484424333,-14.65437507304928,-14.65437532255024,-14.65437559365003,-14.65437588454102,-14.65437619430083,-14.65437652202565,-14.65439293031691,-14.65439327599433,-14.65439363781677,-14.65439401487418,-14.65439440716042,-14.65439481195163,-14.65439522925403,-14.65439565815142,-14.65439609593851,-14.65439654350677,-14.65439699813856,-14.65441342170044,-14.65441388249813,-14.65441434855789,-14.65441481805973,-14.65441529010599,-14.65441576288909,-14.65441623640277,-14.65441670794183,-14.65441717660242,-14.65441764057073,-14.65441809985912,-14.65441855265997,-14.65441899806325,-14.65441943426755,-14.65441985947758,-14.6544313170342,-14.65443178964408,-14.65443226118313,-14.65443272984371,-14.65443319471584,-14.65443365400423,-14.65443410679888,-14.65443455129836,-14.65443498750884,-14.65443541362268,-14.65443582783226,-14.65443622923993,-14.65443661785808,-14.65443699096907,-14.65443734858526,-14.65443767926012,-14.65443815277382,-14.65443862431288,-14.65443909297346,-14.65443955784559,-14.65444001713397,-14.65444046993481,-14.65444091443428,-14.65444135063857,-14.65444177584859,-14.65444219005816,-14.65444259237584,-14.65444298008399,-14.65444610934853,-14.65444658195841,-14.65444705349746,-14.65444752215805,-14.65444798703016,-14.65444844631854,-14.65444889911319,-14.65444934361885,-14.65444977982313,-14.65445020593698,-14.65445062014654,-14.65445102156039,-14.65445141017236,-14.65445178328332,-14.65445214089951,-14.65445248212327,-14.65445280514696,-14.65445310998297,-14.65445339573365,-14.65445366059138,-14.65445390547852,-14.65445412858745,-14.65445432902053,-14.65445450679013,-14.65445466190862,-14.65445479347219,-14.65445490058939,-14.65445498417023,-14.65445504241944,-14.65445507624703,-14.65445508566535,-14.65445584357309,-14.65445631618297,-14.65445678772202,-14.6544572563826,-14.65445772126088,-14.65445818054307,-14.65445863334391,-14.65445907874718,-14.65445951405382,-14.65445994016146,-14.65446035437101,-14.65446075668867,-14.65446114439679,-14.65446151751394,-14.6544618751301,-14.65446221634765,-14.65446254027515,-14.65446284511114,-14.65446312995798,-14.65446339572568,-14.6544636397028,-14.6544638628117,-14.65446406414858,-14.65446424192434,-14.65446439703663,-14.65446452769636,-14.65446463571736,-14.65446471839435,-14.65446477664353,-14.65446481047109,-14.65446481988938,-14.6544648040008,-14.65446476371533,-14.65446469904535,-14.6545310502179,-14.65456203036246,-14.65456235899114,-14.65456270376482,-14.65456306558731,-14.65456344354861,-14.65456383492489,-14.65456424062617,-14.65456465792861,-14.65456508592221,-14.65456552461315,-14.65456597127144,-14.65456642590943,-14.65456688670713,-14.65456735276689,-14.65456782226873,-14.65456829431499,-14.65456865939607,-14.65456874844442,-14.65456886185873,-14.65456899963281,-14.65456916085665,-14.65456934460789,-14.6545695517965,-14.6545697796925,-14.65457003009733,-14.65457030120337,-14.6545705911844,-14.65457090094426,-14.65457122957293,-14.65457157434661,-14.6545719370729,-14.65457231413037,-14.65457270551284,-14.65457311120792,-14.65457352851035,-14.65457395650394,-14.65457439519488,-14.654574771031,-14.6545748113165,-14.65457487689034,-14.65457496593868,-14.65457507935297,-14.65457521712703,-14.65457537834466,-14.65457556210206,-14.65457576838685,-14.65457599718666,-14.65457624759147,-14.65457651779367,-14.65457680867851,-14.65457711843835,-14.65457744616319,-14.65457779184067,-14.65457815366313,-14.65457853162441,-14.65457892300069,-14.65457932870193,-14.65457974600436,-14.65458017399794,-14.65458061268889,-14.65458105934716,-14.65458151398515,-14.65458197478284,-14.6545824408426,-14.65458291034444,-14.65458338239071,-14.65458385607759,-14.65458432868746,-14.65458480022649,-14.65458526888706,-14.65458573375916,-14.65458619304751,-14.65458664584214,-14.65458709034776,-14.654587526552,-14.65458795176198,-14.65458836687532,-14.65458876828295,-14.65458915599723,-14.65458953001197,-14.65459806659698,-14.65459853938004,-14.65459901289373,-14.65459948443276,-14.65459995309333,-14.65460041706159,-14.65460087634995,-14.65460132914457,-14.65460177455401,-14.65460221075825,-14.65460263596822,-14.65460305017775,-14.65460345248919,-14.65460384020346,-14.65460421421819,-14.65460457183432,-14.6546049121542,-14.65460523608165,-14.65461017353059,-14.65461064631367,-14.65461111982735,-14.65461159046255,-14.65461205912312,-14.65461252399521,-14.65461298328356,-14.65461343607818,-14.6546138814876,-14.65461431769185,-14.65461474290182,-14.65461515711134,-14.65461555942277,-14.65461594713704,-14.65461632024795,-14.65461667786406,-14.65461701908775,-14.65461734301519,-14.65461764785112,-14.65461777288927,-14.65461824493553,-14.65461871771861,-14.65461919032846,-14.65461966186749,-14.65462013052805,-14.65462059540632,-14.65462105468849,-14.65462150748928,-14.65462195289252,-14.65462238819913,-14.65462281430673,-14.65462322851624,-14.65462362993003,-14.65462401854192,-14.65462439165901,-14.65462474927513,-14.65462509049262,-14.65462541351624,-14.65462571835216,-14.65462600410276,-14.65462626986421,-14.65462651384746,-14.6546267369563,-14.65462693738928,-14.65462722006828,-14.65462767935045,-14.65462813215123,-14.6546908381979,-14.6547495556009,-14.65474957058573,-14.65474961177506,-14.65474967644509,-14.65474976549343,-14.65474987981156,-14.65475001668181,-14.65475017789945,-14.65475036165686,-14.65475056884547,-14.65475079764528,-14.65475104714629,-14.65475131825231,-14.65475160823334,-14.65475191799318,-14.65475224662185,-14.65475259139551,-14.6547529541218,-14.65475333117926,-14.65475372255553,-14.65475412825679,-14.65475454555921,-14.6547549735528,-14.65475541223755,-14.65475585980584,-14.65475631444381,-14.65475677524151,-14.65475724039745,-14.65475765772394,-14.65475784148133,-14.65475804866374,-14.65475827746972,-14.65475852697073,-14.65475879807055,-14.65475908805775,-14.6547593978176,-14.65475972644625,-14.65476007212372,-14.65476043394619,-14.65476081100364,-14.65476120237991,-14.65476160808117,-14.65476202538358,-14.65476245337717,-14.65476289206192,-14.65476333963019,-14.65476379426817,-14.65476425506586,-14.65476433341892,-14.65476444773701,-14.65476458460724,-14.65476474583105,-14.65476492958225,-14.65476513677083,-14.65476536557063,-14.65476561507162,-14.65476588617762,-14.65476617615863,-14.65476648591846,-14.6547668145471,-14.65476716023075,-14.65476752205321,-14.65476789910448,-14.65476829048692,-14.65476869618198,-14.6547691134844,-14.65476954148417,-14.65476998016891,-14.65477042773718,-14.65477088236897,-14.65477134317284,-14.65477180832261,-14.65477227872825,-14.6547727498707,-14.65477322355758,-14.65477369616745,-14.65477416770648,-14.65477463636705,-14.65477510124533,-14.65479688889234,-14.65479734817451,-14.65479780097532,-14.65479824547475,-14.65479868168518,-14.65479910688897,-14.65479952200232,-14.65479992341612,-14.65480031112421,-14.65480068514514,-14.65480104276126,-14.65480138397878,-14.6548017070086,-14.65481611999084,-14.65481642482676,-14.65481671057736,-14.6548169763388,-14.65481722032202,-14.65481744343085,-14.65481764386383,-14.65481782254333,-14.65482041440356,-14.65482056951575,-14.65482404323764,-14.65482417480106,-14.65482428191812,-14.65482436459499,-14.65482442284405,-14.65482445757531,-14.65482446608967,-14.6548244510986,-14.6548244099092,-14.6548243452391,-14.65482425619067,-14.6548241427763,-14.65481856790886,-14.6548184310385,-14.65481826981456,-14.65481808606324,-14.65481787887452,-14.65481765007461,-14.6548174005735,-14.65481712946738,-14.65481683948626,-14.65481652972632,-14.65481620109758,-14.65481585542001,-14.65481549359746,-14.65481511653992,-14.65479047354914,-14.65479008126897,-14.65478967647145,-14.65478925917515,-14.65478883027151,-14.65478067650823,-14.65478023781725,-14.65470958349671,-14.65470913592838,-14.65470868129654,-14.65469339840157,-14.65469293760385,-14.65469247154406,-14.65469200204224,-14.65469152999597,-14.65469105721293,-14.65469058460309,-14.65469011306409,-14.6546896444036,-14.65468917953157,-14.65468872024329,-14.65468826744875,-14.65468782203943,-14.65468738673911,-14.65468696062544,-14.65468654641604,-14.65468614500857,-14.65468575639062,-14.65468538327984,-14.65468502566389,-14.65468468444036,-14.65468436141691,-14.65468405658114,-14.65468377083071,-14.65468350506942,-14.65468326108635,-14.65459321661632,-14.65459274293564,-14.65454762609156,-14.65454731633159,-14.6545469877028,-14.65454664292902,-14.65454628110644,-14.65454590314505,-14.65454551176251,-14.65454510606735,-14.65454468876485,-14.6545442607712,-14.65454382208021,-14.6545433754157,-14.65454292078386,-14.65454245908232,-14.65454199392636,-14.65454152442453,-14.65454105237826,-14.65454057869139,-14.65453567086511,-14.65453546458635,-14.65453523578019,-14.65453498537522,-14.65453471517906,-14.65453442428789,-14.65453411452791,-14.65453378680293,-14.65453344112533,-14.65453307930276,-14.65453270224518,-14.654532309965,-14.65453190516748,-14.65453148786496,-14.65453105896749,-14.65453062028268,-14.65453017361817,-14.65452971898015,-14.65452925818243,-14.65452879212883,-14.6545283226208,-14.65452785057454,-14.65452716417575,-14.65452680235316,-14.65452642439177,-14.6545260330154,-14.65452562731405,-14.65452521001154,-14.65452478201789,-14.65452434333307,-14.65452389666857,-14.65452344203054,-14.65452298123282,-14.65452251517923,-14.6545220456712,-14.65452157362494]}]]],"X1","seedbox_area",{"interactive":false,"className":"","pane":"tmap403","stroke":true,"color":"#000000","weight":1,"opacity":1,"fill":true,"fillColor":"#D9D9D9","fillOpacity":0,"dashArray":"","smoothFactor":1,"noClip":false},null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addControl","args":["<div>\n  <div style=\"color: #000000;\">predicted_settlers<\/div>\n<\/div>\n<div style=\"position: relative; margin-top:.5em; margin-bottom:.5em; ;&#10;      width: calc(24.8px + 2.5em + 2px); height: calc(176.4px + 0em);\">\n  <img src=\"data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20version%3D%221.1%22%20width%3D%2224.8%22%20height%3D%22176.4%22%3E%0A%20%20%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20version%3D%221.1%22%20width%3D%2224.8%22%20height%3D%22176.4%22%3E%0A%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%3ClinearGradient%20id%3D%22gradient-val-11%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%220%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220.000%25%22%20stop-color%3D%22%235E4FA2%22%3E%3C%2Fstop%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%2211.111%25%22%20stop-color%3D%22%23458CB4%22%3E%3C%2Fstop%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%2222.222%25%22%20stop-color%3D%22%2374C1A8%22%3E%3C%2Fstop%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%2233.333%25%22%20stop-color%3D%22%23B8E2A1%22%3E%3C%2Fstop%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%2244.444%25%22%20stop-color%3D%22%23EEF8A5%22%3E%3C%2Fstop%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%2255.556%25%22%20stop-color%3D%22%23FEEFA4%22%3E%3C%2Fstop%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%2266.667%25%22%20stop-color%3D%22%23FDBE6E%22%3E%3C%2Fstop%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%2277.778%25%22%20stop-color%3D%22%23F37E4E%22%3E%3C%2Fstop%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%2288.889%25%22%20stop-color%3D%22%23D4404B%22%3E%3C%2Fstop%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%22100.000%25%22%20stop-color%3D%22%239E0142%22%3E%3C%2Fstop%3E%0A%20%20%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%3Cg%3E%0A%20%20%20%20%20%20%3Crect%20height%3D%22176.4%22%20width%3D%2216.8%22%20x%3D%220%22%20rx%3D%220%22%20fill-opacity%3D%220.7%22%20fill%3D%22url%28%23gradient-val-11%29%22%3E%3C%2Frect%3E%0A%20%20%20%20%3C%2Fg%3E%0A%20%20%20%20%3Cline%20x1%3D%220%22%20x2%3D%224%22%20y1%3D%22155.273321469462%22%20y2%3D%22155.273321469462%22%20stroke-width%3D%221%22%20stroke%3D%22black%22%20transform%3D%22translate%2816.800%2C0.000%29%22%3E%3C%2Fline%3E%0A%20%20%20%20%3Cline%20x1%3D%220%22%20x2%3D%224%22%20y1%3D%22120.768138920693%22%20y2%3D%22120.768138920693%22%20stroke-width%3D%221%22%20stroke%3D%22black%22%20transform%3D%22translate%2816.800%2C0.000%29%22%3E%3C%2Fline%3E%0A%20%20%20%20%3Cline%20x1%3D%220%22%20x2%3D%224%22%20y1%3D%2286.2629563719235%22%20y2%3D%2286.2629563719235%22%20stroke-width%3D%221%22%20stroke%3D%22black%22%20transform%3D%22translate%2816.800%2C0.000%29%22%3E%3C%2Fline%3E%0A%20%20%20%20%3Cline%20x1%3D%220%22%20x2%3D%224%22%20y1%3D%2251.7577738231541%22%20y2%3D%2251.7577738231541%22%20stroke-width%3D%221%22%20stroke%3D%22black%22%20transform%3D%22translate%2816.800%2C0.000%29%22%3E%3C%2Fline%3E%0A%20%20%20%20%3Cline%20x1%3D%220%22%20x2%3D%224%22%20y1%3D%2217.2525912743847%22%20y2%3D%2217.2525912743847%22%20stroke-width%3D%221%22%20stroke%3D%22black%22%20transform%3D%22translate%2816.800%2C0.000%29%22%3E%3C%2Fline%3E%0A%20%20%3C%2Fsvg%3E%0A%3C%2Fsvg%3E\" style=\"margin-left: 1px;\"/>\n  <p style=\"position: absolute; margin: 0; top: calc(155.27px - .5em);&#10;        right: 0; line-height:1;\">1,200<\/p>\n  <p style=\"position: absolute; margin: 0; top: calc(120.77px - .5em);&#10;        right: 0; line-height:1;\">1,000<\/p>\n  <p style=\"position: absolute; margin: 0; top: calc(86.26px - .5em);&#10;        right: 0; line-height:1;\">800<\/p>\n  <p style=\"position: absolute; margin: 0; top: calc(51.76px - .5em);&#10;        right: 0; line-height:1;\">600<\/p>\n  <p style=\"position: absolute; margin: 0; top: calc(17.25px - .5em);&#10;        right: 0; line-height:1;\">400<\/p>\n<\/div>","bottomright","legend01","info legend masked_raster$predicted_settlers*n_tiles leaflegend-group-maskedrasterpredictedsettlersntiles"]}],"setView":[[-14.65459917377497,145.4503446739691],21,[]],"limits":{"lat":[-14.65490709091378,-14.65429125663616],"lng":[145.4501903113881,145.4504995021989]}},"evals":[],"jsHooks":{"render":[{"code":"function(el, x, data) {\n  return (\nfunction(el, x) {\n  var updateLeafLegend = function() {\n    var controlGroups = document.querySelectorAll(\n      'input.leaflet-control-layers-selector');\n    controlGroups.forEach(g => {\n      var groupName = g.nextSibling.innerText.substr(1);\n      var className = 'leaflegend-group-' +\n        groupName.replace(/[^a-zA-Z0-9]/g, '');\n      var checked = g.checked;\n      document.querySelectorAll('.legend.' + className).forEach(l => {\n        l.hidden = !checked;\n      })\n    })\n  }\n\n  updateLeafLegend();\n  this.on('baselayerchange', el => updateLeafLegend())\n  this.on('overlayadd', el => updateLeafLegend());\n  this.on('overlayremove', el => updateLeafLegend());\n}\n                        ).call(this.getMap(), el, x, data);\n}","data":null}]}}</script>
+</div>
+</div>
+</section>
+<section id="figure-4c" class="level3">
+<h3 class="anchored" data-anchor-id="figure-4c">Figure 4c</h3>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>acdc <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"../data/S103288A017_LSDTrial27N_A0.csv"</span>, <span class="at">sep =</span> <span class="st">";"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  janitor<span class="sc">::</span><span class="fu">clean_names</span>() <span class="sc">|&gt;</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">date_time =</span> <span class="fu">dmy_hms</span>(date_time)) <span class="sc">|&gt;</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  <span class="co"># select(date_time, speed_1_0_3m, dir_1_0_3m) |&gt;</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">filter</span>(date_time <span class="sc">&gt;</span> <span class="fu">ymd_hms</span>(<span class="st">"2024-11-27 00:00:00"</span>)) <span class="sc">|&gt;</span> </span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">filter</span>(date_time <span class="sc">&lt;</span> <span class="fu">ymd_hms</span>(<span class="st">"2024-11-28 06:00:00"</span>)) <span class="sc">|&gt;</span> </span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">select</span>(<span class="sc">-</span>battery, <span class="sc">-</span>heading, <span class="sc">-</span>pitch, <span class="sc">-</span>roll, <span class="sc">-</span>pressure, <span class="sc">-</span>temperature, <span class="sc">-</span>analog_in1, <span class="sc">-</span>analog_in2, <span class="sc">-</span>x)</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>acdc_long <span class="ot">&lt;-</span> acdc <span class="sc">|&gt;</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(date_time, <span class="fu">starts_with</span>(<span class="st">"speed_"</span>), <span class="fu">starts_with</span>(<span class="st">"dir_"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_longer</span>(</span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>  <span class="at">cols =</span> <span class="sc">-</span>date_time,</span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>  <span class="at">names_to =</span> <span class="fu">c</span>(<span class="st">".value"</span>, <span class="st">"depth"</span>),</span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>  <span class="at">names_pattern =</span> <span class="st">"(speed|dir)_(.*)"</span></span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">depth =</span> <span class="fu">str_extract</span>(depth, <span class="st">"(?&lt;=_)[0-9_]+(?=m)"</span>),</span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>  <span class="at">depth =</span> <span class="fu">str_replace_all</span>(depth, <span class="st">"_"</span>, <span class="st">"."</span>),</span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>  <span class="at">depth =</span> <span class="fu">parse_number</span>(depth)) </span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a><span class="co"># ggplot() + theme_bw() + facet_wrap(~depth) +</span></span>
+<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a><span class="co">#   geom_line(data=acdc_long |&gt; filter(depth==1.1), </span></span>
+<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a><span class="co">#             aes(date_time, rollmean(dir, k = 11, fill = NA, align = "center"))) +</span></span>
+<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a><span class="co">#   scale_color_distiller(palette="RdBu") + </span></span>
+<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a><span class="co">#   geom_vline(xintercept = ymd_hms("2024-11-27 10:30:00"), color="darkred")</span></span>
+<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a><span class="co"># </span></span>
+<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a><span class="co"># ggplot() + theme_bw() + facet_wrap(~depth) +</span></span>
+<span id="cb4-28"><a href="#cb4-28" aria-hidden="true" tabindex="-1"></a><span class="co">#   geom_line(data=acdc_long |&gt; filter(depth==1.1), </span></span>
+<span id="cb4-29"><a href="#cb4-29" aria-hidden="true" tabindex="-1"></a><span class="co">#             aes(date_time, rollmean(speed, k = 11, fill = NA, align = "center"))) +</span></span>
+<span id="cb4-30"><a href="#cb4-30" aria-hidden="true" tabindex="-1"></a><span class="co">#   scale_color_distiller(palette="RdBu") + </span></span>
+<span id="cb4-31"><a href="#cb4-31" aria-hidden="true" tabindex="-1"></a><span class="co">#   geom_vline(xintercept = ymd_hms("2024-11-27 10:30:00"), color="darkblue")</span></span>
+<span id="cb4-32"><a href="#cb4-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-33"><a href="#cb4-33" aria-hidden="true" tabindex="-1"></a>  acdc_filtered <span class="ot">&lt;-</span> acdc_long <span class="sc">|&gt;</span> </span>
+<span id="cb4-34"><a href="#cb4-34" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">filter</span>(depth <span class="sc">&gt;=</span> <span class="fl">0.5</span> <span class="sc">&amp;</span> depth <span class="sc">&lt;=</span><span class="dv">4</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb4-35"><a href="#cb4-35" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(date_time) <span class="sc">|&gt;</span> </span>
+<span id="cb4-36"><a href="#cb4-36" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">depth =</span> <span class="fu">mean</span>(depth), <span class="at">speed =</span> <span class="fu">mean</span>(speed), <span class="at">dir =</span> <span class="fu">mean</span>(dir))</span>
+<span id="cb4-37"><a href="#cb4-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-38"><a href="#cb4-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-39"><a href="#cb4-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-40"><a href="#cb4-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-41"><a href="#cb4-41" aria-hidden="true" tabindex="-1"></a>dir_b <span class="ot">&lt;-</span> acdc_long <span class="sc">|&gt;</span> dplyr<span class="sc">::</span><span class="fu">filter</span>(depth <span class="sc">&lt;</span> <span class="dv">2</span>, date_time <span class="sc">&gt;</span> <span class="fu">ymd_hms</span>(<span class="st">"2024-11-27 11:02:00"</span>), date_time <span class="sc">&lt;</span> <span class="fu">ymd_hms</span>(<span class="st">"2024-11-27 22:05:00"</span>)) <span class="sc">|&gt;</span> <span class="fu">pull</span>(dir) <span class="co"># |&gt; mean() </span></span>
+<span id="cb4-42"><a href="#cb4-42" aria-hidden="true" tabindex="-1"></a>speed_b <span class="ot">&lt;-</span> acdc_long <span class="sc">|&gt;</span> dplyr<span class="sc">::</span><span class="fu">filter</span>(depth <span class="sc">&lt;</span> <span class="dv">2</span>, date_time <span class="sc">&gt;</span> <span class="fu">ymd_hms</span>(<span class="st">"2024-11-27 11:02:00"</span>), date_time <span class="sc">&lt;</span> <span class="fu">ymd_hms</span>(<span class="st">"2024-11-27 22:05:00"</span>)) <span class="sc">|&gt;</span> <span class="fu">pull</span>(speed) <span class="co"># |&gt; mean()</span></span>
+<span id="cb4-43"><a href="#cb4-43" aria-hidden="true" tabindex="-1"></a><span class="co"># nocov start</span></span>
+<span id="cb4-44"><a href="#cb4-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-45"><a href="#cb4-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-46"><a href="#cb4-46" aria-hidden="true" tabindex="-1"></a>ggwindrose <span class="ot">&lt;-</span> <span class="cf">function</span>(speed, direction, <span class="at">n_directions =</span> <span class="dv">8</span>, <span class="at">n_speeds =</span> <span class="dv">5</span>,</span>
+<span id="cb4-47"><a href="#cb4-47" aria-hidden="true" tabindex="-1"></a>                       <span class="at">speed_cuts =</span> <span class="cn">NA</span>, <span class="at">col_pal =</span> <span class="st">"GnBu"</span>, <span class="at">legend_title =</span> <span class="st">"Wind speed (m/s)"</span>,</span>
+<span id="cb4-48"><a href="#cb4-48" aria-hidden="true" tabindex="-1"></a>                       <span class="at">calm_wind =</span> <span class="dv">0</span>, <span class="at">n_col =</span> <span class="dv">1</span>, <span class="at">facet =</span> <span class="cn">NULL</span>, <span class="at">plot_title =</span> <span class="st">""</span>) {</span>
+<span id="cb4-49"><a href="#cb4-49" aria-hidden="true" tabindex="-1"></a>  <span class="fu">stopifnot</span>(</span>
+<span id="cb4-50"><a href="#cb4-50" aria-hidden="true" tabindex="-1"></a>    <span class="fu">is.numeric</span>(speed), <span class="fu">is.numeric</span>(direction),</span>
+<span id="cb4-51"><a href="#cb4-51" aria-hidden="true" tabindex="-1"></a>    <span class="fu">length</span>(speed) <span class="sc">==</span> <span class="fu">length</span>(direction),</span>
+<span id="cb4-52"><a href="#cb4-52" aria-hidden="true" tabindex="-1"></a>    <span class="fu">all</span>(direction <span class="sc">&gt;=</span> <span class="dv">0</span> <span class="sc">&amp;</span> direction <span class="sc">&lt;=</span> <span class="dv">360</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb4-53"><a href="#cb4-53" aria-hidden="true" tabindex="-1"></a>    <span class="fu">is.numeric</span>(n_directions), <span class="fu">length</span>(n_directions) <span class="sc">==</span> <span class="dv">1</span>,</span>
+<span id="cb4-54"><a href="#cb4-54" aria-hidden="true" tabindex="-1"></a>    <span class="fu">is.numeric</span>(n_speeds), <span class="fu">length</span>(n_speeds) <span class="sc">==</span> <span class="dv">1</span>,</span>
+<span id="cb4-55"><a href="#cb4-55" aria-hidden="true" tabindex="-1"></a>    <span class="fu">is.numeric</span>(calm_wind), <span class="fu">length</span>(calm_wind) <span class="sc">==</span> <span class="dv">1</span>,</span>
+<span id="cb4-56"><a href="#cb4-56" aria-hidden="true" tabindex="-1"></a>    <span class="fu">is.character</span>(legend_title) <span class="sc">||</span> <span class="fu">is.expression</span>(legend_title),</span>
+<span id="cb4-57"><a href="#cb4-57" aria-hidden="true" tabindex="-1"></a>    col_pal <span class="sc">%in%</span> <span class="fu">hcl.pals</span>()</span>
+<span id="cb4-58"><a href="#cb4-58" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb4-59"><a href="#cb4-59" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-60"><a href="#cb4-60" aria-hidden="true" tabindex="-1"></a>  include_facet <span class="ot">&lt;-</span> <span class="sc">!</span><span class="fu">is.null</span>(facet)</span>
+<span id="cb4-61"><a href="#cb4-61" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (include_facet) {</span>
+<span id="cb4-62"><a href="#cb4-62" aria-hidden="true" tabindex="-1"></a>    <span class="fu">stopifnot</span>(<span class="fu">is.character</span>(facet) <span class="sc">||</span> <span class="fu">is.factor</span>(facet))</span>
+<span id="cb4-63"><a href="#cb4-63" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (<span class="fu">length</span>(facet) <span class="sc">==</span> <span class="dv">1</span>) facet <span class="ot">&lt;-</span> <span class="fu">rep</span>(facet, <span class="fu">length</span>(speed))</span>
+<span id="cb4-64"><a href="#cb4-64" aria-hidden="true" tabindex="-1"></a>    <span class="fu">stopifnot</span>(<span class="fu">length</span>(facet) <span class="sc">==</span> <span class="fu">length</span>(speed))</span>
+<span id="cb4-65"><a href="#cb4-65" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb4-66"><a href="#cb4-66" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-67"><a href="#cb4-67" aria-hidden="true" tabindex="-1"></a>  optimal_n_dir <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">4</span>, <span class="dv">8</span>, <span class="dv">16</span>)</span>
+<span id="cb4-68"><a href="#cb4-68" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="sc">!</span>(n_directions <span class="sc">%in%</span> optimal_n_dir)) {</span>
+<span id="cb4-69"><a href="#cb4-69" aria-hidden="true" tabindex="-1"></a>    n_directions <span class="ot">&lt;-</span> optimal_n_dir[<span class="fu">which.min</span>(<span class="fu">abs</span>(n_directions <span class="sc">-</span> optimal_n_dir))]</span>
+<span id="cb4-70"><a href="#cb4-70" aria-hidden="true" tabindex="-1"></a>    <span class="fu">message</span>(<span class="st">"Using the closest optimal number of wind directions ("</span>, n_directions, <span class="st">")"</span>)</span>
+<span id="cb4-71"><a href="#cb4-71" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb4-72"><a href="#cb4-72" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-73"><a href="#cb4-73" aria-hidden="true" tabindex="-1"></a>  dir_labels <span class="ot">&lt;-</span> <span class="cf">switch</span>(<span class="fu">as.character</span>(n_directions),</span>
+<span id="cb4-74"><a href="#cb4-74" aria-hidden="true" tabindex="-1"></a>    <span class="st">"4"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"N"</span>, <span class="st">"E"</span>, <span class="st">"S"</span>, <span class="st">"W"</span>),</span>
+<span id="cb4-75"><a href="#cb4-75" aria-hidden="true" tabindex="-1"></a>    <span class="st">"8"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"N"</span>, <span class="st">"NE"</span>, <span class="st">"E"</span>, <span class="st">"SE"</span>, <span class="st">"S"</span>, <span class="st">"SW"</span>, <span class="st">"W"</span>, <span class="st">"NW"</span>),</span>
+<span id="cb4-76"><a href="#cb4-76" aria-hidden="true" tabindex="-1"></a>    <span class="st">"16"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"N"</span>, <span class="st">"NNE"</span>, <span class="st">"NE"</span>, <span class="st">"ENE"</span>, <span class="st">"E"</span>, <span class="st">"ESE"</span>, <span class="st">"SE"</span>, <span class="st">"SSE"</span>,</span>
+<span id="cb4-77"><a href="#cb4-77" aria-hidden="true" tabindex="-1"></a>             <span class="st">"S"</span>, <span class="st">"SSW"</span>, <span class="st">"SW"</span>, <span class="st">"WSW"</span>, <span class="st">"W"</span>, <span class="st">"WNW"</span>, <span class="st">"NW"</span>, <span class="st">"NNW"</span>)</span>
+<span id="cb4-78"><a href="#cb4-78" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb4-79"><a href="#cb4-79" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-80"><a href="#cb4-80" aria-hidden="true" tabindex="-1"></a>  dir_bin_width <span class="ot">&lt;-</span> <span class="dv">360</span> <span class="sc">/</span> n_directions</span>
+<span id="cb4-81"><a href="#cb4-81" aria-hidden="true" tabindex="-1"></a>  dir_bin_cuts <span class="ot">&lt;-</span> <span class="fu">seq</span>(dir_bin_width <span class="sc">/</span> <span class="dv">2</span>, <span class="dv">360</span> <span class="sc">-</span> dir_bin_width <span class="sc">/</span> <span class="dv">2</span>, dir_bin_width)</span>
+<span id="cb4-82"><a href="#cb4-82" aria-hidden="true" tabindex="-1"></a>  dir_intervals <span class="ot">&lt;-</span> <span class="fu">findInterval</span>(direction, dir_bin_cuts)</span>
+<span id="cb4-83"><a href="#cb4-83" aria-hidden="true" tabindex="-1"></a>  dir_intervals[dir_intervals <span class="sc">==</span> <span class="dv">0</span>] <span class="ot">&lt;-</span> n_directions</span>
+<span id="cb4-84"><a href="#cb4-84" aria-hidden="true" tabindex="-1"></a>  dir_bin <span class="ot">&lt;-</span> <span class="fu">factor</span>(dir_intervals, <span class="at">labels =</span> dir_labels)</span>
+<span id="cb4-85"><a href="#cb4-85" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-86"><a href="#cb4-86" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">is.numeric</span>(speed_cuts)) {</span>
+<span id="cb4-87"><a href="#cb4-87" aria-hidden="true" tabindex="-1"></a>    speed_cuts <span class="ot">&lt;-</span> <span class="fu">sort</span>(<span class="fu">unique</span>(<span class="fu">c</span>(<span class="fu">min</span>(speed, <span class="at">na.rm =</span> <span class="cn">TRUE</span>), speed_cuts, <span class="fu">max</span>(speed, <span class="at">na.rm =</span> <span class="cn">TRUE</span>))))</span>
+<span id="cb4-88"><a href="#cb4-88" aria-hidden="true" tabindex="-1"></a>    spd_bin <span class="ot">&lt;-</span> <span class="fu">cut</span>(speed, <span class="at">breaks =</span> speed_cuts, <span class="at">include.lowest =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb4-89"><a href="#cb4-89" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> {</span>
+<span id="cb4-90"><a href="#cb4-90" aria-hidden="true" tabindex="-1"></a>    spd_bin <span class="ot">&lt;-</span> <span class="fu">cut</span>(speed, <span class="at">breaks =</span> n_speeds)</span>
+<span id="cb4-91"><a href="#cb4-91" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb4-92"><a href="#cb4-92" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-93"><a href="#cb4-93" aria-hidden="true" tabindex="-1"></a>  spd_cols <span class="ot">&lt;-</span> <span class="fu">hcl.colors</span>(<span class="fu">length</span>(<span class="fu">levels</span>(spd_bin)), col_pal, <span class="at">rev =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb4-94"><a href="#cb4-94" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">length</span>(spd_cols) <span class="sc">!=</span> <span class="fu">length</span>(<span class="fu">levels</span>(spd_bin))) {</span>
+<span id="cb4-95"><a href="#cb4-95" aria-hidden="true" tabindex="-1"></a>    spd_bin <span class="ot">&lt;-</span> <span class="fu">cut</span>(speed, <span class="at">breaks =</span> <span class="fu">length</span>(spd_cols))</span>
+<span id="cb4-96"><a href="#cb4-96" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb4-97"><a href="#cb4-97" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-98"><a href="#cb4-98" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (include_facet) {</span>
+<span id="cb4-99"><a href="#cb4-99" aria-hidden="true" tabindex="-1"></a>    df <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(<span class="fu">table</span>(dir_bin, spd_bin, facet))</span>
+<span id="cb4-100"><a href="#cb4-100" aria-hidden="true" tabindex="-1"></a>    df<span class="sc">$</span>proportion <span class="ot">&lt;-</span> <span class="fu">ave</span>(df<span class="sc">$</span>Freq, df<span class="sc">$</span>facet, <span class="at">FUN =</span> <span class="cf">function</span>(x) x <span class="sc">/</span> <span class="fu">sum</span>(x))</span>
+<span id="cb4-101"><a href="#cb4-101" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> {</span>
+<span id="cb4-102"><a href="#cb4-102" aria-hidden="true" tabindex="-1"></a>    df <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(<span class="fu">table</span>(dir_bin, spd_bin))</span>
+<span id="cb4-103"><a href="#cb4-103" aria-hidden="true" tabindex="-1"></a>    df<span class="sc">$</span>proportion <span class="ot">&lt;-</span> df<span class="sc">$</span>Freq <span class="sc">/</span> <span class="fu">sum</span>(df<span class="sc">$</span>Freq)</span>
+<span id="cb4-104"><a href="#cb4-104" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb4-105"><a href="#cb4-105" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-106"><a href="#cb4-106" aria-hidden="true" tabindex="-1"></a>  p <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(df, <span class="fu">aes</span>(<span class="at">x =</span> dir_bin, <span class="at">fill =</span> spd_bin, <span class="at">y =</span> proportion)) <span class="sc">+</span></span>
+<span id="cb4-107"><a href="#cb4-107" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">"identity"</span>, <span class="at">color =</span> <span class="st">"black"</span>) <span class="sc">+</span></span>
+<span id="cb4-108"><a href="#cb4-108" aria-hidden="true" tabindex="-1"></a>    <span class="fu">scale_x_discrete</span>(<span class="at">drop =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
+<span id="cb4-109"><a href="#cb4-109" aria-hidden="true" tabindex="-1"></a>    <span class="fu">scale_fill_manual</span>(<span class="at">name =</span> legend_title, <span class="at">values =</span> spd_cols) <span class="sc">+</span></span>
+<span id="cb4-110"><a href="#cb4-110" aria-hidden="true" tabindex="-1"></a>    <span class="fu">coord_polar</span>(<span class="at">start =</span> <span class="dv">2</span> <span class="sc">*</span> pi <span class="sc">-</span> pi <span class="sc">/</span> n_directions) <span class="sc">+</span></span>
+<span id="cb4-111"><a href="#cb4-111" aria-hidden="true" tabindex="-1"></a>    <span class="fu">scale_y_continuous</span>(<span class="at">labels =</span> scales<span class="sc">::</span><span class="fu">percent_format</span>(<span class="at">accuracy =</span> <span class="dv">1</span>)) <span class="sc">+</span></span>
+<span id="cb4-112"><a href="#cb4-112" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb4-113"><a href="#cb4-113" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme</span>(<span class="at">axis.title =</span> <span class="fu">element_blank</span>()) <span class="sc">+</span></span>
+<span id="cb4-114"><a href="#cb4-114" aria-hidden="true" tabindex="-1"></a>    <span class="fu">labs</span>(<span class="at">title =</span> plot_title)</span>
+<span id="cb4-115"><a href="#cb4-115" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-116"><a href="#cb4-116" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (include_facet) {</span>
+<span id="cb4-117"><a href="#cb4-117" aria-hidden="true" tabindex="-1"></a>    p <span class="ot">&lt;-</span> p <span class="sc">+</span> <span class="fu">facet_wrap</span>(<span class="sc">~</span>facet, <span class="at">ncol =</span> n_col)</span>
+<span id="cb4-118"><a href="#cb4-118" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb4-119"><a href="#cb4-119" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-120"><a href="#cb4-120" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(p)</span>
+<span id="cb4-121"><a href="#cb4-121" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb4-122"><a href="#cb4-122" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-123"><a href="#cb4-123" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-124"><a href="#cb4-124" aria-hidden="true" tabindex="-1"></a><span class="fu">ggwindrose</span>(speed_b, dir_b, <span class="at">n_directions =</span> <span class="dv">16</span>, <span class="at">speed_cuts =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="fl">0.025</span>, <span class="fl">0.05</span>, <span class="fl">0.075</span>, <span class="fl">0.1</span>, <span class="fl">0.125</span>, <span class="fl">0.15</span>),</span>
+<span id="cb4-125"><a href="#cb4-125" aria-hidden="true" tabindex="-1"></a>           <span class="at">n_speeds =</span> <span class="dv">6</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Figure-4_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+
+
+
+<!-- -->
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+    const viewSource = window.document.getElementById('quarto-view-source') ||
+                       window.document.getElementById('quarto-code-tools-source');
+    if (viewSource) {
+      const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+      viewSource.addEventListener("click", function(e) {
+        if (sourceUrl) {
+          // rstudio viewer pane
+          if (/\bcapabilities=\b/.test(window.location)) {
+            window.open(sourceUrl);
+          } else {
+            window.location.href = sourceUrl;
+          }
+        } else {
+          const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+          modal.show();
+        }
+        return false;
+      });
+    }
+    function toggleCodeHandler(show) {
+      return function(e) {
+        const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+        for (let i=0; i<detailsSrc.length; i++) {
+          const details = detailsSrc[i].parentElement;
+          if (show) {
+            details.open = true;
+          } else {
+            details.removeAttribute("open");
+          }
+        }
+        const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+        const fromCls = show ? "hidden" : "unhidden";
+        const toCls = show ? "unhidden" : "hidden";
+        for (let i=0; i<cellCodeDivs.length; i++) {
+          const codeDiv = cellCodeDivs[i];
+          if (codeDiv.classList.contains(fromCls)) {
+            codeDiv.classList.remove(fromCls);
+            codeDiv.classList.add(toCls);
+          } 
+        }
+        return false;
+      }
+    }
+    const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+    if (hideAllCode) {
+      hideAllCode.addEventListener("click", toggleCodeHandler(false));
+    }
+    const showAllCode = window.document.getElementById("quarto-show-all-code");
+    if (showAllCode) {
+      showAllCode.addEventListener("click", toggleCodeHandler(true));
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+<div class="sourceCode" id="cb5" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Figure 4"</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="co">  html:</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="co">    toc: true</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="co">    math: mathjax</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="co">    code-fold: true</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="co">    code-tools: true</span></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="an">execute:</span></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="co">  echo: true</span></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a><span class="co">  warning: false</span></span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a><span class="co">  message: false</span></span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a><span class="an">editor:</span><span class="co"> visual</span></span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>::: cell</span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a><span class="in">```{=html}</span></span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;style&gt;</span></span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a><span class="in">  code, pre {</span></span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a><span class="in">    font-size: 65%;</span></span>
+<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a><span class="in">    color:darkgrey;</span></span>
+<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a><span class="in">  }</span></span>
+<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;/style&gt;</span></span>
+<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb5-26"><a href="#cb5-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-27"><a href="#cb5-27" aria-hidden="true" tabindex="-1"></a><span class="al">![](images/clipboard-831903289.png)</span>{width="600"}</span>
+<span id="cb5-28"><a href="#cb5-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-29"><a href="#cb5-29" aria-hidden="true" tabindex="-1"></a><span class="fu">### Figure 4a</span></span>
+<span id="cb5-30"><a href="#cb5-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-33"><a href="#cb5-33" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb5-34"><a href="#cb5-34" aria-hidden="true" tabindex="-1"></a><span class="co">#| message: false</span></span>
+<span id="cb5-35"><a href="#cb5-35" aria-hidden="true" tabindex="-1"></a><span class="co">#| warning: false</span></span>
+<span id="cb5-36"><a href="#cb5-36" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-height: 11</span></span>
+<span id="cb5-37"><a href="#cb5-37" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-width: 9</span></span>
+<span id="cb5-38"><a href="#cb5-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-39"><a href="#cb5-39" aria-hidden="true" tabindex="-1"></a><span class="co"># load libraries</span></span>
+<span id="cb5-40"><a href="#cb5-40" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(sf)</span>
+<span id="cb5-41"><a href="#cb5-41" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb5-42"><a href="#cb5-42" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(stars)</span>
+<span id="cb5-43"><a href="#cb5-43" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(janitor)</span>
+<span id="cb5-44"><a href="#cb5-44" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readxl)</span>
+<span id="cb5-45"><a href="#cb5-45" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(leaflet)</span>
+<span id="cb5-46"><a href="#cb5-46" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(fields)</span>
+<span id="cb5-47"><a href="#cb5-47" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(terra)</span>
+<span id="cb5-48"><a href="#cb5-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-49"><a href="#cb5-49" aria-hidden="true" tabindex="-1"></a><span class="co"># read tile data</span></span>
+<span id="cb5-50"><a href="#cb5-50" aria-hidden="true" tabindex="-1"></a>tiles <span class="ot">&lt;-</span> readxl<span class="sc">::</span><span class="fu">read_xlsx</span>(<span class="st">"/Users/rof011/seedbox2/tiles.xlsx"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb5-51"><a href="#cb5-51" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(id) <span class="sc">|&gt;</span> </span>
+<span id="cb5-52"><a href="#cb5-52" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">plot=</span><span class="fu">mean</span>(plot), <span class="at">settlers=</span><span class="fu">sum</span>(count)) </span>
+<span id="cb5-53"><a href="#cb5-53" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-54"><a href="#cb5-54" aria-hidden="true" tabindex="-1"></a><span class="co"># import slrp controls</span></span>
+<span id="cb5-55"><a href="#cb5-55" aria-hidden="true" tabindex="-1"></a>tiles_slrp <span class="ot">&lt;-</span> readxl<span class="sc">::</span><span class="fu">read_xlsx</span>(<span class="st">"/Users/rof011/seedbox2/data_SetTilesSlowReleaseExp3.xlsx"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb5-56"><a href="#cb5-56" aria-hidden="true" tabindex="-1"></a>  <span class="fu">clean_names</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb5-57"><a href="#cb5-57" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">id=</span>tile_number) <span class="sc">|&gt;</span> </span>
+<span id="cb5-58"><a href="#cb5-58" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(id) <span class="sc">|&gt;</span> </span>
+<span id="cb5-59"><a href="#cb5-59" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">settlers=</span><span class="fu">sum</span>(settler_count)) <span class="sc">|&gt;</span> </span>
+<span id="cb5-60"><a href="#cb5-60" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">seedbox=</span><span class="dv">0</span>) <span class="sc">|&gt;</span>  <span class="co">#, dsm=NA, height=NA) |&gt; </span></span>
+<span id="cb5-61"><a href="#cb5-61" aria-hidden="true" tabindex="-1"></a>  <span class="fu">drop_na</span>(id)</span>
+<span id="cb5-62"><a href="#cb5-62" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-63"><a href="#cb5-63" aria-hidden="true" tabindex="-1"></a><span class="co"># vectorise inner tiles adjacent to seedboxes</span></span>
+<span id="cb5-64"><a href="#cb5-64" aria-hidden="true" tabindex="-1"></a>inner <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1217</span>, <span class="dv">1268</span>, <span class="dv">1253</span>, <span class="dv">1121</span>, <span class="dv">1207</span>, <span class="dv">1240</span>, <span class="dv">1021</span>, <span class="dv">1291</span>, <span class="dv">1217</span>,</span>
+<span id="cb5-65"><a href="#cb5-65" aria-hidden="true" tabindex="-1"></a>           <span class="dv">1084</span>, <span class="dv">1039</span>, <span class="dv">1040</span>, <span class="dv">1213</span>, <span class="dv">1254</span>, <span class="dv">1029</span>, </span>
+<span id="cb5-66"><a href="#cb5-66" aria-hidden="true" tabindex="-1"></a>           <span class="dv">1099</span>, <span class="dv">1034</span>, <span class="dv">1284</span>, <span class="dv">1027</span>, <span class="dv">1252</span>, <span class="dv">1056</span>, </span>
+<span id="cb5-67"><a href="#cb5-67" aria-hidden="true" tabindex="-1"></a>           <span class="dv">1073</span>, <span class="dv">1086</span>, <span class="dv">1002</span>, <span class="dv">1005</span>, <span class="dv">1179</span>, <span class="dv">1047</span>,</span>
+<span id="cb5-68"><a href="#cb5-68" aria-hidden="true" tabindex="-1"></a>           <span class="dv">1187</span>, <span class="dv">1104</span>, <span class="dv">1149</span>, <span class="dv">1130</span>, <span class="dv">1197</span>, <span class="dv">1127</span>,</span>
+<span id="cb5-69"><a href="#cb5-69" aria-hidden="true" tabindex="-1"></a>           <span class="dv">1194</span>, <span class="dv">1193</span>, <span class="dv">1107</span>, <span class="dv">1191</span>, <span class="dv">1175</span>, <span class="dv">1178</span>)</span>
+<span id="cb5-70"><a href="#cb5-70" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-71"><a href="#cb5-71" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-72"><a href="#cb5-72" aria-hidden="true" tabindex="-1"></a><span class="co"># read spatial data</span></span>
+<span id="cb5-73"><a href="#cb5-73" aria-hidden="true" tabindex="-1"></a>seedbox <span class="ot">&lt;-</span> <span class="fu">rbind</span>(</span>
+<span id="cb5-74"><a href="#cb5-74" aria-hidden="true" tabindex="-1"></a>  <span class="fu">st_read</span>(<span class="st">"/Users/rof011/seedbox2/shp/Seedbox2.geojson"</span>, <span class="at">quiet=</span><span class="cn">TRUE</span>) <span class="sc">|&gt;</span> <span class="fu">mutate</span>(<span class="at">seedbox=</span><span class="dv">2</span>) <span class="sc">|&gt;</span> <span class="fu">st_transform</span>(<span class="dv">32755</span>),</span>
+<span id="cb5-75"><a href="#cb5-75" aria-hidden="true" tabindex="-1"></a>  <span class="fu">st_read</span>(<span class="st">"/Users/rof011/seedbox2/shp/Seedbox3.geojson"</span>, <span class="at">quiet=</span><span class="cn">TRUE</span>) <span class="sc">|&gt;</span> <span class="fu">mutate</span>(<span class="at">seedbox=</span><span class="dv">3</span>) <span class="sc">|&gt;</span> <span class="fu">st_transform</span>(<span class="dv">32755</span>),</span>
+<span id="cb5-76"><a href="#cb5-76" aria-hidden="true" tabindex="-1"></a>  <span class="fu">st_read</span>(<span class="st">"/Users/rof011/seedbox2/shp/Seedbox4.geojson"</span>, <span class="at">quiet=</span><span class="cn">TRUE</span>) <span class="sc">|&gt;</span> <span class="fu">mutate</span>(<span class="at">seedbox=</span><span class="dv">4</span>) <span class="sc">|&gt;</span> <span class="fu">st_transform</span>(<span class="dv">32755</span>),</span>
+<span id="cb5-77"><a href="#cb5-77" aria-hidden="true" tabindex="-1"></a>  <span class="fu">st_read</span>(<span class="st">"/Users/rof011/seedbox2/shp/Seedbox5.geojson"</span>, <span class="at">quiet=</span><span class="cn">TRUE</span>) <span class="sc">|&gt;</span> <span class="fu">mutate</span>(<span class="at">seedbox=</span><span class="dv">5</span>) <span class="sc">|&gt;</span> <span class="fu">st_transform</span>(<span class="dv">32755</span>),</span>
+<span id="cb5-78"><a href="#cb5-78" aria-hidden="true" tabindex="-1"></a>  <span class="fu">st_read</span>(<span class="st">"/Users/rof011/seedbox2/shp/Seedbox6.geojson"</span>, <span class="at">quiet=</span><span class="cn">TRUE</span>) <span class="sc">|&gt;</span> <span class="fu">mutate</span>(<span class="at">seedbox=</span><span class="dv">6</span>) <span class="sc">|&gt;</span> <span class="fu">st_transform</span>(<span class="dv">32755</span>)) <span class="sc">|&gt;</span> </span>
+<span id="cb5-79"><a href="#cb5-79" aria-hidden="true" tabindex="-1"></a><span class="co">#  st_transform(4326) |&gt; </span></span>
+<span id="cb5-80"><a href="#cb5-80" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(tiles <span class="sc">|&gt;</span> <span class="fu">select</span>(<span class="sc">-</span>plot), <span class="at">by=</span><span class="st">"id"</span>) <span class="sc">|&gt;</span> <span class="fu">drop_na</span>(settlers) <span class="sc">|&gt;</span> </span>
+<span id="cb5-81"><a href="#cb5-81" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span>seedbox <span class="sc">==</span> <span class="dv">1</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb5-82"><a href="#cb5-82" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">seedbox =</span> seedbox <span class="sc">-</span> <span class="dv">1</span>)</span>
+<span id="cb5-83"><a href="#cb5-83" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-84"><a href="#cb5-84" aria-hidden="true" tabindex="-1"></a><span class="co"># filter to only outer array</span></span>
+<span id="cb5-85"><a href="#cb5-85" aria-hidden="true" tabindex="-1"></a>seedbox_outer <span class="ot">&lt;-</span> seedbox <span class="sc">|&gt;</span> <span class="fu">filter</span>(<span class="sc">!</span>id <span class="sc">%in%</span> inner)</span>
+<span id="cb5-86"><a href="#cb5-86" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-87"><a href="#cb5-87" aria-hidden="true" tabindex="-1"></a><span class="co"># Buffer first to extend spatial domain</span></span>
+<span id="cb5-88"><a href="#cb5-88" aria-hidden="true" tabindex="-1"></a>seedbox_outer_buf <span class="ot">&lt;-</span> seedbox_outer <span class="sc">|&gt;</span> <span class="fu">st_buffer</span>(<span class="dv">10</span>)</span>
+<span id="cb5-89"><a href="#cb5-89" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-90"><a href="#cb5-90" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a grid over the buffered area</span></span>
+<span id="cb5-91"><a href="#cb5-91" aria-hidden="true" tabindex="-1"></a>grd <span class="ot">&lt;-</span> seedbox_outer_buf <span class="sc">|&gt;</span></span>
+<span id="cb5-92"><a href="#cb5-92" aria-hidden="true" tabindex="-1"></a>  <span class="fu">st_bbox</span>() <span class="sc">|&gt;</span></span>
+<span id="cb5-93"><a href="#cb5-93" aria-hidden="true" tabindex="-1"></a>  <span class="fu">st_as_stars</span>(<span class="at">dx =</span> <span class="fl">0.05</span>)</span>
+<span id="cb5-94"><a href="#cb5-94" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-95"><a href="#cb5-95" aria-hidden="true" tabindex="-1"></a><span class="co"># extract grid coordinates for prediction</span></span>
+<span id="cb5-96"><a href="#cb5-96" aria-hidden="true" tabindex="-1"></a>grd_coords <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(<span class="fu">st_coordinates</span>(grd))</span>
+<span id="cb5-97"><a href="#cb5-97" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-98"><a href="#cb5-98" aria-hidden="true" tabindex="-1"></a><span class="co"># extract buffered coordinates for fitting the TPS</span></span>
+<span id="cb5-99"><a href="#cb5-99" aria-hidden="true" tabindex="-1"></a>coords <span class="ot">&lt;-</span> <span class="fu">st_coordinates</span>(seedbox_outer)</span>
+<span id="cb5-100"><a href="#cb5-100" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-101"><a href="#cb5-101" aria-hidden="true" tabindex="-1"></a><span class="co"># fit the TPS using unbuffered coordinates, extend grid</span></span>
+<span id="cb5-102"><a href="#cb5-102" aria-hidden="true" tabindex="-1"></a>tps_model <span class="ot">&lt;-</span> <span class="fu">suppressWarnings</span>(</span>
+<span id="cb5-103"><a href="#cb5-103" aria-hidden="true" tabindex="-1"></a>  <span class="fu">Tps</span>(coords, seedbox_outer<span class="sc">$</span>settlers, <span class="at">method =</span> <span class="st">"REML"</span>)</span>
+<span id="cb5-104"><a href="#cb5-104" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb5-105"><a href="#cb5-105" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-106"><a href="#cb5-106" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-107"><a href="#cb5-107" aria-hidden="true" tabindex="-1"></a>seedbox_hull <span class="ot">&lt;-</span> seedbox <span class="sc">|&gt;</span> <span class="fu">st_buffer</span>(<span class="fl">1.5</span>) <span class="sc">|&gt;</span> concaveman<span class="sc">::</span><span class="fu">concaveman</span>(<span class="dv">2</span>,<span class="dv">10</span>) <span class="sc">|&gt;</span> terra<span class="sc">::</span><span class="fu">vect</span>()</span>
+<span id="cb5-108"><a href="#cb5-108" aria-hidden="true" tabindex="-1"></a>seedbox_area <span class="ot">&lt;-</span> seedbox <span class="sc">|&gt;</span> <span class="fu">st_buffer</span>(<span class="dv">1</span>) <span class="sc">|&gt;</span>  concaveman<span class="sc">::</span><span class="fu">concaveman</span>(<span class="dv">2</span>,<span class="dv">10</span>) </span>
+<span id="cb5-109"><a href="#cb5-109" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-110"><a href="#cb5-110" aria-hidden="true" tabindex="-1"></a>grd_coords<span class="sc">$</span>predicted_settlers <span class="ot">&lt;-</span> <span class="fu">suppressWarnings</span>(</span>
+<span id="cb5-111"><a href="#cb5-111" aria-hidden="true" tabindex="-1"></a>  <span class="fu">predict</span>(tps_model, <span class="fu">as.matrix</span>(grd_coords[, <span class="fu">c</span>(<span class="st">"x"</span>, <span class="st">"y"</span>)]))</span>
+<span id="cb5-112"><a href="#cb5-112" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb5-113"><a href="#cb5-113" aria-hidden="true" tabindex="-1"></a>grd<span class="sc">$</span>predicted_settlers <span class="ot">&lt;-</span> <span class="fu">array</span>(grd_coords<span class="sc">$</span>predicted_settlers, <span class="at">dim =</span> <span class="fu">dim</span>(grd))</span>
+<span id="cb5-114"><a href="#cb5-114" aria-hidden="true" tabindex="-1"></a>tps_raster <span class="ot">&lt;-</span> terra<span class="sc">::</span><span class="fu">rast</span>(grd[<span class="st">"predicted_settlers"</span>]) </span>
+<span id="cb5-115"><a href="#cb5-115" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-116"><a href="#cb5-116" aria-hidden="true" tabindex="-1"></a>seed_area <span class="ot">&lt;-</span> seedbox <span class="sc">|&gt;</span> <span class="fu">st_buffer</span>(<span class="dv">1</span>) <span class="sc">|&gt;</span> concaveman<span class="sc">::</span><span class="fu">concaveman</span>(<span class="dv">2</span>,<span class="dv">10</span>) </span>
+<span id="cb5-117"><a href="#cb5-117" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-118"><a href="#cb5-118" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-119"><a href="#cb5-119" aria-hidden="true" tabindex="-1"></a><span class="co"># expand rugosity</span></span>
+<span id="cb5-120"><a href="#cb5-120" aria-hidden="true" tabindex="-1"></a>reef_area_cm2 <span class="ot">&lt;-</span> <span class="dv">1</span> <span class="sc">*</span> <span class="dv">100</span><span class="sc">^</span><span class="dv">2</span>          <span class="co"># 1 m² to cm²</span></span>
+<span id="cb5-121"><a href="#cb5-121" aria-hidden="true" tabindex="-1"></a>rugosity <span class="ot">&lt;-</span> <span class="fl">1.67</span>                     <span class="co"># rugosity factor</span></span>
+<span id="cb5-122"><a href="#cb5-122" aria-hidden="true" tabindex="-1"></a>tile_area_cm2 <span class="ot">&lt;-</span> <span class="dv">70</span>                <span class="co"># single tile area</span></span>
+<span id="cb5-123"><a href="#cb5-123" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-124"><a href="#cb5-124" aria-hidden="true" tabindex="-1"></a>surface_area_cm2 <span class="ot">&lt;-</span> reef_area_cm2 <span class="sc">*</span> rugosity <span class="sc">*</span> <span class="fl">0.8</span></span>
+<span id="cb5-125"><a href="#cb5-125" aria-hidden="true" tabindex="-1"></a>n_tiles <span class="ot">&lt;-</span> surface_area_cm2 <span class="sc">/</span> tile_area_cm2</span>
+<span id="cb5-126"><a href="#cb5-126" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-127"><a href="#cb5-127" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-128"><a href="#cb5-128" aria-hidden="true" tabindex="-1"></a><span class="co"># mask and crop raster</span></span>
+<span id="cb5-129"><a href="#cb5-129" aria-hidden="true" tabindex="-1"></a>masked_raster <span class="ot">&lt;-</span> terra<span class="sc">::</span><span class="fu">mask</span>(tps_raster, seed_area, <span class="at">updatevalue =</span> <span class="cn">NA</span>)</span>
+<span id="cb5-130"><a href="#cb5-130" aria-hidden="true" tabindex="-1"></a>cropped_raster <span class="ot">&lt;-</span> terra<span class="sc">::</span><span class="fu">crop</span>(masked_raster, terra<span class="sc">::</span><span class="fu">ext</span>(masked_raster)) <span class="sc">|&gt;</span> </span>
+<span id="cb5-131"><a href="#cb5-131" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as.data.frame</span>(<span class="at">xy =</span> <span class="cn">TRUE</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb5-132"><a href="#cb5-132" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">predicted_settlers =</span> predicted_settlers <span class="sc">*</span> n_tiles)</span>
+<span id="cb5-133"><a href="#cb5-133" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-134"><a href="#cb5-134" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-135"><a href="#cb5-135" aria-hidden="true" tabindex="-1"></a>geonadir_url <span class="ot">&lt;-</span> <span class="st">"https://api.geonadir.com/cog_tiles/ortho/9723/e534dfb7-6121-4429-bad4-68e9da770711/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMzMjI2MjkzLCJpYXQiOjE3MzMxMzk4OTMsImp0aSI6ImM0ODRmNTc0OTZkNzRiNmZiMWZjZDlmNDViYzViZjQ2IiwidXNlcl9pZCI6MTI1NzR9.IIqFtk6NwEErJiUNZwIDodEgwyR-nxqECf92oHssggY/{z}/{x}/{y}"</span></span>
+<span id="cb5-136"><a href="#cb5-136" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-137"><a href="#cb5-137" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-138"><a href="#cb5-138" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tmap)</span>
+<span id="cb5-139"><a href="#cb5-139" aria-hidden="true" tabindex="-1"></a><span class="fu">tmap_mode</span>(<span class="st">"view"</span>)</span>
+<span id="cb5-140"><a href="#cb5-140" aria-hidden="true" tabindex="-1"></a><span class="fu">tm_tiles</span>(<span class="at">server =</span> geonadir_url, </span>
+<span id="cb5-141"><a href="#cb5-141" aria-hidden="true" tabindex="-1"></a>         <span class="at">zoom=</span><span class="dv">21</span>, </span>
+<span id="cb5-142"><a href="#cb5-142" aria-hidden="true" tabindex="-1"></a>         <span class="at">max.native.zoom=</span><span class="dv">22</span>) <span class="sc">+</span></span>
+<span id="cb5-143"><a href="#cb5-143" aria-hidden="true" tabindex="-1"></a><span class="fu">tm_shape</span>(masked_raster<span class="sc">$</span>predicted_settlers <span class="sc">*</span> n_tiles) <span class="sc">+</span></span>
+<span id="cb5-144"><a href="#cb5-144" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tm_raster</span>(<span class="st">"predicted_settlers"</span>,</span>
+<span id="cb5-145"><a href="#cb5-145" aria-hidden="true" tabindex="-1"></a>            <span class="at">col.scale =</span> <span class="fu">tm_scale_continuous</span>(<span class="at">values =</span> <span class="st">"-spectral"</span>),</span>
+<span id="cb5-146"><a href="#cb5-146" aria-hidden="true" tabindex="-1"></a>            <span class="at">col_alpha =</span> <span class="fl">0.7</span>) <span class="sc">+</span></span>
+<span id="cb5-147"><a href="#cb5-147" aria-hidden="true" tabindex="-1"></a><span class="fu">tm_shape</span>(seedbox_area) <span class="sc">+</span></span>
+<span id="cb5-148"><a href="#cb5-148" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tm_polygons</span>(<span class="at">fill_alpha =</span> <span class="dv">0</span>, </span>
+<span id="cb5-149"><a href="#cb5-149" aria-hidden="true" tabindex="-1"></a>              <span class="at">col =</span> <span class="st">"black"</span>) <span class="sc">+</span></span>
+<span id="cb5-150"><a href="#cb5-150" aria-hidden="true" tabindex="-1"></a><span class="fu">tm_view</span>(<span class="at">set_zoom_limits =</span> <span class="fu">c</span>(<span class="dv">14</span>, <span class="dv">22</span>), </span>
+<span id="cb5-151"><a href="#cb5-151" aria-hidden="true" tabindex="-1"></a>        <span class="at">zoom =</span> <span class="dv">14</span>)</span>
+<span id="cb5-152"><a href="#cb5-152" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb5-153"><a href="#cb5-153" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb5-154"><a href="#cb5-154" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-155"><a href="#cb5-155" aria-hidden="true" tabindex="-1"></a><span class="fu">### Figure 4c</span></span>
+<span id="cb5-156"><a href="#cb5-156" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-159"><a href="#cb5-159" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb5-160"><a href="#cb5-160" aria-hidden="true" tabindex="-1"></a>acdc <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"../data/S103288A017_LSDTrial27N_A0.csv"</span>, <span class="at">sep =</span> <span class="st">";"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb5-161"><a href="#cb5-161" aria-hidden="true" tabindex="-1"></a>  janitor<span class="sc">::</span><span class="fu">clean_names</span>() <span class="sc">|&gt;</span></span>
+<span id="cb5-162"><a href="#cb5-162" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">date_time =</span> <span class="fu">dmy_hms</span>(date_time)) <span class="sc">|&gt;</span></span>
+<span id="cb5-163"><a href="#cb5-163" aria-hidden="true" tabindex="-1"></a>  <span class="co"># select(date_time, speed_1_0_3m, dir_1_0_3m) |&gt;</span></span>
+<span id="cb5-164"><a href="#cb5-164" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">filter</span>(date_time <span class="sc">&gt;</span> <span class="fu">ymd_hms</span>(<span class="st">"2024-11-27 00:00:00"</span>)) <span class="sc">|&gt;</span> </span>
+<span id="cb5-165"><a href="#cb5-165" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">filter</span>(date_time <span class="sc">&lt;</span> <span class="fu">ymd_hms</span>(<span class="st">"2024-11-28 06:00:00"</span>)) <span class="sc">|&gt;</span> </span>
+<span id="cb5-166"><a href="#cb5-166" aria-hidden="true" tabindex="-1"></a>    <span class="fu">select</span>(<span class="sc">-</span>battery, <span class="sc">-</span>heading, <span class="sc">-</span>pitch, <span class="sc">-</span>roll, <span class="sc">-</span>pressure, <span class="sc">-</span>temperature, <span class="sc">-</span>analog_in1, <span class="sc">-</span>analog_in2, <span class="sc">-</span>x)</span>
+<span id="cb5-167"><a href="#cb5-167" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-168"><a href="#cb5-168" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-169"><a href="#cb5-169" aria-hidden="true" tabindex="-1"></a>acdc_long <span class="ot">&lt;-</span> acdc <span class="sc">|&gt;</span></span>
+<span id="cb5-170"><a href="#cb5-170" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(date_time, <span class="fu">starts_with</span>(<span class="st">"speed_"</span>), <span class="fu">starts_with</span>(<span class="st">"dir_"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb5-171"><a href="#cb5-171" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_longer</span>(</span>
+<span id="cb5-172"><a href="#cb5-172" aria-hidden="true" tabindex="-1"></a>  <span class="at">cols =</span> <span class="sc">-</span>date_time,</span>
+<span id="cb5-173"><a href="#cb5-173" aria-hidden="true" tabindex="-1"></a>  <span class="at">names_to =</span> <span class="fu">c</span>(<span class="st">".value"</span>, <span class="st">"depth"</span>),</span>
+<span id="cb5-174"><a href="#cb5-174" aria-hidden="true" tabindex="-1"></a>  <span class="at">names_pattern =</span> <span class="st">"(speed|dir)_(.*)"</span></span>
+<span id="cb5-175"><a href="#cb5-175" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb5-176"><a href="#cb5-176" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">depth =</span> <span class="fu">str_extract</span>(depth, <span class="st">"(?&lt;=_)[0-9_]+(?=m)"</span>),</span>
+<span id="cb5-177"><a href="#cb5-177" aria-hidden="true" tabindex="-1"></a>  <span class="at">depth =</span> <span class="fu">str_replace_all</span>(depth, <span class="st">"_"</span>, <span class="st">"."</span>),</span>
+<span id="cb5-178"><a href="#cb5-178" aria-hidden="true" tabindex="-1"></a>  <span class="at">depth =</span> <span class="fu">parse_number</span>(depth)) </span>
+<span id="cb5-179"><a href="#cb5-179" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-180"><a href="#cb5-180" aria-hidden="true" tabindex="-1"></a><span class="co"># ggplot() + theme_bw() + facet_wrap(~depth) +</span></span>
+<span id="cb5-181"><a href="#cb5-181" aria-hidden="true" tabindex="-1"></a><span class="co">#   geom_line(data=acdc_long |&gt; filter(depth==1.1), </span></span>
+<span id="cb5-182"><a href="#cb5-182" aria-hidden="true" tabindex="-1"></a><span class="co">#             aes(date_time, rollmean(dir, k = 11, fill = NA, align = "center"))) +</span></span>
+<span id="cb5-183"><a href="#cb5-183" aria-hidden="true" tabindex="-1"></a><span class="co">#   scale_color_distiller(palette="RdBu") + </span></span>
+<span id="cb5-184"><a href="#cb5-184" aria-hidden="true" tabindex="-1"></a><span class="co">#   geom_vline(xintercept = ymd_hms("2024-11-27 10:30:00"), color="darkred")</span></span>
+<span id="cb5-185"><a href="#cb5-185" aria-hidden="true" tabindex="-1"></a><span class="co"># </span></span>
+<span id="cb5-186"><a href="#cb5-186" aria-hidden="true" tabindex="-1"></a><span class="co"># ggplot() + theme_bw() + facet_wrap(~depth) +</span></span>
+<span id="cb5-187"><a href="#cb5-187" aria-hidden="true" tabindex="-1"></a><span class="co">#   geom_line(data=acdc_long |&gt; filter(depth==1.1), </span></span>
+<span id="cb5-188"><a href="#cb5-188" aria-hidden="true" tabindex="-1"></a><span class="co">#             aes(date_time, rollmean(speed, k = 11, fill = NA, align = "center"))) +</span></span>
+<span id="cb5-189"><a href="#cb5-189" aria-hidden="true" tabindex="-1"></a><span class="co">#   scale_color_distiller(palette="RdBu") + </span></span>
+<span id="cb5-190"><a href="#cb5-190" aria-hidden="true" tabindex="-1"></a><span class="co">#   geom_vline(xintercept = ymd_hms("2024-11-27 10:30:00"), color="darkblue")</span></span>
+<span id="cb5-191"><a href="#cb5-191" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-192"><a href="#cb5-192" aria-hidden="true" tabindex="-1"></a>  acdc_filtered <span class="ot">&lt;-</span> acdc_long <span class="sc">|&gt;</span> </span>
+<span id="cb5-193"><a href="#cb5-193" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">filter</span>(depth <span class="sc">&gt;=</span> <span class="fl">0.5</span> <span class="sc">&amp;</span> depth <span class="sc">&lt;=</span><span class="dv">4</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb5-194"><a href="#cb5-194" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(date_time) <span class="sc">|&gt;</span> </span>
+<span id="cb5-195"><a href="#cb5-195" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">depth =</span> <span class="fu">mean</span>(depth), <span class="at">speed =</span> <span class="fu">mean</span>(speed), <span class="at">dir =</span> <span class="fu">mean</span>(dir))</span>
+<span id="cb5-196"><a href="#cb5-196" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-197"><a href="#cb5-197" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-198"><a href="#cb5-198" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-199"><a href="#cb5-199" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-200"><a href="#cb5-200" aria-hidden="true" tabindex="-1"></a>dir_b <span class="ot">&lt;-</span> acdc_long <span class="sc">|&gt;</span> dplyr<span class="sc">::</span><span class="fu">filter</span>(depth <span class="sc">&lt;</span> <span class="dv">2</span>, date_time <span class="sc">&gt;</span> <span class="fu">ymd_hms</span>(<span class="st">"2024-11-27 11:02:00"</span>), date_time <span class="sc">&lt;</span> <span class="fu">ymd_hms</span>(<span class="st">"2024-11-27 22:05:00"</span>)) <span class="sc">|&gt;</span> <span class="fu">pull</span>(dir) <span class="co"># |&gt; mean() </span></span>
+<span id="cb5-201"><a href="#cb5-201" aria-hidden="true" tabindex="-1"></a>speed_b <span class="ot">&lt;-</span> acdc_long <span class="sc">|&gt;</span> dplyr<span class="sc">::</span><span class="fu">filter</span>(depth <span class="sc">&lt;</span> <span class="dv">2</span>, date_time <span class="sc">&gt;</span> <span class="fu">ymd_hms</span>(<span class="st">"2024-11-27 11:02:00"</span>), date_time <span class="sc">&lt;</span> <span class="fu">ymd_hms</span>(<span class="st">"2024-11-27 22:05:00"</span>)) <span class="sc">|&gt;</span> <span class="fu">pull</span>(speed) <span class="co"># |&gt; mean()</span></span>
+<span id="cb5-202"><a href="#cb5-202" aria-hidden="true" tabindex="-1"></a><span class="co"># nocov start</span></span>
+<span id="cb5-203"><a href="#cb5-203" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-204"><a href="#cb5-204" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-205"><a href="#cb5-205" aria-hidden="true" tabindex="-1"></a>ggwindrose <span class="ot">&lt;-</span> <span class="cf">function</span>(speed, direction, <span class="at">n_directions =</span> <span class="dv">8</span>, <span class="at">n_speeds =</span> <span class="dv">5</span>,</span>
+<span id="cb5-206"><a href="#cb5-206" aria-hidden="true" tabindex="-1"></a>                       <span class="at">speed_cuts =</span> <span class="cn">NA</span>, <span class="at">col_pal =</span> <span class="st">"GnBu"</span>, <span class="at">legend_title =</span> <span class="st">"Wind speed (m/s)"</span>,</span>
+<span id="cb5-207"><a href="#cb5-207" aria-hidden="true" tabindex="-1"></a>                       <span class="at">calm_wind =</span> <span class="dv">0</span>, <span class="at">n_col =</span> <span class="dv">1</span>, <span class="at">facet =</span> <span class="cn">NULL</span>, <span class="at">plot_title =</span> <span class="st">""</span>) {</span>
+<span id="cb5-208"><a href="#cb5-208" aria-hidden="true" tabindex="-1"></a>  <span class="fu">stopifnot</span>(</span>
+<span id="cb5-209"><a href="#cb5-209" aria-hidden="true" tabindex="-1"></a>    <span class="fu">is.numeric</span>(speed), <span class="fu">is.numeric</span>(direction),</span>
+<span id="cb5-210"><a href="#cb5-210" aria-hidden="true" tabindex="-1"></a>    <span class="fu">length</span>(speed) <span class="sc">==</span> <span class="fu">length</span>(direction),</span>
+<span id="cb5-211"><a href="#cb5-211" aria-hidden="true" tabindex="-1"></a>    <span class="fu">all</span>(direction <span class="sc">&gt;=</span> <span class="dv">0</span> <span class="sc">&amp;</span> direction <span class="sc">&lt;=</span> <span class="dv">360</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb5-212"><a href="#cb5-212" aria-hidden="true" tabindex="-1"></a>    <span class="fu">is.numeric</span>(n_directions), <span class="fu">length</span>(n_directions) <span class="sc">==</span> <span class="dv">1</span>,</span>
+<span id="cb5-213"><a href="#cb5-213" aria-hidden="true" tabindex="-1"></a>    <span class="fu">is.numeric</span>(n_speeds), <span class="fu">length</span>(n_speeds) <span class="sc">==</span> <span class="dv">1</span>,</span>
+<span id="cb5-214"><a href="#cb5-214" aria-hidden="true" tabindex="-1"></a>    <span class="fu">is.numeric</span>(calm_wind), <span class="fu">length</span>(calm_wind) <span class="sc">==</span> <span class="dv">1</span>,</span>
+<span id="cb5-215"><a href="#cb5-215" aria-hidden="true" tabindex="-1"></a>    <span class="fu">is.character</span>(legend_title) <span class="sc">||</span> <span class="fu">is.expression</span>(legend_title),</span>
+<span id="cb5-216"><a href="#cb5-216" aria-hidden="true" tabindex="-1"></a>    col_pal <span class="sc">%in%</span> <span class="fu">hcl.pals</span>()</span>
+<span id="cb5-217"><a href="#cb5-217" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb5-218"><a href="#cb5-218" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-219"><a href="#cb5-219" aria-hidden="true" tabindex="-1"></a>  include_facet <span class="ot">&lt;-</span> <span class="sc">!</span><span class="fu">is.null</span>(facet)</span>
+<span id="cb5-220"><a href="#cb5-220" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (include_facet) {</span>
+<span id="cb5-221"><a href="#cb5-221" aria-hidden="true" tabindex="-1"></a>    <span class="fu">stopifnot</span>(<span class="fu">is.character</span>(facet) <span class="sc">||</span> <span class="fu">is.factor</span>(facet))</span>
+<span id="cb5-222"><a href="#cb5-222" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (<span class="fu">length</span>(facet) <span class="sc">==</span> <span class="dv">1</span>) facet <span class="ot">&lt;-</span> <span class="fu">rep</span>(facet, <span class="fu">length</span>(speed))</span>
+<span id="cb5-223"><a href="#cb5-223" aria-hidden="true" tabindex="-1"></a>    <span class="fu">stopifnot</span>(<span class="fu">length</span>(facet) <span class="sc">==</span> <span class="fu">length</span>(speed))</span>
+<span id="cb5-224"><a href="#cb5-224" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb5-225"><a href="#cb5-225" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-226"><a href="#cb5-226" aria-hidden="true" tabindex="-1"></a>  optimal_n_dir <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">4</span>, <span class="dv">8</span>, <span class="dv">16</span>)</span>
+<span id="cb5-227"><a href="#cb5-227" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="sc">!</span>(n_directions <span class="sc">%in%</span> optimal_n_dir)) {</span>
+<span id="cb5-228"><a href="#cb5-228" aria-hidden="true" tabindex="-1"></a>    n_directions <span class="ot">&lt;-</span> optimal_n_dir[<span class="fu">which.min</span>(<span class="fu">abs</span>(n_directions <span class="sc">-</span> optimal_n_dir))]</span>
+<span id="cb5-229"><a href="#cb5-229" aria-hidden="true" tabindex="-1"></a>    <span class="fu">message</span>(<span class="st">"Using the closest optimal number of wind directions ("</span>, n_directions, <span class="st">")"</span>)</span>
+<span id="cb5-230"><a href="#cb5-230" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb5-231"><a href="#cb5-231" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-232"><a href="#cb5-232" aria-hidden="true" tabindex="-1"></a>  dir_labels <span class="ot">&lt;-</span> <span class="cf">switch</span>(<span class="fu">as.character</span>(n_directions),</span>
+<span id="cb5-233"><a href="#cb5-233" aria-hidden="true" tabindex="-1"></a>    <span class="st">"4"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"N"</span>, <span class="st">"E"</span>, <span class="st">"S"</span>, <span class="st">"W"</span>),</span>
+<span id="cb5-234"><a href="#cb5-234" aria-hidden="true" tabindex="-1"></a>    <span class="st">"8"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"N"</span>, <span class="st">"NE"</span>, <span class="st">"E"</span>, <span class="st">"SE"</span>, <span class="st">"S"</span>, <span class="st">"SW"</span>, <span class="st">"W"</span>, <span class="st">"NW"</span>),</span>
+<span id="cb5-235"><a href="#cb5-235" aria-hidden="true" tabindex="-1"></a>    <span class="st">"16"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"N"</span>, <span class="st">"NNE"</span>, <span class="st">"NE"</span>, <span class="st">"ENE"</span>, <span class="st">"E"</span>, <span class="st">"ESE"</span>, <span class="st">"SE"</span>, <span class="st">"SSE"</span>,</span>
+<span id="cb5-236"><a href="#cb5-236" aria-hidden="true" tabindex="-1"></a>             <span class="st">"S"</span>, <span class="st">"SSW"</span>, <span class="st">"SW"</span>, <span class="st">"WSW"</span>, <span class="st">"W"</span>, <span class="st">"WNW"</span>, <span class="st">"NW"</span>, <span class="st">"NNW"</span>)</span>
+<span id="cb5-237"><a href="#cb5-237" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb5-238"><a href="#cb5-238" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-239"><a href="#cb5-239" aria-hidden="true" tabindex="-1"></a>  dir_bin_width <span class="ot">&lt;-</span> <span class="dv">360</span> <span class="sc">/</span> n_directions</span>
+<span id="cb5-240"><a href="#cb5-240" aria-hidden="true" tabindex="-1"></a>  dir_bin_cuts <span class="ot">&lt;-</span> <span class="fu">seq</span>(dir_bin_width <span class="sc">/</span> <span class="dv">2</span>, <span class="dv">360</span> <span class="sc">-</span> dir_bin_width <span class="sc">/</span> <span class="dv">2</span>, dir_bin_width)</span>
+<span id="cb5-241"><a href="#cb5-241" aria-hidden="true" tabindex="-1"></a>  dir_intervals <span class="ot">&lt;-</span> <span class="fu">findInterval</span>(direction, dir_bin_cuts)</span>
+<span id="cb5-242"><a href="#cb5-242" aria-hidden="true" tabindex="-1"></a>  dir_intervals[dir_intervals <span class="sc">==</span> <span class="dv">0</span>] <span class="ot">&lt;-</span> n_directions</span>
+<span id="cb5-243"><a href="#cb5-243" aria-hidden="true" tabindex="-1"></a>  dir_bin <span class="ot">&lt;-</span> <span class="fu">factor</span>(dir_intervals, <span class="at">labels =</span> dir_labels)</span>
+<span id="cb5-244"><a href="#cb5-244" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-245"><a href="#cb5-245" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">is.numeric</span>(speed_cuts)) {</span>
+<span id="cb5-246"><a href="#cb5-246" aria-hidden="true" tabindex="-1"></a>    speed_cuts <span class="ot">&lt;-</span> <span class="fu">sort</span>(<span class="fu">unique</span>(<span class="fu">c</span>(<span class="fu">min</span>(speed, <span class="at">na.rm =</span> <span class="cn">TRUE</span>), speed_cuts, <span class="fu">max</span>(speed, <span class="at">na.rm =</span> <span class="cn">TRUE</span>))))</span>
+<span id="cb5-247"><a href="#cb5-247" aria-hidden="true" tabindex="-1"></a>    spd_bin <span class="ot">&lt;-</span> <span class="fu">cut</span>(speed, <span class="at">breaks =</span> speed_cuts, <span class="at">include.lowest =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb5-248"><a href="#cb5-248" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> {</span>
+<span id="cb5-249"><a href="#cb5-249" aria-hidden="true" tabindex="-1"></a>    spd_bin <span class="ot">&lt;-</span> <span class="fu">cut</span>(speed, <span class="at">breaks =</span> n_speeds)</span>
+<span id="cb5-250"><a href="#cb5-250" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb5-251"><a href="#cb5-251" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-252"><a href="#cb5-252" aria-hidden="true" tabindex="-1"></a>  spd_cols <span class="ot">&lt;-</span> <span class="fu">hcl.colors</span>(<span class="fu">length</span>(<span class="fu">levels</span>(spd_bin)), col_pal, <span class="at">rev =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb5-253"><a href="#cb5-253" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">length</span>(spd_cols) <span class="sc">!=</span> <span class="fu">length</span>(<span class="fu">levels</span>(spd_bin))) {</span>
+<span id="cb5-254"><a href="#cb5-254" aria-hidden="true" tabindex="-1"></a>    spd_bin <span class="ot">&lt;-</span> <span class="fu">cut</span>(speed, <span class="at">breaks =</span> <span class="fu">length</span>(spd_cols))</span>
+<span id="cb5-255"><a href="#cb5-255" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb5-256"><a href="#cb5-256" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-257"><a href="#cb5-257" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (include_facet) {</span>
+<span id="cb5-258"><a href="#cb5-258" aria-hidden="true" tabindex="-1"></a>    df <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(<span class="fu">table</span>(dir_bin, spd_bin, facet))</span>
+<span id="cb5-259"><a href="#cb5-259" aria-hidden="true" tabindex="-1"></a>    df<span class="sc">$</span>proportion <span class="ot">&lt;-</span> <span class="fu">ave</span>(df<span class="sc">$</span>Freq, df<span class="sc">$</span>facet, <span class="at">FUN =</span> <span class="cf">function</span>(x) x <span class="sc">/</span> <span class="fu">sum</span>(x))</span>
+<span id="cb5-260"><a href="#cb5-260" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> {</span>
+<span id="cb5-261"><a href="#cb5-261" aria-hidden="true" tabindex="-1"></a>    df <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(<span class="fu">table</span>(dir_bin, spd_bin))</span>
+<span id="cb5-262"><a href="#cb5-262" aria-hidden="true" tabindex="-1"></a>    df<span class="sc">$</span>proportion <span class="ot">&lt;-</span> df<span class="sc">$</span>Freq <span class="sc">/</span> <span class="fu">sum</span>(df<span class="sc">$</span>Freq)</span>
+<span id="cb5-263"><a href="#cb5-263" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb5-264"><a href="#cb5-264" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-265"><a href="#cb5-265" aria-hidden="true" tabindex="-1"></a>  p <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(df, <span class="fu">aes</span>(<span class="at">x =</span> dir_bin, <span class="at">fill =</span> spd_bin, <span class="at">y =</span> proportion)) <span class="sc">+</span></span>
+<span id="cb5-266"><a href="#cb5-266" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">"identity"</span>, <span class="at">color =</span> <span class="st">"black"</span>) <span class="sc">+</span></span>
+<span id="cb5-267"><a href="#cb5-267" aria-hidden="true" tabindex="-1"></a>    <span class="fu">scale_x_discrete</span>(<span class="at">drop =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
+<span id="cb5-268"><a href="#cb5-268" aria-hidden="true" tabindex="-1"></a>    <span class="fu">scale_fill_manual</span>(<span class="at">name =</span> legend_title, <span class="at">values =</span> spd_cols) <span class="sc">+</span></span>
+<span id="cb5-269"><a href="#cb5-269" aria-hidden="true" tabindex="-1"></a>    <span class="fu">coord_polar</span>(<span class="at">start =</span> <span class="dv">2</span> <span class="sc">*</span> pi <span class="sc">-</span> pi <span class="sc">/</span> n_directions) <span class="sc">+</span></span>
+<span id="cb5-270"><a href="#cb5-270" aria-hidden="true" tabindex="-1"></a>    <span class="fu">scale_y_continuous</span>(<span class="at">labels =</span> scales<span class="sc">::</span><span class="fu">percent_format</span>(<span class="at">accuracy =</span> <span class="dv">1</span>)) <span class="sc">+</span></span>
+<span id="cb5-271"><a href="#cb5-271" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb5-272"><a href="#cb5-272" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme</span>(<span class="at">axis.title =</span> <span class="fu">element_blank</span>()) <span class="sc">+</span></span>
+<span id="cb5-273"><a href="#cb5-273" aria-hidden="true" tabindex="-1"></a>    <span class="fu">labs</span>(<span class="at">title =</span> plot_title)</span>
+<span id="cb5-274"><a href="#cb5-274" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-275"><a href="#cb5-275" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (include_facet) {</span>
+<span id="cb5-276"><a href="#cb5-276" aria-hidden="true" tabindex="-1"></a>    p <span class="ot">&lt;-</span> p <span class="sc">+</span> <span class="fu">facet_wrap</span>(<span class="sc">~</span>facet, <span class="at">ncol =</span> n_col)</span>
+<span id="cb5-277"><a href="#cb5-277" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb5-278"><a href="#cb5-278" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-279"><a href="#cb5-279" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(p)</span>
+<span id="cb5-280"><a href="#cb5-280" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb5-281"><a href="#cb5-281" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-282"><a href="#cb5-282" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-283"><a href="#cb5-283" aria-hidden="true" tabindex="-1"></a><span class="fu">ggwindrose</span>(speed_b, dir_b, <span class="at">n_directions =</span> <span class="dv">16</span>, <span class="at">speed_cuts =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="fl">0.025</span>, <span class="fl">0.05</span>, <span class="fl">0.075</span>, <span class="fl">0.1</span>, <span class="fl">0.125</span>, <span class="fl">0.15</span>),</span>
+<span id="cb5-284"><a href="#cb5-284" aria-hidden="true" tabindex="-1"></a>           <span class="at">n_speeds =</span> <span class="dv">6</span>)</span>
+<span id="cb5-285"><a href="#cb5-285" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+</code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
+</div></div></div></div></div>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

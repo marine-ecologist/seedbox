@@ -1,0 +1,157 @@
+---
+title: "Figure S2"
+format:
+  html:
+    toc: true
+    math: mathjax
+    code-fold: true
+    code-tools: true
+execute:
+  echo: true
+  warning: false
+  message: false
+editor: visual
+---
+
+::: cell
+```{=html}
+<style>
+  code, pre {
+    font-size: 65%;
+    color:darkgrey;
+  }
+</style>
+```
+:::
+
+kmm(r) values on the y:
+
+-   \> 1 High values (e.g. high settler counts) tend to occur near each other â†’ positive spatial autocorrelation
+
+-   \~1 No correlation in settler values at that distance â†’ spatial randomness
+
+-   \< 1 High values avoid each other; negative correlation (alternation of high/low marks)
+
+grey CI ribbon is output from a null model that preserves the point locations and randomizes the marks (settler counts) to account for underlying spatial structure (i.e. random labeling null model).
+
+```{r}
+#| message: false
+#| warning: false
+#| fig-height: 6
+#| fig-width: 9
+#| cache: true
+
+
+library(tidyverse)
+library(ggplot2)
+library(spatstat)
+library(janitor)
+library(sf)
+
+# read tile data
+tiles <- readxl::read_xlsx("/Users/rof011/seedbox2/tiles.xlsx") |>
+  group_by(id) |> 
+  summarise(plot=mean(plot), settlers=sum(count)) 
+
+# import slrp controls
+tiles_slrp <- readxl::read_xlsx("/Users/rof011/seedbox2/data_SetTilesSlowReleaseExp3.xlsx") |>
+  clean_names() |> 
+  rename(id=tile_number) |> 
+  group_by(id) |> 
+  summarise(settlers=sum(settler_count)) |> 
+  mutate(seedbox=0) |>  #, dsm=NA, height=NA) |> 
+  drop_na(id)
+
+# vectorise inner tiles adjacent to seedboxes
+inner <- c(1217, 1268, 1253, 1121, 1207, 1240, 1021, 1291, 1217,
+           1084, 1039, 1040, 1213, 1254, 1029, 
+           1099, 1034, 1284, 1027, 1252, 1056, 
+           1073, 1086, 1002, 1005, 1179, 1047,
+           1187, 1104, 1149, 1130, 1197, 1127,
+           1194, 1193, 1107, 1191, 1175, 1178)
+
+
+# read spatial data
+seedbox_st <- rbind(
+  st_read("/Users/rof011/seedbox2/shp/Seedbox2.geojson", quiet=TRUE) |> mutate(seedbox=2) |> st_transform(32755),
+  st_read("/Users/rof011/seedbox2/shp/Seedbox3.geojson", quiet=TRUE) |> mutate(seedbox=3) |> st_transform(32755),
+  st_read("/Users/rof011/seedbox2/shp/Seedbox4.geojson", quiet=TRUE) |> mutate(seedbox=4) |> st_transform(32755),
+  st_read("/Users/rof011/seedbox2/shp/Seedbox5.geojson", quiet=TRUE) |> mutate(seedbox=5) |> st_transform(32755),
+  st_read("/Users/rof011/seedbox2/shp/Seedbox6.geojson", quiet=TRUE) |> mutate(seedbox=6) |> st_transform(32755)) |> 
+  left_join(tiles |> select(-plot), by="id") |> drop_na(settlers) |> 
+  filter(!seedbox == 1) |> 
+  mutate(seedbox = seedbox - 1)
+
+
+# Convert to spatial point pattern (ppp) with settler counts as marks
+ppp_settlers_st <- as.ppp(
+  st_coordinates(seedbox_st),
+  W = as.owin(st_bbox(seedbox_st))
+)
+
+marks(ppp_settlers_st) <- (seedbox_st$settlers)
+Kmark_result_st <- markcorr(ppp_settlers_st, correction = "Ripley",  r = seq(0, 8, by = 0.2))
+
+## outer
+seedbox_st_outer <- seedbox_st |> dplyr::filter(!id %in% inner)
+ppp_settlers_st_outer <- as.ppp(
+  st_coordinates(seedbox_st_outer),
+  W = as.owin(st_bbox(seedbox_st_outer))
+)
+
+marks(ppp_settlers_st_outer) <- (seedbox_st_outer$settlers)
+Kmark_result_st_outer <- markcorr(ppp_settlers_st_outer, correction = "Ripley",  r = seq(0, 8, by = 0.2))
+
+
+# extrct values and. combine kmark results into a single df:
+kmm_st_df <- as.data.frame(Kmark_result_st)[, c("r", "iso", "theo")]
+names(kmm_st_df) <- c("r", "observed", "theoretical")
+kmm_st_df_outer <- as.data.frame(Kmark_result_st_outer)[, c("r", "iso", "theo")]
+names(kmm_st_df_outer) <- c("r", "observed", "theoretical")
+kmm_st_plot <- rbind(kmm_st_df |> mutate(factor="all_tiles"),
+                     kmm_st_df_outer |> mutate(factor="outer_array")
+                     ) 
+
+
+
+coords <- st_coordinates(seedbox_st)
+win <- as.owin(st_bbox(seedbox_st))
+
+
+# Repeat 999 times
+simulated_kmm <- map_dfr(1:999, function(i) {
+  ppp <- as.ppp(coords, W = win)
+  marks(ppp) <- sample(seedbox_st$settlers)
+  kmm <- markcorr(ppp, correction = "Ripley", r = seq(0, 8, by = 0.05))
+  df <- as.data.frame(kmm)[, c("r", "iso")]
+  df$id <-  i
+  names(df) <-  c("r", "observed", "id")
+  df
+})
+
+
+# Compute percentiles for each r
+envelope_bounds_st <- simulated_kmm |>
+  drop_na() |> 
+  group_by(r) |>
+  summarise(
+    lower = quantile(observed, 0.05),
+    upper = quantile(observed, 0.99),
+    .groups = "drop"
+  ) |> mutate(lower=0)
+
+ggplot() + theme_bw() + 
+  xlim(round(min(nndist(ppp_settlers_st)), 1), 8) +
+  geom_ribbon(data = envelope_bounds_st, aes(x = r, ymin = lower, ymax = upper), fill = "grey20", alpha=0.1) +
+  geom_line(data=kmm_st_plot, aes(r, observed, color=factor), linewidth=1.5) +
+  scale_y_continuous(limits=c(0, 40), breaks=seq(-10, 40, 10)) +
+  scale_x_continuous(limits=c(0, 8), breaks=seq(0, 8, 1)) + xlab("Distance betwen tiles") +
+  geom_hline(yintercept = 1, linewidth = 0.5, alpha=0.6, linetype = "solid") + 
+  scale_color_manual(
+    labels = c("all_tiles" = "All tiles", "outer_array" = "outer array"),
+    values = c("all_tiles" = "turquoise4", "outer_array" = "cyan2"),
+    name = NULL
+  )
+
+
+```

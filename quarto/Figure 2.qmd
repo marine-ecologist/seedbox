@@ -1,0 +1,79 @@
+---
+title: "Figure 2"
+format:
+  html:
+    toc: true
+    math: mathjax
+    code-fold: true
+    code-tools: true
+execute:
+  echo: true
+  warning: false
+  message: false
+editor: visual
+---
+
+::: cell
+```{=html}
+<style>
+  code, pre {
+    font-size: 65%;
+    color:darkgrey;
+  }
+</style>
+```
+:::
+
+![](images/clipboard-3805581159.png)
+
+```{r}
+#| message: false
+#| warning: false
+#| fig-height: 7.5
+#| fig-width: 11
+
+# load libraries
+library(sf)
+library(tidyverse)
+library(janitor)
+library(readxl)
+library(leaflet)
+
+
+# permanent link to orthoomosaic via geonadir.com:
+
+geonadir_url <- "https://api.geonadir.com/cog_tiles/ortho/9723/e534dfb7-6121-4429-bad4-68e9da770711/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMzMjI2MjkzLCJpYXQiOjE3MzMxMzk4OTMsImp0aSI6ImM0ODRmNTc0OTZkNzRiNmZiMWZjZDlmNDViYzViZjQ2IiwidXNlcl9pZCI6MTI1NzR9.IIqFtk6NwEErJiUNZwIDodEgwyR-nxqECf92oHssggY/{z}/{x}/{y}"
+
+# load geojson spatial files for tile locations, join with the tile data:
+seedbox_tile_locations_sf <- rbind(
+  st_read("../data/Seedbox2.geojson", quiet=TRUE) |> mutate(seedbox=1) |> st_transform(32755),
+  st_read("../data/Seedbox3.geojson", quiet=TRUE) |> mutate(seedbox=2) |> st_transform(32755),
+  st_read("../data/Seedbox4.geojson", quiet=TRUE) |> mutate(seedbox=3) |> st_transform(32755),
+  st_read("../data/Seedbox5.geojson", quiet=TRUE) |> mutate(seedbox=4) |> st_transform(32755),
+  st_read("../data/Seedbox6.geojson", quiet=TRUE) |> mutate(seedbox=5) |> st_transform(32755)
+) |> st_transform(4326)  
+
+seedbox_tile_locations <- seedbox_tile_locations_sf %>%  
+  st_coordinates() |>
+  as.data.frame() |>
+  rename(x = X, y = Y) |>
+  bind_cols(st_drop_geometry(seedbox_tile_locations_sf))
+
+
+# Map tile locations on orthomosaic
+leaflet(seedbox_tile_locations) %>%
+  addProviderTiles('Esri.WorldImagery', group = "<b> [Seascape]</b> satellite map", 
+                   options=providerTileOptions(opacity=5, maxNativeZoom=18,maxZoom=100)) |>
+  addTiles(urlTemplate = geonadir_url, 
+           attribution = "Geoff Carlin @ CSIRO", 
+           options = providerTileOptions(minZoom = 17, maxZoom = 30)) %>%
+  addCircleMarkers(~seedbox_tile_locations$x, ~seedbox_tile_locations$y,
+                   group="seedbox",
+                   radius = 5,
+                   fillColor = "white",
+                   fillOpacity = 0.8, 
+                   stroke = TRUE, 
+                   color = "black", 
+                   weight = 1)  
+
+```

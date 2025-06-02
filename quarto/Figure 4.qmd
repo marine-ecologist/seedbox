@@ -1,0 +1,285 @@
+---
+title: "Figure 4"
+format:
+  html:
+    toc: true
+    math: mathjax
+    code-fold: true
+    code-tools: true
+execute:
+  echo: true
+  warning: false
+  message: false
+editor: visual
+---
+
+::: cell
+```{=html}
+<style>
+  code, pre {
+    font-size: 65%;
+    color:darkgrey;
+  }
+</style>
+```
+:::
+
+![](images/clipboard-831903289.png){width="600"}
+
+### Figure 4a
+
+```{r}
+#| message: false
+#| warning: false
+#| fig-height: 11
+#| fig-width: 9
+
+# load libraries
+library(sf)
+library(tidyverse)
+library(stars)
+library(janitor)
+library(readxl)
+library(leaflet)
+library(fields)
+library(terra)
+
+# read tile data
+tiles <- readxl::read_xlsx("/Users/rof011/seedbox2/tiles.xlsx") |>
+  group_by(id) |> 
+  summarise(plot=mean(plot), settlers=sum(count)) 
+
+# import slrp controls
+tiles_slrp <- readxl::read_xlsx("/Users/rof011/seedbox2/data_SetTilesSlowReleaseExp3.xlsx") |>
+  clean_names() |> 
+  rename(id=tile_number) |> 
+  group_by(id) |> 
+  summarise(settlers=sum(settler_count)) |> 
+  mutate(seedbox=0) |>  #, dsm=NA, height=NA) |> 
+  drop_na(id)
+
+# vectorise inner tiles adjacent to seedboxes
+inner <- c(1217, 1268, 1253, 1121, 1207, 1240, 1021, 1291, 1217,
+           1084, 1039, 1040, 1213, 1254, 1029, 
+           1099, 1034, 1284, 1027, 1252, 1056, 
+           1073, 1086, 1002, 1005, 1179, 1047,
+           1187, 1104, 1149, 1130, 1197, 1127,
+           1194, 1193, 1107, 1191, 1175, 1178)
+
+
+# read spatial data
+seedbox <- rbind(
+  st_read("/Users/rof011/seedbox2/shp/Seedbox2.geojson", quiet=TRUE) |> mutate(seedbox=2) |> st_transform(32755),
+  st_read("/Users/rof011/seedbox2/shp/Seedbox3.geojson", quiet=TRUE) |> mutate(seedbox=3) |> st_transform(32755),
+  st_read("/Users/rof011/seedbox2/shp/Seedbox4.geojson", quiet=TRUE) |> mutate(seedbox=4) |> st_transform(32755),
+  st_read("/Users/rof011/seedbox2/shp/Seedbox5.geojson", quiet=TRUE) |> mutate(seedbox=5) |> st_transform(32755),
+  st_read("/Users/rof011/seedbox2/shp/Seedbox6.geojson", quiet=TRUE) |> mutate(seedbox=6) |> st_transform(32755)) |> 
+#  st_transform(4326) |> 
+  left_join(tiles |> select(-plot), by="id") |> drop_na(settlers) |> 
+  filter(!seedbox == 1) |> 
+  mutate(seedbox = seedbox - 1)
+
+# filter to only outer array
+seedbox_outer <- seedbox |> filter(!id %in% inner)
+
+# Buffer first to extend spatial domain
+seedbox_outer_buf <- seedbox_outer |> st_buffer(10)
+
+# Create a grid over the buffered area
+grd <- seedbox_outer_buf |>
+  st_bbox() |>
+  st_as_stars(dx = 0.05)
+
+# extract grid coordinates for prediction
+grd_coords <- as.data.frame(st_coordinates(grd))
+
+# extract buffered coordinates for fitting the TPS
+coords <- st_coordinates(seedbox_outer)
+
+# fit the TPS using unbuffered coordinates, extend grid
+tps_model <- suppressWarnings(
+  Tps(coords, seedbox_outer$settlers, method = "REML")
+)
+
+
+seedbox_hull <- seedbox |> st_buffer(1.5) |> concaveman::concaveman(2,10) |> terra::vect()
+seedbox_area <- seedbox |> st_buffer(1) |>  concaveman::concaveman(2,10) 
+
+grd_coords$predicted_settlers <- suppressWarnings(
+  predict(tps_model, as.matrix(grd_coords[, c("x", "y")]))
+)
+grd$predicted_settlers <- array(grd_coords$predicted_settlers, dim = dim(grd))
+tps_raster <- terra::rast(grd["predicted_settlers"]) 
+
+seed_area <- seedbox |> st_buffer(1) |> concaveman::concaveman(2,10) 
+
+
+# expand rugosity
+reef_area_cm2 <- 1 * 100^2          # 1 m² to cm²
+rugosity <- 1.67                     # rugosity factor
+tile_area_cm2 <- 70                # single tile area
+
+surface_area_cm2 <- reef_area_cm2 * rugosity * 0.8
+n_tiles <- surface_area_cm2 / tile_area_cm2
+
+
+# mask and crop raster
+masked_raster <- terra::mask(tps_raster, seed_area, updatevalue = NA)
+cropped_raster <- terra::crop(masked_raster, terra::ext(masked_raster)) |> 
+  as.data.frame(xy = TRUE, na.rm = TRUE) |> 
+  mutate(predicted_settlers = predicted_settlers * n_tiles)
+
+
+geonadir_url <- "https://api.geonadir.com/cog_tiles/ortho/9723/e534dfb7-6121-4429-bad4-68e9da770711/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMzMjI2MjkzLCJpYXQiOjE3MzMxMzk4OTMsImp0aSI6ImM0ODRmNTc0OTZkNzRiNmZiMWZjZDlmNDViYzViZjQ2IiwidXNlcl9pZCI6MTI1NzR9.IIqFtk6NwEErJiUNZwIDodEgwyR-nxqECf92oHssggY/{z}/{x}/{y}"
+
+
+library(tmap)
+tmap_mode("view")
+tm_tiles(server = geonadir_url, 
+         zoom=21, 
+         max.native.zoom=22) +
+tm_shape(masked_raster$predicted_settlers * n_tiles) +
+  tm_raster("predicted_settlers",
+            col.scale = tm_scale_continuous(values = "-spectral"),
+            col_alpha = 0.7) +
+tm_shape(seedbox_area) +
+  tm_polygons(fill_alpha = 0, 
+              col = "black") +
+tm_view(set_zoom_limits = c(14, 22), 
+        zoom = 14)
+  
+```
+
+### Figure 4c
+
+```{r}
+
+
+
+
+acdc <- read.csv("../data/S103288A017_LSDTrial27N_A0.csv", sep = ";") |>
+  janitor::clean_names() |>
+  mutate(date_time = dmy_hms(date_time)) |>
+  # select(date_time, speed_1_0_3m, dir_1_0_3m) |>
+  dplyr::filter(date_time > ymd_hms("2024-11-27 00:00:00")) |> 
+  dplyr::filter(date_time < ymd_hms("2024-11-28 06:00:00")) |> 
+    select(-battery, -heading, -pitch, -roll, -pressure, -temperature, -analog_in1, -analog_in2, -x)
+
+
+acdc_long <- acdc |>
+  select(date_time, starts_with("speed_"), starts_with("dir_")) |>
+  pivot_longer(
+  cols = -date_time,
+  names_to = c(".value", "depth"),
+  names_pattern = "(speed|dir)_(.*)"
+  ) |>
+  mutate(depth = str_extract(depth, "(?<=_)[0-9_]+(?=m)"),
+  depth = str_replace_all(depth, "_", "."),
+  depth = parse_number(depth)) 
+
+# ggplot() + theme_bw() + facet_wrap(~depth) +
+#   geom_line(data=acdc_long |> filter(depth==1.1), 
+#             aes(date_time, rollmean(dir, k = 11, fill = NA, align = "center"))) +
+#   scale_color_distiller(palette="RdBu") + 
+#   geom_vline(xintercept = ymd_hms("2024-11-27 10:30:00"), color="darkred")
+# 
+# ggplot() + theme_bw() + facet_wrap(~depth) +
+#   geom_line(data=acdc_long |> filter(depth==1.1), 
+#             aes(date_time, rollmean(speed, k = 11, fill = NA, align = "center"))) +
+#   scale_color_distiller(palette="RdBu") + 
+#   geom_vline(xintercept = ymd_hms("2024-11-27 10:30:00"), color="darkblue")
+
+  acdc_filtered <- acdc_long |> 
+  dplyr::filter(depth >= 0.5 & depth <=4) |> 
+  group_by(date_time) |> 
+  summarise(depth = mean(depth), speed = mean(speed), dir = mean(dir))
+
+
+
+
+dir_b <- acdc_long |> dplyr::filter(depth < 2, date_time > ymd_hms("2024-11-27 11:02:00"), date_time < ymd_hms("2024-11-27 22:05:00")) |> pull(dir) # |> mean() 
+speed_b <- acdc_long |> dplyr::filter(depth < 2, date_time > ymd_hms("2024-11-27 11:02:00"), date_time < ymd_hms("2024-11-27 22:05:00")) |> pull(speed) # |> mean()
+# nocov start
+
+
+ggwindrose <- function(speed, direction, n_directions = 8, n_speeds = 5,
+                       speed_cuts = NA, col_pal = "GnBu", legend_title = "Wind speed (m/s)",
+                       calm_wind = 0, n_col = 1, facet = NULL, plot_title = "") {
+  stopifnot(
+    is.numeric(speed), is.numeric(direction),
+    length(speed) == length(direction),
+    all(direction >= 0 & direction <= 360, na.rm = TRUE),
+    is.numeric(n_directions), length(n_directions) == 1,
+    is.numeric(n_speeds), length(n_speeds) == 1,
+    is.numeric(calm_wind), length(calm_wind) == 1,
+    is.character(legend_title) || is.expression(legend_title),
+    col_pal %in% hcl.pals()
+  )
+
+  include_facet <- !is.null(facet)
+  if (include_facet) {
+    stopifnot(is.character(facet) || is.factor(facet))
+    if (length(facet) == 1) facet <- rep(facet, length(speed))
+    stopifnot(length(facet) == length(speed))
+  }
+
+  optimal_n_dir <- c(4, 8, 16)
+  if (!(n_directions %in% optimal_n_dir)) {
+    n_directions <- optimal_n_dir[which.min(abs(n_directions - optimal_n_dir))]
+    message("Using the closest optimal number of wind directions (", n_directions, ")")
+  }
+
+  dir_labels <- switch(as.character(n_directions),
+    "4" = c("N", "E", "S", "W"),
+    "8" = c("N", "NE", "E", "SE", "S", "SW", "W", "NW"),
+    "16" = c("N", "NNE", "NE", "ENE", "E", "ESE", "SE", "SSE",
+             "S", "SSW", "SW", "WSW", "W", "WNW", "NW", "NNW")
+  )
+
+  dir_bin_width <- 360 / n_directions
+  dir_bin_cuts <- seq(dir_bin_width / 2, 360 - dir_bin_width / 2, dir_bin_width)
+  dir_intervals <- findInterval(direction, dir_bin_cuts)
+  dir_intervals[dir_intervals == 0] <- n_directions
+  dir_bin <- factor(dir_intervals, labels = dir_labels)
+
+  if (is.numeric(speed_cuts)) {
+    speed_cuts <- sort(unique(c(min(speed, na.rm = TRUE), speed_cuts, max(speed, na.rm = TRUE))))
+    spd_bin <- cut(speed, breaks = speed_cuts, include.lowest = TRUE)
+  } else {
+    spd_bin <- cut(speed, breaks = n_speeds)
+  }
+
+  spd_cols <- hcl.colors(length(levels(spd_bin)), col_pal, rev = TRUE)
+  if (length(spd_cols) != length(levels(spd_bin))) {
+    spd_bin <- cut(speed, breaks = length(spd_cols))
+  }
+
+  if (include_facet) {
+    df <- as.data.frame(table(dir_bin, spd_bin, facet))
+    df$proportion <- ave(df$Freq, df$facet, FUN = function(x) x / sum(x))
+  } else {
+    df <- as.data.frame(table(dir_bin, spd_bin))
+    df$proportion <- df$Freq / sum(df$Freq)
+  }
+
+  p <- ggplot(df, aes(x = dir_bin, fill = spd_bin, y = proportion)) +
+    geom_bar(stat = "identity", color = "black") +
+    scale_x_discrete(drop = FALSE) +
+    scale_fill_manual(name = legend_title, values = spd_cols) +
+    coord_polar(start = 2 * pi - pi / n_directions) +
+    scale_y_continuous(labels = scales::percent_format(accuracy = 1)) +
+    theme_minimal() +
+    theme(axis.title = element_blank()) +
+    labs(title = plot_title)
+
+  if (include_facet) {
+    p <- p + facet_wrap(~facet, ncol = n_col)
+  }
+
+  return(p)
+}
+
+
+ggwindrose(speed_b, dir_b, n_directions = 16, speed_cuts = c(0, 0.025, 0.05, 0.075, 0.1, 0.125, 0.15),
+           n_speeds = 6)
+```

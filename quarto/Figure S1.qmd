@@ -1,0 +1,125 @@
+---
+title: "Figure S1"
+format:
+  html:
+    toc: true
+    math: mathjax
+    code-fold: true
+    code-tools: true
+execute:
+  echo: true
+  warning: false
+  message: false
+editor: visual
+---
+
+::: cell
+```{=html}
+<style>
+  code, pre {
+    font-size: 65%;
+    color:darkgrey;
+  }
+</style>
+```
+:::
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| fig-height: 7.5
+#| fig-width: 11
+#| include: false
+#| eval: true
+
+
+library(dataaimsr)
+library(ggplot2)
+library(tidyverse)
+
+my_api_key="JUh5oCYdac3gqScxlN4i32360bGFOYpB9JGCECf4"
+
+
+
+```
+
+Daily wind speed (± min/max) and average wind direction for Lizard Island October 2024 - February 2025
+
+```{r}
+#| message: false
+#| warning: false
+#| fig-height: 7.5
+#| fig-width: 11
+
+# load libraries
+library(sf)
+library(tidyverse)
+library(janitor)
+library(readxl)
+library(leaflet)
+library(dataaimsr)
+
+lizard_wind_speed <- aims_data("weather",
+  filters = list(
+    series_id = 3484,
+    from_date = "2024-07-10",
+    thru_date = "2025-02-28"
+  ),
+  api_key = my_api_key
+)
+
+lizard_wind_direction <- aims_data("weather",
+  filters = list(
+    series_id = 3485,
+    from_date = "2024-07-10",
+    thru_date = "2025-02-24"
+  ),
+  api_key = my_api_key
+)
+
+# Prepare daily summary
+wind_daily <- lizard_wind_speed |>
+  mutate(date = as.Date(time)) |>
+  group_by(date) |>
+  summarise(
+    mean_speed = mean(qc_val, na.rm = TRUE),
+    min_speed = min(qc_val, na.rm = TRUE),
+    max_speed = max(qc_val, na.rm = TRUE)
+  )
+
+# Join with direction
+wind_direction_daily <- lizard_wind_direction |>
+  mutate(date = as.Date(time)) |>
+  group_by(date) |>
+  summarise(mean_dir = mean(qc_val, na.rm = TRUE))
+
+# Combine
+wind_combined <- left_join(wind_daily, wind_direction_daily, by = "date") |>
+  mutate(dir_rad = (270 - mean_dir) * pi / 180) # convert to radians, flip for plotting
+
+wind_combined <- wind_combined |>
+  mutate(
+    dir_rad = (270 - mean_dir) * pi / 180,
+    dx = sin(dir_rad),
+    dy = cos(dir_rad)
+  )
+
+ggplot() +
+  theme_bw() +
+  geom_ribbon(data = wind_combined, aes(x = date, ymin = min_speed, ymax = max_speed), fill = "lightblue", alpha = 0.3) +
+  geom_line(data = wind_combined, aes(x = date, y = mean_speed), color = "blue") +
+  geom_segment(
+    data = wind_combined, aes(
+      x = date,
+      xend = date + dx * 0.25, # adjust 0.25 for horizontal scaling
+      y = -8,
+      yend = -8 + dy * 8 # adjust 2 for arrow height
+    ),
+    arrow = arrow(length = unit(0.1, "cm")),
+    linewidth = 0.5
+  ) +
+  scale_y_continuous(limits = c(-20, NA), expand = expansion(mult = c(0, 0.05))) +
+  labs(y = "Wind Speed (m/s)", x = "Date")
+
+```

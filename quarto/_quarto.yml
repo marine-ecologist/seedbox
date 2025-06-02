@@ -1,0 +1,33 @@
+project:
+  type: website
+  output-dir: ../docs/
+  resources:
+    - quarto/
+
+website:
+  title: "Larval seedboxes"
+  search: false
+  navbar:
+    left:
+      - file: codebase.qmd
+      - text: "Figures"
+        menu:
+          - file: Figure 1.qmd
+          - file: Figure 2.qmd
+          - file: Figure 3.qmd
+          - file: Figure 4.qmd
+          - file: Figure S1.qmd
+          - file: Figure S2.qmd
+      - icon: github
+        href: https://github.com/marine-ecologist/seedbox
+        aria-label: GitHub
+
+format:
+  html:
+    theme: cyborg
+    page-layout: full
+    toc: false
+
+execute:
+  echo: true
+  warning: false
