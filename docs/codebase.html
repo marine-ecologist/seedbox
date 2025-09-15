@@ -86,6 +86,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
+<script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
 
 
 </head>
@@ -110,37 +112,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <a class="nav-link active" href="./codebase.html" aria-current="page"> 
 <span class="menu-text">Codebase</span></a>
   </li>  
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-figures" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Figures</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-figures">    
-        <li>
-    <a class="dropdown-item" href="./Figure 1.html">
- <span class="dropdown-text">Figure 1</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./Figure 2.html">
- <span class="dropdown-text">Figure 2</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./Figure 3.html">
- <span class="dropdown-text">Figure 3</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./Figure 4.html">
- <span class="dropdown-text">Figure 4</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./Figure S1.html">
- <span class="dropdown-text">Figure S1</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./Figure S2.html">
- <span class="dropdown-text">Figure S2</span></a>
-  </li>  
-    </ul>
-  </li>
   <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/marine-ecologist/seedbox"> <i class="bi bi-github" role="img" aria-label="GitHub">
 </i> 
@@ -199,67 +170,180 @@ code:not(pre code) {
 </div>
 <p>Code via <code>quarto::quarto_render()</code> in <code>../quarto/</code>, data via <code>../data/</code></p>
 <p>All outputs are regenerated for fully reproducible research</p>
-<section id="abstract" class="level4">
-<h4 class="anchored" data-anchor-id="abstract">Abstract</h4>
 <div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">session_info</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 <div class="cell-output cell-output-stdout">
 <pre><code>─ Session info ───────────────────────────────────────────────────────────────
  setting  value
  version  R version 4.4.2 (2024-10-31)
- os       macOS Sequoia 15.4.1
+ os       macOS Sequoia 15.6.1
  system   aarch64, darwin20
  ui       X11
  language (EN)
  collate  en_US.UTF-8
  ctype    en_US.UTF-8
  tz       Australia/Brisbane
- date     2025-06-02
- pandoc   3.6.4 @ /opt/homebrew/bin/ (via rmarkdown)
+ date     2025-09-15
+ pandoc   3.7.0.2 @ /opt/homebrew/bin/ (via rmarkdown)
  quarto   1.7.29 @ /usr/local/bin/quarto
 
 ─ Packages ───────────────────────────────────────────────────────────────────
- package     * version date (UTC) lib source
- cachem        1.1.0   2024-05-16 [1] CRAN (R 4.4.0)
- cli           3.6.5   2025-04-23 [1] CRAN (R 4.4.1)
- conflicted  * 1.2.0   2023-02-01 [1] CRAN (R 4.4.0)
- devtools      2.4.5   2022-10-11 [1] CRAN (R 4.4.0)
- digest        0.6.37  2024-08-19 [1] CRAN (R 4.4.1)
- ellipsis      0.3.2   2021-04-29 [1] CRAN (R 4.4.0)
- evaluate      1.0.3   2025-01-10 [1] CRAN (R 4.4.1)
- fastmap       1.2.0   2024-05-15 [1] CRAN (R 4.4.0)
- fs            1.6.6   2025-04-12 [1] CRAN (R 4.4.1)
- glue          1.8.0   2024-09-30 [1] CRAN (R 4.4.1)
- htmltools     0.5.8.1 2024-04-04 [1] CRAN (R 4.4.1)
- htmlwidgets   1.6.4   2023-12-06 [1] CRAN (R 4.4.0)
- httpuv        1.6.16  2025-04-16 [1] CRAN (R 4.4.1)
- jsonlite      2.0.0   2025-03-27 [1] CRAN (R 4.4.1)
- knitr         1.50    2025-03-16 [1] CRAN (R 4.4.1)
- later         1.4.2   2025-04-08 [1] CRAN (R 4.4.1)
- lifecycle     1.0.4   2023-11-07 [1] CRAN (R 4.4.0)
- magrittr      2.0.3   2022-03-30 [1] CRAN (R 4.4.0)
- memoise       2.0.1   2021-11-26 [1] CRAN (R 4.4.0)
- mime          0.13    2025-03-17 [1] CRAN (R 4.4.1)
- miniUI        0.1.1.1 2018-05-18 [1] CRAN (R 4.4.0)
- pkgbuild      1.4.8   2025-05-26 [1] CRAN (R 4.4.1)
- pkgload       1.4.0   2024-06-28 [1] CRAN (R 4.4.0)
- profvis       0.4.0   2024-09-20 [1] CRAN (R 4.4.1)
- promises      1.3.2   2024-11-28 [1] CRAN (R 4.4.1)
- purrr         1.0.4   2025-02-05 [1] CRAN (R 4.4.1)
- R6            2.6.1   2025-02-15 [1] CRAN (R 4.4.1)
- Rcpp          1.0.14  2025-01-12 [1] CRAN (R 4.4.1)
- remotes       2.5.0   2024-03-17 [1] CRAN (R 4.4.0)
- rlang         1.1.6   2025-04-11 [1] CRAN (R 4.4.1)
- rmarkdown     2.29    2024-11-04 [1] CRAN (R 4.4.1)
- rstudioapi    0.17.1  2024-10-22 [1] CRAN (R 4.4.1)
- sessioninfo   1.2.3   2025-02-05 [1] CRAN (R 4.4.1)
- shiny         1.10.0  2024-12-14 [1] CRAN (R 4.4.1)
- urlchecker    1.0.1   2021-11-30 [1] CRAN (R 4.4.0)
- usethis       3.1.0   2024-11-26 [1] CRAN (R 4.4.1)
- vctrs         0.6.5   2023-12-01 [1] CRAN (R 4.4.0)
- xfun          0.52    2025-04-02 [1] CRAN (R 4.4.1)
- xtable        1.8-4   2019-04-21 [1] CRAN (R 4.4.0)
- yaml          2.3.10  2024-07-26 [1] CRAN (R 4.4.0)
+ package          * version    date (UTC) lib source
+ abind            * 1.4-8      2024-09-12 [1] CRAN (R 4.4.1)
+ arrayhelpers       1.1-0      2020-02-04 [1] CRAN (R 4.4.0)
+ backports          1.5.0      2024-05-23 [1] CRAN (R 4.4.0)
+ bayesplot          1.13.0     2025-06-18 [1] CRAN (R 4.4.1)
+ bayestestR       * 0.16.1     2025-07-01 [1] CRAN (R 4.4.1)
+ bridgesampling     1.1-2      2021-04-16 [1] CRAN (R 4.4.0)
+ brms             * 2.23.0     2025-09-09 [1] CRAN (R 4.4.1)
+ Brobdingnag        1.2-9      2022-10-19 [1] CRAN (R 4.4.0)
+ broom            * 1.0.9      2025-07-28 [1] CRAN (R 4.4.1)
+ broom.mixed      * 0.2.9.6    2024-10-15 [1] CRAN (R 4.4.1)
+ cachem             1.1.0      2024-05-16 [1] CRAN (R 4.4.0)
+ cellranger         1.1.0      2016-07-27 [1] CRAN (R 4.4.0)
+ checkmate          2.3.2      2024-07-29 [1] CRAN (R 4.4.0)
+ class              7.3-23     2025-01-01 [1] CRAN (R 4.4.1)
+ classInt           0.4-11     2025-01-08 [1] CRAN (R 4.4.1)
+ cli                3.6.5      2025-04-23 [1] CRAN (R 4.4.1)
+ coda               0.19-4.1   2024-01-31 [1] CRAN (R 4.4.0)
+ codetools          0.2-20     2024-03-31 [1] CRAN (R 4.4.2)
+ conflicted       * 1.2.0      2023-02-01 [1] CRAN (R 4.4.0)
+ curl               7.0.0      2025-08-19 [1] CRAN (R 4.4.1)
+ dataaimsr        * 1.1.0      2025-06-01 [1] Github (ropensci/dataaimsr@1a6132e)
+ DBI                1.2.3      2024-06-02 [1] CRAN (R 4.4.0)
+ deldir             2.0-4      2024-02-28 [1] CRAN (R 4.4.0)
+ devtools           2.4.5      2022-10-11 [1] CRAN (R 4.4.0)
+ dichromat          2.0-0.1    2022-05-02 [1] CRAN (R 4.4.0)
+ digest             0.6.37     2024-08-19 [1] CRAN (R 4.4.1)
+ distributional     0.5.0      2024-09-17 [1] CRAN (R 4.4.1)
+ dotCall64          1.2        2024-10-04 [1] CRAN (R 4.4.1)
+ dplyr            * 1.1.4      2023-11-17 [1] CRAN (R 4.4.0)
+ e1071              1.7-16     2024-09-16 [1] CRAN (R 4.4.1)
+ ellipsis           0.3.2      2021-04-29 [1] CRAN (R 4.4.0)
+ emmeans            1.11.2     2025-07-11 [1] CRAN (R 4.4.1)
+ estimability       1.5.1      2024-05-12 [1] CRAN (R 4.4.0)
+ evaluate           1.0.4      2025-06-18 [1] CRAN (R 4.4.1)
+ farver             2.1.2      2024-05-13 [1] CRAN (R 4.4.0)
+ fastmap            1.2.0      2024-05-15 [1] CRAN (R 4.4.0)
+ fields           * 16.3.1     2025-03-08 [1] CRAN (R 4.4.1)
+ forcats          * 1.0.0      2023-01-29 [1] CRAN (R 4.4.0)
+ fs                 1.6.6      2025-04-12 [1] CRAN (R 4.4.1)
+ furrr              0.3.1      2022-08-15 [1] CRAN (R 4.4.0)
+ future             1.67.0     2025-07-29 [1] CRAN (R 4.4.1)
+ generics           0.1.4      2025-05-09 [1] CRAN (R 4.4.1)
+ ggdist             3.3.3      2025-04-23 [1] CRAN (R 4.4.1)
+ ggplot2          * 3.5.2      2025-04-09 [1] CRAN (R 4.4.1)
+ ggrepel            0.9.6      2024-09-07 [1] CRAN (R 4.4.1)
+ globals            0.18.0     2025-05-08 [1] CRAN (R 4.4.1)
+ glue               1.8.0      2024-09-30 [1] CRAN (R 4.4.1)
+ goftest            1.2-3      2021-10-07 [1] CRAN (R 4.4.0)
+ gtable             0.3.6      2024-10-25 [1] CRAN (R 4.4.1)
+ hms                1.1.3      2023-03-21 [1] CRAN (R 4.4.0)
+ htmltools          0.5.8.1    2024-04-04 [1] CRAN (R 4.4.1)
+ htmlwidgets        1.6.4      2023-12-06 [1] CRAN (R 4.4.0)
+ httpuv             1.6.16     2025-04-16 [1] CRAN (R 4.4.1)
+ httr               1.4.7      2023-08-15 [1] CRAN (R 4.4.0)
+ insight            1.3.1      2025-06-30 [1] CRAN (R 4.4.1)
+ janitor          * 2.2.1      2024-12-22 [1] CRAN (R 4.4.1)
+ jsonlite           2.0.0      2025-03-27 [1] CRAN (R 4.4.1)
+ kableExtra       * 1.4.0      2024-01-24 [1] CRAN (R 4.4.0)
+ KernSmooth         2.23-26    2025-01-01 [1] CRAN (R 4.4.1)
+ knitr              1.50       2025-03-16 [1] CRAN (R 4.4.1)
+ later              1.4.2      2025-04-08 [1] CRAN (R 4.4.1)
+ lattice            0.22-7     2025-04-02 [1] CRAN (R 4.4.1)
+ lifecycle          1.0.4      2023-11-07 [1] CRAN (R 4.4.0)
+ listenv            0.9.1      2024-01-29 [1] CRAN (R 4.4.0)
+ loo                2.8.0.9000 2024-11-25 [1] https://stan-dev.r-universe.dev (R 4.4.2)
+ lubridate        * 1.9.4      2024-12-08 [1] CRAN (R 4.4.1)
+ magrittr           2.0.3      2022-03-30 [1] CRAN (R 4.4.0)
+ maps               3.4.3      2025-05-26 [1] CRAN (R 4.4.1)
+ MASS               7.3-65     2025-02-28 [1] CRAN (R 4.4.1)
+ Matrix             1.7-3      2025-03-11 [1] CRAN (R 4.4.1)
+ matrixStats        1.5.0      2025-01-07 [1] CRAN (R 4.4.1)
+ memoise            2.0.1      2021-11-26 [1] CRAN (R 4.4.0)
+ mgcv               1.9-3      2025-04-04 [1] CRAN (R 4.4.1)
+ mime               0.13       2025-03-17 [1] CRAN (R 4.4.1)
+ miniUI             0.1.2      2025-04-17 [1] CRAN (R 4.4.1)
+ multcomp           1.4-28     2025-01-29 [1] CRAN (R 4.4.1)
+ mvtnorm            1.3-3      2025-01-10 [1] CRAN (R 4.4.1)
+ nlme             * 3.1-168    2025-03-31 [1] CRAN (R 4.4.1)
+ parallelly         1.45.1     2025-07-24 [1] CRAN (R 4.4.1)
+ parsedate          1.3.2      2024-12-09 [1] CRAN (R 4.4.1)
+ patchwork        * 1.3.1      2025-06-21 [1] CRAN (R 4.4.1)
+ pillar             1.11.0     2025-07-04 [1] CRAN (R 4.4.1)
+ pkgbuild           1.4.8      2025-05-26 [1] CRAN (R 4.4.1)
+ pkgconfig          2.0.3      2019-09-22 [1] CRAN (R 4.4.0)
+ pkgload            1.4.0      2024-06-28 [1] CRAN (R 4.4.0)
+ polyclip           1.10-7     2024-07-23 [1] CRAN (R 4.4.0)
+ posterior        * 1.6.1      2025-02-27 [1] CRAN (R 4.4.1)
+ profvis            0.4.0      2024-09-20 [1] CRAN (R 4.4.1)
+ promises           1.3.3      2025-05-29 [1] CRAN (R 4.4.1)
+ proxy              0.4-27     2022-06-09 [1] CRAN (R 4.4.0)
+ purrr            * 1.1.0      2025-07-10 [1] CRAN (R 4.4.1)
+ R6                 2.6.1      2025-02-15 [1] CRAN (R 4.4.1)
+ RColorBrewer       1.1-3      2022-04-03 [1] CRAN (R 4.4.0)
+ Rcpp             * 1.1.0      2025-07-02 [1] CRAN (R 4.4.1)
+ RcppParallel       5.1.10     2025-01-24 [1] CRAN (R 4.4.1)
+ readr            * 2.1.5      2024-01-10 [1] CRAN (R 4.4.0)
+ readxl           * 1.4.5      2025-03-07 [1] CRAN (R 4.4.1)
+ remotes            2.5.0      2024-03-17 [1] CRAN (R 4.4.0)
+ rlang              1.1.6      2025-04-11 [1] CRAN (R 4.4.1)
+ rmarkdown          2.29       2024-11-04 [1] CRAN (R 4.4.1)
+ rnaturalearth      1.1.0      2025-07-28 [1] CRAN (R 4.4.1)
+ rpart            * 4.1.24     2025-01-07 [1] CRAN (R 4.4.1)
+ rstantools         2.4.0      2024-01-31 [1] CRAN (R 4.4.0)
+ rstudioapi         0.17.1     2024-10-22 [1] CRAN (R 4.4.1)
+ sandwich           3.1-1      2024-09-15 [1] CRAN (R 4.4.1)
+ scales             1.4.0      2025-04-24 [1] CRAN (R 4.4.1)
+ sessioninfo        1.2.3      2025-02-05 [1] CRAN (R 4.4.1)
+ sf               * 1.0-21     2025-05-15 [1] CRAN (R 4.4.1)
+ shiny              1.11.1     2025-07-03 [1] CRAN (R 4.4.1)
+ snakecase          0.11.1     2023-08-27 [1] CRAN (R 4.4.0)
+ spam             * 2.11-1     2025-01-20 [1] CRAN (R 4.4.1)
+ spatstat         * 3.4-0      2025-07-25 [1] CRAN (R 4.4.1)
+ spatstat.data    * 3.1-6      2025-03-17 [1] CRAN (R 4.4.1)
+ spatstat.explore * 3.5-2      2025-07-22 [1] CRAN (R 4.4.1)
+ spatstat.geom    * 3.5-0      2025-07-20 [1] CRAN (R 4.4.1)
+ spatstat.linnet  * 3.3-1      2025-07-24 [1] CRAN (R 4.4.1)
+ spatstat.model   * 3.4-0      2025-07-23 [1] CRAN (R 4.4.1)
+ spatstat.random  * 3.4-1      2025-05-20 [1] CRAN (R 4.4.1)
+ spatstat.sparse    3.1-0      2024-06-21 [1] CRAN (R 4.4.0)
+ spatstat.univar  * 3.1-4      2025-07-13 [1] CRAN (R 4.4.1)
+ spatstat.utils     3.1-5      2025-07-17 [1] CRAN (R 4.4.1)
+ stars            * 0.6-8      2025-02-01 [1] CRAN (R 4.4.1)
+ stringi            1.8.7      2025-03-27 [1] CRAN (R 4.4.1)
+ stringr          * 1.5.2      2025-09-08 [1] CRAN (R 4.4.1)
+ survival           3.8-3      2024-12-17 [1] CRAN (R 4.4.1)
+ svglite            2.2.1      2025-05-12 [1] CRAN (R 4.4.1)
+ svUnit             1.0.6      2021-04-19 [1] CRAN (R 4.4.0)
+ systemfonts        1.2.3      2025-04-30 [1] CRAN (R 4.4.1)
+ tensor             1.5.1      2025-06-17 [1] CRAN (R 4.4.1)
+ tensorA            0.36.2.1   2023-12-13 [1] CRAN (R 4.4.0)
+ terra            * 1.8-60     2025-07-21 [1] CRAN (R 4.4.1)
+ textshaping        1.0.1      2025-05-01 [1] CRAN (R 4.4.1)
+ TH.data            1.1-3      2025-01-17 [1] CRAN (R 4.4.1)
+ tibble           * 3.3.0      2025-06-08 [1] CRAN (R 4.4.1)
+ tidybayes        * 3.0.7      2024-09-15 [1] CRAN (R 4.4.1)
+ tidyr            * 1.3.1      2024-01-24 [1] CRAN (R 4.4.0)
+ tidyselect         1.2.1      2024-03-11 [1] CRAN (R 4.4.0)
+ tidyterra        * 0.7.2      2025-04-14 [1] CRAN (R 4.4.1)
+ tidyverse        * 2.0.0      2023-02-22 [1] CRAN (R 4.4.0)
+ timechange         0.3.0      2024-01-18 [1] CRAN (R 4.4.0)
+ tzdb               0.5.0      2025-03-15 [1] CRAN (R 4.4.1)
+ units              0.8-7      2025-03-11 [1] CRAN (R 4.4.1)
+ urlchecker         1.0.1      2021-11-30 [1] CRAN (R 4.4.0)
+ usethis            3.1.0      2024-11-26 [1] CRAN (R 4.4.1)
+ vctrs              0.6.5      2023-12-01 [1] CRAN (R 4.4.0)
+ viridisLite      * 0.4.2      2023-05-02 [1] CRAN (R 4.4.0)
+ withr              3.0.2      2024-10-28 [1] CRAN (R 4.4.1)
+ xfun               0.52       2025-04-02 [1] CRAN (R 4.4.1)
+ xml2               1.4.0      2025-08-20 [1] CRAN (R 4.4.1)
+ xtable             1.8-4      2019-04-21 [1] CRAN (R 4.4.0)
+ yaml               2.3.10     2024-07-26 [1] CRAN (R 4.4.0)
+ zoo                1.8-14     2025-04-10 [1] CRAN (R 4.4.1)
 
  [1] /Library/Frameworks/R.framework/Versions/4.4-arm64/Resources/library
  * ── Packages attached to the search path.
@@ -267,11 +351,1118 @@ code:not(pre code) {
 ──────────────────────────────────────────────────────────────────────────────</code></pre>
 </div>
 </div>
+<section id="figure-2" class="level4">
+<h4 class="anchored" data-anchor-id="figure-2">Figure 2</h4>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(janitor)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readxl)</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(sf)</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(terra)</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyterra)</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="co"># read tile data</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>tiles <span class="ot">&lt;-</span> readxl<span class="sc">::</span><span class="fu">read_xlsx</span>(<span class="st">"../data/tiles.xlsx"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(id) <span class="sc">|&gt;</span> </span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">plot=</span><span class="fu">mean</span>(plot), <span class="at">settlers=</span><span class="fu">sum</span>(count)) </span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a><span class="co"># import slow release pool controls</span></span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>tiles_slrp <span class="ot">&lt;-</span> <span class="fu">read_xlsx</span>(<span class="st">"../data/data_SetTilesSlowReleaseExp3.xlsx"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">clean_names</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">id=</span>tile_number) <span class="sc">|&gt;</span> </span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(id) <span class="sc">|&gt;</span> </span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">settlers=</span><span class="fu">sum</span>(settler_count)) <span class="sc">|&gt;</span> </span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">seedbox=</span><span class="dv">0</span>) <span class="sc">|&gt;</span>  <span class="co">#, dsm=NA, height=NA) |&gt; </span></span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">drop_na</span>(id)</span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a><span class="co"># vectorise inner tiles adjacent to seedboxes</span></span>
+<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a>inner <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1217</span>, <span class="dv">1268</span>, <span class="dv">1253</span>, <span class="dv">1121</span>, <span class="dv">1207</span>, <span class="dv">1240</span>, <span class="dv">1021</span>, <span class="dv">1291</span>, <span class="dv">1217</span>,</span>
+<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a>  <span class="dv">1084</span>, <span class="dv">1039</span>, <span class="dv">1040</span>, <span class="dv">1213</span>, <span class="dv">1254</span>, <span class="dv">1029</span>, </span>
+<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a>  <span class="dv">1099</span>, <span class="dv">1034</span>, <span class="dv">1284</span>, <span class="dv">1027</span>, <span class="dv">1252</span>, <span class="dv">1056</span>, </span>
+<span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a>  <span class="dv">1073</span>, <span class="dv">1086</span>, <span class="dv">1002</span>, <span class="dv">1005</span>, <span class="dv">1179</span>, <span class="dv">1047</span>,</span>
+<span id="cb3-29"><a href="#cb3-29" aria-hidden="true" tabindex="-1"></a>  <span class="dv">1187</span>, <span class="dv">1104</span>, <span class="dv">1149</span>, <span class="dv">1130</span>, <span class="dv">1197</span>, <span class="dv">1127</span>,</span>
+<span id="cb3-30"><a href="#cb3-30" aria-hidden="true" tabindex="-1"></a>  <span class="dv">1194</span>, <span class="dv">1193</span>, <span class="dv">1107</span>, <span class="dv">1191</span>, <span class="dv">1175</span>, <span class="dv">1178</span>)</span>
+<span id="cb3-31"><a href="#cb3-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-32"><a href="#cb3-32" aria-hidden="true" tabindex="-1"></a><span class="co"># read spatial data, add "signal" binary where count exceeds 80% CI of controls</span></span>
+<span id="cb3-33"><a href="#cb3-33" aria-hidden="true" tabindex="-1"></a>seedbox <span class="ot">&lt;-</span> <span class="fu">rbind</span>(</span>
+<span id="cb3-34"><a href="#cb3-34" aria-hidden="true" tabindex="-1"></a>  <span class="fu">st_read</span>(<span class="st">"../data/Seedbox2.geojson"</span>, <span class="at">quiet=</span><span class="cn">TRUE</span>) <span class="sc">|&gt;</span> <span class="fu">mutate</span>(<span class="at">seedbox=</span><span class="dv">2</span>) <span class="sc">|&gt;</span> <span class="fu">st_transform</span>(<span class="dv">32755</span>),</span>
+<span id="cb3-35"><a href="#cb3-35" aria-hidden="true" tabindex="-1"></a>  <span class="fu">st_read</span>(<span class="st">"../data/Seedbox3.geojson"</span>, <span class="at">quiet=</span><span class="cn">TRUE</span>) <span class="sc">|&gt;</span> <span class="fu">mutate</span>(<span class="at">seedbox=</span><span class="dv">3</span>) <span class="sc">|&gt;</span> <span class="fu">st_transform</span>(<span class="dv">32755</span>),</span>
+<span id="cb3-36"><a href="#cb3-36" aria-hidden="true" tabindex="-1"></a>  <span class="fu">st_read</span>(<span class="st">"../data/Seedbox4.geojson"</span>, <span class="at">quiet=</span><span class="cn">TRUE</span>) <span class="sc">|&gt;</span> <span class="fu">mutate</span>(<span class="at">seedbox=</span><span class="dv">4</span>) <span class="sc">|&gt;</span> <span class="fu">st_transform</span>(<span class="dv">32755</span>),</span>
+<span id="cb3-37"><a href="#cb3-37" aria-hidden="true" tabindex="-1"></a>  <span class="fu">st_read</span>(<span class="st">"../data/Seedbox5.geojson"</span>, <span class="at">quiet=</span><span class="cn">TRUE</span>) <span class="sc">|&gt;</span> <span class="fu">mutate</span>(<span class="at">seedbox=</span><span class="dv">5</span>) <span class="sc">|&gt;</span> <span class="fu">st_transform</span>(<span class="dv">32755</span>),</span>
+<span id="cb3-38"><a href="#cb3-38" aria-hidden="true" tabindex="-1"></a>  <span class="fu">st_read</span>(<span class="st">"../data/Seedbox6.geojson"</span>, <span class="at">quiet=</span><span class="cn">TRUE</span>) <span class="sc">|&gt;</span> <span class="fu">mutate</span>(<span class="at">seedbox=</span><span class="dv">6</span>) <span class="sc">|&gt;</span> <span class="fu">st_transform</span>(<span class="dv">32755</span>)) <span class="sc">|&gt;</span> </span>
+<span id="cb3-39"><a href="#cb3-39" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(tiles <span class="sc">|&gt;</span> <span class="fu">select</span>(<span class="sc">-</span>plot), <span class="at">by=</span><span class="st">"id"</span>) <span class="sc">|&gt;</span> <span class="fu">drop_na</span>(settlers) <span class="sc">|&gt;</span> </span>
+<span id="cb3-40"><a href="#cb3-40" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">signal =</span> <span class="fu">ifelse</span>(settlers <span class="sc">&lt;</span> <span class="fu">t.test</span>(tiles_slrp<span class="sc">$</span>settlers, <span class="at">conf.level =</span> <span class="fl">0.80</span>)<span class="sc">$</span>conf.int[[<span class="dv">2</span>]], <span class="st">"none"</span>, <span class="st">"signal"</span>)) </span>
+<span id="cb3-41"><a href="#cb3-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-42"><a href="#cb3-42" aria-hidden="true" tabindex="-1"></a><span class="co"># import orthomosaic, downsample raster</span></span>
+<span id="cb3-43"><a href="#cb3-43" aria-hidden="true" tabindex="-1"></a>orthomap <span class="ot">&lt;-</span> <span class="fu">rast</span>(<span class="st">"../data/orthophoto.tif"</span>) </span>
+<span id="cb3-44"><a href="#cb3-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-45"><a href="#cb3-45" aria-hidden="true" tabindex="-1"></a><span class="co"># plot with ggplot</span></span>
+<span id="cb3-46"><a href="#cb3-46" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>() <span class="sc">+</span> <span class="fu">theme_bw</span>() <span class="sc">+</span></span>
+<span id="cb3-47"><a href="#cb3-47" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_spatraster_rgb</span>(<span class="at">data=</span>orthomap, <span class="at">alpha=</span><span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb3-48"><a href="#cb3-48" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_sf</span>(<span class="at">data =</span> seedbox, <span class="at">fill=</span><span class="st">"white"</span>, <span class="at">shape=</span><span class="dv">21</span>, <span class="at">size=</span><span class="dv">2</span>, <span class="at">alpha=</span><span class="fl">0.9</span>) <span class="sc">+</span></span>
+<span id="cb3-49"><a href="#cb3-49" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">90</span>, <span class="at">vjust =</span> <span class="fl">0.5</span>, <span class="at">hjust=</span><span class="dv">1</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="codebase_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid figure-img" width="480"></p>
+</figure>
+</div>
+</div>
+</div>
 </section>
-<section id="contact" class="level4">
-<h4 class="anchored" data-anchor-id="contact">Contact</h4>
-<p><a href="mailto:george.roff@csiro.au">george.roff@csiro.au</a></p>
-<p><a href="https://github.com/marine-ecologist/seedbox" class="uri">https://github.com/marine-ecologist/seedbox</a></p>
+<section id="figure-3" class="level4">
+<h4 class="anchored" data-anchor-id="figure-3">Figure 3</h4>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(patchwork)</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(broom)</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="co"># calculate hulls, generate summary tables</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="co"># get centroids of tiles</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>centroids <span class="ot">&lt;-</span> seedbox <span class="sc">%&gt;%</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(seedbox) <span class="sc">%&gt;%</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(<span class="at">geometry =</span> <span class="fu">st_centroid</span>(<span class="fu">st_union</span>(geometry)))</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a><span class="co"># filter to only outer tiles</span></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>seedbox_outer <span class="ot">&lt;-</span> seedbox <span class="sc">|&gt;</span> <span class="fu">filter</span>(<span class="sc">!</span>id <span class="sc">%in%</span> inner)</span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a><span class="co"># make hulls and areas for plotting</span></span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>seedbox_hull <span class="ot">&lt;-</span> seedbox <span class="sc">|&gt;</span> <span class="fu">st_buffer</span>(<span class="fl">1.5</span>) <span class="sc">|&gt;</span> concaveman<span class="sc">::</span><span class="fu">concaveman</span>(<span class="dv">2</span>,<span class="dv">10</span>) <span class="sc">|&gt;</span> <span class="fu">vect</span>()</span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>seedbox_area <span class="ot">&lt;-</span> seedbox <span class="sc">|&gt;</span> <span class="fu">st_buffer</span>(<span class="dv">1</span>) <span class="sc">|&gt;</span>  concaveman<span class="sc">::</span><span class="fu">concaveman</span>(<span class="dv">2</span>,<span class="dv">10</span>) </span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate buffered bounding box for mapping</span></span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a>bbox <span class="ot">&lt;-</span> <span class="fu">st_bbox</span>(seedbox)</span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a>bbox[<span class="dv">1</span>] <span class="ot">&lt;-</span> bbox[<span class="dv">1</span>] <span class="sc">-</span> <span class="dv">5</span>  <span class="co"># xmin </span></span>
+<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a>bbox[<span class="dv">3</span>] <span class="ot">&lt;-</span> bbox[<span class="dv">3</span>] <span class="sc">+</span> <span class="dv">8</span>  <span class="co"># xmax </span></span>
+<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a>bbox[<span class="dv">2</span>] <span class="ot">&lt;-</span> bbox[<span class="dv">2</span>] <span class="sc">-</span> <span class="dv">2</span>  <span class="co"># xmin </span></span>
+<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a>bbox[<span class="dv">4</span>] <span class="ot">&lt;-</span> bbox[<span class="dv">4</span>] <span class="sc">+</span> <span class="dv">2</span>  <span class="co"># xmax </span></span>
+<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a><span class="co"># Convert to sf polygon for plotting</span></span>
+<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a>bbox_sf <span class="ot">&lt;-</span> <span class="fu">st_as_sfc</span>(bbox)</span>
+<span id="cb4-28"><a href="#cb4-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-29"><a href="#cb4-29" aria-hidden="true" tabindex="-1"></a><span class="co"># set breaks for heatmap z axis</span></span>
+<span id="cb4-30"><a href="#cb4-30" aria-hidden="true" tabindex="-1"></a>breaks_vals <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">5</span>, <span class="dv">10</span>, <span class="dv">20</span>, <span class="dv">50</span>, <span class="dv">100</span>, <span class="dv">250</span>, <span class="dv">500</span>, <span class="dv">1000</span>)</span>
+<span id="cb4-31"><a href="#cb4-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-32"><a href="#cb4-32" aria-hidden="true" tabindex="-1"></a><span class="co"># log settlers and add coords</span></span>
+<span id="cb4-33"><a href="#cb4-33" aria-hidden="true" tabindex="-1"></a>seedbox_centroids_data <span class="ot">&lt;-</span> seedbox <span class="sc">|&gt;</span></span>
+<span id="cb4-34"><a href="#cb4-34" aria-hidden="true" tabindex="-1"></a>  <span class="fu">st_transform</span>(<span class="dv">4326</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb4-35"><a href="#cb4-35" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">settlers_log =</span> <span class="fu">log</span>(settlers)) <span class="sc">|&gt;</span></span>
+<span id="cb4-36"><a href="#cb4-36" aria-hidden="true" tabindex="-1"></a>  <span class="fu">bind_cols</span>(<span class="fu">st_coordinates</span>(seedbox <span class="sc">|&gt;</span> <span class="fu">st_transform</span>(<span class="dv">4326</span>)))</span>
+<span id="cb4-37"><a href="#cb4-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-38"><a href="#cb4-38" aria-hidden="true" tabindex="-1"></a><span class="co"># summarise centroid for seedboxes</span></span>
+<span id="cb4-39"><a href="#cb4-39" aria-hidden="true" tabindex="-1"></a>seedbox_centroids <span class="ot">&lt;-</span> seedbox_centroids_data <span class="sc">|&gt;</span></span>
+<span id="cb4-40"><a href="#cb4-40" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(seedbox) <span class="sc">|&gt;</span></span>
+<span id="cb4-41"><a href="#cb4-41" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">geometry =</span> <span class="fu">st_centroid</span>(<span class="fu">st_union</span>(geometry))) <span class="sc">|&gt;</span></span>
+<span id="cb4-42"><a href="#cb4-42" aria-hidden="true" tabindex="-1"></a>  <span class="fu">st_as_sf</span>()</span>
+<span id="cb4-43"><a href="#cb4-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-44"><a href="#cb4-44" aria-hidden="true" tabindex="-1"></a>seedbox_centroids <span class="ot">&lt;-</span> seedbox_centroids <span class="sc">|&gt;</span>  <span class="fu">bind_cols</span>(<span class="fu">st_coordinates</span>(seedbox_centroids))</span>
+<span id="cb4-45"><a href="#cb4-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-46"><a href="#cb4-46" aria-hidden="true" tabindex="-1"></a><span class="co"># generate summary data</span></span>
+<span id="cb4-47"><a href="#cb4-47" aria-hidden="true" tabindex="-1"></a>summary_data <span class="ot">&lt;-</span> seedbox <span class="sc">|&gt;</span></span>
+<span id="cb4-48"><a href="#cb4-48" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as.data.frame</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb4-49"><a href="#cb4-49" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span>geometry, <span class="sc">-</span>signal) <span class="sc">|&gt;</span> </span>
+<span id="cb4-50"><a href="#cb4-50" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rbind</span>(tiles_slrp) <span class="sc">|&gt;</span> </span>
+<span id="cb4-51"><a href="#cb4-51" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">seedbox=</span><span class="fu">as.factor</span>(seedbox)) <span class="sc">|&gt;</span> </span>
+<span id="cb4-52"><a href="#cb4-52" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(seedbox) <span class="sc">|&gt;</span></span>
+<span id="cb4-53"><a href="#cb4-53" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(</span>
+<span id="cb4-54"><a href="#cb4-54" aria-hidden="true" tabindex="-1"></a>    <span class="at">settlers_mean =</span> <span class="fu">mean</span>(settlers, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb4-55"><a href="#cb4-55" aria-hidden="true" tabindex="-1"></a>     <span class="at">settlers_max =</span> <span class="fu">max</span>(settlers, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb4-56"><a href="#cb4-56" aria-hidden="true" tabindex="-1"></a>    <span class="at">settlers_se =</span> <span class="fu">sd</span>(settlers, <span class="at">na.rm =</span> <span class="cn">TRUE</span>) <span class="sc">/</span> <span class="fu">sqrt</span>(<span class="fu">n</span>()),  <span class="co"># Standard error</span></span>
+<span id="cb4-57"><a href="#cb4-57" aria-hidden="true" tabindex="-1"></a>    <span class="at">.groups =</span> <span class="st">"drop"</span></span>
+<span id="cb4-58"><a href="#cb4-58" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb4-59"><a href="#cb4-59" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb4-60"><a href="#cb4-60" aria-hidden="true" tabindex="-1"></a>    <span class="at">lower_ci =</span> settlers_mean <span class="sc">-</span> <span class="fu">qt</span>(<span class="fl">0.80</span>, <span class="at">df =</span> <span class="fu">n</span>() <span class="sc">-</span> <span class="dv">1</span>) <span class="sc">*</span> settlers_se,  <span class="co"># Lower bound</span></span>
+<span id="cb4-61"><a href="#cb4-61" aria-hidden="true" tabindex="-1"></a>    <span class="at">upper_ci =</span> settlers_mean <span class="sc">+</span> <span class="fu">qt</span>(<span class="fl">0.80</span>, <span class="at">df =</span> <span class="fu">n</span>() <span class="sc">-</span> <span class="dv">1</span>) <span class="sc">*</span> settlers_se   <span class="co"># Upper bound</span></span>
+<span id="cb4-62"><a href="#cb4-62" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb4-63"><a href="#cb4-63" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-64"><a href="#cb4-64" aria-hidden="true" tabindex="-1"></a><span class="co"># generate summary plot</span></span>
+<span id="cb4-65"><a href="#cb4-65" aria-hidden="true" tabindex="-1"></a>summary_data_plot <span class="ot">&lt;-</span>  seedbox_outer <span class="sc">|&gt;</span></span>
+<span id="cb4-66"><a href="#cb4-66" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as.data.frame</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb4-67"><a href="#cb4-67" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span>geometry, <span class="sc">-</span>signal) <span class="sc">|&gt;</span> </span>
+<span id="cb4-68"><a href="#cb4-68" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rbind</span>(tiles_slrp) <span class="sc">|&gt;</span> </span>
+<span id="cb4-69"><a href="#cb4-69" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">seedbox=</span><span class="fu">as.factor</span>(seedbox)) <span class="sc">|&gt;</span> </span>
+<span id="cb4-70"><a href="#cb4-70" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(seedbox) <span class="sc">|&gt;</span></span>
+<span id="cb4-71"><a href="#cb4-71" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(</span>
+<span id="cb4-72"><a href="#cb4-72" aria-hidden="true" tabindex="-1"></a>    <span class="at">settlers_mean =</span> <span class="fu">mean</span>(settlers, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb4-73"><a href="#cb4-73" aria-hidden="true" tabindex="-1"></a>     <span class="at">settlers_max =</span> <span class="fu">max</span>(settlers, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb4-74"><a href="#cb4-74" aria-hidden="true" tabindex="-1"></a>    <span class="at">settlers_se =</span> <span class="fu">sd</span>(settlers, <span class="at">na.rm =</span> <span class="cn">TRUE</span>) <span class="sc">/</span> <span class="fu">sqrt</span>(<span class="fu">n</span>()),  <span class="co"># Standard error</span></span>
+<span id="cb4-75"><a href="#cb4-75" aria-hidden="true" tabindex="-1"></a>    <span class="at">.groups =</span> <span class="st">"drop"</span></span>
+<span id="cb4-76"><a href="#cb4-76" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb4-77"><a href="#cb4-77" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb4-78"><a href="#cb4-78" aria-hidden="true" tabindex="-1"></a>    <span class="at">lower_ci =</span> settlers_mean <span class="sc">-</span> <span class="fu">qt</span>(<span class="fl">0.80</span>, <span class="at">df =</span> <span class="fu">n</span>() <span class="sc">-</span> <span class="dv">1</span>) <span class="sc">*</span> settlers_se,  <span class="co"># Lower bound</span></span>
+<span id="cb4-79"><a href="#cb4-79" aria-hidden="true" tabindex="-1"></a>    <span class="at">upper_ci =</span> settlers_mean <span class="sc">+</span> <span class="fu">qt</span>(<span class="fl">0.80</span>, <span class="at">df =</span> <span class="fu">n</span>() <span class="sc">-</span> <span class="dv">1</span>) <span class="sc">*</span> settlers_se   <span class="co"># Upper bound</span></span>
+<span id="cb4-80"><a href="#cb4-80" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span> </span>
+<span id="cb4-81"><a href="#cb4-81" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-82"><a href="#cb4-82" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">seedbox =</span> <span class="fu">factor</span>(seedbox, <span class="at">levels =</span> <span class="dv">0</span><span class="sc">:</span><span class="dv">6</span>, <span class="at">labels =</span> <span class="fu">c</span>(<span class="st">"Reference"</span>, <span class="fu">paste0</span>(<span class="st">"Seedbox "</span>, <span class="dv">1</span><span class="sc">:</span><span class="dv">6</span>))))</span>
+<span id="cb4-83"><a href="#cb4-83" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-84"><a href="#cb4-84" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate mean and 95% CI for settlers grouped by seedbox</span></span>
+<span id="cb4-85"><a href="#cb4-85" aria-hidden="true" tabindex="-1"></a>summary_data_outer <span class="ot">&lt;-</span> seedbox_outer <span class="sc">|&gt;</span></span>
+<span id="cb4-86"><a href="#cb4-86" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as.data.frame</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb4-87"><a href="#cb4-87" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span>geometry, <span class="sc">-</span>signal) <span class="sc">|&gt;</span> </span>
+<span id="cb4-88"><a href="#cb4-88" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rbind</span>(tiles_slrp) <span class="sc">|&gt;</span> </span>
+<span id="cb4-89"><a href="#cb4-89" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">seedbox=</span><span class="fu">as.factor</span>(seedbox)) <span class="sc">|&gt;</span> </span>
+<span id="cb4-90"><a href="#cb4-90" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(seedbox) <span class="sc">|&gt;</span></span>
+<span id="cb4-91"><a href="#cb4-91" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(</span>
+<span id="cb4-92"><a href="#cb4-92" aria-hidden="true" tabindex="-1"></a>    <span class="at">settlers_mean =</span> <span class="fu">mean</span>(settlers, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb4-93"><a href="#cb4-93" aria-hidden="true" tabindex="-1"></a>     <span class="at">settlers_max =</span> <span class="fu">max</span>(settlers, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb4-94"><a href="#cb4-94" aria-hidden="true" tabindex="-1"></a>    <span class="at">settlers_se =</span> <span class="fu">sd</span>(settlers, <span class="at">na.rm =</span> <span class="cn">TRUE</span>) <span class="sc">/</span> <span class="fu">sqrt</span>(<span class="fu">n</span>()),  <span class="co"># Standard error</span></span>
+<span id="cb4-95"><a href="#cb4-95" aria-hidden="true" tabindex="-1"></a>    <span class="at">.groups =</span> <span class="st">"drop"</span></span>
+<span id="cb4-96"><a href="#cb4-96" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb4-97"><a href="#cb4-97" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb4-98"><a href="#cb4-98" aria-hidden="true" tabindex="-1"></a>    <span class="at">lower_ci =</span> settlers_mean <span class="sc">-</span> <span class="fu">qt</span>(<span class="fl">0.80</span>, <span class="at">df =</span> <span class="fu">n</span>() <span class="sc">-</span> <span class="dv">1</span>) <span class="sc">*</span> settlers_se,  <span class="co"># Lower bound</span></span>
+<span id="cb4-99"><a href="#cb4-99" aria-hidden="true" tabindex="-1"></a>    <span class="at">upper_ci =</span> settlers_mean <span class="sc">+</span> <span class="fu">qt</span>(<span class="fl">0.80</span>, <span class="at">df =</span> <span class="fu">n</span>() <span class="sc">-</span> <span class="dv">1</span>) <span class="sc">*</span> settlers_se   <span class="co"># Upper bound</span></span>
+<span id="cb4-100"><a href="#cb4-100" aria-hidden="true" tabindex="-1"></a>  ) </span>
+<span id="cb4-101"><a href="#cb4-101" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-102"><a href="#cb4-102" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate mean and 95% CI for settlers grouped by seedbox</span></span>
+<span id="cb4-103"><a href="#cb4-103" aria-hidden="true" tabindex="-1"></a>summary_data_merge <span class="ot">&lt;-</span> seedbox_outer <span class="sc">|&gt;</span></span>
+<span id="cb4-104"><a href="#cb4-104" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as.data.frame</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb4-105"><a href="#cb4-105" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span>geometry, <span class="sc">-</span>signal) <span class="sc">|&gt;</span> </span>
+<span id="cb4-106"><a href="#cb4-106" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rbind</span>(tiles_slrp) <span class="sc">|&gt;</span> </span>
+<span id="cb4-107"><a href="#cb4-107" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">seedbox=</span><span class="fu">as.factor</span>(seedbox)) <span class="sc">|&gt;</span> </span>
+<span id="cb4-108"><a href="#cb4-108" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(</span>
+<span id="cb4-109"><a href="#cb4-109" aria-hidden="true" tabindex="-1"></a>    <span class="at">settlers_mean =</span> <span class="fu">mean</span>(settlers, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb4-110"><a href="#cb4-110" aria-hidden="true" tabindex="-1"></a>     <span class="at">settlers_max =</span> <span class="fu">max</span>(settlers, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb4-111"><a href="#cb4-111" aria-hidden="true" tabindex="-1"></a>    <span class="at">settlers_se =</span> <span class="fu">sd</span>(settlers, <span class="at">na.rm =</span> <span class="cn">TRUE</span>) <span class="sc">/</span> <span class="fu">sqrt</span>(<span class="fu">n</span>()),  <span class="co"># Standard error</span></span>
+<span id="cb4-112"><a href="#cb4-112" aria-hidden="true" tabindex="-1"></a>    <span class="at">.groups =</span> <span class="st">"drop"</span></span>
+<span id="cb4-113"><a href="#cb4-113" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb4-114"><a href="#cb4-114" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb4-115"><a href="#cb4-115" aria-hidden="true" tabindex="-1"></a>    <span class="at">lower_ci =</span> settlers_mean <span class="sc">-</span> <span class="fu">qt</span>(<span class="fl">0.80</span>, <span class="at">df =</span> <span class="fu">n</span>() <span class="sc">-</span> <span class="dv">1</span>) <span class="sc">*</span> settlers_se,  <span class="co"># Lower bound</span></span>
+<span id="cb4-116"><a href="#cb4-116" aria-hidden="true" tabindex="-1"></a>    <span class="at">upper_ci =</span> settlers_mean <span class="sc">+</span> <span class="fu">qt</span>(<span class="fl">0.80</span>, <span class="at">df =</span> <span class="fu">n</span>() <span class="sc">-</span> <span class="dv">1</span>) <span class="sc">*</span> settlers_se   <span class="co"># Upper bound</span></span>
+<span id="cb4-117"><a href="#cb4-117" aria-hidden="true" tabindex="-1"></a>  ) </span>
+<span id="cb4-118"><a href="#cb4-118" aria-hidden="true" tabindex="-1"></a><span class="co"># </span></span>
+<span id="cb4-119"><a href="#cb4-119" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-120"><a href="#cb4-120" aria-hidden="true" tabindex="-1"></a>summary_data<span class="sc">$</span>group <span class="ot">&lt;-</span> <span class="st">"inner"</span></span>
+<span id="cb4-121"><a href="#cb4-121" aria-hidden="true" tabindex="-1"></a>summary_data_outer<span class="sc">$</span>group <span class="ot">&lt;-</span> <span class="st">"outer"</span></span>
+<span id="cb4-122"><a href="#cb4-122" aria-hidden="true" tabindex="-1"></a>combined_data <span class="ot">&lt;-</span> <span class="fu">bind_rows</span>(summary_data, summary_data_outer) <span class="sc">|&gt;</span></span>
+<span id="cb4-123"><a href="#cb4-123" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">seedbox =</span> <span class="fu">factor</span>(seedbox, <span class="at">levels =</span> <span class="dv">0</span><span class="sc">:</span><span class="dv">6</span>, <span class="at">labels =</span> <span class="fu">c</span>(<span class="st">"reference"</span>, <span class="fu">paste0</span>(<span class="st">"seedbox "</span>, <span class="dv">1</span><span class="sc">:</span><span class="dv">6</span>))))</span>
+<span id="cb4-124"><a href="#cb4-124" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-125"><a href="#cb4-125" aria-hidden="true" tabindex="-1"></a><span class="co"># t-test for outer tiles</span></span>
+<span id="cb4-126"><a href="#cb4-126" aria-hidden="true" tabindex="-1"></a>seedbox_outer_ttest <span class="ot">&lt;-</span> seedbox_outer<span class="sc">$</span>settlers <span class="sc">%&gt;%</span></span>
+<span id="cb4-127"><a href="#cb4-127" aria-hidden="true" tabindex="-1"></a>     <span class="fu">t.test</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb4-128"><a href="#cb4-128" aria-hidden="true" tabindex="-1"></a>     <span class="fu">tidy</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb4-129"><a href="#cb4-129" aria-hidden="true" tabindex="-1"></a>     <span class="fu">select</span>(estimate, conf.low, conf.high)</span>
+<span id="cb4-130"><a href="#cb4-130" aria-hidden="true" tabindex="-1"></a><span class="co"># t-test for tiles</span></span>
+<span id="cb4-131"><a href="#cb4-131" aria-hidden="true" tabindex="-1"></a>tiles_ttest <span class="ot">&lt;-</span> tiles_slrp<span class="sc">$</span>settlers <span class="sc">%&gt;%</span></span>
+<span id="cb4-132"><a href="#cb4-132" aria-hidden="true" tabindex="-1"></a>     <span class="fu">t.test</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb4-133"><a href="#cb4-133" aria-hidden="true" tabindex="-1"></a>     <span class="fu">tidy</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb4-134"><a href="#cb4-134" aria-hidden="true" tabindex="-1"></a>     <span class="fu">select</span>(estimate, conf.low, conf.high)</span>
+<span id="cb4-135"><a href="#cb4-135" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-136"><a href="#cb4-136" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-137"><a href="#cb4-137" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(brms)</span>
+<span id="cb4-138"><a href="#cb4-138" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidybayes)</span>
+<span id="cb4-139"><a href="#cb4-139" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(posterior)</span>
+<span id="cb4-140"><a href="#cb4-140" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(bayestestR)</span>
+<span id="cb4-141"><a href="#cb4-141" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(broom.mixed)</span>
+<span id="cb4-142"><a href="#cb4-142" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-143"><a href="#cb4-143" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-144"><a href="#cb4-144" aria-hidden="true" tabindex="-1"></a>seedbox_outer_brms <span class="ot">&lt;-</span> seedbox_outer <span class="sc">|&gt;</span>  <span class="fu">as.data.frame</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb4-145"><a href="#cb4-145" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span>geometry, <span class="sc">-</span>signal) <span class="sc">|&gt;</span> </span>
+<span id="cb4-146"><a href="#cb4-146" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rbind</span>(tiles_slrp) <span class="sc">|&gt;</span> </span>
+<span id="cb4-147"><a href="#cb4-147" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">seedbox=</span><span class="fu">as.factor</span>(seedbox)) <span class="sc">|&gt;</span> </span>
+<span id="cb4-148"><a href="#cb4-148" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">type =</span> <span class="fu">ifelse</span>(seedbox<span class="sc">==</span><span class="st">"0"</span>, <span class="st">"ctrl"</span>, <span class="st">"seed"</span>))</span>
+<span id="cb4-149"><a href="#cb4-149" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-150"><a href="#cb4-150" aria-hidden="true" tabindex="-1"></a><span class="co"># brms model the outer seedbox tiles</span></span>
+<span id="cb4-151"><a href="#cb4-151" aria-hidden="true" tabindex="-1"></a>zi_model_outer <span class="ot">&lt;-</span> <span class="fu">brm</span>(</span>
+<span id="cb4-152"><a href="#cb4-152" aria-hidden="true" tabindex="-1"></a>  settlers <span class="sc">~</span> seedbox,</span>
+<span id="cb4-153"><a href="#cb4-153" aria-hidden="true" tabindex="-1"></a>  <span class="at">family =</span> <span class="fu">zero_inflated_poisson</span>(),</span>
+<span id="cb4-154"><a href="#cb4-154" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> seedbox_outer_brms,</span>
+<span id="cb4-155"><a href="#cb4-155" aria-hidden="true" tabindex="-1"></a>  <span class="at">chains =</span> <span class="dv">4</span>,</span>
+<span id="cb4-156"><a href="#cb4-156" aria-hidden="true" tabindex="-1"></a>  <span class="at">cores =</span> <span class="dv">4</span>,</span>
+<span id="cb4-157"><a href="#cb4-157" aria-hidden="true" tabindex="-1"></a>  <span class="at">iter =</span> <span class="dv">2000</span>,</span>
+<span id="cb4-158"><a href="#cb4-158" aria-hidden="true" tabindex="-1"></a>  <span class="at">silent=</span><span class="dv">2</span>,</span>
+<span id="cb4-159"><a href="#cb4-159" aria-hidden="true" tabindex="-1"></a>  <span class="at">refresh =</span> <span class="dv">0</span></span>
+<span id="cb4-160"><a href="#cb4-160" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>Running /Library/Frameworks/R.framework/Resources/bin/R CMD SHLIB foo.c
+using C compiler: ‘Apple clang version 17.0.0 (clang-1700.0.13.5)’
+using SDK: ‘MacOSX15.5.sdk’
+/usr/bin/clang -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG   -I"/Library/Frameworks/R.framework/Versions/4.4-arm64/Resources/library/Rcpp/include/"  -I"/Library/Frameworks/R.framework/Versions/4.4-arm64/Resources/library/RcppEigen/include/"  -I"/Library/Frameworks/R.framework/Versions/4.4-arm64/Resources/library/RcppEigen/include/unsupported"  -I"/Library/Frameworks/R.framework/Versions/4.4-arm64/Resources/library/BH/include" -I"/Library/Frameworks/R.framework/Versions/4.4-arm64/Resources/library/StanHeaders/include/src/"  -I"/Library/Frameworks/R.framework/Versions/4.4-arm64/Resources/library/StanHeaders/include/"  -I"/Library/Frameworks/R.framework/Versions/4.4-arm64/Resources/library/RcppParallel/include/"  -I"/Library/Frameworks/R.framework/Versions/4.4-arm64/Resources/library/rstan/include" -DEIGEN_NO_DEBUG  -DBOOST_DISABLE_ASSERTS  -DBOOST_PENDING_INTEGER_LOG2_HPP  -DSTAN_THREADS  -DUSE_STANC3 -DSTRICT_R_HEADERS  -DBOOST_PHOENIX_NO_VARIADIC_EXPRESSION  -D_HAS_AUTO_PTR_ETC=0  -include '/Library/Frameworks/R.framework/Versions/4.4-arm64/Resources/library/StanHeaders/include/stan/math/prim/fun/Eigen.hpp'  -D_REENTRANT -DRCPP_PARALLEL_USE_TBB=1   -I/opt/R/arm64/include    -fPIC  -O3 -Wall -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -c foo.c -o foo.o
+In file included from &lt;built-in&gt;:1:
+In file included from /Library/Frameworks/R.framework/Versions/4.4-arm64/Resources/library/StanHeaders/include/stan/math/prim/fun/Eigen.hpp:22:
+In file included from /Library/Frameworks/R.framework/Versions/4.4-arm64/Resources/library/RcppEigen/include/Eigen/Dense:1:
+In file included from /Library/Frameworks/R.framework/Versions/4.4-arm64/Resources/library/RcppEigen/include/Eigen/Core:19:
+/Library/Frameworks/R.framework/Versions/4.4-arm64/Resources/library/RcppEigen/include/Eigen/src/Core/util/Macros.h:679:10: fatal error: 'cmath' file not found
+  679 | #include &lt;cmath&gt;
+      |          ^~~~~~~
+1 error generated.
+make: *** [foo.o] Error 1</code></pre>
+</div>
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># # Extract posterior draws for coefficients</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>summary_draws_outer<span class="ot">&lt;-</span> zi_model_outer <span class="sc">%&gt;%</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">spread_draws</span>(b_seedbox2, b_seedbox3, b_seedbox4, b_seedbox5, b_seedbox6) <span class="sc">|&gt;</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_longer</span>(<span class="at">cols =</span> <span class="fu">starts_with</span>(<span class="st">"b_seedbox"</span>),</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>               <span class="at">names_to =</span> <span class="st">"seedbox"</span>,</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>               <span class="at">values_to =</span> <span class="st">"estimate"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">seedbox =</span> <span class="fu">gsub</span>(<span class="st">"b_seedbox"</span>, <span class="st">""</span>, seedbox)) <span class="sc">%&gt;%</span> <span class="co"># Remove "b_" prefix</span></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(seedbox) <span class="sc">%&gt;%</span></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">median_qi</span>(estimate)</span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>summary_draws_outer_IRR <span class="ot">&lt;-</span> summary_draws_outer <span class="sc">%&gt;%</span></span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">effect_size =</span> <span class="fu">exp</span>(estimate),</span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>    <span class="at">effect_lower =</span> <span class="fu">exp</span>(.lower),</span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>    <span class="at">effect_upper =</span> <span class="fu">exp</span>(.upper)</span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># plot effects from draws</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>effects <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(summary_draws_outer, <span class="fu">aes</span>(<span class="at">x =</span> seedbox, <span class="at">fill=</span>estimate, <span class="at">color=</span>estimate, <span class="at">y =</span> (estimate), <span class="at">ymin =</span> (.lower), <span class="at">ymax =</span> (.upper))) <span class="sc">+</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_pointrange</span>(<span class="at">size=</span><span class="fl">0.3</span>, <span class="at">shape=</span><span class="dv">21</span>, <span class="at">stroke=</span><span class="fl">0.5</span>, <span class="at">show.legend=</span><span class="cn">FALSE</span>) <span class="sc">+</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text</span>(<span class="fu">aes</span>(<span class="at">label=</span><span class="fu">paste0</span>(<span class="st">"x"</span>,<span class="fu">round</span>(<span class="fu">exp</span>(estimate),<span class="dv">1</span>))), <span class="at">size=</span><span class="fl">1.8</span>,<span class="at">color=</span><span class="st">"black"</span>, <span class="at">nudge_x =</span> <span class="fl">0.2</span>) <span class="sc">+</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a> <span class="fu">scale_color_distiller</span>(</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">palette =</span> <span class="st">"YlGnBu"</span>,</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">direction =</span> <span class="dv">1</span>,</span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">limits =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">4</span>),              <span class="co"># set desired range</span></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">oob =</span> scales<span class="sc">::</span>squish             <span class="co"># squish out-of-bounds to nearest limit</span></span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>) <span class="sc">+</span></span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a> <span class="fu">scale_fill_distiller</span>(</span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>  <span class="at">palette =</span> <span class="st">"YlGnBu"</span>,</span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>  <span class="at">direction =</span> <span class="dv">1</span>,</span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>  <span class="at">limits =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">4</span>),              <span class="co"># set desired range</span></span>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a>  <span class="at">oob =</span> scales<span class="sc">::</span>squish             <span class="co"># squish out-of-bounds to nearest limit</span></span>
+<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a>) <span class="sc">+</span></span>
+<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_flip</span>() <span class="sc">+</span></span>
+<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_hline</span>(<span class="at">yintercept=</span><span class="dv">1</span>, <span class="at">linewidth=</span><span class="dv">1</span>, <span class="at">alpha=</span><span class="fl">0.3</span>) <span class="sc">+</span></span>
+<span id="cb7-20"><a href="#cb7-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylim</span>(<span class="dv">0</span>,<span class="dv">6</span>) <span class="sc">+</span></span>
+<span id="cb7-21"><a href="#cb7-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="co">#subtitle = "outer tiles",</span></span>
+<span id="cb7-22"><a href="#cb7-22" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Seedbox"</span>,</span>
+<span id="cb7-23"><a href="#cb7-23" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="fu">expression</span>(beta<span class="sc">~</span><span class="st">"coefficient (log scale)"</span>)) <span class="sc">+</span></span>
+<span id="cb7-24"><a href="#cb7-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>() <span class="sc">+</span> </span>
+<span id="cb7-25"><a href="#cb7-25" aria-hidden="true" tabindex="-1"></a>   <span class="fu">theme</span>(</span>
+<span id="cb7-26"><a href="#cb7-26" aria-hidden="true" tabindex="-1"></a>    <span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="fl">6.5</span>),</span>
+<span id="cb7-27"><a href="#cb7-27" aria-hidden="true" tabindex="-1"></a>    <span class="at">axis.text.y =</span> <span class="fu">element_text</span>(<span class="at">size=</span><span class="fl">6.5</span>),</span>
+<span id="cb7-28"><a href="#cb7-28" aria-hidden="true" tabindex="-1"></a>    <span class="at">axis.title =</span> <span class="fu">element_text</span>(<span class="at">size=</span><span class="fl">6.5</span>),</span>
+<span id="cb7-29"><a href="#cb7-29" aria-hidden="true" tabindex="-1"></a>    <span class="at">axis.title.y =</span> <span class="fu">element_text</span>(<span class="at">margin =</span> <span class="fu">margin</span>(<span class="at">r =</span> <span class="dv">5</span>))  <span class="co"># reduce right margin of y-axis title</span></span>
+<span id="cb7-30"><a href="#cb7-30" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb7-31"><a href="#cb7-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-32"><a href="#cb7-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-33"><a href="#cb7-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-34"><a href="#cb7-34" aria-hidden="true" tabindex="-1"></a>bbox <span class="ot">&lt;-</span> <span class="fu">st_bbox</span>(seedbox)</span>
+<span id="cb7-35"><a href="#cb7-35" aria-hidden="true" tabindex="-1"></a>bbox[<span class="dv">1</span>] <span class="ot">&lt;-</span> bbox[<span class="dv">1</span>] <span class="sc">-</span> <span class="dv">8</span>  <span class="co"># xmin - 20</span></span>
+<span id="cb7-36"><a href="#cb7-36" aria-hidden="true" tabindex="-1"></a>bbox[<span class="dv">3</span>] <span class="ot">&lt;-</span> bbox[<span class="dv">3</span>] <span class="sc">+</span> <span class="dv">9</span>  <span class="co"># xmax + 20</span></span>
+<span id="cb7-37"><a href="#cb7-37" aria-hidden="true" tabindex="-1"></a>bbox[<span class="dv">2</span>] <span class="ot">&lt;-</span> bbox[<span class="dv">2</span>] <span class="sc">-</span> <span class="dv">0</span>  <span class="co"># xmin - 20</span></span>
+<span id="cb7-38"><a href="#cb7-38" aria-hidden="true" tabindex="-1"></a>bbox[<span class="dv">4</span>] <span class="ot">&lt;-</span> bbox[<span class="dv">4</span>] <span class="sc">+</span> <span class="dv">0</span>  <span class="co"># xmax + 20</span></span>
+<span id="cb7-39"><a href="#cb7-39" aria-hidden="true" tabindex="-1"></a>bbox_sf <span class="ot">&lt;-</span> <span class="fu">st_as_sfc</span>(bbox)</span>
+<span id="cb7-40"><a href="#cb7-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-41"><a href="#cb7-41" aria-hidden="true" tabindex="-1"></a><span class="co"># Add to plot</span></span>
+<span id="cb7-42"><a href="#cb7-42" aria-hidden="true" tabindex="-1"></a>a <span class="ot">&lt;-</span> <span class="fu">ggplot</span>() <span class="sc">+</span> <span class="fu">theme_bw</span>() <span class="sc">+</span></span>
+<span id="cb7-43"><a href="#cb7-43" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_sf</span>(<span class="at">data=</span>seedbox <span class="sc">|&gt;</span> <span class="fu">st_transform</span>(<span class="dv">4326</span>) <span class="sc">|&gt;</span> dplyr<span class="sc">::</span><span class="fu">filter</span>(signal<span class="sc">==</span><span class="st">"signal"</span>), <span class="fu">aes</span>(<span class="at">fill =</span> <span class="fu">log</span>(settlers)), <span class="at">shape =</span> <span class="dv">21</span>, <span class="at">stroke=</span><span class="fl">0.1</span>, <span class="at">size =</span> <span class="fl">1.8</span>, <span class="at">show.legend =</span> <span class="cn">TRUE</span>) <span class="sc">+</span></span>
+<span id="cb7-44"><a href="#cb7-44" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_sf</span>(<span class="at">data=</span>seedbox <span class="sc">|&gt;</span> <span class="fu">st_transform</span>(<span class="dv">4326</span>) <span class="sc">|&gt;</span> dplyr<span class="sc">::</span><span class="fu">filter</span>(signal<span class="sc">==</span><span class="st">"none"</span>), <span class="at">shape =</span> <span class="dv">4</span>, <span class="at">fill=</span><span class="st">"white"</span>, <span class="at">color=</span><span class="st">"darkgrey"</span>, <span class="at">size =</span> <span class="fl">1.6</span>, <span class="at">show.legend =</span> <span class="cn">TRUE</span>) <span class="sc">+</span></span>
+<span id="cb7-45"><a href="#cb7-45" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_label</span>(<span class="at">data =</span> seedbox_centroids <span class="sc">|&gt;</span> <span class="fu">as.data.frame</span>(), <span class="fu">aes</span>(X, Y, <span class="at">label =</span> <span class="fu">paste0</span>(<span class="st">"Seedbox #"</span>, seedbox)), <span class="at">size=</span><span class="fl">3.2</span>, <span class="at">nudge_x=</span><span class="sc">-</span><span class="fl">0.000084</span>, <span class="at">nudge_y =</span> <span class="fl">0.000022</span>) <span class="sc">+</span></span>
+<span id="cb7-46"><a href="#cb7-46" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_sf</span>(<span class="at">data =</span> bbox_sf, <span class="at">fill =</span> <span class="cn">NA</span>, <span class="at">color =</span> <span class="cn">NA</span>, <span class="at">linewidth =</span> <span class="fl">0.5</span>) <span class="sc">+</span></span>
+<span id="cb7-47"><a href="#cb7-47" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_distiller</span>(</span>
+<span id="cb7-48"><a href="#cb7-48" aria-hidden="true" tabindex="-1"></a>   <span class="at">name =</span> <span class="fu">bquote</span>(<span class="fu">atop</span>(<span class="st">"Settlers per"</span>, <span class="st">"tile (75 cm"</span><span class="sc">^</span><span class="dv">2</span><span class="sc">*</span><span class="st">")"</span>)),</span>
+<span id="cb7-49"><a href="#cb7-49" aria-hidden="true" tabindex="-1"></a>    <span class="at">palette =</span> <span class="st">"RdYlBu"</span>,</span>
+<span id="cb7-50"><a href="#cb7-50" aria-hidden="true" tabindex="-1"></a>    <span class="at">direction =</span> <span class="sc">-</span><span class="dv">1</span>,</span>
+<span id="cb7-51"><a href="#cb7-51" aria-hidden="true" tabindex="-1"></a>    <span class="at">na.value =</span> <span class="st">"transparent"</span>,</span>
+<span id="cb7-52"><a href="#cb7-52" aria-hidden="true" tabindex="-1"></a>    <span class="co">#values = c(2,1250),</span></span>
+<span id="cb7-53"><a href="#cb7-53" aria-hidden="true" tabindex="-1"></a>    <span class="at">breaks =</span> <span class="fu">log</span>(breaks_vals),</span>
+<span id="cb7-54"><a href="#cb7-54" aria-hidden="true" tabindex="-1"></a>    <span class="at">labels =</span> breaks_vals</span>
+<span id="cb7-55"><a href="#cb7-55" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb7-56"><a href="#cb7-56" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
+<span id="cb7-57"><a href="#cb7-57" aria-hidden="true" tabindex="-1"></a>    <span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">45</span>, <span class="at">vjust =</span> <span class="dv">1</span>, <span class="at">hjust =</span> <span class="dv">1</span>, <span class="at">size =</span> <span class="fl">6.5</span>),</span>
+<span id="cb7-58"><a href="#cb7-58" aria-hidden="true" tabindex="-1"></a>    <span class="at">axis.text.y =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="fl">6.5</span>),</span>
+<span id="cb7-59"><a href="#cb7-59" aria-hidden="true" tabindex="-1"></a>    <span class="at">legend.position.inside =</span> <span class="fu">c</span>(<span class="fl">0.85</span>, <span class="fl">0.35</span>),</span>
+<span id="cb7-60"><a href="#cb7-60" aria-hidden="true" tabindex="-1"></a>    <span class="at">legend.title =</span> <span class="fu">element_text</span>(<span class="at">size=</span><span class="dv">7</span>),</span>
+<span id="cb7-61"><a href="#cb7-61" aria-hidden="true" tabindex="-1"></a>    <span class="at">legend.text =</span> <span class="fu">element_text</span>(<span class="at">size=</span><span class="dv">5</span>),</span>
+<span id="cb7-62"><a href="#cb7-62" aria-hidden="true" tabindex="-1"></a>    <span class="at">legend.background =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb7-63"><a href="#cb7-63" aria-hidden="true" tabindex="-1"></a>    <span class="at">legend.box.background =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb7-64"><a href="#cb7-64" aria-hidden="true" tabindex="-1"></a>    <span class="at">legend.key =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb7-65"><a href="#cb7-65" aria-hidden="true" tabindex="-1"></a>    <span class="at">legend.direction =</span> <span class="st">"vertical"</span></span>
+<span id="cb7-66"><a href="#cb7-66" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb7-67"><a href="#cb7-67" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span> <span class="fu">xlab</span>(<span class="st">""</span>) <span class="sc">+</span> <span class="fu">ylab</span>(<span class="st">""</span>)</span>
+<span id="cb7-68"><a href="#cb7-68" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-69"><a href="#cb7-69" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-70"><a href="#cb7-70" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-71"><a href="#cb7-71" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-72"><a href="#cb7-72" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-73"><a href="#cb7-73" aria-hidden="true" tabindex="-1"></a>b <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(combined_data, <span class="fu">aes</span>(<span class="at">x =</span> seedbox, <span class="at">y =</span> settlers_max, <span class="at">fill =</span> group)) <span class="sc">+</span></span>
+<span id="cb7-74"><a href="#cb7-74" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">"identity"</span>, <span class="at">position =</span> <span class="st">"stack"</span>, <span class="at">color =</span> <span class="st">"black"</span>, <span class="at">width =</span> <span class="fl">0.6</span>, <span class="at">linewidth=</span><span class="fl">0.3</span>) <span class="sc">+</span></span>
+<span id="cb7-75"><a href="#cb7-75" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_manual</span>(</span>
+<span id="cb7-76"><a href="#cb7-76" aria-hidden="true" tabindex="-1"></a>    <span class="at">values =</span> <span class="fu">c</span>(<span class="st">"inner"</span> <span class="ot">=</span> <span class="st">"turquoise4"</span>, <span class="st">"outer"</span> <span class="ot">=</span> <span class="st">"turquoise3"</span>),</span>
+<span id="cb7-77"><a href="#cb7-77" aria-hidden="true" tabindex="-1"></a>    <span class="at">labels =</span> <span class="fu">c</span>(<span class="st">"inner"</span> <span class="ot">=</span> <span class="st">"Adjacent tiles"</span>, <span class="st">"outer"</span> <span class="ot">=</span> <span class="st">"outer tiles"</span>),</span>
+<span id="cb7-78"><a href="#cb7-78" aria-hidden="true" tabindex="-1"></a>    <span class="at">name =</span> <span class="cn">NULL</span></span>
+<span id="cb7-79"><a href="#cb7-79" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb7-80"><a href="#cb7-80" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x=</span><span class="st">""</span>, <span class="at">y =</span> <span class="fu">expression</span>(<span class="st">"Maximum settlers per tile (75 cm"</span><span class="sc">^</span><span class="dv">2</span><span class="sc">*</span><span class="st">")"</span>), <span class="st">" (75cm2)"</span>) <span class="sc">+</span></span>
+<span id="cb7-81"><a href="#cb7-81" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_vline</span>(<span class="at">xintercept =</span> <span class="dv">1</span>, <span class="at">linewidth =</span> <span class="dv">14</span>, <span class="at">alpha=</span><span class="fl">0.06</span>) <span class="sc">+</span></span>
+<span id="cb7-82"><a href="#cb7-82" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-83"><a href="#cb7-83" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylim</span>(<span class="dv">0</span>, <span class="dv">1200</span>) <span class="sc">+</span></span>
+<span id="cb7-84"><a href="#cb7-84" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>() <span class="sc">+</span></span>
+<span id="cb7-85"><a href="#cb7-85" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
+<span id="cb7-86"><a href="#cb7-86" aria-hidden="true" tabindex="-1"></a>    <span class="at">axis.text.x =</span> <span class="fu">element_blank</span>(), <span class="co">#(angle = 45, vjust = 0.9, hjust = 1),</span></span>
+<span id="cb7-87"><a href="#cb7-87" aria-hidden="true" tabindex="-1"></a>    <span class="at">axis.title.y =</span> <span class="fu">element_text</span>(<span class="at">size=</span><span class="dv">8</span>),</span>
+<span id="cb7-88"><a href="#cb7-88" aria-hidden="true" tabindex="-1"></a>    <span class="at">legend.position.inside =</span> <span class="fu">c</span>(<span class="fl">0.30</span>, <span class="fl">0.92</span>),</span>
+<span id="cb7-89"><a href="#cb7-89" aria-hidden="true" tabindex="-1"></a>    <span class="at">legend.background =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb7-90"><a href="#cb7-90" aria-hidden="true" tabindex="-1"></a>    <span class="at">legend.box.background =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb7-91"><a href="#cb7-91" aria-hidden="true" tabindex="-1"></a>    <span class="at">legend.key =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb7-92"><a href="#cb7-92" aria-hidden="true" tabindex="-1"></a>    <span class="at">legend.text =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">6</span>), </span>
+<span id="cb7-93"><a href="#cb7-93" aria-hidden="true" tabindex="-1"></a>    <span class="at">legend.key.size =</span> <span class="fu">unit</span>(<span class="fl">0.6</span>, <span class="st">"lines"</span>),</span>
+<span id="cb7-94"><a href="#cb7-94" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.margin =</span> <span class="fu">margin</span>(<span class="dv">5</span>, <span class="dv">5</span>, <span class="dv">0</span>, <span class="dv">5</span>)</span>
+<span id="cb7-95"><a href="#cb7-95" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb7-96"><a href="#cb7-96" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-97"><a href="#cb7-97" aria-hidden="true" tabindex="-1"></a>c <span class="ot">&lt;-</span> <span class="fu">ggplot</span>() <span class="sc">+</span> <span class="fu">theme_bw</span>() <span class="sc">+</span></span>
+<span id="cb7-98"><a href="#cb7-98" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">data =</span> summary_data_plot, <span class="fu">aes</span>(<span class="at">x =</span> seedbox, <span class="at">y =</span> settlers_mean, <span class="at">fill =</span> settlers_mean), </span>
+<span id="cb7-99"><a href="#cb7-99" aria-hidden="true" tabindex="-1"></a>           <span class="at">linewidth =</span> <span class="fl">0.3</span>, <span class="at">show.legend =</span> <span class="cn">FALSE</span>, <span class="at">stat =</span> <span class="st">"identity"</span>, <span class="at">color =</span> <span class="st">"black"</span>, <span class="at">width =</span> <span class="fl">0.7</span>) <span class="sc">+</span></span>
+<span id="cb7-100"><a href="#cb7-100" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_hline</span>(<span class="at">yintercept =</span> <span class="fu">mean</span>(seedbox_outer<span class="sc">$</span>settlers), <span class="at">alpha =</span> <span class="fl">0.3</span>) <span class="sc">+</span></span>
+<span id="cb7-101"><a href="#cb7-101" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_errorbar</span>(<span class="at">data =</span> summary_data_plot, <span class="fu">aes</span>(<span class="at">x =</span> seedbox, <span class="at">y =</span> settlers_mean, </span>
+<span id="cb7-102"><a href="#cb7-102" aria-hidden="true" tabindex="-1"></a>                                              <span class="at">ymin =</span> settlers_mean <span class="sc">-</span> settlers_se, </span>
+<span id="cb7-103"><a href="#cb7-103" aria-hidden="true" tabindex="-1"></a>                                              <span class="at">ymax =</span> settlers_mean <span class="sc">+</span> settlers_se), <span class="at">width =</span> <span class="fl">0.2</span>) <span class="sc">+</span></span>
+<span id="cb7-104"><a href="#cb7-104" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_distiller</span>(<span class="at">palette =</span> <span class="st">"YlGnBu"</span>, <span class="at">direction =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb7-105"><a href="#cb7-105" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_vline</span>(<span class="at">xintercept =</span> <span class="dv">1</span>, <span class="at">linewidth =</span> <span class="dv">14</span>, <span class="at">alpha =</span> <span class="fl">0.06</span>) <span class="sc">+</span></span>
+<span id="cb7-106"><a href="#cb7-106" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb7-107"><a href="#cb7-107" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">""</span>, </span>
+<span id="cb7-108"><a href="#cb7-108" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="fu">expression</span>(<span class="st">"Mean density per outer tile (75 cm"</span><span class="sc">^</span><span class="dv">2</span><span class="sc">*</span><span class="st">")"</span>)</span>
+<span id="cb7-109"><a href="#cb7-109" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb7-110"><a href="#cb7-110" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
+<span id="cb7-111"><a href="#cb7-111" aria-hidden="true" tabindex="-1"></a>    <span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">0</span>, <span class="at">vjust =</span> <span class="fl">0.9</span>, <span class="at">hjust =</span> <span class="fl">0.5</span>, <span class="at">size =</span> <span class="fl">4.5</span>),</span>
+<span id="cb7-112"><a href="#cb7-112" aria-hidden="true" tabindex="-1"></a>    <span class="at">axis.title.y =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">8</span>),</span>
+<span id="cb7-113"><a href="#cb7-113" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.margin =</span> <span class="fu">margin</span>(<span class="at">t =</span> <span class="dv">0</span>, <span class="at">r =</span> <span class="dv">5</span>, <span class="at">b =</span> <span class="dv">5</span>, <span class="at">l =</span> <span class="dv">5</span>)</span>
+<span id="cb7-114"><a href="#cb7-114" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb7-115"><a href="#cb7-115" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-116"><a href="#cb7-116" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-117"><a href="#cb7-117" aria-hidden="true" tabindex="-1"></a>fig3_plot <span class="ot">&lt;-</span> cowplot<span class="sc">::</span><span class="fu">plot_grid</span>(cowplot<span class="sc">::</span><span class="fu">plot_grid</span>(a, <span class="at">labels=</span><span class="fu">c</span>(<span class="st">"a"</span>), <span class="at">label_size=</span><span class="dv">12</span>) , cowplot<span class="sc">::</span><span class="fu">plot_grid</span>(b,c,effects, <span class="at">labels =</span> <span class="fu">c</span>(<span class="st">"b"</span>, <span class="st">"c"</span>, <span class="st">"d"</span>),  <span class="at">align =</span> <span class="st">"v"</span>, <span class="at">label_size =</span> <span class="dv">12</span>, <span class="at">nrow=</span><span class="dv">3</span>))</span>
+<span id="cb7-118"><a href="#cb7-118" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-119"><a href="#cb7-119" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-120"><a href="#cb7-120" aria-hidden="true" tabindex="-1"></a>fig3_plot</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="codebase_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="figure-4" class="level4">
+<h4 class="anchored" data-anchor-id="figure-4">Figure 4</h4>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(fields)</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(stars)</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(terra)</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyterra)</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(spatstat)</span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a><span class="co"># import orthomosaic, downsample raster</span></span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>orthomap <span class="ot">&lt;-</span> <span class="fu">rast</span>(<span class="st">"../data/orthophoto.tif"</span>) </span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Buffer first to exten&lt;- spatial domain</span></span>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a>seedbox_outer_buf <span class="ot">&lt;-</span> seedbox_outer <span class="sc">|&gt;</span> <span class="fu">st_buffer</span>(<span class="dv">10</span>)</span>
+<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a grid over the buffered area</span></span>
+<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a>grd <span class="ot">&lt;-</span> seedbox_outer_buf <span class="sc">|&gt;</span></span>
+<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">st_bbox</span>() <span class="sc">|&gt;</span></span>
+<span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">st_as_stars</span>(<span class="at">dx =</span> <span class="fl">0.1</span>)</span>
+<span id="cb8-21"><a href="#cb8-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-22"><a href="#cb8-22" aria-hidden="true" tabindex="-1"></a><span class="co"># extract grid coordinates for prediction</span></span>
+<span id="cb8-23"><a href="#cb8-23" aria-hidden="true" tabindex="-1"></a>grd_coords <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(<span class="fu">st_coordinates</span>(grd))</span>
+<span id="cb8-24"><a href="#cb8-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-25"><a href="#cb8-25" aria-hidden="true" tabindex="-1"></a><span class="co"># extract buffered coordinates for fitting the TPS</span></span>
+<span id="cb8-26"><a href="#cb8-26" aria-hidden="true" tabindex="-1"></a>coords <span class="ot">&lt;-</span> <span class="fu">st_coordinates</span>(seedbox_outer)</span>
+<span id="cb8-27"><a href="#cb8-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-28"><a href="#cb8-28" aria-hidden="true" tabindex="-1"></a><span class="co"># fit the TPS using unbuffered coordinates, extend grid</span></span>
+<span id="cb8-29"><a href="#cb8-29" aria-hidden="true" tabindex="-1"></a>tps_model <span class="ot">&lt;-</span> <span class="fu">Tps</span>(coords, seedbox_outer<span class="sc">$</span>settlers, </span>
+<span id="cb8-30"><a href="#cb8-30" aria-hidden="true" tabindex="-1"></a>                 <span class="at">method =</span> <span class="st">"REML"</span>,</span>
+<span id="cb8-31"><a href="#cb8-31" aria-hidden="true" tabindex="-1"></a>                 <span class="at">lambda =</span> <span class="dv">150</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>Warning: 
+Grid searches over lambda (nugget and sill variances) with  minima at the endpoints: 
+  (REML) Restricted maximum likelihood 
+   minimum at  right endpoint  lambda  =  918.891 (eff. df= 3.000899 )</code></pre>
+</div>
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>grd_coords<span class="sc">$</span>predicted_settlers <span class="ot">&lt;-</span> <span class="fu">predict</span>(tps_model, <span class="fu">as.matrix</span>(grd_coords[, <span class="fu">c</span>(<span class="st">"x"</span>, <span class="st">"y"</span>)]))</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>grd<span class="sc">$</span>predicted_settlers <span class="ot">&lt;-</span> <span class="fu">array</span>(grd_coords<span class="sc">$</span>predicted_settlers, <span class="at">dim =</span> <span class="fu">dim</span>(grd))</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>tps_raster <span class="ot">&lt;-</span> <span class="fu">rast</span>(grd[<span class="st">"predicted_settlers"</span>]) </span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>seed_area <span class="ot">&lt;-</span> seedbox <span class="sc">|&gt;</span> <span class="fu">st_buffer</span>(<span class="dv">1</span>) <span class="sc">|&gt;</span> concaveman<span class="sc">::</span><span class="fu">concaveman</span>(<span class="dv">2</span>,<span class="dv">10</span>) </span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a><span class="co"># expand rugosity</span></span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>reef_area_cm2 <span class="ot">&lt;-</span> <span class="dv">1</span> <span class="sc">*</span> <span class="dv">100</span><span class="sc">^</span><span class="dv">2</span>          <span class="co"># 1 m² to cm²</span></span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>rugosity <span class="ot">&lt;-</span> <span class="fl">1.67</span>                     <span class="co"># rugosity factor</span></span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>tile_area_cm2 <span class="ot">&lt;-</span> <span class="dv">70</span>                <span class="co"># single tile area</span></span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a>surface_area_cm2 <span class="ot">&lt;-</span> reef_area_cm2 <span class="sc">*</span> rugosity <span class="sc">*</span> <span class="fl">0.8</span></span>
+<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a>n_tiles <span class="ot">&lt;-</span> surface_area_cm2 <span class="sc">/</span> tile_area_cm2</span>
+<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a><span class="co"># mask and crop raster</span></span>
+<span id="cb10-16"><a href="#cb10-16" aria-hidden="true" tabindex="-1"></a>masked_raster <span class="ot">&lt;-</span> <span class="fu">mask</span>(tps_raster, seed_area, <span class="at">updatevalue =</span> <span class="cn">NA</span>)</span>
+<span id="cb10-17"><a href="#cb10-17" aria-hidden="true" tabindex="-1"></a>cropped_raster <span class="ot">&lt;-</span> <span class="fu">crop</span>(masked_raster, <span class="fu">ext</span>(masked_raster)) <span class="sc">|&gt;</span> </span>
+<span id="cb10-18"><a href="#cb10-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as.data.frame</span>(<span class="at">xy =</span> <span class="cn">TRUE</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb10-19"><a href="#cb10-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">predicted_settlers =</span> predicted_settlers <span class="sc">*</span> n_tiles)</span>
+<span id="cb10-20"><a href="#cb10-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-21"><a href="#cb10-21" aria-hidden="true" tabindex="-1"></a>bbox2 <span class="ot">&lt;-</span> <span class="fu">st_bbox</span>(terra<span class="sc">::</span><span class="fu">ext</span>(orthomap), <span class="at">crs=</span><span class="fu">st_crs</span>(orthomap))</span>
+<span id="cb10-22"><a href="#cb10-22" aria-hidden="true" tabindex="-1"></a>bbox2[<span class="dv">1</span>] <span class="ot">&lt;-</span> bbox2[<span class="dv">1</span>] <span class="sc">-</span> <span class="dv">2</span>  <span class="co"># xmin - 20</span></span>
+<span id="cb10-23"><a href="#cb10-23" aria-hidden="true" tabindex="-1"></a>bbox2[<span class="dv">3</span>] <span class="ot">&lt;-</span> bbox2[<span class="dv">3</span>] <span class="sc">+</span> <span class="dv">11</span>  <span class="co"># xmax + 20</span></span>
+<span id="cb10-24"><a href="#cb10-24" aria-hidden="true" tabindex="-1"></a>bbox2[<span class="dv">2</span>] <span class="ot">&lt;-</span> bbox2[<span class="dv">2</span>] <span class="sc">-</span> <span class="dv">0</span>  <span class="co"># xmin - 20</span></span>
+<span id="cb10-25"><a href="#cb10-25" aria-hidden="true" tabindex="-1"></a>bbox2[<span class="dv">4</span>] <span class="ot">&lt;-</span> bbox2[<span class="dv">4</span>] <span class="sc">+</span> <span class="dv">0</span>  <span class="co"># xmax + 20</span></span>
+<span id="cb10-26"><a href="#cb10-26" aria-hidden="true" tabindex="-1"></a>bbox2_sf <span class="ot">&lt;-</span> <span class="fu">st_as_sfc</span>(bbox2)</span>
+<span id="cb10-27"><a href="#cb10-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-28"><a href="#cb10-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-29"><a href="#cb10-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-30"><a href="#cb10-30" aria-hidden="true" tabindex="-1"></a>Figure_4 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>() <span class="sc">+</span> <span class="fu">theme_bw</span>() <span class="sc">+</span></span>
+<span id="cb10-31"><a href="#cb10-31" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_sf</span>(<span class="at">data =</span> bbox2_sf, <span class="at">fill =</span> <span class="cn">NA</span>, <span class="at">color =</span> <span class="cn">NA</span>, <span class="at">linewidth =</span> <span class="fl">0.5</span>) <span class="sc">+</span></span>
+<span id="cb10-32"><a href="#cb10-32" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_spatraster_rgb</span>(<span class="at">data=</span>orthomap, <span class="at">alpha=</span><span class="fl">0.5</span>) <span class="sc">+</span></span>
+<span id="cb10-33"><a href="#cb10-33" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_tile</span>(<span class="at">data =</span> cropped_raster, <span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">y =</span> y, <span class="at">fill =</span> predicted_settlers), <span class="at">alpha =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb10-34"><a href="#cb10-34" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_distiller</span>(<span class="at">name =</span> <span class="fu">bquote</span>(<span class="st">"Settlement</span><span class="sc">\n</span><span class="st">density (m"</span><span class="sc">^</span><span class="dv">2</span><span class="sc">*</span><span class="st">")"</span>), <span class="at">palette=</span><span class="st">"Spectral"</span>, <span class="at">na.value =</span> <span class="st">"transparent"</span>) <span class="sc">+</span></span>
+<span id="cb10-35"><a href="#cb10-35" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_sf</span>(<span class="at">data =</span> seedbox, <span class="at">fill=</span><span class="st">"white"</span>, <span class="at">shape=</span><span class="dv">21</span>, <span class="at">size=</span><span class="dv">1</span>, <span class="at">alpha=</span><span class="fl">0.4</span>) <span class="sc">+</span></span>
+<span id="cb10-36"><a href="#cb10-36" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_sf</span>(<span class="at">data=</span>seedbox_area, <span class="at">fill=</span><span class="cn">NA</span>, <span class="at">color=</span><span class="st">"black"</span>, <span class="at">linewidth=</span><span class="fl">0.2</span>) <span class="sc">+</span></span>
+<span id="cb10-37"><a href="#cb10-37" aria-hidden="true" tabindex="-1"></a> </span>
+<span id="cb10-38"><a href="#cb10-38" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">90</span>, <span class="at">vjust =</span> <span class="fl">0.5</span>, <span class="at">hjust=</span><span class="dv">1</span>)) <span class="sc">+</span></span>
+<span id="cb10-39"><a href="#cb10-39" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
+<span id="cb10-40"><a href="#cb10-40" aria-hidden="true" tabindex="-1"></a>  <span class="co">#  axis.text.y = element_blank(),</span></span>
+<span id="cb10-41"><a href="#cb10-41" aria-hidden="true" tabindex="-1"></a>    <span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">90</span>, <span class="at">vjust =</span> <span class="fl">0.5</span>, <span class="at">hjust =</span> <span class="dv">1</span>, <span class="at">size =</span> <span class="fl">6.5</span>),</span>
+<span id="cb10-42"><a href="#cb10-42" aria-hidden="true" tabindex="-1"></a>    <span class="at">legend.position.inside =</span> <span class="fu">c</span>(<span class="fl">0.85</span>, <span class="fl">0.35</span>),</span>
+<span id="cb10-43"><a href="#cb10-43" aria-hidden="true" tabindex="-1"></a>    <span class="at">legend.title =</span> <span class="fu">element_text</span>(<span class="at">size=</span><span class="dv">6</span>),</span>
+<span id="cb10-44"><a href="#cb10-44" aria-hidden="true" tabindex="-1"></a>    <span class="at">legend.background =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb10-45"><a href="#cb10-45" aria-hidden="true" tabindex="-1"></a>    <span class="at">legend.text =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">6</span>), </span>
+<span id="cb10-46"><a href="#cb10-46" aria-hidden="true" tabindex="-1"></a>    <span class="at">legend.key.size =</span> <span class="fu">unit</span>(<span class="fl">0.5</span>, <span class="st">"lines"</span>),</span>
+<span id="cb10-47"><a href="#cb10-47" aria-hidden="true" tabindex="-1"></a>    <span class="at">legend.box.background =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb10-48"><a href="#cb10-48" aria-hidden="true" tabindex="-1"></a>    <span class="co">#legend.key = element_blank(),</span></span>
+<span id="cb10-49"><a href="#cb10-49" aria-hidden="true" tabindex="-1"></a>    <span class="at">legend.direction =</span> <span class="st">"vertical"</span></span>
+<span id="cb10-50"><a href="#cb10-50" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span> <span class="fu">xlab</span>(<span class="st">""</span>) <span class="sc">+</span> <span class="fu">ylab</span>(<span class="st">""</span>)</span>
+<span id="cb10-51"><a href="#cb10-51" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-52"><a href="#cb10-52" aria-hidden="true" tabindex="-1"></a>Figure_4</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="codebase_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid figure-img" width="480"></p>
+</figure>
+</div>
+</div>
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co">#ggsave("data/Figure4.pdf", plot = Figure_4, device = "pdf", width = 5, height = 10)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(zoo)</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>ggwindrose <span class="ot">&lt;-</span> <span class="cf">function</span>(speed, direction, <span class="at">n_directions =</span> <span class="dv">8</span>, <span class="at">n_speeds =</span> <span class="dv">5</span>,</span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>                       <span class="at">speed_cuts =</span> <span class="cn">NA</span>, <span class="at">col_pal =</span> <span class="st">"GnBu"</span>,</span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>                       <span class="at">legend_title =</span> <span class="st">"Wind speed (m/s)"</span>, <span class="at">calm_wind =</span> <span class="dv">0</span>,</span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>                       <span class="at">n_col =</span> <span class="dv">1</span>, <span class="at">facet =</span> <span class="cn">NULL</span>, <span class="at">plot_title =</span> <span class="st">""</span>,</span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>                       ...) {</span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">missing</span>(speed)) {</span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a>    <span class="fu">stop</span>(<span class="st">"Speed can't be missing"</span>)</span>
+<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">missing</span>(direction)) {</span>
+<span id="cb12-13"><a href="#cb12-13" aria-hidden="true" tabindex="-1"></a>    <span class="fu">stop</span>(<span class="st">"Direction can't be missing"</span>)</span>
+<span id="cb12-14"><a href="#cb12-14" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb12-15"><a href="#cb12-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-16"><a href="#cb12-16" aria-hidden="true" tabindex="-1"></a>  include_facet <span class="ot">&lt;-</span> <span class="sc">!</span><span class="fu">is.null</span>(facet)</span>
+<span id="cb12-17"><a href="#cb12-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-18"><a href="#cb12-18" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (include_facet) {</span>
+<span id="cb12-19"><a href="#cb12-19" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (<span class="sc">!</span><span class="fu">is.character</span>(facet) <span class="sc">&amp;&amp;</span> <span class="sc">!</span><span class="fu">is.factor</span>(facet)) {</span>
+<span id="cb12-20"><a href="#cb12-20" aria-hidden="true" tabindex="-1"></a>      <span class="fu">stop</span>(<span class="st">"The facet variable needs to be character or factor"</span>)</span>
+<span id="cb12-21"><a href="#cb12-21" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb12-22"><a href="#cb12-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-23"><a href="#cb12-23" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (<span class="fu">length</span>(facet) <span class="sc">==</span> <span class="dv">1</span>) {</span>
+<span id="cb12-24"><a href="#cb12-24" aria-hidden="true" tabindex="-1"></a>      facet <span class="ot">&lt;-</span> <span class="fu">rep</span>(facet, <span class="fu">length</span>(speed))</span>
+<span id="cb12-25"><a href="#cb12-25" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb12-26"><a href="#cb12-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-27"><a href="#cb12-27" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (<span class="fu">length</span>(facet) <span class="sc">!=</span> <span class="fu">length</span>(speed)) {</span>
+<span id="cb12-28"><a href="#cb12-28" aria-hidden="true" tabindex="-1"></a>      <span class="fu">stop</span>(<span class="st">"The facet variable must be the same length as the wind speeds"</span>)</span>
+<span id="cb12-29"><a href="#cb12-29" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb12-30"><a href="#cb12-30" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb12-31"><a href="#cb12-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-32"><a href="#cb12-32" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="sc">!</span><span class="fu">is.numeric</span>(speed)) {</span>
+<span id="cb12-33"><a href="#cb12-33" aria-hidden="true" tabindex="-1"></a>    <span class="fu">stop</span>(<span class="st">"Wind speeds need to be numeric"</span>)</span>
+<span id="cb12-34"><a href="#cb12-34" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb12-35"><a href="#cb12-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-36"><a href="#cb12-36" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="sc">!</span><span class="fu">is.numeric</span>(direction)) {</span>
+<span id="cb12-37"><a href="#cb12-37" aria-hidden="true" tabindex="-1"></a>    <span class="fu">stop</span>(<span class="st">"Wind directions need to be numeric"</span>)</span>
+<span id="cb12-38"><a href="#cb12-38" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb12-39"><a href="#cb12-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-40"><a href="#cb12-40" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">length</span>(speed) <span class="sc">!=</span> <span class="fu">length</span>(direction)) {</span>
+<span id="cb12-41"><a href="#cb12-41" aria-hidden="true" tabindex="-1"></a>    <span class="fu">stop</span>(<span class="st">"Wind speeds and directions must be the same length"</span>)</span>
+<span id="cb12-42"><a href="#cb12-42" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb12-43"><a href="#cb12-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-44"><a href="#cb12-44" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">any</span>((direction <span class="sc">&gt;</span> <span class="dv">360</span> <span class="sc">|</span> direction <span class="sc">&lt;</span> <span class="dv">0</span>),</span>
+<span id="cb12-45"><a href="#cb12-45" aria-hidden="true" tabindex="-1"></a>    <span class="at">na.rm =</span> <span class="cn">TRUE</span></span>
+<span id="cb12-46"><a href="#cb12-46" aria-hidden="true" tabindex="-1"></a>  )) {</span>
+<span id="cb12-47"><a href="#cb12-47" aria-hidden="true" tabindex="-1"></a>    <span class="fu">stop</span>(<span class="st">"Wind directions can't be outside the interval [0, 360]"</span>)</span>
+<span id="cb12-48"><a href="#cb12-48" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb12-49"><a href="#cb12-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-50"><a href="#cb12-50" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="sc">!</span><span class="fu">is.numeric</span>(n_directions) <span class="sc">||</span> <span class="fu">length</span>(n_directions) <span class="sc">!=</span> <span class="dv">1</span>) {</span>
+<span id="cb12-51"><a href="#cb12-51" aria-hidden="true" tabindex="-1"></a>    <span class="fu">stop</span>(<span class="st">"n_directions must be a numeric vector of length 1"</span>)</span>
+<span id="cb12-52"><a href="#cb12-52" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb12-53"><a href="#cb12-53" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-54"><a href="#cb12-54" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="sc">!</span><span class="fu">is.numeric</span>(n_speeds) <span class="sc">||</span> <span class="fu">length</span>(n_speeds) <span class="sc">!=</span> <span class="dv">1</span>) {</span>
+<span id="cb12-55"><a href="#cb12-55" aria-hidden="true" tabindex="-1"></a>    <span class="fu">stop</span>(<span class="st">"n_speeds must be a numeric vector of length 1"</span>)</span>
+<span id="cb12-56"><a href="#cb12-56" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb12-57"><a href="#cb12-57" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-58"><a href="#cb12-58" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="sc">!</span><span class="fu">is.numeric</span>(calm_wind) <span class="sc">||</span> <span class="fu">length</span>(calm_wind) <span class="sc">!=</span> <span class="dv">1</span>) {</span>
+<span id="cb12-59"><a href="#cb12-59" aria-hidden="true" tabindex="-1"></a>    <span class="fu">stop</span>(<span class="st">"calm_wind must be a numeric vector of length 1"</span>)</span>
+<span id="cb12-60"><a href="#cb12-60" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb12-61"><a href="#cb12-61" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-62"><a href="#cb12-62" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> ((<span class="sc">!</span><span class="fu">is.character</span>(legend_title) <span class="sc">&amp;&amp;</span> <span class="sc">!</span><span class="fu">is.expression</span>(</span>
+<span id="cb12-63"><a href="#cb12-63" aria-hidden="true" tabindex="-1"></a>    legend_title</span>
+<span id="cb12-64"><a href="#cb12-64" aria-hidden="true" tabindex="-1"></a>  )) <span class="sc">||</span> <span class="fu">length</span>(legend_title) <span class="sc">!=</span> <span class="dv">1</span>) {</span>
+<span id="cb12-65"><a href="#cb12-65" aria-hidden="true" tabindex="-1"></a>    <span class="fu">stop</span>(<span class="st">"Legend title must be a single character string or expression"</span>)</span>
+<span id="cb12-66"><a href="#cb12-66" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb12-67"><a href="#cb12-67" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-68"><a href="#cb12-68" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-69"><a href="#cb12-69" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="sc">!</span>col_pal <span class="sc">%in%</span> <span class="fu">hcl.pals</span>()) {</span>
+<span id="cb12-70"><a href="#cb12-70" aria-hidden="true" tabindex="-1"></a>    <span class="fu">stop</span>(<span class="st">"`col_pal` should be one of the palettes defined on `hc.pals()`"</span>)</span>
+<span id="cb12-71"><a href="#cb12-71" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb12-72"><a href="#cb12-72" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-73"><a href="#cb12-73" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">any</span>(<span class="sc">!</span><span class="fu">is.na</span>(speed_cuts)) <span class="sc">&amp;&amp;</span> <span class="sc">!</span><span class="fu">is.numeric</span>(speed_cuts)) {</span>
+<span id="cb12-74"><a href="#cb12-74" aria-hidden="true" tabindex="-1"></a>    <span class="fu">stop</span>(<span class="st">"`speed_cuts` should be numeric or NA"</span>)</span>
+<span id="cb12-75"><a href="#cb12-75" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb12-76"><a href="#cb12-76" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-77"><a href="#cb12-77" aria-hidden="true" tabindex="-1"></a>  optimal_n_dir <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">4</span>, <span class="dv">8</span>, <span class="dv">16</span>)</span>
+<span id="cb12-78"><a href="#cb12-78" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-79"><a href="#cb12-79" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">is.na</span>(<span class="fu">match</span>(n_directions, optimal_n_dir))) {</span>
+<span id="cb12-80"><a href="#cb12-80" aria-hidden="true" tabindex="-1"></a>    n_directions <span class="ot">&lt;-</span></span>
+<span id="cb12-81"><a href="#cb12-81" aria-hidden="true" tabindex="-1"></a>      optimal_n_dir[<span class="fu">which.min</span>(<span class="fu">abs</span>(n_directions <span class="sc">-</span> optimal_n_dir))]</span>
+<span id="cb12-82"><a href="#cb12-82" aria-hidden="true" tabindex="-1"></a>    <span class="fu">message</span>(</span>
+<span id="cb12-83"><a href="#cb12-83" aria-hidden="true" tabindex="-1"></a>      <span class="st">"Using the closest optimal number of wind directions ("</span>,</span>
+<span id="cb12-84"><a href="#cb12-84" aria-hidden="true" tabindex="-1"></a>      n_directions,</span>
+<span id="cb12-85"><a href="#cb12-85" aria-hidden="true" tabindex="-1"></a>      <span class="st">")"</span></span>
+<span id="cb12-86"><a href="#cb12-86" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb12-87"><a href="#cb12-87" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb12-88"><a href="#cb12-88" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-89"><a href="#cb12-89" aria-hidden="true" tabindex="-1"></a>  dir_labels <span class="ot">&lt;-</span> <span class="cf">switch</span>(<span class="fu">as.character</span>(n_directions),</span>
+<span id="cb12-90"><a href="#cb12-90" aria-hidden="true" tabindex="-1"></a>    <span class="st">"4"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"N"</span>, <span class="st">"E"</span>, <span class="st">"S"</span>, <span class="st">"W"</span>),</span>
+<span id="cb12-91"><a href="#cb12-91" aria-hidden="true" tabindex="-1"></a>    <span class="st">"8"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"N"</span>, <span class="st">"NE"</span>, <span class="st">"E"</span>, <span class="st">"SE"</span>, <span class="st">"S"</span>, <span class="st">"SW"</span>, <span class="st">"W"</span>, <span class="st">"NW"</span>),</span>
+<span id="cb12-92"><a href="#cb12-92" aria-hidden="true" tabindex="-1"></a>    <span class="st">"16"</span> <span class="ot">=</span> <span class="fu">c</span>(</span>
+<span id="cb12-93"><a href="#cb12-93" aria-hidden="true" tabindex="-1"></a>      <span class="st">"N"</span>, <span class="st">"NNE"</span>, <span class="st">"NE"</span>, <span class="st">"ENE"</span>, <span class="st">"E"</span>, <span class="st">"ESE"</span>, <span class="st">"SE"</span>, <span class="st">"SSE"</span>, <span class="st">"S"</span>, <span class="st">"SSW"</span>, <span class="st">"SW"</span>,</span>
+<span id="cb12-94"><a href="#cb12-94" aria-hidden="true" tabindex="-1"></a>      <span class="st">"WSW"</span>, <span class="st">"W"</span>, <span class="st">"WNW"</span>, <span class="st">"NW"</span>, <span class="st">"NNW"</span></span>
+<span id="cb12-95"><a href="#cb12-95" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb12-96"><a href="#cb12-96" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb12-97"><a href="#cb12-97" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-98"><a href="#cb12-98" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Factor variable for wind direction intervals</span></span>
+<span id="cb12-99"><a href="#cb12-99" aria-hidden="true" tabindex="-1"></a>  dir_bin_width <span class="ot">&lt;-</span> <span class="dv">360</span> <span class="sc">/</span> n_directions</span>
+<span id="cb12-100"><a href="#cb12-100" aria-hidden="true" tabindex="-1"></a>  dir_bin_cuts <span class="ot">&lt;-</span></span>
+<span id="cb12-101"><a href="#cb12-101" aria-hidden="true" tabindex="-1"></a>    <span class="fu">seq</span>(dir_bin_width <span class="sc">/</span> <span class="dv">2</span>, <span class="dv">360</span> <span class="sc">-</span> dir_bin_width <span class="sc">/</span> <span class="dv">2</span>, dir_bin_width)</span>
+<span id="cb12-102"><a href="#cb12-102" aria-hidden="true" tabindex="-1"></a>  dir_intervals <span class="ot">&lt;-</span></span>
+<span id="cb12-103"><a href="#cb12-103" aria-hidden="true" tabindex="-1"></a>    <span class="fu">findInterval</span>(<span class="fu">c</span>(direction, dir_bin_cuts), dir_bin_cuts)</span>
+<span id="cb12-104"><a href="#cb12-104" aria-hidden="true" tabindex="-1"></a>  dir_intervals[dir_intervals <span class="sc">==</span> n_directions] <span class="ot">&lt;-</span> <span class="dv">0</span></span>
+<span id="cb12-105"><a href="#cb12-105" aria-hidden="true" tabindex="-1"></a>  factor_labs <span class="ot">&lt;-</span></span>
+<span id="cb12-106"><a href="#cb12-106" aria-hidden="true" tabindex="-1"></a>    <span class="fu">paste</span>(<span class="fu">c</span>(<span class="fu">tail</span>(dir_bin_cuts, <span class="dv">1</span>), <span class="fu">head</span>(dir_bin_cuts, <span class="sc">-</span><span class="dv">1</span>)),</span>
+<span id="cb12-107"><a href="#cb12-107" aria-hidden="true" tabindex="-1"></a>      dir_bin_cuts,</span>
+<span id="cb12-108"><a href="#cb12-108" aria-hidden="true" tabindex="-1"></a>      <span class="at">sep =</span> <span class="st">", "</span></span>
+<span id="cb12-109"><a href="#cb12-109" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb12-110"><a href="#cb12-110" aria-hidden="true" tabindex="-1"></a>  dir_bin <span class="ot">&lt;-</span> <span class="fu">head</span>(</span>
+<span id="cb12-111"><a href="#cb12-111" aria-hidden="true" tabindex="-1"></a>    <span class="fu">factor</span>(dir_intervals, <span class="at">labels =</span> <span class="fu">paste0</span>(<span class="st">"("</span>, factor_labs, <span class="st">"]"</span>)),</span>
+<span id="cb12-112"><a href="#cb12-112" aria-hidden="true" tabindex="-1"></a>    <span class="sc">-</span>n_directions</span>
+<span id="cb12-113"><a href="#cb12-113" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb12-114"><a href="#cb12-114" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-115"><a href="#cb12-115" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Factor variable for wind speed intervals</span></span>
+<span id="cb12-116"><a href="#cb12-116" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-117"><a href="#cb12-117" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">is.numeric</span>(speed_cuts)) {</span>
+<span id="cb12-118"><a href="#cb12-118" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (<span class="fu">min</span>(speed) <span class="sc">&lt;</span> <span class="fu">min</span>(speed_cuts)) {</span>
+<span id="cb12-119"><a href="#cb12-119" aria-hidden="true" tabindex="-1"></a>      speed_cuts <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fu">min</span>(speed), speed_cuts)</span>
+<span id="cb12-120"><a href="#cb12-120" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb12-121"><a href="#cb12-121" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-122"><a href="#cb12-122" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (<span class="fu">max</span>(speed) <span class="sc">&gt;</span> <span class="fu">max</span>(speed_cuts)) {</span>
+<span id="cb12-123"><a href="#cb12-123" aria-hidden="true" tabindex="-1"></a>      speed_cuts <span class="ot">&lt;-</span> <span class="fu">c</span>(speed_cuts, <span class="fu">max</span>(speed))</span>
+<span id="cb12-124"><a href="#cb12-124" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb12-125"><a href="#cb12-125" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-126"><a href="#cb12-126" aria-hidden="true" tabindex="-1"></a>    speed_cuts <span class="ot">&lt;-</span> <span class="fu">sort</span>(<span class="fu">unique</span>(speed_cuts))</span>
+<span id="cb12-127"><a href="#cb12-127" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-128"><a href="#cb12-128" aria-hidden="true" tabindex="-1"></a>    spd_bin <span class="ot">&lt;-</span> <span class="fu">cut</span>(speed, speed_cuts)</span>
+<span id="cb12-129"><a href="#cb12-129" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> {</span>
+<span id="cb12-130"><a href="#cb12-130" aria-hidden="true" tabindex="-1"></a>    spd_bin <span class="ot">&lt;-</span> ggplot2<span class="sc">::</span><span class="fu">cut_interval</span>(speed, n_speeds)</span>
+<span id="cb12-131"><a href="#cb12-131" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb12-132"><a href="#cb12-132" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-133"><a href="#cb12-133" aria-hidden="true" tabindex="-1"></a>  <span class="co"># New palette</span></span>
+<span id="cb12-134"><a href="#cb12-134" aria-hidden="true" tabindex="-1"></a>  spd_cols <span class="ot">&lt;-</span></span>
+<span id="cb12-135"><a href="#cb12-135" aria-hidden="true" tabindex="-1"></a>    <span class="fu">hcl.colors</span>(<span class="fu">length</span>(<span class="fu">levels</span>(spd_bin)), col_pal, <span class="at">rev =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb12-136"><a href="#cb12-136" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-137"><a href="#cb12-137" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">length</span>(spd_cols) <span class="sc">!=</span> <span class="fu">length</span>(<span class="fu">levels</span>(spd_bin))) {</span>
+<span id="cb12-138"><a href="#cb12-138" aria-hidden="true" tabindex="-1"></a>    spd_bin <span class="ot">&lt;-</span> ggplot2<span class="sc">::</span><span class="fu">cut_interval</span>(speed, <span class="fu">length</span>(spd_cols))</span>
+<span id="cb12-139"><a href="#cb12-139" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb12-140"><a href="#cb12-140" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-141"><a href="#cb12-141" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Dataframe suitable for plotting</span></span>
+<span id="cb12-142"><a href="#cb12-142" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (include_facet) {</span>
+<span id="cb12-143"><a href="#cb12-143" aria-hidden="true" tabindex="-1"></a>    ggplot_df <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(<span class="fu">table</span>(dir_bin, spd_bin, facet))</span>
+<span id="cb12-144"><a href="#cb12-144" aria-hidden="true" tabindex="-1"></a>    ggplot_df<span class="sc">$</span>proportion <span class="ot">&lt;-</span> <span class="fu">unlist</span>(</span>
+<span id="cb12-145"><a href="#cb12-145" aria-hidden="true" tabindex="-1"></a>      <span class="fu">by</span>(</span>
+<span id="cb12-146"><a href="#cb12-146" aria-hidden="true" tabindex="-1"></a>        ggplot_df<span class="sc">$</span>Freq,</span>
+<span id="cb12-147"><a href="#cb12-147" aria-hidden="true" tabindex="-1"></a>        ggplot_df<span class="sc">$</span>facet, <span class="cf">function</span>(x) {</span>
+<span id="cb12-148"><a href="#cb12-148" aria-hidden="true" tabindex="-1"></a>          x <span class="sc">/</span> <span class="fu">sum</span>(x)</span>
+<span id="cb12-149"><a href="#cb12-149" aria-hidden="true" tabindex="-1"></a>        }</span>
+<span id="cb12-150"><a href="#cb12-150" aria-hidden="true" tabindex="-1"></a>      ),</span>
+<span id="cb12-151"><a href="#cb12-151" aria-hidden="true" tabindex="-1"></a>      <span class="at">use.names =</span> <span class="cn">FALSE</span></span>
+<span id="cb12-152"><a href="#cb12-152" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb12-153"><a href="#cb12-153" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> {</span>
+<span id="cb12-154"><a href="#cb12-154" aria-hidden="true" tabindex="-1"></a>    ggplot_df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="fu">table</span>(dir_bin, spd_bin))</span>
+<span id="cb12-155"><a href="#cb12-155" aria-hidden="true" tabindex="-1"></a>    ggplot_df<span class="sc">$</span>proportion <span class="ot">&lt;-</span> ggplot_df<span class="sc">$</span>Freq <span class="sc">/</span> <span class="fu">sum</span>(ggplot_df<span class="sc">$</span>Freq)</span>
+<span id="cb12-156"><a href="#cb12-156" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb12-157"><a href="#cb12-157" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-158"><a href="#cb12-158" aria-hidden="true" tabindex="-1"></a>  <span class="do">## Draw plot</span></span>
+<span id="cb12-159"><a href="#cb12-159" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-160"><a href="#cb12-160" aria-hidden="true" tabindex="-1"></a>  windrose_plot <span class="ot">&lt;-</span> ggplot2<span class="sc">::</span><span class="fu">ggplot</span>(</span>
+<span id="cb12-161"><a href="#cb12-161" aria-hidden="true" tabindex="-1"></a>    <span class="at">data =</span> ggplot_df,</span>
+<span id="cb12-162"><a href="#cb12-162" aria-hidden="true" tabindex="-1"></a>    ggplot2<span class="sc">::</span><span class="fu">aes_string</span>(</span>
+<span id="cb12-163"><a href="#cb12-163" aria-hidden="true" tabindex="-1"></a>      <span class="at">x =</span> <span class="st">"dir_bin"</span>,</span>
+<span id="cb12-164"><a href="#cb12-164" aria-hidden="true" tabindex="-1"></a>      <span class="at">fill =</span> <span class="st">"spd_bin"</span>,</span>
+<span id="cb12-165"><a href="#cb12-165" aria-hidden="true" tabindex="-1"></a>      <span class="at">y =</span> <span class="st">"proportion"</span></span>
+<span id="cb12-166"><a href="#cb12-166" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb12-167"><a href="#cb12-167" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb12-168"><a href="#cb12-168" aria-hidden="true" tabindex="-1"></a>    ggplot2<span class="sc">::</span><span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">"identity"</span>, <span class="at">color=</span><span class="st">"black"</span>) <span class="sc">+</span></span>
+<span id="cb12-169"><a href="#cb12-169" aria-hidden="true" tabindex="-1"></a>    ggplot2<span class="sc">::</span><span class="fu">scale_x_discrete</span>(</span>
+<span id="cb12-170"><a href="#cb12-170" aria-hidden="true" tabindex="-1"></a>      <span class="at">breaks =</span> <span class="fu">levels</span>(ggplot_df<span class="sc">$</span>dir_bin)[<span class="fu">seq</span>(<span class="dv">1</span>, n_directions, <span class="dv">1</span>)],</span>
+<span id="cb12-171"><a href="#cb12-171" aria-hidden="true" tabindex="-1"></a>      <span class="at">labels =</span> dir_labels,</span>
+<span id="cb12-172"><a href="#cb12-172" aria-hidden="true" tabindex="-1"></a>      <span class="at">drop =</span> <span class="cn">FALSE</span></span>
+<span id="cb12-173"><a href="#cb12-173" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">+</span></span>
+<span id="cb12-174"><a href="#cb12-174" aria-hidden="true" tabindex="-1"></a>    ggplot2<span class="sc">::</span><span class="fu">scale_fill_manual</span>(<span class="at">name =</span> legend_title, <span class="at">values =</span> spd_cols) <span class="sc">+</span></span>
+<span id="cb12-175"><a href="#cb12-175" aria-hidden="true" tabindex="-1"></a>    ggplot2<span class="sc">::</span><span class="fu">coord_polar</span>(<span class="at">start =</span> <span class="dv">2</span> <span class="sc">*</span> pi <span class="sc">-</span> pi <span class="sc">/</span> n_directions) <span class="sc">+</span></span>
+<span id="cb12-176"><a href="#cb12-176" aria-hidden="true" tabindex="-1"></a>    ggplot2<span class="sc">::</span><span class="fu">scale_y_continuous</span>(</span>
+<span id="cb12-177"><a href="#cb12-177" aria-hidden="true" tabindex="-1"></a>      <span class="at">labels =</span> <span class="cf">function</span>(values) {</span>
+<span id="cb12-178"><a href="#cb12-178" aria-hidden="true" tabindex="-1"></a>        values <span class="ot">&lt;-</span> <span class="fu">sprintf</span>(<span class="st">"%0.1f %%"</span>, values <span class="sc">*</span> <span class="dv">100</span>)</span>
+<span id="cb12-179"><a href="#cb12-179" aria-hidden="true" tabindex="-1"></a>        <span class="fu">return</span>(values)</span>
+<span id="cb12-180"><a href="#cb12-180" aria-hidden="true" tabindex="-1"></a>      }</span>
+<span id="cb12-181"><a href="#cb12-181" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">+</span></span>
+<span id="cb12-182"><a href="#cb12-182" aria-hidden="true" tabindex="-1"></a>    ggplot2<span class="sc">::</span><span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb12-183"><a href="#cb12-183" aria-hidden="true" tabindex="-1"></a>    ggplot2<span class="sc">::</span><span class="fu">theme</span>(<span class="at">axis.title =</span> ggplot2<span class="sc">::</span><span class="fu">element_blank</span>()) <span class="sc">+</span></span>
+<span id="cb12-184"><a href="#cb12-184" aria-hidden="true" tabindex="-1"></a>    ggplot2<span class="sc">::</span><span class="fu">labs</span>(<span class="at">title =</span> plot_title)</span>
+<span id="cb12-185"><a href="#cb12-185" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-186"><a href="#cb12-186" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (include_facet) {</span>
+<span id="cb12-187"><a href="#cb12-187" aria-hidden="true" tabindex="-1"></a>    windrose_plot <span class="ot">&lt;-</span></span>
+<span id="cb12-188"><a href="#cb12-188" aria-hidden="true" tabindex="-1"></a>      windrose_plot <span class="sc">+</span> ggplot2<span class="sc">::</span><span class="fu">facet_wrap</span>(<span class="sc">~</span>facet, <span class="at">ncol =</span> n_col)</span>
+<span id="cb12-189"><a href="#cb12-189" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb12-190"><a href="#cb12-190" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-191"><a href="#cb12-191" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(windrose_plot)</span>
+<span id="cb12-192"><a href="#cb12-192" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb12-193"><a href="#cb12-193" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-194"><a href="#cb12-194" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-195"><a href="#cb12-195" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-196"><a href="#cb12-196" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-197"><a href="#cb12-197" aria-hidden="true" tabindex="-1"></a>acdc <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"../data/S103288A017_LSDTrial27N_A0.csv"</span>, <span class="at">sep =</span> <span class="st">";"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb12-198"><a href="#cb12-198" aria-hidden="true" tabindex="-1"></a>  janitor<span class="sc">::</span><span class="fu">clean_names</span>() <span class="sc">|&gt;</span></span>
+<span id="cb12-199"><a href="#cb12-199" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">date_time =</span> <span class="fu">dmy_hms</span>(date_time)) <span class="sc">|&gt;</span></span>
+<span id="cb12-200"><a href="#cb12-200" aria-hidden="true" tabindex="-1"></a>  <span class="co"># select(date_time, speed_1_0_3m, dir_1_0_3m) |&gt;</span></span>
+<span id="cb12-201"><a href="#cb12-201" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">filter</span>(date_time <span class="sc">&gt;</span> <span class="fu">ymd_hms</span>(<span class="st">"2024-11-27 00:00:00"</span>)) <span class="sc">|&gt;</span> </span>
+<span id="cb12-202"><a href="#cb12-202" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">filter</span>(date_time <span class="sc">&lt;</span> <span class="fu">ymd_hms</span>(<span class="st">"2024-11-28 06:00:00"</span>)) <span class="sc">|&gt;</span> </span>
+<span id="cb12-203"><a href="#cb12-203" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(date_time, <span class="fu">starts_with</span>(<span class="st">"speed_"</span>), <span class="fu">starts_with</span>(<span class="st">"dir_"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb12-204"><a href="#cb12-204" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_longer</span>(</span>
+<span id="cb12-205"><a href="#cb12-205" aria-hidden="true" tabindex="-1"></a>    <span class="at">cols =</span> <span class="sc">-</span>date_time,</span>
+<span id="cb12-206"><a href="#cb12-206" aria-hidden="true" tabindex="-1"></a>    <span class="at">names_to =</span> <span class="fu">c</span>(<span class="st">".value"</span>, <span class="st">"depth"</span>),</span>
+<span id="cb12-207"><a href="#cb12-207" aria-hidden="true" tabindex="-1"></a>    <span class="at">names_pattern =</span> <span class="st">"(speed|dir)_(.*)"</span></span>
+<span id="cb12-208"><a href="#cb12-208" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb12-209"><a href="#cb12-209" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">depth =</span> <span class="fu">str_extract</span>(depth, <span class="st">"(?&lt;=_)[0-9_]+(?=m)"</span>),</span>
+<span id="cb12-210"><a href="#cb12-210" aria-hidden="true" tabindex="-1"></a>         <span class="at">depth =</span> <span class="fu">str_replace_all</span>(depth, <span class="st">"_"</span>, <span class="st">"."</span>),</span>
+<span id="cb12-211"><a href="#cb12-211" aria-hidden="true" tabindex="-1"></a>         <span class="at">depth =</span> <span class="fu">parse_number</span>(depth)) </span>
+<span id="cb12-212"><a href="#cb12-212" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-213"><a href="#cb12-213" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-214"><a href="#cb12-214" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-215"><a href="#cb12-215" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-216"><a href="#cb12-216" aria-hidden="true" tabindex="-1"></a><span class="co"># extract direction and speed</span></span>
+<span id="cb12-217"><a href="#cb12-217" aria-hidden="true" tabindex="-1"></a>dir_b <span class="ot">&lt;-</span> acdc <span class="sc">|&gt;</span> </span>
+<span id="cb12-218"><a href="#cb12-218" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">filter</span>(depth <span class="sc">&lt;</span> <span class="dv">2</span>, date_time <span class="sc">&gt;</span> <span class="fu">ymd_hms</span>(<span class="st">"2024-11-27 11:02:00"</span>), </span>
+<span id="cb12-219"><a href="#cb12-219" aria-hidden="true" tabindex="-1"></a>                date_time <span class="sc">&lt;</span> <span class="fu">ymd_hms</span>(<span class="st">"2024-11-27 22:05:00"</span>)) <span class="sc">|&gt;</span> </span>
+<span id="cb12-220"><a href="#cb12-220" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pull</span>(dir) </span>
+<span id="cb12-221"><a href="#cb12-221" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-222"><a href="#cb12-222" aria-hidden="true" tabindex="-1"></a>speed_b <span class="ot">&lt;-</span> acdc <span class="sc">|&gt;</span> </span>
+<span id="cb12-223"><a href="#cb12-223" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">filter</span>(depth <span class="sc">&lt;</span> <span class="dv">2</span>, date_time <span class="sc">&gt;</span> <span class="fu">ymd_hms</span>(<span class="st">"2024-11-27 11:02:00"</span>), </span>
+<span id="cb12-224"><a href="#cb12-224" aria-hidden="true" tabindex="-1"></a>                date_time <span class="sc">&lt;</span> <span class="fu">ymd_hms</span>(<span class="st">"2024-11-27 22:05:00"</span>)) <span class="sc">|&gt;</span> </span>
+<span id="cb12-225"><a href="#cb12-225" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pull</span>(speed) </span>
+<span id="cb12-226"><a href="#cb12-226" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-227"><a href="#cb12-227" aria-hidden="true" tabindex="-1"></a><span class="co"># plot</span></span>
+<span id="cb12-228"><a href="#cb12-228" aria-hidden="true" tabindex="-1"></a>windrose <span class="ot">&lt;-</span> <span class="fu">ggwindrose</span>(speed_b, dir_b, <span class="at">n_directions =</span> <span class="dv">16</span>, <span class="at">speed_cuts =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="fl">0.025</span>, <span class="fl">0.05</span>, <span class="fl">0.075</span>, <span class="fl">0.1</span>, <span class="fl">0.125</span>, <span class="fl">0.15</span>),</span>
+<span id="cb12-229"><a href="#cb12-229" aria-hidden="true" tabindex="-1"></a>                       <span class="at">n_speeds =</span> <span class="dv">6</span>)</span>
+<span id="cb12-230"><a href="#cb12-230" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-231"><a href="#cb12-231" aria-hidden="true" tabindex="-1"></a>windrose</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="codebase_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="table-s1" class="level4">
+<h4 class="anchored" data-anchor-id="table-s1">Table S1</h4>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>table_s1 <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(<span class="fu">fixef</span>(zi_model_outer, <span class="at">probs =</span> <span class="fu">c</span>(<span class="fl">0.05</span>, <span class="fl">0.95</span>))) <span class="sc">|&gt;</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rownames_to_column</span>(<span class="st">"Parameter"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">Estimate =</span> Estimate,</span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">Error =</span> Est.Error,</span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">`</span><span class="at">Lower CI (95%)</span><span class="st">`</span> <span class="ot">=</span> Q5,</span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>    <span class="st">`</span><span class="at">Upper CI (95%)</span><span class="st">`</span> <span class="ot">=</span> Q95</span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span> </span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">rhat =</span>  <span class="fu">rhat</span>(zi_model_outer, <span class="at">variables =</span> brms_pars)[<span class="dv">1</span><span class="sc">:</span><span class="dv">6</span>]) <span class="sc">|&gt;</span> </span>
+<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">ess =</span> <span class="fu">effective_sample</span>(zi_model_outer)[,<span class="dv">3</span>]) <span class="sc">|&gt;</span> </span>
+<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="fu">across</span>(<span class="fu">where</span>(is.numeric), <span class="sc">~</span> <span class="fu">round</span>(.x, <span class="dv">2</span>)))</span>
+<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-14"><a href="#cb13-14" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(kableExtra)</span>
+<span id="cb13-15"><a href="#cb13-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-16"><a href="#cb13-16" aria-hidden="true" tabindex="-1"></a>table_s1 <span class="sc">%&gt;%</span> </span>
+<span id="cb13-17"><a href="#cb13-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kbl</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb13-18"><a href="#cb13-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_styling</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<table class="table caption-top table-sm table-striped small" data-quarto-postprocess="true">
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Parameter</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">Estimate</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">Error</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">Lower CI (95%)</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">Upper CI (95%)</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">rhat</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">ess</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Intercept</td>
+<td style="text-align: right;">-1.74</td>
+<td style="text-align: right;">0.34</td>
+<td style="text-align: right;">-2.34</td>
+<td style="text-align: right;">-1.22</td>
+<td style="text-align: right;">1.01</td>
+<td style="text-align: right;">699</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">seedbox2</td>
+<td style="text-align: right;">2.55</td>
+<td style="text-align: right;">0.36</td>
+<td style="text-align: right;">2.00</td>
+<td style="text-align: right;">3.17</td>
+<td style="text-align: right;">1.01</td>
+<td style="text-align: right;">830</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">seedbox3</td>
+<td style="text-align: right;">3.29</td>
+<td style="text-align: right;">0.35</td>
+<td style="text-align: right;">2.75</td>
+<td style="text-align: right;">3.90</td>
+<td style="text-align: right;">1.01</td>
+<td style="text-align: right;">732</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">seedbox4</td>
+<td style="text-align: right;">2.82</td>
+<td style="text-align: right;">0.35</td>
+<td style="text-align: right;">2.28</td>
+<td style="text-align: right;">3.42</td>
+<td style="text-align: right;">1.01</td>
+<td style="text-align: right;">891</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">seedbox5</td>
+<td style="text-align: right;">3.19</td>
+<td style="text-align: right;">0.35</td>
+<td style="text-align: right;">2.65</td>
+<td style="text-align: right;">3.79</td>
+<td style="text-align: right;">1.01</td>
+<td style="text-align: right;">755</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">seedbox6</td>
+<td style="text-align: right;">3.77</td>
+<td style="text-align: right;">0.35</td>
+<td style="text-align: right;">3.23</td>
+<td style="text-align: right;">4.38</td>
+<td style="text-align: right;">1.01</td>
+<td style="text-align: right;">773</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="figure-s1" class="level4">
+<h4 class="anchored" data-anchor-id="figure-s1">Figure S1</h4>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dataaimsr)</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lubridate)</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(grid)  <span class="co"># for arrow()</span></span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a><span class="co"># --- fetch 6-hourly means ---</span></span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a>lizard_wind_speed <span class="ot">&lt;-</span> <span class="fu">aims_data</span>(<span class="st">"weather"</span>, <span class="at">api_key =</span> <span class="st">"KNJ8y0lDup7m9ODBUwIXVFSx1EAiz0p91qDUlSld"</span>,</span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a>                    <span class="at">filters =</span> <span class="fu">list</span>(<span class="at">series_id =</span> <span class="dv">3484</span>,</span>
+<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a>                                   <span class="at">from_date =</span> <span class="st">"2024-11-20"</span>,</span>
+<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a>                                   <span class="at">thru_date =</span> <span class="st">"2024-12-01"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">hour6 =</span> <span class="fu">floor_date</span>(time, <span class="st">"6 hours"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb14-13"><a href="#cb14-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(hour6) <span class="sc">|&gt;</span></span>
+<span id="cb14-14"><a href="#cb14-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">mean_speed =</span> <span class="fu">mean</span>(qc_val, <span class="at">na.rm =</span> <span class="cn">TRUE</span>), <span class="at">.groups =</span> <span class="st">"drop"</span>)</span>
+<span id="cb14-15"><a href="#cb14-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-16"><a href="#cb14-16" aria-hidden="true" tabindex="-1"></a>lizard_wind_direction <span class="ot">&lt;-</span> <span class="fu">aims_data</span>(<span class="st">"weather"</span>, <span class="at">api_key =</span> <span class="st">"KNJ8y0lDup7m9ODBUwIXVFSx1EAiz0p91qDUlSld"</span>,</span>
+<span id="cb14-17"><a href="#cb14-17" aria-hidden="true" tabindex="-1"></a>                    <span class="at">filters =</span> <span class="fu">list</span>(<span class="at">series_id =</span> <span class="dv">3485</span>,</span>
+<span id="cb14-18"><a href="#cb14-18" aria-hidden="true" tabindex="-1"></a>                                   <span class="at">from_date =</span> <span class="st">"2024-11-20"</span>,</span>
+<span id="cb14-19"><a href="#cb14-19" aria-hidden="true" tabindex="-1"></a>                                   <span class="at">thru_date =</span> <span class="st">"2024-12-01"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb14-20"><a href="#cb14-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">hour6 =</span> <span class="fu">floor_date</span>(time, <span class="st">"6 hours"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb14-21"><a href="#cb14-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(hour6) <span class="sc">|&gt;</span></span>
+<span id="cb14-22"><a href="#cb14-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">mean_dir_deg =</span> <span class="fu">mean</span>(qc_val, <span class="at">na.rm =</span> <span class="cn">TRUE</span>), <span class="at">.groups =</span> <span class="st">"drop"</span>)</span>
+<span id="cb14-23"><a href="#cb14-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-24"><a href="#cb14-24" aria-hidden="true" tabindex="-1"></a><span class="co"># --- join + arrow endpoints from bearings (bearing: 0°=N/up, 90°=E/right) ---</span></span>
+<span id="cb14-25"><a href="#cb14-25" aria-hidden="true" tabindex="-1"></a>wind_6h <span class="ot">&lt;-</span> lizard_wind_speed <span class="sc">|&gt;</span></span>
+<span id="cb14-26"><a href="#cb14-26" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(lizard_wind_direction, <span class="at">by =</span> <span class="st">"hour6"</span>)</span>
+<span id="cb14-27"><a href="#cb14-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-28"><a href="#cb14-28" aria-hidden="true" tabindex="-1"></a><span class="co"># baseline for arrows just below min speed</span></span>
+<span id="cb14-29"><a href="#cb14-29" aria-hidden="true" tabindex="-1"></a>ymin <span class="ot">&lt;-</span> <span class="fu">min</span>(wind_6h<span class="sc">$</span>mean_speed, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb14-30"><a href="#cb14-30" aria-hidden="true" tabindex="-1"></a>yrng <span class="ot">&lt;-</span> <span class="fu">diff</span>(<span class="fu">range</span>(wind_6h<span class="sc">$</span>mean_speed, <span class="at">na.rm =</span> <span class="cn">TRUE</span>))</span>
+<span id="cb14-31"><a href="#cb14-31" aria-hidden="true" tabindex="-1"></a>pad  <span class="ot">&lt;-</span> <span class="cf">if</span> (<span class="fu">is.finite</span>(yrng) <span class="sc">&amp;&amp;</span> yrng <span class="sc">&gt;</span> <span class="dv">0</span>) <span class="fl">0.12</span> <span class="sc">*</span> yrng <span class="cf">else</span> <span class="dv">1</span></span>
+<span id="cb14-32"><a href="#cb14-32" aria-hidden="true" tabindex="-1"></a>label_y <span class="ot">&lt;-</span> ymin <span class="sc">-</span> pad</span>
+<span id="cb14-33"><a href="#cb14-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-34"><a href="#cb14-34" aria-hidden="true" tabindex="-1"></a><span class="co"># arrow lengths (in data units): time component in seconds, y component in speed units</span></span>
+<span id="cb14-35"><a href="#cb14-35" aria-hidden="true" tabindex="-1"></a><span class="co"># scale by speed so stronger winds have longer arrows (cap to avoid huge arrows)</span></span>
+<span id="cb14-36"><a href="#cb14-36" aria-hidden="true" tabindex="-1"></a>len_time_sec_base <span class="ot">&lt;-</span> <span class="dv">60</span> <span class="sc">*</span> <span class="dv">60</span> <span class="sc">*</span> <span class="fl">1.5</span>  <span class="co"># ~1.5h along x at max scale</span></span>
+<span id="cb14-37"><a href="#cb14-37" aria-hidden="true" tabindex="-1"></a>len_y_base        <span class="ot">&lt;-</span> <span class="cf">if</span> (<span class="fu">is.finite</span>(yrng) <span class="sc">&amp;&amp;</span> yrng <span class="sc">&gt;</span> <span class="dv">0</span>) <span class="fl">0.18</span> <span class="sc">*</span> yrng <span class="cf">else</span> <span class="dv">1</span></span>
+<span id="cb14-38"><a href="#cb14-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-39"><a href="#cb14-39" aria-hidden="true" tabindex="-1"></a>wind_6h <span class="ot">&lt;-</span> wind_6h <span class="sc">|&gt;</span></span>
+<span id="cb14-40"><a href="#cb14-40" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb14-41"><a href="#cb14-41" aria-hidden="true" tabindex="-1"></a>    <span class="at">dir_deg =</span> mean_dir_deg <span class="sc">%%</span> <span class="dv">360</span>,</span>
+<span id="cb14-42"><a href="#cb14-42" aria-hidden="true" tabindex="-1"></a>    <span class="at">phi_deg =</span> <span class="dv">90</span> <span class="sc">-</span> dir_deg,                     <span class="co"># convert bearing to math angle (0° = +x)</span></span>
+<span id="cb14-43"><a href="#cb14-43" aria-hidden="true" tabindex="-1"></a>    <span class="at">phi     =</span> pi <span class="sc">*</span> phi_deg <span class="sc">/</span> <span class="dv">180</span>,</span>
+<span id="cb14-44"><a href="#cb14-44" aria-hidden="true" tabindex="-1"></a>    <span class="at">scale_s =</span> <span class="fu">pmin</span>(mean_speed <span class="sc">/</span> <span class="fu">max</span>(mean_speed, <span class="at">na.rm =</span> <span class="cn">TRUE</span>), <span class="dv">1</span>),</span>
+<span id="cb14-45"><a href="#cb14-45" aria-hidden="true" tabindex="-1"></a>    <span class="at">dx_sec  =</span> len_time_sec_base <span class="sc">*</span> scale_s <span class="sc">*</span> <span class="fu">cos</span>(phi),</span>
+<span id="cb14-46"><a href="#cb14-46" aria-hidden="true" tabindex="-1"></a>    <span class="at">dy      =</span> len_y_base        <span class="sc">*</span> scale_s <span class="sc">*</span> <span class="fu">sin</span>(phi),</span>
+<span id="cb14-47"><a href="#cb14-47" aria-hidden="true" tabindex="-1"></a>    <span class="at">x0      =</span> hour6,</span>
+<span id="cb14-48"><a href="#cb14-48" aria-hidden="true" tabindex="-1"></a>    <span class="at">y0      =</span> label_y,</span>
+<span id="cb14-49"><a href="#cb14-49" aria-hidden="true" tabindex="-1"></a>    <span class="at">x1      =</span> hour6 <span class="sc">+</span> dx_sec,                   <span class="co"># POSIXct + seconds</span></span>
+<span id="cb14-50"><a href="#cb14-50" aria-hidden="true" tabindex="-1"></a>    <span class="at">y1      =</span> label_y <span class="sc">+</span> dy</span>
+<span id="cb14-51"><a href="#cb14-51" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb14-52"><a href="#cb14-52" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-53"><a href="#cb14-53" aria-hidden="true" tabindex="-1"></a><span class="co"># --- plot: speed line + directional arrows below ---</span></span>
+<span id="cb14-54"><a href="#cb14-54" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>() <span class="sc">+</span> <span class="fu">theme_bw</span>() <span class="sc">+</span></span>
+<span id="cb14-55"><a href="#cb14-55" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">data =</span> wind_6h, <span class="fu">aes</span>(<span class="at">x =</span> hour6, <span class="at">y =</span> mean_speed)) <span class="sc">+</span></span>
+<span id="cb14-56"><a href="#cb14-56" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">data =</span> wind_6h, <span class="fu">aes</span>(<span class="at">x =</span> hour6, <span class="at">y =</span> mean_speed)) <span class="sc">+</span></span>
+<span id="cb14-57"><a href="#cb14-57" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_segment</span>(</span>
+<span id="cb14-58"><a href="#cb14-58" aria-hidden="true" tabindex="-1"></a>    <span class="at">data =</span> wind_6h,</span>
+<span id="cb14-59"><a href="#cb14-59" aria-hidden="true" tabindex="-1"></a>    <span class="fu">aes</span>(<span class="at">x =</span> x0, <span class="at">y =</span> y0, <span class="at">xend =</span> x1, <span class="at">yend =</span> y1),</span>
+<span id="cb14-60"><a href="#cb14-60" aria-hidden="true" tabindex="-1"></a>    <span class="at">arrow =</span> <span class="fu">arrow</span>(<span class="at">length =</span> <span class="fu">unit</span>(<span class="dv">3</span>, <span class="st">"mm"</span>), <span class="at">type =</span> <span class="st">"closed"</span>),</span>
+<span id="cb14-61"><a href="#cb14-61" aria-hidden="true" tabindex="-1"></a>    <span class="at">linewidth =</span> <span class="fl">0.5</span></span>
+<span id="cb14-62"><a href="#cb14-62" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb14-63"><a href="#cb14-63" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="cn">NULL</span>, <span class="at">y =</span> <span class="st">"Wind speed (m/s)"</span>,</span>
+<span id="cb14-64"><a href="#cb14-64" aria-hidden="true" tabindex="-1"></a>       <span class="at">title =</span> <span class="st">"Lizard Island · 6-hourly wind speed with directional arrows (bearing)"</span>) <span class="sc">+</span></span>
+<span id="cb14-65"><a href="#cb14-65" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_cartesian</span>(<span class="at">ylim =</span> <span class="fu">c</span>(label_y, <span class="cn">NA</span>), <span class="at">clip =</span> <span class="st">"off"</span>) <span class="sc">+</span></span>
+<span id="cb14-66"><a href="#cb14-66" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">plot.margin =</span> <span class="fu">margin</span>(<span class="dv">10</span>, <span class="dv">10</span>, <span class="dv">24</span>, <span class="dv">10</span>),</span>
+<span id="cb14-67"><a href="#cb14-67" aria-hidden="true" tabindex="-1"></a>        <span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">margin =</span> <span class="fu">margin</span>(<span class="at">t =</span> <span class="dv">8</span>)))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="codebase_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dataaimsr)</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lubridate)</span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(grid)  <span class="co"># for arrow()</span></span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a><span class="co"># --- fetch 6-hourly means ---</span></span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a>lizard_wind_speed <span class="ot">&lt;-</span> <span class="fu">aims_data</span>(<span class="st">"weather"</span>,</span>
+<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a>                    <span class="at">filters =</span> <span class="fu">list</span>(<span class="at">series_id =</span> <span class="dv">3484</span>,</span>
+<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a>                                   <span class="at">from_date =</span> <span class="st">"2024-11-20"</span>,</span>
+<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a>                                   <span class="at">thru_date =</span> <span class="st">"2024-12-01"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb15-12"><a href="#cb15-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">hour6 =</span> <span class="fu">floor_date</span>(time, <span class="st">"6 hours"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb15-13"><a href="#cb15-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(hour6) <span class="sc">|&gt;</span></span>
+<span id="cb15-14"><a href="#cb15-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">mean_speed =</span> <span class="fu">mean</span>(qc_val, <span class="at">na.rm =</span> <span class="cn">TRUE</span>), <span class="at">.groups =</span> <span class="st">"drop"</span>)</span>
+<span id="cb15-15"><a href="#cb15-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-16"><a href="#cb15-16" aria-hidden="true" tabindex="-1"></a>lizard_wind_direction <span class="ot">&lt;-</span> <span class="fu">aims_data</span>(<span class="st">"weather"</span>, </span>
+<span id="cb15-17"><a href="#cb15-17" aria-hidden="true" tabindex="-1"></a>                    <span class="at">filters =</span> <span class="fu">list</span>(<span class="at">series_id =</span> <span class="dv">3485</span>,</span>
+<span id="cb15-18"><a href="#cb15-18" aria-hidden="true" tabindex="-1"></a>                                   <span class="at">from_date =</span> <span class="st">"2024-11-20"</span>,</span>
+<span id="cb15-19"><a href="#cb15-19" aria-hidden="true" tabindex="-1"></a>                                   <span class="at">thru_date =</span> <span class="st">"2024-12-01"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb15-20"><a href="#cb15-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">hour6 =</span> <span class="fu">floor_date</span>(time, <span class="st">"6 hours"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb15-21"><a href="#cb15-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(hour6) <span class="sc">|&gt;</span></span>
+<span id="cb15-22"><a href="#cb15-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">mean_dir_deg =</span> <span class="fu">mean</span>(qc_val, <span class="at">na.rm =</span> <span class="cn">TRUE</span>), <span class="at">.groups =</span> <span class="st">"drop"</span>)</span>
+<span id="cb15-23"><a href="#cb15-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-24"><a href="#cb15-24" aria-hidden="true" tabindex="-1"></a><span class="co"># --- join + arrow endpoints from bearings (bearing: 0°=N/up, 90°=E/right) ---</span></span>
+<span id="cb15-25"><a href="#cb15-25" aria-hidden="true" tabindex="-1"></a>wind_6h <span class="ot">&lt;-</span> lizard_wind_speed <span class="sc">|&gt;</span></span>
+<span id="cb15-26"><a href="#cb15-26" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(lizard_wind_direction, <span class="at">by =</span> <span class="st">"hour6"</span>)</span>
+<span id="cb15-27"><a href="#cb15-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-28"><a href="#cb15-28" aria-hidden="true" tabindex="-1"></a><span class="co"># baseline for arrows just below min speed</span></span>
+<span id="cb15-29"><a href="#cb15-29" aria-hidden="true" tabindex="-1"></a>ymin <span class="ot">&lt;-</span> <span class="fu">min</span>(wind_6h<span class="sc">$</span>mean_speed, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb15-30"><a href="#cb15-30" aria-hidden="true" tabindex="-1"></a>yrng <span class="ot">&lt;-</span> <span class="fu">diff</span>(<span class="fu">range</span>(wind_6h<span class="sc">$</span>mean_speed, <span class="at">na.rm =</span> <span class="cn">TRUE</span>))</span>
+<span id="cb15-31"><a href="#cb15-31" aria-hidden="true" tabindex="-1"></a>pad  <span class="ot">&lt;-</span> <span class="cf">if</span> (<span class="fu">is.finite</span>(yrng) <span class="sc">&amp;&amp;</span> yrng <span class="sc">&gt;</span> <span class="dv">0</span>) <span class="fl">0.12</span> <span class="sc">*</span> yrng <span class="cf">else</span> <span class="dv">1</span></span>
+<span id="cb15-32"><a href="#cb15-32" aria-hidden="true" tabindex="-1"></a>label_y <span class="ot">&lt;-</span> ymin <span class="sc">-</span> pad</span>
+<span id="cb15-33"><a href="#cb15-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-34"><a href="#cb15-34" aria-hidden="true" tabindex="-1"></a><span class="co"># arrow lengths (in data units): time component in seconds, y component in speed units</span></span>
+<span id="cb15-35"><a href="#cb15-35" aria-hidden="true" tabindex="-1"></a><span class="co"># scale by speed so stronger winds have longer arrows (cap to avoid huge arrows)</span></span>
+<span id="cb15-36"><a href="#cb15-36" aria-hidden="true" tabindex="-1"></a>len_time_sec_base <span class="ot">&lt;-</span> <span class="dv">60</span> <span class="sc">*</span> <span class="dv">60</span> <span class="sc">*</span> <span class="fl">1.5</span>  <span class="co"># ~1.5h along x at max scale</span></span>
+<span id="cb15-37"><a href="#cb15-37" aria-hidden="true" tabindex="-1"></a>len_y_base        <span class="ot">&lt;-</span> <span class="cf">if</span> (<span class="fu">is.finite</span>(yrng) <span class="sc">&amp;&amp;</span> yrng <span class="sc">&gt;</span> <span class="dv">0</span>) <span class="fl">0.18</span> <span class="sc">*</span> yrng <span class="cf">else</span> <span class="dv">1</span></span>
+<span id="cb15-38"><a href="#cb15-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-39"><a href="#cb15-39" aria-hidden="true" tabindex="-1"></a>wind_6h <span class="ot">&lt;-</span> wind_6h <span class="sc">|&gt;</span></span>
+<span id="cb15-40"><a href="#cb15-40" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb15-41"><a href="#cb15-41" aria-hidden="true" tabindex="-1"></a>    <span class="at">dir_deg =</span> mean_dir_deg <span class="sc">%%</span> <span class="dv">360</span>,</span>
+<span id="cb15-42"><a href="#cb15-42" aria-hidden="true" tabindex="-1"></a>    <span class="at">phi_deg =</span> <span class="dv">90</span> <span class="sc">-</span> dir_deg,                     <span class="co"># convert bearing to math angle (0° = +x)</span></span>
+<span id="cb15-43"><a href="#cb15-43" aria-hidden="true" tabindex="-1"></a>    <span class="at">phi     =</span> pi <span class="sc">*</span> phi_deg <span class="sc">/</span> <span class="dv">180</span>,</span>
+<span id="cb15-44"><a href="#cb15-44" aria-hidden="true" tabindex="-1"></a>    <span class="at">scale_s =</span> <span class="fu">pmin</span>(mean_speed <span class="sc">/</span> <span class="fu">max</span>(mean_speed, <span class="at">na.rm =</span> <span class="cn">TRUE</span>), <span class="dv">1</span>),</span>
+<span id="cb15-45"><a href="#cb15-45" aria-hidden="true" tabindex="-1"></a>    <span class="at">dx_sec  =</span> len_time_sec_base <span class="sc">*</span> scale_s <span class="sc">*</span> <span class="fu">cos</span>(phi),</span>
+<span id="cb15-46"><a href="#cb15-46" aria-hidden="true" tabindex="-1"></a>    <span class="at">dy      =</span> len_y_base        <span class="sc">*</span> scale_s <span class="sc">*</span> <span class="fu">sin</span>(phi),</span>
+<span id="cb15-47"><a href="#cb15-47" aria-hidden="true" tabindex="-1"></a>    <span class="at">x0      =</span> hour6,</span>
+<span id="cb15-48"><a href="#cb15-48" aria-hidden="true" tabindex="-1"></a>    <span class="at">y0      =</span> label_y,</span>
+<span id="cb15-49"><a href="#cb15-49" aria-hidden="true" tabindex="-1"></a>    <span class="at">x1      =</span> hour6 <span class="sc">+</span> dx_sec,                   <span class="co"># POSIXct + seconds</span></span>
+<span id="cb15-50"><a href="#cb15-50" aria-hidden="true" tabindex="-1"></a>    <span class="at">y1      =</span> label_y <span class="sc">+</span> dy</span>
+<span id="cb15-51"><a href="#cb15-51" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb15-52"><a href="#cb15-52" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-53"><a href="#cb15-53" aria-hidden="true" tabindex="-1"></a><span class="co"># --- plot: speed line + directional arrows below ---</span></span>
+<span id="cb15-54"><a href="#cb15-54" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>() <span class="sc">+</span> <span class="fu">theme_bw</span>() <span class="sc">+</span></span>
+<span id="cb15-55"><a href="#cb15-55" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">data =</span> wind_6h, <span class="fu">aes</span>(<span class="at">x =</span> hour6, <span class="at">y =</span> mean_speed)) <span class="sc">+</span></span>
+<span id="cb15-56"><a href="#cb15-56" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">data =</span> wind_6h, <span class="fu">aes</span>(<span class="at">x =</span> hour6, <span class="at">y =</span> mean_speed)) <span class="sc">+</span></span>
+<span id="cb15-57"><a href="#cb15-57" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_segment</span>(</span>
+<span id="cb15-58"><a href="#cb15-58" aria-hidden="true" tabindex="-1"></a>    <span class="at">data =</span> wind_6h,</span>
+<span id="cb15-59"><a href="#cb15-59" aria-hidden="true" tabindex="-1"></a>    <span class="fu">aes</span>(<span class="at">x =</span> x0, <span class="at">y =</span> y0, <span class="at">xend =</span> x1, <span class="at">yend =</span> y1),</span>
+<span id="cb15-60"><a href="#cb15-60" aria-hidden="true" tabindex="-1"></a>    <span class="at">arrow =</span> <span class="fu">arrow</span>(<span class="at">length =</span> <span class="fu">unit</span>(<span class="dv">3</span>, <span class="st">"mm"</span>), <span class="at">type =</span> <span class="st">"closed"</span>),</span>
+<span id="cb15-61"><a href="#cb15-61" aria-hidden="true" tabindex="-1"></a>    <span class="at">linewidth =</span> <span class="fl">0.5</span></span>
+<span id="cb15-62"><a href="#cb15-62" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb15-63"><a href="#cb15-63" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="cn">NULL</span>, <span class="at">y =</span> <span class="st">"Wind speed (m/s)"</span>,</span>
+<span id="cb15-64"><a href="#cb15-64" aria-hidden="true" tabindex="-1"></a>       <span class="at">title =</span> <span class="st">"Lizard Island · 6-hourly wind speed with directional arrows (bearing)"</span>) <span class="sc">+</span></span>
+<span id="cb15-65"><a href="#cb15-65" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_cartesian</span>(<span class="at">ylim =</span> <span class="fu">c</span>(label_y, <span class="cn">NA</span>), <span class="at">clip =</span> <span class="st">"off"</span>) <span class="sc">+</span></span>
+<span id="cb15-66"><a href="#cb15-66" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">plot.margin =</span> <span class="fu">margin</span>(<span class="dv">10</span>, <span class="dv">10</span>, <span class="dv">24</span>, <span class="dv">10</span>),</span>
+<span id="cb15-67"><a href="#cb15-67" aria-hidden="true" tabindex="-1"></a>        <span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">margin =</span> <span class="fu">margin</span>(<span class="at">t =</span> <span class="dv">8</span>)))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+</section>
+<section id="figure-s2" class="level4">
+<h4 class="anchored" data-anchor-id="figure-s2">Figure S2</h4>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="do">### Construct spatial arrays</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(spatstat)</span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(purrr)</span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">101</span>)</span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Convert to ppp with settler mark</span></span>
+<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a>ppp_settlers <span class="ot">&lt;-</span> <span class="fu">as.ppp</span>(</span>
+<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">st_coordinates</span>(seedbox),</span>
+<span id="cb16-10"><a href="#cb16-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">W =</span> <span class="fu">as.owin</span>(<span class="fu">st_bbox</span>(seedbox))</span>
+<span id="cb16-11"><a href="#cb16-11" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb16-12"><a href="#cb16-12" aria-hidden="true" tabindex="-1"></a><span class="fu">marks</span>(ppp_settlers) <span class="ot">&lt;-</span> (seedbox<span class="sc">$</span>settlers)</span>
+<span id="cb16-13"><a href="#cb16-13" aria-hidden="true" tabindex="-1"></a>Kmark_result <span class="ot">&lt;-</span> <span class="fu">markcorr</span>(ppp_settlers, <span class="at">correction =</span> <span class="st">"Ripley"</span>,  <span class="at">r =</span> <span class="fu">seq</span>(<span class="dv">0</span>, <span class="dv">6</span>, <span class="at">by =</span> <span class="fl">0.2</span>))</span>
+<span id="cb16-14"><a href="#cb16-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-15"><a href="#cb16-15" aria-hidden="true" tabindex="-1"></a>seedbox_subset <span class="ot">&lt;-</span> seedbox <span class="sc">|&gt;</span> <span class="fu">filter</span>(id <span class="sc">%in%</span> inner)</span>
+<span id="cb16-16"><a href="#cb16-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-17"><a href="#cb16-17" aria-hidden="true" tabindex="-1"></a>ppp_settlers_subset <span class="ot">&lt;-</span> <span class="fu">as.ppp</span>(</span>
+<span id="cb16-18"><a href="#cb16-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">st_coordinates</span>(seedbox_subset),</span>
+<span id="cb16-19"><a href="#cb16-19" aria-hidden="true" tabindex="-1"></a>  <span class="at">W =</span> <span class="fu">as.owin</span>(<span class="fu">st_bbox</span>(seedbox_subset))</span>
+<span id="cb16-20"><a href="#cb16-20" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb16-21"><a href="#cb16-21" aria-hidden="true" tabindex="-1"></a><span class="fu">marks</span>(ppp_settlers_subset) <span class="ot">&lt;-</span> (seedbox_subset<span class="sc">$</span>settlers)</span>
+<span id="cb16-22"><a href="#cb16-22" aria-hidden="true" tabindex="-1"></a>Kmark_result_subset <span class="ot">&lt;-</span> <span class="fu">markcorr</span>(ppp_settlers_subset, <span class="at">correction =</span> <span class="st">"Ripley"</span>,  <span class="at">r =</span> <span class="fu">seq</span>(<span class="dv">0</span>, <span class="dv">6</span>, <span class="at">by =</span> <span class="fl">0.2</span>))</span>
+<span id="cb16-23"><a href="#cb16-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-24"><a href="#cb16-24" aria-hidden="true" tabindex="-1"></a><span class="co"># combine</span></span>
+<span id="cb16-25"><a href="#cb16-25" aria-hidden="true" tabindex="-1"></a>kmm_df <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(Kmark_result)[, <span class="fu">c</span>(<span class="st">"r"</span>, <span class="st">"iso"</span>, <span class="st">"theo"</span>)]</span>
+<span id="cb16-26"><a href="#cb16-26" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(kmm_df) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"r"</span>, <span class="st">"observed"</span>, <span class="st">"theoretical"</span>)</span>
+<span id="cb16-27"><a href="#cb16-27" aria-hidden="true" tabindex="-1"></a>kmm_df_subset <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(Kmark_result_subset)[, <span class="fu">c</span>(<span class="st">"r"</span>, <span class="st">"iso"</span>, <span class="st">"theo"</span>)]</span>
+<span id="cb16-28"><a href="#cb16-28" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(kmm_df_subset) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"r"</span>, <span class="st">"observed"</span>, <span class="st">"theoretical"</span>)</span>
+<span id="cb16-29"><a href="#cb16-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-30"><a href="#cb16-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-31"><a href="#cb16-31" aria-hidden="true" tabindex="-1"></a>kmm_plot <span class="ot">&lt;-</span> <span class="fu">rbind</span>(kmm_df <span class="sc">|&gt;</span> <span class="fu">mutate</span>(<span class="at">factor=</span><span class="st">"all_tiles"</span>),</span>
+<span id="cb16-32"><a href="#cb16-32" aria-hidden="true" tabindex="-1"></a>                  kmm_df_subset <span class="sc">|&gt;</span> <span class="fu">mutate</span>(<span class="at">factor=</span><span class="st">"outer_array"</span>)</span>
+<span id="cb16-33"><a href="#cb16-33" aria-hidden="true" tabindex="-1"></a>  ) </span>
+<span id="cb16-34"><a href="#cb16-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-35"><a href="#cb16-35" aria-hidden="true" tabindex="-1"></a>coords <span class="ot">&lt;-</span> <span class="fu">st_coordinates</span>(seedbox)</span>
+<span id="cb16-36"><a href="#cb16-36" aria-hidden="true" tabindex="-1"></a>win <span class="ot">&lt;-</span> <span class="fu">as.owin</span>(<span class="fu">st_bbox</span>(seedbox))</span>
+<span id="cb16-37"><a href="#cb16-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-38"><a href="#cb16-38" aria-hidden="true" tabindex="-1"></a><span class="co"># Repeat 999 times</span></span>
+<span id="cb16-39"><a href="#cb16-39" aria-hidden="true" tabindex="-1"></a>simulated_kmm <span class="ot">&lt;-</span> <span class="fu">map_dfr</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">999</span>, <span class="cf">function</span>(i) {</span>
+<span id="cb16-40"><a href="#cb16-40" aria-hidden="true" tabindex="-1"></a>  ppp <span class="ot">&lt;-</span> <span class="fu">as.ppp</span>(coords, <span class="at">W =</span> win)</span>
+<span id="cb16-41"><a href="#cb16-41" aria-hidden="true" tabindex="-1"></a>  <span class="fu">marks</span>(ppp) <span class="ot">&lt;-</span> <span class="fu">sample</span>(seedbox<span class="sc">$</span>settlers)</span>
+<span id="cb16-42"><a href="#cb16-42" aria-hidden="true" tabindex="-1"></a>  kmm <span class="ot">&lt;-</span> <span class="fu">markcorr</span>(ppp, <span class="at">correction =</span> <span class="st">"Ripley"</span>, <span class="at">r =</span> <span class="fu">seq</span>(<span class="dv">0</span>, <span class="dv">6</span>, <span class="at">by =</span> <span class="fl">0.1</span>))</span>
+<span id="cb16-43"><a href="#cb16-43" aria-hidden="true" tabindex="-1"></a>  df <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(kmm)[, <span class="fu">c</span>(<span class="st">"r"</span>, <span class="st">"iso"</span>)]</span>
+<span id="cb16-44"><a href="#cb16-44" aria-hidden="true" tabindex="-1"></a>  df<span class="sc">$</span>id <span class="ot">&lt;-</span> i</span>
+<span id="cb16-45"><a href="#cb16-45" aria-hidden="true" tabindex="-1"></a>  <span class="fu">names</span>(df) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"r"</span>, <span class="st">"observed"</span>, <span class="st">"id"</span>)</span>
+<span id="cb16-46"><a href="#cb16-46" aria-hidden="true" tabindex="-1"></a>  df</span>
+<span id="cb16-47"><a href="#cb16-47" aria-hidden="true" tabindex="-1"></a>})</span>
+<span id="cb16-48"><a href="#cb16-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-49"><a href="#cb16-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-50"><a href="#cb16-50" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-51"><a href="#cb16-51" aria-hidden="true" tabindex="-1"></a><span class="co"># Compute percentiles for each r</span></span>
+<span id="cb16-52"><a href="#cb16-52" aria-hidden="true" tabindex="-1"></a>envelope_bounds <span class="ot">&lt;-</span> simulated_kmm <span class="sc">|&gt;</span></span>
+<span id="cb16-53"><a href="#cb16-53" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(r) <span class="sc">|&gt;</span></span>
+<span id="cb16-54"><a href="#cb16-54" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(</span>
+<span id="cb16-55"><a href="#cb16-55" aria-hidden="true" tabindex="-1"></a>    <span class="at">lower =</span> <span class="fu">quantile</span>(observed, <span class="fl">0.05</span>),</span>
+<span id="cb16-56"><a href="#cb16-56" aria-hidden="true" tabindex="-1"></a>    <span class="at">upper =</span> <span class="fu">quantile</span>(observed, <span class="fl">0.99</span>),</span>
+<span id="cb16-57"><a href="#cb16-57" aria-hidden="true" tabindex="-1"></a>    <span class="at">.groups =</span> <span class="st">"drop"</span></span>
+<span id="cb16-58"><a href="#cb16-58" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span> <span class="fu">mutate</span>(<span class="at">lower=</span><span class="dv">0</span>)</span>
+<span id="cb16-59"><a href="#cb16-59" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-60"><a href="#cb16-60" aria-hidden="true" tabindex="-1"></a>kmm_df<span class="sc">$</span>id <span class="ot">&lt;-</span> <span class="dv">0</span></span>
+<span id="cb16-61"><a href="#cb16-61" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-62"><a href="#cb16-62" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-63"><a href="#cb16-63" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-64"><a href="#cb16-64" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-65"><a href="#cb16-65" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-66"><a href="#cb16-66" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-67"><a href="#cb16-67" aria-hidden="true" tabindex="-1"></a>Figure_S1 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>() <span class="sc">+</span> <span class="fu">theme_bw</span>() <span class="sc">+</span> <span class="fu">xlim</span>(<span class="fu">round</span>(<span class="fu">min</span>(<span class="fu">nndist</span>(ppp_settlers)), <span class="dv">1</span>), <span class="dv">6</span>) <span class="sc">+</span></span>
+<span id="cb16-68"><a href="#cb16-68" aria-hidden="true" tabindex="-1"></a> </span>
+<span id="cb16-69"><a href="#cb16-69" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_ribbon</span>(<span class="at">data =</span> envelope_bounds, <span class="fu">aes</span>(<span class="at">x =</span> r, <span class="at">ymin =</span> lower, <span class="at">ymax =</span> upper), <span class="at">fill =</span> <span class="st">"grey20"</span>, <span class="at">alpha=</span><span class="fl">0.1</span>) <span class="sc">+</span></span>
+<span id="cb16-70"><a href="#cb16-70" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">data=</span>kmm_plot, <span class="fu">aes</span>(r, observed, <span class="at">color=</span>factor), <span class="at">linewidth=</span><span class="fl">0.3</span>) <span class="sc">+</span></span>
+<span id="cb16-71"><a href="#cb16-71" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">limits=</span><span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">40</span>), <span class="at">breaks=</span><span class="fu">seq</span>(<span class="sc">-</span><span class="dv">10</span>, <span class="dv">40</span>, <span class="dv">10</span>)) <span class="sc">+</span></span>
+<span id="cb16-72"><a href="#cb16-72" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">limits=</span><span class="fu">c</span>(<span class="dv">0</span>, <span class="fl">5.5</span>), <span class="at">breaks=</span><span class="fu">seq</span>(<span class="dv">0</span>, <span class="fl">5.5</span>, <span class="dv">1</span>)) <span class="sc">+</span> <span class="fu">xlab</span>(<span class="st">"Distance betwen tiles"</span>) <span class="sc">+</span></span>
+<span id="cb16-73"><a href="#cb16-73" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_hline</span>(<span class="at">yintercept =</span> <span class="fl">0.5</span>, <span class="at">linewidth =</span> <span class="fl">0.5</span>, <span class="at">alpha=</span><span class="fl">0.6</span>, <span class="at">linetype =</span> <span class="st">"solid"</span>) <span class="sc">+</span> </span>
+<span id="cb16-74"><a href="#cb16-74" aria-hidden="true" tabindex="-1"></a>  <span class="co">#geom_hline(yintercept = 0, linewidth = 0.5, alpha=0.8, linetype = "solid") +</span></span>
+<span id="cb16-75"><a href="#cb16-75" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_manual</span>(</span>
+<span id="cb16-76"><a href="#cb16-76" aria-hidden="true" tabindex="-1"></a>    <span class="at">labels =</span> <span class="fu">c</span>(<span class="st">"all_tiles"</span> <span class="ot">=</span> <span class="st">"All tiles"</span>, <span class="st">"outer_array"</span> <span class="ot">=</span> <span class="st">"Outer tiles only"</span>),</span>
+<span id="cb16-77"><a href="#cb16-77" aria-hidden="true" tabindex="-1"></a>    <span class="at">values =</span> <span class="fu">c</span>(<span class="st">"all_tiles"</span> <span class="ot">=</span> <span class="st">"turquoise4"</span>, <span class="st">"outer_array"</span> <span class="ot">=</span> <span class="st">"turquoise2"</span>),</span>
+<span id="cb16-78"><a href="#cb16-78" aria-hidden="true" tabindex="-1"></a>    <span class="at">name =</span> <span class="cn">NULL</span></span>
+<span id="cb16-79"><a href="#cb16-79" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb16-80"><a href="#cb16-80" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme</span>(</span>
+<span id="cb16-81"><a href="#cb16-81" aria-hidden="true" tabindex="-1"></a>    <span class="at">legend.position.inside.inside =</span> <span class="fu">c</span>(<span class="fl">0.75</span>, <span class="fl">0.85</span>),</span>
+<span id="cb16-82"><a href="#cb16-82" aria-hidden="true" tabindex="-1"></a>    <span class="at">legend.background =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb16-83"><a href="#cb16-83" aria-hidden="true" tabindex="-1"></a>    <span class="at">legend.box.background =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb16-84"><a href="#cb16-84" aria-hidden="true" tabindex="-1"></a>    <span class="at">legend.key =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb16-85"><a href="#cb16-85" aria-hidden="true" tabindex="-1"></a>    <span class="at">legend.text =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">10</span>), </span>
+<span id="cb16-86"><a href="#cb16-86" aria-hidden="true" tabindex="-1"></a>    <span class="at">legend.key.size =</span> <span class="fu">unit</span>(<span class="fl">1.2</span>, <span class="st">"lines"</span>),</span>
+<span id="cb16-87"><a href="#cb16-87" aria-hidden="true" tabindex="-1"></a>    <span class="at">axis.title.x =</span> <span class="fu">element_text</span>(<span class="at">margin =</span> <span class="fu">margin</span>(<span class="at">t =</span> <span class="dv">2</span>)),</span>
+<span id="cb16-88"><a href="#cb16-88" aria-hidden="true" tabindex="-1"></a>    <span class="at">axis.title.y =</span> <span class="fu">element_text</span>(<span class="at">margin =</span> <span class="fu">margin</span>(<span class="at">r =</span> <span class="dv">2</span>))</span>
+<span id="cb16-89"><a href="#cb16-89" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb16-90"><a href="#cb16-90" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-91"><a href="#cb16-91" aria-hidden="true" tabindex="-1"></a>Figure_S1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="codebase_files/figure-html/unnamed-chunk-11-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co">#ggsave("data/Figure_S1.pdf", plot = Figure_S1, device = "pdf", width = 8, height = 7)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
 
 
 </section>
